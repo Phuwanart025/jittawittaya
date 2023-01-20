@@ -4,38 +4,9 @@ set_time_limit();
     
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-            <link href="{{ URL::to('assets/css/style.css') }}" rel="stylesheet">            
-        </head>
+      <link href="{{ URL::to('assets/css/style.css') }}" rel="stylesheet">            
+       
         
-        <style>
-            @font-face {
-                font-family: 'THSarabunNew';
-                font-style: normal;
-                font-weight: normal;
-                src: url("{{ public_path('fonts/THSarabunNew.ttf') }}") format('truetype');
-            }
-            @font-face {
-                font-family: 'THSarabunNew';
-                font-style: normal;
-                font-weight: bold;
-                src: url("{{ public_path('fonts/THSarabunNew Bold.ttf') }}") format('truetype');
-            }
-            @font-face {
-                font-family: 'THSarabunNew';
-                font-style: italic;
-                font-weight: normal;
-                src: url("{{ public_path('fonts/THSarabunNew Italic.ttf') }}") format('truetype');
-            }
-            @font-face {
-                font-family: 'THSarabunNew';
-                font-style: italic;
-                font-weight: bold;
-                src: url("{{ public_path('fonts/THSarabunNew BoldItalic.ttf') }}") format('truetype');
-            }
-            body {
-                font-family: "THSarabunNew";
-            }
-        </style>
     <title>รายงานการทำแบบบันทึก</title>
 </head>
 <body>
@@ -59,12 +30,14 @@ set_time_limit();
                 </tr>
             </tfoot>
             <tbody>
-              <tr class="item{{$data->id}}">
-                  <td><span class="w3-tag w3-round w3-green w3-border w3-border-white">{{$data->id}}</span></td>
-                  <td>{{$data->rounds}}</td>
-                  <td>{{$data->created_at}}</td>
-                  <td>{{$data->updated_at}}</td>
+                @foreach ($data as $item)
+              <tr class="item{{$item->id}}">
+                  <td><span class="w3-tag w3-round w3-green w3-border w3-border-white">{{$item->id}}</span></td>
+                  <td>{{$item->rounds}}</td>
+                  <td>{{$item->created_at}}</td>
+                  <td>{{$item->updated_at}}</td>
               </tr>
+              @endforeach
             </tbody>
         </table>
 
