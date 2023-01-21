@@ -39,47 +39,73 @@
         body {
             font-family: "THSarabunNew";
         }
+
         .header {
-  text-align: center;
-}
-.container {
- 
-  margin: 0 auto; /* centers the container horizontally */
-  padding: 20px; /* adds padding around the elements inside the container */
-  border: 1px solid black; /* adds a border around the container */
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
+            text-align: center;
+        }
 
-th, td {
-    text-align: center;
-  padding: 8px;
-}
+        .container {
 
-tr:nth-child(even){background-color: #f2f2f2}
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-th {
-  background-color: #04AA6D;
-  color: white;
-}
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #08faa1
+        }
+
+        th {
+            background-color: #04AA6D;
+            color: rgb(255, 255, 255);
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+       
+
+        .lable {
+            color: rgb(15, 42, 240);
+            font-size: 20px;
+        }
+
+        q{
+            font-size: 18px;
+            text-align: center;
+        }
     </style>
 </head>
 
-<body>  
+<body>
     <div class="header">
         <h1>Jitdee</h1>
-        <h4>ประวัติบันทึกความรู้สึก</h4>
+        <h2>ประวัติบันทึกความรู้สึก</h2>
+        <h3>{{ Auth::user()->name }}</h3>
     </div>
     <hr>
-    
-  <div class="container">
+
+    <div class="container">
         <div class="row">
 
             <table class="table table-bordered">
@@ -104,18 +130,52 @@ th {
                     @endforeach
                 </tbody>
             </table>
+            <hr>
+            <div class="column">
+                <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
+                <q>{{ $item->rounds }}</q><br>
+                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
+                <q>{{ $item->created_at }}</q><br>
+
+            </div>
+            <div class="column">
+                <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
+                <q>{{ $item->rounds }}</q><br>
+                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
+                <q>{{ $item->created_at }}</q><br>
+            </div>
+            <div class="column">
+                <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
+                <q>{{ $item->created_at }}</q><br>
+                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
+                <q>{{ $item->created_at }}</q><br> 
+            </div>
         </div>
+            <div class="row">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">เลขที่ลำดับ</th>
+                        <th scope="col">ครั้งที่</th>
+                        <th scope="col">เวลาทำครั้งแรก</th>
+                        <th scope="col">สิ้นสุด</th>
 
-        <div class="text-center">
-            <h1>ดทำพนยเทำพยน</h1>
-            <h1>ประวัติบันทึกความรู้สึก</h1>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($data as $item)
+                        <tr class="table-secondary">
+                            <td><span class="badge bg-success">{{ $item->id }}</span>
+                            </td>
+                            <td>{{ $item->rounds }}</td>
+                            <td>{{ $item->created_at }}</td>
+                            <td>{{ $item->updated_at }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+            </div>
         </div>
-
-
-
-
-
-
     </div>
 </body>
 

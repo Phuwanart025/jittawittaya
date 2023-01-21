@@ -15,7 +15,7 @@ class PDFController extends Controller
         set_time_limit(0);
         $data = DB::table('rounds_completed')->select('rounds_completed.*')->where('id', $id)->get();
         $pdf = PDF::loadView('myPDF', compact('data'));
-        $pdf->set_option('isRemoteEnabled', TRUE);
+      //  $pdf->set_option('isRemoteEnabled', TRUE);
         $pdf->render();
         return $pdf->stream('รายงานการทำแบบบันทึก-jitdee.pdf');
 
