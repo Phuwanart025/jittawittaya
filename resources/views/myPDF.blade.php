@@ -39,14 +39,43 @@
         body {
             font-family: "THSarabunNew";
         }
+        .header {
+  text-align: center;
+}
+.container {
+ 
+  margin: 0 auto; /* centers the container horizontally */
+  padding: 20px; /* adds padding around the elements inside the container */
+  border: 1px solid black; /* adds a border around the container */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
+th, td {
+    text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
     </style>
 </head>
 
 <body>  
-    <div class="text-center">
+    <div class="header">
         <h1>Jitdee</h1>
-        <p>ประวัติบันทึกความรู้สึก</p>
+        <h4>ประวัติบันทึกความรู้สึก</h4>
     </div>
     <hr>
     
