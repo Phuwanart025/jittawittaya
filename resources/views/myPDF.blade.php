@@ -1,46 +1,93 @@
-set_time_limit();
 <!DOCTYPE html>
-<html><head>
-    
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-      <link href="{{ URL::to('assets/css/style.css') }}" rel="stylesheet">            
-       
-        
+<html>
+
+<head>
     <title>รายงานการทำแบบบันทึก</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <style>
+        @font-face {
+            font-family: 'THSarabunNew';
+            font-style: normal;
+            font-weight: normal;
+            src: url("{{ public_path('fonts/THSarabunNew.ttf') }}") format('truetype');
+        }
+
+        @font-face {
+            font-family: 'THSarabunNew';
+            font-style: normal;
+            font-weight: bold;
+            src: url("{{ public_path('fonts/THSarabunNew Bold.ttf') }}") format('truetype');
+        }
+
+        @font-face {
+            font-family: 'THSarabunNew';
+            font-style: italic;
+            font-weight: normal;
+            src: url("{{ public_path('fonts/THSarabunNew Italic.ttf') }}") format('truetype');
+        }
+
+        @font-face {
+            font-family: 'THSarabunNew';
+            font-style: italic;
+            font-weight: bold;
+            src: url("{{ public_path('fonts/THSarabunNew BoldItalic.ttf') }}") format('truetype');
+        }
+
+        body {
+            font-family: "THSarabunNew";
+        }
+
+    </style>
 </head>
-<body>
-    <div class="table-responsive">
-        <table id="myTable" class="display  text-secondary" style="width: 100%;">
-            <thead>
-                <tr>
-                    <th scope="col">เลขที่ลำดับ</th>
-                    <th scope="col">ครั้งที่</th>
-                    <th scope="col">เวลาทำครั้งแรก</th>
-                    <th scope="col">สิ้นสุด</th>
-            
-                </tr>
-            </thead>
-            <tfoot>
-                <tr>
-                    <th scope="col">เลขที่ลำดับ</th>
-                    <th scope="col">ครั้งที่</th>
-                    <th scope="col">เวลาทำครั้งแรก</th>
-                    <th scope="col">สิ้นสุด</th> 
-                </tr>
-            </tfoot>
-            <tbody>
-                @foreach ($data as $item)
-              <tr class="item{{$item->id}}">
-                  <td><span class="w3-tag w3-round w3-green w3-border w3-border-white">{{$item->id}}</span></td>
-                  <td>{{$item->rounds}}</td>
-                  <td>{{$item->created_at}}</td>
-                  <td>{{$item->updated_at}}</td>
-              </tr>
-              @endforeach
-            </tbody>
-        </table>
+
+<body>  
+    <div class="text-center">
+        <h1>Jitdee</h1>
+        <p>ประวัติบันทึกความรู้สึก</p>
+    </div>
+    <hr>
+    
+  <div class="container">
+        <div class="row">
+
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">เลขที่ลำดับ</th>
+                        <th scope="col">ครั้งที่</th>
+                        <th scope="col">เวลาทำครั้งแรก</th>
+                        <th scope="col">สิ้นสุด</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($data as $item)
+                        <tr class="table-secondary">
+                            <td><span class="badge bg-success">{{ $item->id }}</span>
+                            </td>
+                            <td>{{ $item->rounds }}</td>
+                            <td>{{ $item->created_at }}</td>
+                            <td>{{ $item->updated_at }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-center">
+            <h1>ดทำพนยเทำพยน</h1>
+            <h1>ประวัติบันทึกความรู้สึก</h1>
+        </div>
+
+
+
+
+
 
     </div>
 </body>
+
 </html>
