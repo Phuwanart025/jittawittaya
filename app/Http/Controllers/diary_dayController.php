@@ -18,7 +18,7 @@ class diary_dayController extends Controller
             'value' => 'required',
             'v3' => 'required'
         ]);
-        $latest = rounds_completed::orderBy('jobs_id', 'desc')->first();
+        $latest = rounds_completed::where('user_id')->orderBy('jobs_id', 'desc')->first();
         $diary1 = new rounds_completed;
         $diary = new diary_day;
         if ($latest) {
@@ -46,7 +46,7 @@ class diary_dayController extends Controller
 
     public function store2(Request $request)
     {
-        $latest = rounds_completed::orderBy('jobs_id', 'desc')->first();
+        $latest = rounds_completed::where('user_id')->orderBy('jobs_id', 'desc')->first();
         $diary1 = new rounds_completed;
         $diary1->user_id = Auth::user()->id;
         $diary1->jobs_id = 2;
