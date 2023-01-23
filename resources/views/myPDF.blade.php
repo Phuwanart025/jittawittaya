@@ -88,7 +88,7 @@
             float: left;
             width: 33.33%;
             padding: 10px;
-            height: 300px;
+            height: 100px;
             /* Should be removed. Only for demonstration */
         }
 
@@ -97,14 +97,15 @@
             color: rgb(15, 42, 240);
             font-size: 20px;
         }
+
     </style>
 </head>
 
 <body>
     <div class="header">
-        <h1>Jitdee</h1>
+        <img class="" src="images/logo1.jpg" class="img-thumbnail" alt="..." ><h1>Jitdee</h1>
         <h3>ประวัติบันทึกความรู้สึก</h3>
-        <h4>{{ Auth::user()->name }}</h4>
+        <h5>คุณ{{ Auth::user()->name }}</h5>
     </div>
     <hr>
 
@@ -137,26 +138,20 @@
             <div class="column">
                 <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
                 <q>{{ $item->rounds }}</q><br>
-                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->created_at }}</q><br>
-
             </div>
             <div class="column">
                 <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
                 <q>{{ $item->rounds }}</q><br>
-                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->created_at }}</q><br>
             </div>
             <div class="column">
                 <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
                 <q>{{ $item->created_at }}</q><br>
-                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->created_at }}</q><br>
             </div>
         </div>
         <hr>
-        <h3 class="">วันที่2</h3>
+
         <div class="row">
+            <h3>วันที่2</h3>
             <table class="table table-bordered">
                 <thead class="table-dark">
                     <tr>
@@ -179,161 +174,143 @@
                     @endforeach
                 </tbody>
             </table>
-            <div class="column">
-                <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
-                <q>{{ $item->rounds }}</q><br>
-                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->created_at }}</q><br>
-
-            </div>
-            <div class="column">
-                <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->rounds }}</q><br>
-                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->created_at }}</q><br>
-            </div>
-            <div class="column">
-                <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
-                <q>{{ $item->created_at }}</q><br>
-                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->created_at }}</q><br>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <h3 class="">วันที่3</h3>
-    <div class="row">
-        <table class="table table-bordered">
-            <thead class="table-dark">
-                <tr>
-                    <th scope="col">เลขที่ลำดับ</th>
-                    <th scope="col">ครั้งที่</th>
-                    <th scope="col">เวลาทำครั้งแรก</th>
-                    <th scope="col">สิ้นสุด</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($data as $item)
-                    <tr class="table-secondary">
-                        <td><span class="badge bg-success">{{ $item->id }}</span>
-                        </td>
-                        <td>{{ $item->rounds }}</td>
-                        <td>{{ $item->created_at }}</td>
-                        <td>{{ $item->updated_at }}</td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
-        <div class="column">
-            <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
-            <q>{{ $item->rounds }}</q><br>
-            <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-            <q>{{ $item->created_at }}</q><br>
-
-        </div>
-        <div class="column">
-            <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
-            <q>{{ $item->rounds }}</q><br>
-            <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-            <q>{{ $item->created_at }}</q><br>
-        </div>
-        <div class="column">
-            <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
-            <q>{{ $item->created_at }}</q><br>
-            <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-            <q>{{ $item->created_at }}</q><br>
-        </div>
-        <hr>
-        <h3 class="">วันที่4</h3>
-        <div class="row">
-            <table class="table table-bordered">
-                <thead class="table-dark">
-                    <tr>
-                        <th scope="col">เลขที่ลำดับ</th>
-                        <th scope="col">ครั้งที่</th>
-                        <th scope="col">เวลาทำครั้งแรก</th>
-                        <th scope="col">สิ้นสุด</th>
-    
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($data as $item)
-                        <tr class="table-secondary">
-                            <td><span class="badge bg-success">{{ $item->id }}</span>
-                            </td>
-                            <td>{{ $item->rounds }}</td>
-                            <td>{{ $item->created_at }}</td>
-                            <td>{{ $item->updated_at }}</td>
-                        </tr>
-                    @endforeach
-                </tbody>
-            </table>
-            <div class="column">
-                <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
-                <q>{{ $item->rounds }}</q><br>
-                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->created_at }}</q><br>
-    
-            </div>
-            <div class="column">
-                <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->rounds }}</q><br>
-                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->created_at }}</q><br>
-            </div>
-            <div class="column">
-                <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
-                <q>{{ $item->created_at }}</q><br>
-                <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->created_at }}</q><br>
-            </div>
             <hr>
-            <h3 class="">วันที่5</h3>
-            <div class="row">
-                <table class="table table-bordered">
-                    <thead class="table-dark">
-                        <tr>
-                            <th scope="col">เลขที่ลำดับ</th>
-                            <th scope="col">ครั้งที่</th>
-                            <th scope="col">เวลาทำครั้งแรก</th>
-                            <th scope="col">สิ้นสุด</th>
-        
+            <div class="column">
+                <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
+                <q>{{ $item->rounds }}</q><br>
+            </div>
+            <div class="column">
+                <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
+                <q>{{ $item->rounds }}</q><br>
+            </div>
+            <div class="column">
+                <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
+                <q>{{ $item->created_at }}</q><br>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <h3>วันที่3</h3>
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">เลขที่ลำดับ</th>
+                        <th scope="col">ครั้งที่</th>
+                        <th scope="col">เวลาทำครั้งแรก</th>
+                        <th scope="col">สิ้นสุด</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($data as $item)
+                        <tr class="table-secondary">
+                            <td><span class="badge bg-success">{{ $item->id }}</span>
+                            </td>
+                            <td>{{ $item->rounds }}</td>
+                            <td>{{ $item->created_at }}</td>
+                            <td>{{ $item->updated_at }}</td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($data as $item)
-                            <tr class="table-secondary">
-                                <td><span class="badge bg-success">{{ $item->id }}</span>
-                                </td>
-                                <td>{{ $item->rounds }}</td>
-                                <td>{{ $item->created_at }}</td>
-                                <td>{{ $item->updated_at }}</td>
-                            </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-                <div class="column">
-                    <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
-                    <q>{{ $item->rounds }}</q><br>
-                    <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                    <q>{{ $item->created_at }}</q><br>
-        
-                </div>
-                <div class="column">
-                    <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
-                    <q>{{ $item->rounds }}</q><br>
-                    <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                    <q>{{ $item->created_at }}</q><br>
-                </div>
-                <div class="column">
-                    <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
-                    <q>{{ $item->created_at }}</q><br>
-                    <label class="lable" for="fname">ระดับความรู้สึก :</label><br>
-                    <q>{{ $item->created_at }}</q><br>
-                </div>
+                    @endforeach
+                </tbody>
+            </table>
+            <hr>
+            <div class="column">
+                <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
+                <q>{{ $item->rounds }}</q><br>
+            </div>
+            <div class="column">
+                <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
+                <q>{{ $item->rounds }}</q><br>
+            </div>
+            <div class="column">
+                <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
+                <q>{{ $item->created_at }}</q><br>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <h3>วันที่4</h3>
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">เลขที่ลำดับ</th>
+                        <th scope="col">ครั้งที่</th>
+                        <th scope="col">เวลาทำครั้งแรก</th>
+                        <th scope="col">สิ้นสุด</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($data as $item)
+                        <tr class="table-secondary">
+                            <td><span class="badge bg-success">{{ $item->id }}</span>
+                            </td>
+                            <td>{{ $item->rounds }}</td>
+                            <td>{{ $item->created_at }}</td>
+                            <td>{{ $item->updated_at }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+            <hr>
+            <div class="column">
+                <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
+                <q>{{ $item->rounds }}</q><br>
+            </div>
+            <div class="column">
+                <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
+                <q>{{ $item->rounds }}</q><br>
+            </div>
+            <div class="column">
+                <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
+                <q>{{ $item->created_at }}</q><br>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <h3>วันที่5</h3>
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">เลขที่ลำดับ</th>
+                        <th scope="col">ครั้งที่</th>
+                        <th scope="col">เวลาทำครั้งแรก</th>
+                        <th scope="col">สิ้นสุด</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($data as $item)
+                        <tr class="table-secondary">
+                            <td><span class="badge bg-success">{{ $item->id }}</span>
+                            </td>
+                            <td>{{ $item->rounds }}</td>
+                            <td>{{ $item->created_at }}</td>
+                            <td>{{ $item->updated_at }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+            <hr>
+            <div class="column">
+                <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
+                <q>{{ $item->rounds }}</q><br>
+            </div>
+            <div class="column">
+                <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
+                <q>{{ $item->rounds }}</q><br>
+            </div>
+            <div class="column">
+                <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
+                <q>{{ $item->created_at }}</q><br>
+            </div>
+        </div>
+        <hr>
     </div>
-   
+
 
 
 </body>
