@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use App\Models\rounds_completed;
 use App\Models\diary_day;
 use App\Http\Controllers\diary_dayController;
@@ -98,7 +99,10 @@ Route::get('/mypdf/{id}', [App\Http\Controllers\PDFController::class, 'pdf']);
 Route::get('/mypdf', [App\Http\Controllers\PDFController::class, 'pdf2']);
 
 Route::middleware(['auth:sanctum'])->get('/services', function () {
-    $rounds_story = rounds_completed::all();
+    $rounds_story =  DB::table('rounds_completed')
+    ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+    ->where('rounds_completed.user_id', Auth::user()->id)
+    ->count();
     return view('Services', compact(('rounds_story')));
 })->name('/services');
 
