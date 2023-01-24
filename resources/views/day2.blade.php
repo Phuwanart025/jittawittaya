@@ -224,7 +224,8 @@
                                         <br><br><br><br>
 
                                         <div class="slidecontainer">
-                                            <h3 for="customRange2">ระดับความรู้สึก:</h3>
+                                            <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
+                                                    style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
                                                 value="{{ old('value') }}" class="slider" id="myRange">
                                             <div class="sliderticks">

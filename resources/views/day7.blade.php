@@ -155,43 +155,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-                                        <br><br><br>
-
-                                        <h2 class="text-center">มาเรียนรู้เกี่ยวกับกับดักความคิดกัน...</h2>
-                                        <div class="mb-5">
-                                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img"
-                                                aria-label="Info:">
-                                                <use xlink:href="#info-fill" />
-                                            </svg>
-                                            <h4 class="text-center">ความคิดหลายแบบที่มักจะทำให้เราเกิดความทุกข์ขึ้นบ่อยๆ
-                                                มีดังต่อไปนี้</h4>
-                                            <img class="img-fluid rounded mx-auto d-block" src="images/image1.jpg"
-                                                width="800" height="600">
-                                        </div>
-                                        <br><br>
-                                    </div>
-
-                                    {{-- Content2 --}}
-                                    <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY7</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -280,12 +244,12 @@
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
 
-                                    {{-- Content3 --}}
+                                    {{-- Content2 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY7</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -303,92 +267,15 @@
                                         <br><br>
 
                                         <div class="text-center">
-                                            {{-- <h2>รู้ทันกาย รู้ทันใจ รู้ทันความคิดในชีวิตประจำวัน...</h2>
-                                            <h3>(Daili thought record)</h3>
-                                            <p>มาดูตารางกันว่าเราแอบใช้ กับดักความคิด อะไรอยู่บ้าง แล้วจะคิดใหม่อย่างไรบ้าง
-                                            </p> --}}
-                                            <img class="img-fluid rounded mx-auto d-block" src="Images/image.jpg"
-                                                width="800" height="600">
+                                            <h2>...</h2>
+                                            
+                                            <img class="img-fluid rounded mx-auto d-block" src="" width="100"
+                                                height="100">
                                         </div>
-                                        <br><br>
+                                        <br>
                                         <hr><br>
-                                        {{-- <div class="table-responsive">
-                                            <table class="table table-light table-striped table-hover">
-                                                <thead class="table-dark">
-                                                    <tr>
-                                                        <th scope="col">เหตุการณ์</th>
-                                                        <th scope="col">รู้สึก(0-10)</th>
-                                                        <th scope="col">คิด</th>
-                                                        <th scope="col">กับดัก</th>
-                                                        <th scope="col">คิดใหม่</th>
-                                                        <th scope="col">รู้สึกใหม่(0-10)</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th>1</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>2</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>3</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div> --}}
-                                    </div>
 
-                                    {{-- Content4 --}}
-                                    <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-                                        <br><br><br>
-                                        <div class="row py-5 text-center">
-                                            <div class="col-md-4">
-                                                <img
-                                                    src="https://cdn.pixabay.com/animation/2022/07/29/14/46/14-46-54-82_512.gif">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <h3>ฝึกรู้ทันความคิด</h3>
-                                                <h4>มีเรื่องอะไรบ้างนะที่ทำให้หนูกลัว แล้วตอนนั้นหนูคิดอะไรนะ?</h4>
-                                                <textarea name="" id="" class="form-control mb-3" rows="6" placeholder="เหตุการณ์..."></textarea>
-                                                <textarea name="" id="" class="form-control mb-3" rows="6" placeholder="ความคิดตอนนั้น..."></textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="d-grid gap-2 col-3 mx-auto">
+                                        <div class="d-grid gap-2 col-4 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
                                                 href="{{ url('/day5') }}">บันทึก</button>
@@ -398,7 +285,6 @@
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
-
                             </div>
                         </div>
 
@@ -410,8 +296,6 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
 
                     </div>
@@ -458,11 +342,34 @@
         <script>
             var slider = document.getElementById("myRange");
             var output = document.getElementById("demo");
+
             output.innerHTML = slider.value; // Display the default slider value
 
             // Update the current slider value (each time you drag the slider handle)
             slider.oninput = function() {
                 output.innerHTML = this.value;
+            }
+        </script>
+
+        <script>
+            var slider2 = document.getElementById("myRange2");
+            var output2 = document.getElementById("demo2");
+            output2.innerHTML = slider2.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider2.oninput = function() {
+                output2.innerHTML = this.value;
+            }
+        </script>
+
+        <script>
+            var slider3 = document.getElementById("myRange3");
+            var output3 = document.getElementById("demo3");
+            output3.innerHTML = slider3.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider3.oninput = function() {
+                output3.innerHTML = this.value;
             }
         </script>
 
