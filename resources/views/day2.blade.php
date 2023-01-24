@@ -264,6 +264,53 @@
                                                 </span>
                                             </h1>
                                         </div>
+                                        
+
+                                        <div class="row py-5 text-center">
+                                            <div class="col-md-12">
+                                                <h1>เกมส์แยกอารมณ์...</h1>
+                                                {{-- <img class="img-fluid rounded mx-auto d-block"
+                                                    src="http://thebandmusicschool.com/wp-content/uploads/2020/08/musical-healing-1-999x1024.jpg"
+                                                    alt="" width="150" height="150">
+                                                <audio class="mx-auto mt-4 mb-4" style="width: 820px" controls>
+                                                    <source src="images/ร่มสีเทา.mp3" type="audio/ogg">
+                                                    <source src="images/ร่มสีเทา.mp3" type="audio/mpeg">
+                                                </audio> --}}
+                                            </div>
+                                            <div class="col-md-12">
+                                                {{-- <textarea name="" id="" class="form-control mx-auto" rows="6"
+                                                    placeholder="ฟังเพลงแล้วได้ข้อคิดอะไรบ้าง..."></textarea> --}}
+                                            </div>
+                                        </div>
+
+                                        <div class="d-grid gap-2 col-3 mx-auto">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
+                                                href="{{ url('/day5') }}">บันทึก</button>
+                                        </div>
+
+                                    </div>
+
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY2</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
                                         <br><br>
 
                                         <div class="row py-5 text-center">
@@ -290,6 +337,7 @@
                                         </div>
 
                                     </div>
+
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
@@ -305,6 +353,7 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
 
                     </div>

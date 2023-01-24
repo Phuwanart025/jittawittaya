@@ -172,17 +172,15 @@
                                         </div>
                                         <br><br><br>
 
-                                        <h2 class="text-center">มาเรียนรู้เกี่ยวกับกับดักความคิดกัน...</h2>
-                                        <div class="mb-5">
+                                        <h2 class="text-center">คุณค่าของใบใบแห้ง...</h2>
+                                        {{-- <div class="mb-5">
                                             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img"
                                                 aria-label="Info:">
                                                 <use xlink:href="#info-fill" />
                                             </svg>
-                                            <h4 class="text-center">ความคิดหลายแบบที่มักจะทำให้เราเกิดความทุกข์ขึ้นบ่อยๆ
-                                                มีดังต่อไปนี้</h4>
                                             <img class="img-fluid rounded mx-auto d-block" src="images/image1.jpg"
                                                 width="800" height="600">
-                                        </div>
+                                        </div> --}}
                                         <br><br>
                                     </div>
 
@@ -303,15 +301,15 @@
                                         <br><br>
 
                                         <div class="text-center">
+                                            <h2>บทความ + สถานการณ์...</h2>
                                             {{-- <h2>รู้ทันกาย รู้ทันใจ รู้ทันความคิดในชีวิตประจำวัน...</h2>
                                             <h3>(Daili thought record)</h3>
                                             <p>มาดูตารางกันว่าเราแอบใช้ กับดักความคิด อะไรอยู่บ้าง แล้วจะคิดใหม่อย่างไรบ้าง
-                                            </p> --}}
+                                            </p>
                                             <img class="img-fluid rounded mx-auto d-block" src="Images/image.jpg"
-                                                width="800" height="600">
+                                                width="800" height="600"> --}}
                                         </div>
-                                        <br><br>
-                                        <hr><br>
+                                        
                                         {{-- <div class="table-responsive">
                                             <table class="table table-light table-striped table-hover">
                                                 <thead class="table-dark">
@@ -374,17 +372,19 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br><br>
+                                        
                                         <div class="row py-5 text-center">
+                                            <h3>เกมส์เกี่ยวกับหาความคิด, อารมณ์</h3>
                                             <div class="col-md-4">
-                                                <img
-                                                    src="https://cdn.pixabay.com/animation/2022/07/29/14/46/14-46-54-82_512.gif">
+                                                {{-- <img
+                                                    src="https://cdn.pixabay.com/animation/2022/07/29/14/46/14-46-54-82_512.gif"> --}}
                                             </div>
                                             <div class="col-md-8">
-                                                <h3>ฝึกรู้ทันความคิด</h3>
+                                                
+                                                {{-- <h3>ฝึกรู้ทันความคิด</h3>
                                                 <h4>มีเรื่องอะไรบ้างนะที่ทำให้หนูกลัว แล้วตอนนั้นหนูคิดอะไรนะ?</h4>
                                                 <textarea name="" id="" class="form-control mb-3" rows="6" placeholder="เหตุการณ์..."></textarea>
-                                                <textarea name="" id="" class="form-control mb-3" rows="6" placeholder="ความคิดตอนนั้น..."></textarea>
+                                                <textarea name="" id="" class="form-control mb-3" rows="6" placeholder="ความคิดตอนนั้น..."></textarea> --}}
                                             </div>
                                         </div>
 
