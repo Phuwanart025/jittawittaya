@@ -120,7 +120,7 @@ Route::get('/mypdf', [App\Http\Controllers\PDFController::class, 'pdf2']);
 Route::middleware(['auth:sanctum'])->get('/services', function () {
     $rounds_story = DB::table('rounds_completed')
     ->join('users', 'rounds_completed.user_id', '=', 'users.id')
-    ->where('rounds_completed.user_id', 1)
+    ->where('rounds_completed.user_id', Auth::user()->id)
     ->select(DB::raw('rounds_completed.rounds, COUNT(*) as count_round, SUM(rounds_completed.score) as total_score'))
     ->groupBy('rounds_completed.rounds')
     ->orderBy('rounds_completed.rounds', 'asc')
