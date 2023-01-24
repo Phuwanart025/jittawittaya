@@ -155,7 +155,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY3</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -249,7 +249,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY3</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
