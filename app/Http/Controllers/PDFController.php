@@ -10,10 +10,10 @@ use Illuminate\Support\Facades\DB;
 class PDFController extends Controller
 {
 
-    public function pdf(Request $request, $id)
+    public function pdf(Request $request, $rounds)
     {
         set_time_limit(0);
-        $data = DB::table('rounds_completed')->select('rounds_completed.*')->where('id', $id)->get();
+        $data = DB::table('rounds_completed')->select('rounds_completed.*')->where('rounds', $rounds)->get();
         $pdf = PDF::loadView('myPDF', compact('data'));
       //  $pdf->set_option('isRemoteEnabled', TRUE);
         $pdf->render();

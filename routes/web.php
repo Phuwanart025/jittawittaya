@@ -95,15 +95,18 @@ Route::get('/profile', function () {
 
 Auth::routes();
 
-Route::get('/mypdf/{id}', [App\Http\Controllers\PDFController::class, 'pdf']);
+Route::get('/mypdf/{rounds}', [App\Http\Controllers\PDFController::class, 'pdf']);
 Route::get('/mypdf', [App\Http\Controllers\PDFController::class, 'pdf2']);
 
 Route::middleware(['auth:sanctum'])->get('/services', function () {
-    $rounds_story =  DB::table('rounds_completed')
+    $rounds_story = DB::table('rounds_completed')
     ->join('users', 'rounds_completed.user_id', '=', 'users.id')
-    ->where('rounds_completed.user_id', Auth::user()->id)
-    ->count();
-    return view('Services', compact(('rounds_story')));
+    ->where('rounds_completed.user_id', 1)
+    ->select(DB::raw('rounds_completed.rounds, COUNT(*) as count_round, SUM(rounds_completed.score) as total_score'))
+    ->groupBy('rounds_completed.rounds')
+    ->orderBy('rounds_completed.rounds', 'asc')
+    ->get();
+    return view('Services', compact('rounds_story'));
 })->name('/services');
 
 
