@@ -98,6 +98,9 @@
             font-size: 20px;
         }
 
+        .page-break {
+            page-break-after: always;
+        }
     </style>
 </head>
 
@@ -110,7 +113,7 @@
     <hr>
 
     <div class="container">
-        <div class="row1">
+        <div class="page-break row1">
             <h3>วันที่1</h3>
             <table class="table table-bordered">
                 <thead class="table-dark">
@@ -148,9 +151,8 @@
                 <q>{{ $item->created_at }}</q><br>
             </div>
         </div>
-        <hr>
 
-        <div class="row">
+        <div class="page-break row">
             <h3>วันที่2</h3>
             <table class="table table-bordered">
                 <thead class="table-dark">
@@ -188,9 +190,8 @@
                 <q>{{ $item->created_at }}</q><br>
             </div>
         </div>
-        <hr>
 
-        <div class="row">
+        <div class="page-break row">
             <h3>วันที่3</h3>
             <table class="table table-bordered">
                 <thead class="table-dark">
@@ -228,9 +229,8 @@
                 <q>{{ $item->created_at }}</q><br>
             </div>
         </div>
-        <hr>
 
-        <div class="row">
+        <div class="page-break row">
             <h3>วันที่4</h3>
             <table class="table table-bordered">
                 <thead class="table-dark">
@@ -268,9 +268,8 @@
                 <q>{{ $item->created_at }}</q><br>
             </div>
         </div>
-        <hr>
 
-        <div class="row">
+        <div class="page-break row">
             <h3>วันที่5</h3>
             <table class="table table-bordered">
                 <thead class="table-dark">
@@ -308,7 +307,8 @@
                 <q>{{ $item->created_at }}</q><br>
             </div>
         </div>
-        <hr>
+
+
     </div>
 
 
