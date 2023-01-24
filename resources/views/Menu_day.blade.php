@@ -1,6 +1,6 @@
 <style>
     .bgimg {
-        background-image: url('https://img.freepik.com/free-photo/3d-render-power-knowledge-concept-book-lamp_107791-15680.jpg?w=1060&t=st=1674100340~exp=1674100940~hmac=82018f39000ce07995c9b7217656f0f771d2c85b8b33bf1404d80b81c4258cec');
+        background-image: url('/images/card/4.jpg');
         min-height: 10%;
         background-position: center;
         background-size: cover;

@@ -48,8 +48,8 @@ Route::get('/contact', function () {
     return view('contact');
 })->middleware('auth');
 
-Route::get('/services', function () {
-    return view('Services');
+Route::get('/record', function () {
+    return view('record');
 })->middleware('auth');
 
 Route::get('/Menu_day', function () {
@@ -117,7 +117,7 @@ Auth::routes();
 Route::get('/mypdf/{rounds}', [App\Http\Controllers\PDFController::class, 'pdf']);
 Route::get('/mypdf', [App\Http\Controllers\PDFController::class, 'pdf2']);
 
-Route::middleware(['auth:sanctum'])->get('/services', function () {
+Route::middleware(['auth:sanctum'])->get('/record', function () {
     $rounds_story = DB::table('rounds_completed')
     ->join('users', 'rounds_completed.user_id', '=', 'users.id')
     ->where('rounds_completed.user_id', Auth::user()->id)
@@ -125,8 +125,8 @@ Route::middleware(['auth:sanctum'])->get('/services', function () {
     ->groupBy('rounds_completed.rounds')
     ->orderBy('rounds_completed.rounds', 'asc')
     ->get();
-    return view('Services', compact('rounds_story'));
-})->name('/services');
+    return view('record', compact('rounds_story'));
+})->name('/record');
 
 Route::get('GoogleCallbacks', [
     App\Http\Controllers\HomeController::class,

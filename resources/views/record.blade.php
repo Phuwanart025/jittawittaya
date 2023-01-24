@@ -50,7 +50,7 @@
                                                             class="w3-tag w3-round w3-green w3-border w3-border-white">{{ $item->rounds }}</span>
                                                     </td>
                                                     <td>{{ $item->rounds }}</td>
-                                                    <td>{{ $item->total_score }}</td>
+                                                    <td>{{ $item->total_score }} คะแนน</td>
                                                     <td>{{ $item->count_round }}/21วัน</td>
                                                     <td>
                                                         <a href="{{ url('/mypdf/' . $item->rounds) }}" method="GET"
