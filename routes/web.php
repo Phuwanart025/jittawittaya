@@ -100,6 +100,22 @@ Route::get('/day10', function () {
     return view('day10');
 })->middleware('auth');
 
+Route::get('/day11', function () {
+    return view('day11');
+})->middleware('auth');
+
+Route::get('/day12', function () {
+    return view('day12');
+})->middleware('auth');
+
+Route::get('/day13', function () {
+    return view('day13');
+})->middleware('auth');
+
+Route::get('/day14', function () {
+    return view('day14');
+})->middleware('auth');
+
 Route::get('/team', function () {
     return view('team');
 })->middleware('auth');

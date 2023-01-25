@@ -18,7 +18,7 @@
                 <div class="card-body p-0">
                     <!-- Nested Row within Card Body -->
                     <div class="row">
-                        <div class="col-lg-6 d-none d-lg-block bg-login-image"><img class="profile_img" src="images/ลงทะเบียน.png" alt="student dp" width="650" height="600"></div>
+                        <div class="col-lg-6 d-none d-lg-block bg-login-image" ><img class="profile_img" src="images/ลงทะเบียน.png" alt="student dp" width="650" height="600"></div>
                         <div class="col-lg-6">
                             <div class="p-5">
                                 <div class="text-center">
@@ -79,8 +79,8 @@
                                                 <h5>{{ Auth::user()->created_at->format('j F, Y เวลา h:i' )}}</h6>
                                             </div>
                                         
-                                            <hr>
-                                            <div class="row mb-0">
+                                            
+                                            <div class="row mb-0 py-5">
                                                 <div class="col-md-6 offset-md-4">
                                                     <button type="submit" class="btn btn-primary">
                                                         {{ __('บันทึกข้อมูล') }}

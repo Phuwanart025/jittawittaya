@@ -170,10 +170,9 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
+
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
-
                                         <div class="row">
                                             <div class="col-md-3 mt-3">
                                                 <div class="form-check">
@@ -221,9 +220,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <br><br><br><br>
 
-                                        <div class="slidecontainer">
+                                        <div class="slidecontainer py-5">
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
@@ -237,9 +235,7 @@
                                             </div>
                                         </div>
 
-                                        <br><br><br><br><br>
-
-                                        <h3 for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -264,16 +260,10 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
 
-                                        <div class="text-center">
-                                            <h2>...</h2>
-                                            
-                                            <img class="img-fluid rounded mx-auto d-block" src="" width="100"
-                                                height="100">
+                                        <div class="text-center py-5">
+                                            <h2>ทำความเข้าใจอารมณ์ ความคิด...</h2>
                                         </div>
-                                        <br>
-                                        <hr><br>
 
                                         <div class="d-grid gap-2 col-4 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"

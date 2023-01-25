@@ -155,7 +155,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY4</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY14</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -171,73 +171,10 @@
                                             </h1>
                                         </div>
 
-
-                                        <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
-                                        <div class="row">
-                                            <div class="col-md-3 mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1"
-                                                        checked>
-                                                    <label class="form-check-label" for="color_feel_today1">
-                                                        สีเหลือง = ความสุข
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <br>
-
-                                            <div class="col-md-3 mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2" checked>
-                                                    <label class="form-check-label" for="color_feel_today2">
-                                                        สีแดง = ความโกรธ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <br>
-
-                                            <div class="col-md-3 mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3"
-                                                        checked>
-                                                    <label class="form-check-label" for="color_feel_today3">
-                                                        สีเขียว = ความกลัว
-                                                    </label>
-                                                </div>
-
-                                            </div>
-                                            <br>
-
-                                            <div class="col-md-3 mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4" checked>
-                                                    <label class="form-check-label" for="color_feel_today4">
-                                                        สีฟ้า = ความเศร้า
-                                                    </label>
-                                                </div>
-                                            </div>
+                                        <div class="text-center py-5">
+                                            <h2>สรุปความคิดดีๆ ที่เกิดขึ้นประจำสัปดาห์</h2>
                                         </div>
 
-                                        <div class="slidecontainer py-5">
-                                            <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
-                                                    style="font-weight:bold;color:red"></label></h3>
-                                            <input type="range" min="1" max="5" name="value"
-                                                value="{{ old('value') }}" class="slider" id="myRange">
-                                            <div class="sliderticks">
-                                                <p>น้อยที่สุด</p>
-                                                <p>น้อย</p>
-                                                <p>ปานกลาง</p>
-                                                <p>มาก</p>
-                                                <p>มากที่สุด</p>
-                                            </div>
-                                        </div>
-
-                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
-                                        <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -245,34 +182,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY4</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-                                        <br><br>
-
-                                        <div class="text-center py-5">
-                                            <h2>นิทานไม่มีปาฏิหาริย์ + ให้วิเคราะห์นิทานสั้นๆ...</h2>
-                                        </div>
-                                    </div>
-
-                                    {{-- Content3 --}}
-                                    <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY4</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY14</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -288,44 +198,18 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>ฝึกรู้ทันความคิด + อารมณ์...</h2>
-                                        </div>
-                                    </div>
-
-                                    {{-- Content4 --}}
-                                    <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY4</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
 
                                         <div class="text-center py-5">
-                                            <h2>เกมจำแนกอารมณ์...</h2>
+                                            <h2>คะแนนประจำสัปดาห์</h2>
                                         </div>
 
-                                        <div class="d-grid gap-2 col-4 mx-auto py-5">
+                                        {{-- <div class="d-grid gap-2 col-4 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
                                                 href="{{ url('/day5') }}">บันทึก</button>
-                                        </div>
+                                        </div> --}}
 
                                     </div>
-
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
@@ -340,8 +224,6 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
 
                     </div>

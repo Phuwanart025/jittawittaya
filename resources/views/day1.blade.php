@@ -170,9 +170,9 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br><br>
 
-                                        <h2 class="text-center">คุณค่าของใบใบแห้ง...</h2>
+
+                                        <h2 class="text-center py-5">คุณค่าของใบไม้แห้ง...</h2>
                                         {{-- <div class="mb-5">
                                             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img"
                                                 aria-label="Info:">
@@ -181,7 +181,6 @@
                                             <img class="img-fluid rounded mx-auto d-block" src="images/image1.jpg"
                                                 width="800" height="600">
                                         </div> --}}
-                                        <br><br>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -204,10 +203,9 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
+                                       
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
-
                                         <div class="row">
                                             <div class="col-md-3 mt-3">
                                                 <div class="form-check">
@@ -255,9 +253,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <br><br><br><br>
 
-                                        <div class="slidecontainer">
+                                        <div class="slidecontainer py-5">
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
@@ -271,9 +268,7 @@
                                             </div>
                                         </div>
 
-                                        <br><br><br><br><br>
-
-                                        <h3 for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -309,7 +304,7 @@
                                             <img class="img-fluid rounded mx-auto d-block" src="Images/image.jpg"
                                                 width="800" height="600"> --}}
                                         </div>
-                                        
+
                                         {{-- <div class="table-responsive">
                                             <table class="table table-light table-striped table-hover">
                                                 <thead class="table-dark">
@@ -372,7 +367,7 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        
+
                                         <div class="row py-5 text-center">
                                             <h3>เกมส์เกี่ยวกับหาความคิด, อารมณ์</h3>
                                             <div class="col-md-4">
@@ -380,7 +375,7 @@
                                                     src="https://cdn.pixabay.com/animation/2022/07/29/14/46/14-46-54-82_512.gif"> --}}
                                             </div>
                                             <div class="col-md-8">
-                                                
+
                                                 {{-- <h3>ฝึกรู้ทันความคิด</h3>
                                                 <h4>มีเรื่องอะไรบ้างนะที่ทำให้หนูกลัว แล้วตอนนั้นหนูคิดอะไรนะ?</h4>
                                                 <textarea name="" id="" class="form-control mb-3" rows="6" placeholder="เหตุการณ์..."></textarea>

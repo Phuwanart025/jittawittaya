@@ -170,78 +170,11 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
 
-                                        <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
-
-                                        <div class="row">
-                                            <div class="col-md-3 mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1"
-                                                        checked>
-                                                    <label class="form-check-label" for="color_feel_today1">
-                                                        สีเหลือง = ความสุข
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <br>
-
-                                            <div class="col-md-3 mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2" checked>
-                                                    <label class="form-check-label" for="color_feel_today2">
-                                                        สีแดง = ความโกรธ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <br>
-
-                                            <div class="col-md-3 mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3"
-                                                        checked>
-                                                    <label class="form-check-label" for="color_feel_today3">
-                                                        สีเขียว = ความกลัว
-                                                    </label>
-                                                </div>
-
-                                            </div>
-                                            <br>
-
-                                            <div class="col-md-3 mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4" checked>
-                                                    <label class="form-check-label" for="color_feel_today4">
-                                                        สีฟ้า = ความเศร้า
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <br><br><br><br>
-
-                                        <div class="slidecontainer">
-                                            <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
-                                                    style="font-weight:bold;color:red"></label></h3>
-                                            <input type="range" min="1" max="5" name="value"
-                                                value="{{ old('value') }}" class="slider" id="myRange">
-                                            <div class="sliderticks">
-                                                <p>น้อยที่สุด</p>
-                                                <p>น้อย</p>
-                                                <p>ปานกลาง</p>
-                                                <p>มาก</p>
-                                                <p>มากที่สุด</p>
-                                            </div>
+                                        <div class="text-center py-5">
+                                            <h2>สรุปความคิดดีๆ ที่เกิดขึ้นประจำสัปดาห์</h2>
                                         </div>
 
-                                        <br><br><br><br><br>
-
-                                        <h3 for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
-                                        <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -264,22 +197,17 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
 
-                                        <div class="text-center">
-                                            <h2>...</h2>
-                                            
-                                            <img class="img-fluid rounded mx-auto d-block" src="" width="100"
-                                                height="100">
+
+                                        <div class="text-center py-5">
+                                            <h2>คะแนนประจำสัปดาห์</h2>
                                         </div>
-                                        <br>
-                                        <hr><br>
 
-                                        <div class="d-grid gap-2 col-4 mx-auto">
+                                        {{-- <div class="d-grid gap-2 col-4 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
                                                 href="{{ url('/day5') }}">บันทึก</button>
-                                        </div>
+                                        </div> --}}
 
                                     </div>
                                 </form>

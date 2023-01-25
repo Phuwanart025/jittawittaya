@@ -170,10 +170,9 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
+
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
-
                                         <div class="row">
                                             <div class="col-md-3 mt-3">
                                                 <div class="form-check">
@@ -221,9 +220,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <br><br><br><br>
 
-                                        <div class="slidecontainer">
+                                        <div class="slidecontainer py-5">
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
@@ -237,9 +235,7 @@
                                             </div>
                                         </div>
 
-                                        <br><br><br><br><br>
-
-                                        <h3 for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -264,9 +260,8 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
 
-                                        <div class="text-center">
+                                        <div class="text-center py-5">
                                             <h2>รู้ทันกาย รู้ทันใจ รู้ทันความคิดในชีวิตประจำวัน...</h2>
                                             <h3>(Daili thought record)</h3>
                                             <p>มาดูตารางกันว่าเราแอบใช้ กับดักความคิด อะไรอยู่บ้าง แล้วจะคิดใหม่อย่างไรบ้าง
@@ -275,60 +270,91 @@
                                                 src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/323924207_926043702103987_3054380521469122473_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=rK0KI8l4ahkAX_muwRj&_nc_ht=scontent.fbkk10-1.fna&oh=03_AdQal_mRbbRfIPOGnAkMWRMtX2yL_O8mOQ8FZA34UvuBuQ&oe=63E32E4B"
                                                 width="800" height="600">
                                         </div>
-                                        <br>
-                                        <hr><br>
+                                        <hr>
 
-                                        <div class="row mb-3">
-                                            <div class="col">
-                                                <label for="">สถานการณ์: </label>
-                                                <input type="text" class="form-control" placeholder="สถานการณ์...">
+                                        <div class="py-3">
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                    <label for="">สถานการณ์: </label>
+                                                    <input type="text" class="form-control" placeholder="สถานการณ์...">
+                                                </div>
+                                                <div class="col">
+                                                    <div class="slidecontainer">
+                                                        <h3 for="customRange2">ระดับความรู้สึก: <label for=""
+                                                                id="demo2" style="font-weight:bold;color:red"></label>
+                                                        </h3>
+                                                        <input type="range" min="1" max="10"
+                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            id="myRange2">
+
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col">
-                                                <div class="slidecontainer">
-                                                    <h3 for="customRange2">ระดับความรู้สึก: <label for=""
-                                                            id="demo2" style="font-weight:bold;color:red"></label></h3>
-                                                    <input type="range" min="1" max="10" name="value"
-                                                        value="{{ old('value') }}" class="slider" id="myRange2">
 
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                    <label for="">ความคิด: </label>
+                                                    <input type="text" class="form-control" placeholder="ความคิด...">
+                                                </div>
+                                                <div class="col">
+                                                    <label for="">กับดักความคิด: </label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="กับดักความคิด...">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="col">
+                                                    <label for="">คิดใหม่: </label>
+                                                    <input type="text" class="form-control" placeholder="คิดใหม่...">
+                                                </div>
+                                                <div class="col">
+                                                    <div class="slidecontainer">
+                                                        <h3 for="customRange2">ระดับความรู้สึกใหม่: <label for=""
+                                                                id="demo3" style="font-weight:bold;color:red"></label>
+                                                        </h3>
+                                                        <input type="range" min="1" max="10"
+                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            id="myRange3">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div class="row mb-3">
-                                            <div class="col">
-                                                <label for="">ความคิด: </label>
-                                                <input type="text" class="form-control" placeholder="ความคิด...">
-                                            </div>
-                                            <div class="col">
-                                                <label for="">กับดักความคิด: </label>
-                                                <input type="text" class="form-control"
-                                                    placeholder="กับดักความคิด...">
-                                            </div>
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY3</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
                                         </div>
 
-                                        <div class="row py-5 mb-3">
-                                            <div class="col">
-                                                <label for="">คิดใหม่: </label>
-                                                <input type="text" class="form-control" placeholder="คิดใหม่...">
-                                            </div>
-                                            <div class="col">
-                                                <div class="slidecontainer">
-                                                    <h3 for="customRange2">ระดับความรู้สึกใหม่: <label for=""
-                                                            id="demo3" style="font-weight:bold;color:red"></label>
-                                                    </h3>
-                                                    <input type="range" min="1" max="10" name="value"
-                                                        value="{{ old('value') }}" class="slider" id="myRange3">
-                                                </div>
-                                            </div>
+                                        <div class="text-center py-5">
+                                            <h2>ฝึกรู้จักอารมณ์ต่างๆ และความคิดจากการดูภาพ...</h2>
                                         </div>
 
-                                        <div class="d-grid gap-2 col-4 mx-auto">
+                                        <div class="d-grid gap-2 col-4 mx-auto py-5">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
                                                 href="{{ url('/day5') }}">บันทึก</button>
                                         </div>
 
                                     </div>
+
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
@@ -343,6 +369,7 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
 
                     </div>

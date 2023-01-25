@@ -155,7 +155,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY4</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY13</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -245,34 +245,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY4</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-                                        <br><br>
-
-                                        <div class="text-center py-5">
-                                            <h2>นิทานไม่มีปาฏิหาริย์ + ให้วิเคราะห์นิทานสั้นๆ...</h2>
-                                        </div>
-                                    </div>
-
-                                    {{-- Content3 --}}
-                                    <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY4</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY13</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -289,43 +262,16 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <h2>ฝึกรู้ทันความคิด + อารมณ์...</h2>
-                                        </div>
-                                    </div>
-
-                                    {{-- Content4 --}}
-                                    <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY4</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
+                                            <h2>...</h2>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>เกมจำแนกอารมณ์...</h2>
-                                        </div>
-
-                                        <div class="d-grid gap-2 col-4 mx-auto py-5">
+                                        <div class="d-grid gap-2 col-4 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
                                                 href="{{ url('/day5') }}">บันทึก</button>
                                         </div>
 
                                     </div>
-
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
@@ -340,8 +286,6 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
 
                     </div>

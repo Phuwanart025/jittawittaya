@@ -170,10 +170,9 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
+
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
-
                                         <div class="row">
                                             <div class="col-md-3 mt-3">
                                                 <div class="form-check">
@@ -221,9 +220,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <br><br><br><br>
 
-                                        <div class="slidecontainer">
+                                        <div class="slidecontainer py-5">
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
@@ -237,9 +235,7 @@
                                             </div>
                                         </div>
 
-                                        <br><br><br><br><br>
-
-                                        <h3 for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -264,7 +260,6 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        
 
                                         <div class="row py-5 text-center">
                                             <div class="col-md-12">
@@ -311,7 +306,6 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
 
                                         <div class="row py-5 text-center">
                                             <div class="col-md-12">

@@ -170,10 +170,9 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
+
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
-
                                         <div class="row">
                                             <div class="col-md-3 mt-3">
                                                 <div class="form-check">
@@ -221,9 +220,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <br><br><br><br>
 
-                                        <div class="slidecontainer">
+                                        <div class="slidecontainer py-5">
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
@@ -237,9 +235,7 @@
                                             </div>
                                         </div>
 
-                                        <br><br><br><br><br>
-
-                                        <h3 for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -264,24 +260,50 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
 
-                                        <div class="text-center">
-                                            <h2>...</h2>
-                                            
-                                            <img class="img-fluid rounded mx-auto d-block" src="" width="100"
-                                                height="100">
+                                        <div class="text-center py-5">
+                                            <h2>วันสบายๆ...</h2>
+                                            <h3>ไปฟังเพลงจากปุ่มด้านล่างนี้กันเล๊ย...</h3>
+                                            <div class="py-2">
+                                                <a class="btn btn-success "
+                                                    href="https://www.youtube.com/watch?v=P5VFTPL3Er4"
+                                                    target="_blank">ฟังเพลง</a>
+                                            </div>
                                         </div>
-                                        <br>
-                                        <hr><br>
+                                    </div>
 
-                                        <div class="d-grid gap-2 col-4 mx-auto">
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY5</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="text-center py-5">
+                                            <h2>ลองมองสิ่งดีดีรอบตัวจากเรื่องแย่งๆ...</h2>
+                                        </div>
+
+                                        <div class="d-grid gap-2 col-4 mx-auto py-5">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
                                                 href="{{ url('/day5') }}">บันทึก</button>
                                         </div>
-
                                     </div>
+
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
@@ -296,6 +318,7 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
 
                     </div>
