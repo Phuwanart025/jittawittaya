@@ -170,39 +170,6 @@
                                                 </span>
                                             </h1>
                                         </div>
-
-
-                                        <h2 class="text-center py-5">คุณค่าของใบไม้แห้ง...</h2>
-                                        {{-- <div class="mb-5">
-                                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img"
-                                                aria-label="Info:">
-                                                <use xlink:href="#info-fill" />
-                                            </svg>
-                                            <img class="img-fluid rounded mx-auto d-block" src="images/image1.jpg"
-                                                width="800" height="600">
-                                        </div> --}}
-                                    </div>
-
-                                    {{-- Content2 --}}
-                                    <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY1</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
                                        
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
@@ -273,7 +240,7 @@
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
 
-                                    {{-- Content3 --}}
+                                    {{-- Content2 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -293,61 +260,20 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                        <br><br>
 
-                                        <div class="text-center">
-                                            <h2>บทความ + สถานการณ์...</h2>
-                                            {{-- <h2>รู้ทันกาย รู้ทันใจ รู้ทันความคิดในชีวิตประจำวัน...</h2>
-                                            <h3>(Daili thought record)</h3>
-                                            <p>มาดูตารางกันว่าเราแอบใช้ กับดักความคิด อะไรอยู่บ้าง แล้วจะคิดใหม่อย่างไรบ้าง
-                                            </p>
-                                            <img class="img-fluid rounded mx-auto d-block" src="Images/image.jpg"
-                                                width="800" height="600"> --}}
-                                        </div>
 
-                                        {{-- <div class="table-responsive">
-                                            <table class="table table-light table-striped table-hover">
-                                                <thead class="table-dark">
-                                                    <tr>
-                                                        <th scope="col">เหตุการณ์</th>
-                                                        <th scope="col">รู้สึก(0-10)</th>
-                                                        <th scope="col">คิด</th>
-                                                        <th scope="col">กับดัก</th>
-                                                        <th scope="col">คิดใหม่</th>
-                                                        <th scope="col">รู้สึกใหม่(0-10)</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th>1</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>2</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>3</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <h2 class="text-center py-5">คุณค่าของใบไม้แห้ง...</h2>
+                                        {{-- <div class="mb-5">
+                                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img"
+                                                aria-label="Info:">
+                                                <use xlink:href="#info-fill" />
+                                            </svg>
+                                            <img class="img-fluid rounded mx-auto d-block" src="images/image1.jpg"
+                                                width="800" height="600">
                                         </div> --}}
                                     </div>
 
-                                    {{-- Content4 --}}
+                                    {{-- Content3 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -406,7 +332,6 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
 
                     </div>
