@@ -270,18 +270,15 @@
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/4.png" style="width:100%">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/5.png" style="width:100%">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/6.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/7.png"
-                                                style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/8.png"
-                                                style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/9.png"
-                                                style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/7.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/8.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/9.png" style="width:100%">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/10.png"
                                                 style="width:100%">
-                                              <hr>
-                                              <h3 class="py-5" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
-                                              <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                                  placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            <hr>
+                                            <h3 class="py-5" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                            <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                         </div>
 
 
@@ -310,75 +307,32 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
-<<<<<<< HEAD
-                                            <h3>เกมส์เกี่ยวกับหาความคิด, อารมณ์</h3>
-
-=======
                                             <h3>เกมส์แยกความคิด</h3>
-                                            <h3 class="py-5">ฉันเศร้ารึเปล่า?</h3>
->>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
                                             <div class="row py-5 mx-auto">
-                                                <h4>ubhuibuigiuuyvyu</h4>
+                                                <h3 class="py-5">ฉันเศร้ารึเปล่า?</h3>
                                                 <div class="col-md-6">
                                                     <div class="form-check">
-<<<<<<< HEAD
-                                                        <input class="form-check-input" name="flexRadioDefault2"
-                                                            type="checkbox" id="option1" value="ถูก"
-                                                            onclick="disableCheckbox(); highlightAnswer('option1');">1.ถูก
-=======
                                                         <input class="form-check-input" type="checkbox" id="option1"
                                                             onclick="disableCheckbox(); highlightAnswer('option1');"
                                                             name="checkoDefault" value="ถูก">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             ความคิด
                                                         </label>
->>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-check">
-<<<<<<< HEAD
-                                                        <input class="form-check-input" name="flexRadioDefault2"
-                                                            type="checkbox" id="option2" value="ผิด"
-                                                            onclick="disableCheckbox(); highlightAnswer('option2');">2.ผิด
-=======
                                                         <input class="form-check-input" type="checkbox" id="option2"
                                                             onclick="disableCheckbox(); highlightAnswer('option2');"
                                                             name="checkoDefault" value="ผิด">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             อารมณ์
                                                         </label>
->>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
                                                     </div>
-
                                                 </div>
                                             </div>
                                             <p id="result"></p>
-
                                         </div>
-                                        <script>
-                                            const correctAnswer = "option1";
-
-
-                                            function disableCheckbox() {
-                                                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-                                                for (var i = 0; i < checkboxes.length; i++) {
-                                                    checkboxes[i].disabled = true;
-                                                }
-                                            }
-
-                                            function highlightAnswer(answer) {
-
-                                                if (answer !== correctAnswer) {
-                                                    document.getElementById(correctAnswer).style.backgroundColor = "red";
-                                                    document.getElementById("result").innerHTML = "คำตอบ: ข้อ1 ถูก";
-                                                } else {
-                                                    document.getElementById(answer).style.backgroundColor = "lightgreen";
-                                                    document.getElementById("result").innerHTML = "คำตอบ: คุณตอบถูกแล้ว";
-                                                }
-                                            }
-                                        </script>
-
                                     </div>
 
                                     {{-- Content4 --}}
@@ -406,37 +360,40 @@
                                             <h3>เกมส์แยกอารมณ์...</h3>
                                             <h3 class="py-5">...?</h3>
                                             <div class="row py-5 mx-auto">
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-3 mx-auto">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option11"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option11');"
                                                             name="checkoDefault" value="ถูก">
+                                                            <img src="https://cdn.pixabay.com/photo/2017/03/05/21/55/emoticon-2120024_960_720.png" width="50" height="50">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             สุข
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-3 mx-auto">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option22"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option22');"
                                                             name="checkoDefault" value="ผิด">
+                                                            <img src="https://cdn.pixabay.com/photo/2020/02/07/13/54/emoji-4827231_960_720.png" width="50" height="50">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             เศร้า
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-3 mx-auto">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option33"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option33');"
                                                             name="checkoDefault" value="ผิด">
+                                                            <img src="https://cdn.pixabay.com/photo/2016/09/14/16/44/emoticon-1669804_960_720.png" width="50" height="50">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             โกรธ
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-3 mx-auto">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option44"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option44');"
@@ -453,9 +410,7 @@
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-
                                     </div>
-
                                 </form>
                                 <br>
                             </div>
@@ -472,11 +427,9 @@
                             <span class="dot" onclick="currentSlide(3)"></span>
                             <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
         </div>
 
 
@@ -513,7 +466,6 @@
             }
         </script>
 
-
         <script>
             var slider = document.getElementById("myRange");
             var output = document.getElementById("demo");
@@ -524,10 +476,8 @@
                 output.innerHTML = this.value;
             }
         </script>
-    
 
-<<<<<<< HEAD
-=======
+
         <script>
             const correctAnswer = "option1";
 
@@ -571,7 +521,6 @@
                 }
             }
         </script>
->>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
 
         </html>
     @endsection

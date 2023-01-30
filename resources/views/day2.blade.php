@@ -241,7 +241,7 @@
                                     </div>
 
                                     {{-- Content2 --}}
-                                    <div class="mySlides">
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -292,7 +292,7 @@
 
                                         
 
-                                    </div>
+                                    </div> --}}
 
                                     {{-- Content3 --}}
                                     <div class="mySlides">
@@ -334,10 +334,8 @@
 
                                         <div class="d-grid gap-2 col-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
-                                                href="{{ url('/day5') }}">บันทึก</button>
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-
                                     </div>
 
                                 </form>
