@@ -11,7 +11,9 @@ class diary_day extends Model
         'color_feel_today',
         'sensation_level',
         'detail_t1',
-        'thoughts_emotions',
+        'story_d1',
+        'thoughts',
+        'emotions',
         'rounds_id',
     ];
     public $timestamps = false;

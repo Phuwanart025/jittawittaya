@@ -142,7 +142,14 @@
         <div class="layout_padding">
             <div class="container">
                 <div class="row justify-content-center">
-
+                    @if ($message = Session::get('error'))
+                    <div class="alert alert-danger d-flex align-items-center " role="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg>
+                        <strong>{{ $message }}</strong>
+                    </div>
+                    @endif
                     <div class="card o-hidden border-0 shadow-lg my-5  w3-theme-l4">
                         <div class="card-body p-0">
                             <div class="p-5">
@@ -310,45 +317,32 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
-<<<<<<< HEAD
-                                            <h3>เกมส์เกี่ยวกับหาความคิด, อารมณ์</h3>
-
-=======
                                             <h3>เกมส์แยกความคิด</h3>
                                             <h3 class="py-5">ฉันเศร้ารึเปล่า?</h3>
->>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
                                             <div class="row py-5 mx-auto">
                                                 <h4>ubhuibuigiuuyvyu</h4>
                                                 <div class="col-md-6">
                                                     <div class="form-check">
-<<<<<<< HEAD
-                                                        <input class="form-check-input" name="flexRadioDefault2"
-                                                            type="checkbox" id="option1" value="ถูก"
-                                                            onclick="disableCheckbox(); highlightAnswer('option1');">1.ถูก
-=======
+
                                                         <input class="form-check-input" type="checkbox" id="option1"
                                                             onclick="disableCheckbox(); highlightAnswer('option1');"
-                                                            name="checkoDefault" value="ถูก">
+                                                            name="v5" value="ถูก">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             ความคิด
                                                         </label>
->>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
+
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-check">
-<<<<<<< HEAD
-                                                        <input class="form-check-input" name="flexRadioDefault2"
-                                                            type="checkbox" id="option2" value="ผิด"
-                                                            onclick="disableCheckbox(); highlightAnswer('option2');">2.ผิด
-=======
+
                                                         <input class="form-check-input" type="checkbox" id="option2"
                                                             onclick="disableCheckbox(); highlightAnswer('option2');"
-                                                            name="checkoDefault" value="ผิด">
+                                                            name="v5" value="ผิด">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             อารมณ์
                                                         </label>
->>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
+
                                                     </div>
 
                                                 </div>
@@ -410,7 +404,7 @@
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option11"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option11');"
-                                                            name="checkoDefault" value="ถูก">
+                                                            name="v6" value="ถูก">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             สุข
                                                         </label>
@@ -420,7 +414,7 @@
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option22"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option22');"
-                                                            name="checkoDefault" value="ผิด">
+                                                            name="v6" value="ผิด">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             เศร้า
                                                         </label>
@@ -430,7 +424,7 @@
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option33"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option33');"
-                                                            name="checkoDefault" value="ผิด">
+                                                            name="v6" value="ผิด">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             โกรธ
                                                         </label>
@@ -440,7 +434,7 @@
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option44"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option44');"
-                                                            name="checkoDefault" value="ผิด">
+                                                            name="v6" value="ผิด">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             กลัว
                                                         </label>
@@ -526,8 +520,6 @@
         </script>
     
 
-<<<<<<< HEAD
-=======
         <script>
             const correctAnswer = "option1";
 
@@ -571,7 +563,7 @@
                 }
             }
         </script>
->>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
+
 
         </html>
     @endsection

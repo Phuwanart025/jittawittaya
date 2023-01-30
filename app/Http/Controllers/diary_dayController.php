@@ -16,13 +16,10 @@ class diary_dayController extends Controller
             $this->validate($request, [
                 'flexRadioDefault' => 'required',
                 'value' => 'required',
-<<<<<<< HEAD
-                'v3' => 'required'
-                'v4' => 'required'
-=======
                 'v3' => 'required',
-                'checkoDefault' => 'required'
->>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
+                'v4' => 'required',
+                'v5' => 'required',
+                'v6' => 'required'
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)->where('jobs_id', 1)->orderBy('id', 'desc')->first();
             $diary1 = new rounds_completed;
@@ -38,17 +35,14 @@ class diary_dayController extends Controller
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t1 = $request->v3;
-<<<<<<< HEAD
             $diary->story_d1 = $request->v4;
-            $diary->thoughts_emotions = $request->flexRadioDefault2;
-=======
-            $diary->dbcheckoDefault = $request->checkoDefault;
->>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
+           // $diary->thoughts = $request->v5;
+           // $diary->emotions = $request->v6;
             $diary1->save();
             $diary->diary_day()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
-            return redirect()->back()->withErrors(['Error' => $e->getMessage()]);
+            return redirect()->back()->with('error', "ข้อมูลไม่ถูกต้อง");
         }
         return redirect('/results');
     }
@@ -57,10 +51,9 @@ class diary_dayController extends Controller
     {
         try {
             $this->validate($request, [
-               'flexRadioDefault' => 'required',
+                'flexRadioDefault' => 'required',
                 'value' => 'required',
-                'v3' => 'required',
-                'checkoDefault' => 'required'
+                'v3' => 'required'
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)->where('jobs_id', 2)->orderBy('id', 'desc')->first();
             $diary1 = new rounds_completed;
@@ -76,12 +69,11 @@ class diary_dayController extends Controller
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t1 = $request->v3;
-            $diary->dbcheckoDefault = $request->checkoDefault;
             $diary1->save();
             $diary->diary_day()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
-            return redirect()->back()->withErrors(['Error' => $e->getMessage()]);
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
         return redirect('/results');
     }
