@@ -170,7 +170,7 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                       
+
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
@@ -296,17 +296,21 @@
 
                                         <div class="row py-5 text-center">
                                             <h3>เกมส์เกี่ยวกับหาความคิด, อารมณ์</h3>
-                                            <div class="col-md-4">
-                                                {{-- <img
-                                                    src="https://cdn.pixabay.com/animation/2022/07/29/14/46/14-46-54-82_512.gif"> --}}
+                                            <div class="row py-5 mx-auto">
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="option1"
+                                                            onclick="disableCheckbox(); highlightAnswer('option1');">1.ถูก
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="option2"
+                                                            onclick="disableCheckbox(); highlightAnswer('option2');">2.ผิด
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-8">
-
-                                                {{-- <h3>ฝึกรู้ทันความคิด</h3>
-                                                <h4>มีเรื่องอะไรบ้างนะที่ทำให้หนูกลัว แล้วตอนนั้นหนูคิดอะไรนะ?</h4>
-                                                <textarea name="" id="" class="form-control mb-3" rows="6" placeholder="เหตุการณ์..."></textarea>
-                                                <textarea name="" id="" class="form-control mb-3" rows="6" placeholder="ความคิดตอนนั้น..."></textarea> --}}
-                                            </div>
+                                            <p id="result"></p>
                                         </div>
 
                                         <div class="d-grid gap-2 col-3 mx-auto">
@@ -383,6 +387,29 @@
             // Update the current slider value (each time you drag the slider handle)
             slider.oninput = function() {
                 output.innerHTML = this.value;
+            }
+        </script>
+
+        <script>
+            const correctAnswer = "option1";
+
+
+            function disableCheckbox() {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].disabled = true;
+                }
+            }
+
+            function highlightAnswer(answer) {
+
+                if (answer !== correctAnswer) {
+                    document.getElementById(correctAnswer).style.backgroundColor = "lightgreen";
+                    document.getElementById("result").innerHTML = "คำตอบ: คุณเลือกข้อ2 ข้อ1 ถูก";
+                } else {
+                    document.getElementById(answer).style.backgroundColor = "lightgreen";
+                    document.getElementById("result").innerHTML = "คำตอบ: คุณตอบถูกแล้ว";
+                }
             }
         </script>
 
