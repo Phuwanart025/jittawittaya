@@ -310,23 +310,47 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
+<<<<<<< HEAD
                                             <h3>เกมส์เกี่ยวกับหาความคิด, อารมณ์</h3>
 
+=======
+                                            <h3>เกมส์แยกความคิด</h3>
+                                            <h3 class="py-5">ฉันเศร้ารึเปล่า?</h3>
+>>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
                                             <div class="row py-5 mx-auto">
                                                 <h4>ubhuibuigiuuyvyu</h4>
                                                 <div class="col-md-6">
                                                     <div class="form-check">
+<<<<<<< HEAD
                                                         <input class="form-check-input" name="flexRadioDefault2"
                                                             type="checkbox" id="option1" value="ถูก"
                                                             onclick="disableCheckbox(); highlightAnswer('option1');">1.ถูก
+=======
+                                                        <input class="form-check-input" type="checkbox" id="option1"
+                                                            onclick="disableCheckbox(); highlightAnswer('option1');"
+                                                            name="checkoDefault" value="ถูก">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            ความคิด
+                                                        </label>
+>>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-check">
+<<<<<<< HEAD
                                                         <input class="form-check-input" name="flexRadioDefault2"
                                                             type="checkbox" id="option2" value="ผิด"
                                                             onclick="disableCheckbox(); highlightAnswer('option2');">2.ผิด
+=======
+                                                        <input class="form-check-input" type="checkbox" id="option2"
+                                                            onclick="disableCheckbox(); highlightAnswer('option2');"
+                                                            name="checkoDefault" value="ผิด">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            อารมณ์
+                                                        </label>
+>>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
                                                     </div>
+
                                                 </div>
                                             </div>
                                             <p id="result"></p>
@@ -355,12 +379,83 @@
                                             }
                                         </script>
 
+                                    </div>
+
+                                    {{-- Content4 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row py-5 text-center">
+                                            <h3>เกมส์แยกอารมณ์...</h3>
+                                            <h3 class="py-5">...?</h3>
+                                            <div class="row py-5 mx-auto">
+                                                <div class="col-md-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" id="option11"
+                                                            onclick="disableCheckbox2(); highlightAnswer2('option11');"
+                                                            name="checkoDefault" value="ถูก">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            สุข
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" id="option22"
+                                                            onclick="disableCheckbox2(); highlightAnswer2('option22');"
+                                                            name="checkoDefault" value="ผิด">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            เศร้า
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" id="option33"
+                                                            onclick="disableCheckbox2(); highlightAnswer2('option33');"
+                                                            name="checkoDefault" value="ผิด">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            โกรธ
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" id="option44"
+                                                            onclick="disableCheckbox2(); highlightAnswer2('option44');"
+                                                            name="checkoDefault" value="ผิด">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            กลัว
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p id="result2"></p>
+                                        </div>
                                         <div class="d-grid gap-2 col-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
 
                                     </div>
+
                                 </form>
                                 <br>
                             </div>
@@ -375,6 +470,7 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
 
                     </div>
@@ -430,6 +526,52 @@
         </script>
     
 
+<<<<<<< HEAD
+=======
+        <script>
+            const correctAnswer = "option1";
+
+            function disableCheckbox() {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].disabled = true;
+                }
+            }
+
+            function highlightAnswer(answer) {
+
+                if (answer == correctAnswer) {
+                    document.getElementById(correctAnswer).style.backgroundColor = "lightgreen";
+                    document.getElementById("result").innerHTML = "คำตอบ: คุณเลือกตอบความคิด คุณตอบถูกแล้ว";
+                } else {
+                    document.getElementById(answer).style.backgroundColor = "red";
+                    document.getElementById("result").innerHTML = "คำตอบ: คุณเลือกตอบอารมณ์ คำตอบที่ถูกคือ ความคิด";
+                }
+            }
+        </script>
+
+        <script>
+            const correctAnswer2 = "option11";
+
+            function disableCheckbox2() {
+                var checkboxes2 = document.querySelectorAll('input[type="radio"]');
+                for (var i = 0; i < checkboxes2.length; i++) {
+                    checkboxes2[i].disabled = true;
+                }
+            }
+
+            function highlightAnswer2(answer2) {
+
+                if (answer2 == correctAnswer2) {
+                    document.getElementById(correctAnswer2).style.backgroundColor = "lightgreen";
+                    document.getElementById("result2").innerHTML = "คำตอบ: คุณตอบถูกแล้ว";
+                } else {
+                    document.getElementById(answer2).style.backgroundColor = "red";
+                    document.getElementById("result2").innerHTML = "คำตอบ: คุณตอบผิด";
+                }
+            }
+        </script>
+>>>>>>> dcb02bc2661b8eaf3644aec9d88b54056ee22996
 
         </html>
     @endsection
