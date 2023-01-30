@@ -107,7 +107,7 @@
 <body>
     <div class="header">
         <img class="" src="images/jitdee.jpg" class="img-thumbnail" alt="..." width="250" height="140">
-        <h2>ประวัติบันทึกความรู้สึก</h2>
+        <h3>ประวัติบันทึกความรู้สึก</h3>
         <h3>คุณ: {{ Auth::user()->name }}</h3>
     </div>
     <hr>

@@ -106,10 +106,11 @@
                                             <a class=" w3-btn w3-round-xlarge w3-hover-white" href="{{ url('Menu_day') }}">บันทึกความรู้สึก</a>
                                             <a class=" w3-btn w3-round-xlarge w3-hover-white" href="{{ url('record') }}">ประวัติบันทึกความรู้สึก</a>
                                             <a class="w3-btn w3-round-xlarge w3-hover-white" href="{{ url('certificate1') }}">รางวัลของฉัน</a>
-                                            <a class=" w3-btn w3-round-xlarge w3-hover-white" href="{{ url('about') }}">เกี่ยวกับ</a>
-                                            <a class="w3-btn w3-round-xlarge w3-hover-white" href="{{ url('choose') }}">หน้าว่าง</a>
+                                            
                                             <a class=" w3-btn w3-round-xlarge w3-hover-white" href="{{ url('team') }}">ทีมผู้พัฒนา</a>
                                             <a class=" w3-btn w3-round-xlarge w3-hover-white" href="{{ url('contact') }}">ติดต่อสอบถาม</a>
+                                            <a class="w3-btn w3-round-xlarge w3-hover-white" href="{{ url('choose') }}">คู่มือการใช้งาน</a>
+                                            <a class=" w3-btn w3-round-xlarge w3-hover-white" href="{{ url('about') }}">เกี่ยวกับ</a>
                                             <hr>
                                             <a class="w3-btn w3-round-xlarge w3-hover-white" href="{{ route('logout') }}" onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">ออกจากระบบ</a>

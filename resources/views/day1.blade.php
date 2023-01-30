@@ -296,19 +296,8 @@
 
                                         <div class="row py-5 text-center">
                                             <h3>เกมส์เกี่ยวกับหาความคิด, อารมณ์</h3>
-                                            <div class="col-md-4">
-                                                {{-- <img
-                                                    src="https://cdn.pixabay.com/animation/2022/07/29/14/46/14-46-54-82_512.gif"> --}}
-                                            </div>
-                                            <div class="col-md-8">
-
-                                                {{-- <h3>ฝึกรู้ทันความคิด</h3>
-                                                <h4>มีเรื่องอะไรบ้างนะที่ทำให้หนูกลัว แล้วตอนนั้นหนูคิดอะไรนะ?</h4>
-                                                <textarea name="" id="" class="form-control mb-3" rows="6" placeholder="เหตุการณ์..."></textarea>
-                                                <textarea name="" id="" class="form-control mb-3" rows="6" placeholder="ความคิดตอนนั้น..."></textarea> --}}
-                                            </div>
-                                        </div>
-
+                                            
+                                          
                                         <div class="d-grid gap-2 col-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"

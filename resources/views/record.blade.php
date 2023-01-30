@@ -22,6 +22,17 @@
                                             class="badge bg-warning ms-2">1 </span> </h6>
                                 </div>
                             </div>
+                            <script>let data = [1,2,3,4,5];
+                                let table = document.getElementById("myTable");
+                                
+                                for (let i = 0; i < data.length; i++) {
+                                    let row = table.insertRow();
+                                    let cell1 = row.insertCell();
+                                    let cell2 = row.insertCell();
+                                    cell1.innerHTML = i + 1; // Add 1 to the index to start row number at 1
+                                    cell2.innerHTML = data[i];
+                                }
+                                </script>
                             <div class="card-body w3-center">
                                 <div class="table-responsive">
                                     <table id="myTable" class="display  text-secondary" style="width: 100%;">
@@ -44,10 +55,11 @@
                                             </tr>
                                         </tfoot>
                                         <tbody>
+                                            <?php $i = 1; ?>
                                             @foreach ($rounds_story as $item)
                                                 <tr class="item{{ $item->rounds }}">
                                                     <td><span
-                                                            class="w3-tag w3-round w3-green w3-border w3-border-white">{{ $item->rounds }}</span>
+                                                            class="w3-tag w3-round w3-green w3-border w3-border-white">{{ $i++ }}</span>
                                                     </td>
                                                     <td>{{ $item->rounds }}</td>
                                                     <td>{{ $item->total_score }} คะแนน</td>
