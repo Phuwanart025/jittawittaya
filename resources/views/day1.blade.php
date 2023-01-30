@@ -170,7 +170,7 @@
                                                 </span>
                                             </h1>
                                         </div>
-                                       
+
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
@@ -296,8 +296,28 @@
 
                                         <div class="row py-5 text-center">
                                             <h3>เกมส์เกี่ยวกับหาความคิด, อารมณ์</h3>
+<<<<<<< HEAD
                                             
                                           
+=======
+                                            <div class="row py-5 mx-auto">
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="option1"
+                                                            onclick="disableCheckbox(); highlightAnswer('option1');">1.ถูก
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="option2"
+                                                            onclick="disableCheckbox(); highlightAnswer('option2');">2.ผิด
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p id="result"></p>
+                                        </div>
+
+>>>>>>> 1256a38e2ff0f0ae9f2739d5f4625fb29d10d222
                                         <div class="d-grid gap-2 col-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
@@ -372,6 +392,29 @@
             // Update the current slider value (each time you drag the slider handle)
             slider.oninput = function() {
                 output.innerHTML = this.value;
+            }
+        </script>
+
+        <script>
+            const correctAnswer = "option1";
+
+
+            function disableCheckbox() {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].disabled = true;
+                }
+            }
+
+            function highlightAnswer(answer) {
+
+                if (answer !== correctAnswer) {
+                    document.getElementById(correctAnswer).style.backgroundColor = "lightgreen";
+                    document.getElementById("result").innerHTML = "คำตอบ: คุณเลือกข้อ2 ข้อ1 ถูก";
+                } else {
+                    document.getElementById(answer).style.backgroundColor = "lightgreen";
+                    document.getElementById("result").innerHTML = "คำตอบ: คุณตอบถูกแล้ว";
+                }
             }
         </script>
 
