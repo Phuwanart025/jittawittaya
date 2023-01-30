@@ -245,7 +245,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY2</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -262,27 +262,35 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
-                                            <div class="col-md-12">
-                                                <h1>เกมส์แยกอารมณ์...</h1>
-                                                {{-- <img class="img-fluid rounded mx-auto d-block"
-                                                    src="http://thebandmusicschool.com/wp-content/uploads/2020/08/musical-healing-1-999x1024.jpg"
-                                                    alt="" width="150" height="150">
-                                                <audio class="mx-auto mt-4 mb-4" style="width: 820px" controls>
-                                                    <source src="images/ร่มสีเทา.mp3" type="audio/ogg">
-                                                    <source src="images/ร่มสีเทา.mp3" type="audio/mpeg">
-                                                </audio> --}}
+                                            <h3>เกมส์แยกความคิด</h3>
+                                            <h3 class="py-5">...?</h3>
+                                            <div class="row py-5 mx-auto">
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="option1"
+                                                            onclick="disableCheckbox(); highlightAnswer('option1');"
+                                                            name="checkoDefault" value="ผิด">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            ความคิด
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="option2"
+                                                            onclick="disableCheckbox(); highlightAnswer('option2');"
+                                                            name="checkoDefault" value="ถูก">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            อารมณ์
+                                                        </label>
+                                                    </div>
+
+                                                </div>
                                             </div>
-                                            <div class="col-md-12">
-                                                {{-- <textarea name="" id="" class="form-control mx-auto" rows="6"
-                                                    placeholder="ฟังเพลงแล้วได้ข้อคิดอะไรบ้าง..."></textarea> --}}
-                                            </div>
+                                            <p id="result"></p>
                                         </div>
 
-                                        <div class="d-grid gap-2 col-3 mx-auto">
-                                            <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
-                                                href="{{ url('/day5') }}">บันทึก</button>
-                                        </div>
+                                        
 
                                     </div>
 
@@ -399,6 +407,29 @@
             // Update the current slider value (each time you drag the slider handle)
             slider.oninput = function() {
                 output.innerHTML = this.value;
+            }
+        </script>
+
+        <script>
+            const correctAnswer = "option1";
+
+
+            function disableCheckbox() {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].disabled = true;
+                }
+            }
+
+            function highlightAnswer(answer) {
+
+                if (answer == correctAnswer) {
+                    document.getElementById(correctAnswer).style.backgroundColor = "red";
+                    document.getElementById("result").innerHTML = "คำตอบ: คุณเลือกตอบความคิด คำตอบที่ถูกคือ ความคิด";
+                } else {
+                    document.getElementById(answer).style.backgroundColor = "lightgreen";
+                    document.getElementById("result").innerHTML = "คำตอบ: คุณเลือกตอบอารมณ์ คุณตอบถูกแล้ว";
+                }
             }
         </script>
 
