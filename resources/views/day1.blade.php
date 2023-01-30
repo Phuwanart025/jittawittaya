@@ -263,14 +263,29 @@
 
 
                                         <h2 class="text-center py-5">คุณค่าของใบไม้แห้ง...</h2>
-                                        {{-- <div class="mb-5">
-                                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img"
-                                                aria-label="Info:">
-                                                <use xlink:href="#info-fill" />
-                                            </svg>
-                                            <img class="img-fluid rounded mx-auto d-block" src="images/image1.jpg"
-                                                width="800" height="600">
-                                        </div> --}}
+                                        <div class="w3-content w3-display-container">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/2.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/3.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/4.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/5.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/6.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/7.png"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/8.png"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/9.png"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/10.png"
+                                                style="width:100%">
+                                              <hr>
+                                              <h3 class="py-5" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                              <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                                  placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                        </div>
+
+
+
                                     </div>
 
                                     {{-- Content3 --}}
@@ -296,39 +311,58 @@
 
                                         <div class="row py-5 text-center">
                                             <h3>เกมส์เกี่ยวกับหาความคิด, อารมณ์</h3>
-<<<<<<< HEAD
-                                            
-                                          
-=======
+
                                             <div class="row py-5 mx-auto">
+                                                <h4>ubhuibuigiuuyvyu</h4>
                                                 <div class="col-md-6">
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" id="option1"
+                                                        <input class="form-check-input" name="flexRadioDefault2"
+                                                            type="checkbox" id="option1" value="ถูก"
                                                             onclick="disableCheckbox(); highlightAnswer('option1');">1.ถูก
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" id="option2"
+                                                        <input class="form-check-input" name="flexRadioDefault2"
+                                                            type="checkbox" id="option2" value="ผิด"
                                                             onclick="disableCheckbox(); highlightAnswer('option2');">2.ผิด
                                                     </div>
                                                 </div>
                                             </div>
                                             <p id="result"></p>
-                                        </div>
 
->>>>>>> 1256a38e2ff0f0ae9f2739d5f4625fb29d10d222
+                                        </div>
+                                        <script>
+                                            const correctAnswer = "option1";
+
+
+                                            function disableCheckbox() {
+                                                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                                                for (var i = 0; i < checkboxes.length; i++) {
+                                                    checkboxes[i].disabled = true;
+                                                }
+                                            }
+
+                                            function highlightAnswer(answer) {
+
+                                                if (answer !== correctAnswer) {
+                                                    document.getElementById(correctAnswer).style.backgroundColor = "red";
+                                                    document.getElementById("result").innerHTML = "คำตอบ: ข้อ1 ถูก";
+                                                } else {
+                                                    document.getElementById(answer).style.backgroundColor = "lightgreen";
+                                                    document.getElementById("result").innerHTML = "คำตอบ: คุณตอบถูกแล้ว";
+                                                }
+                                            }
+                                        </script>
+
                                         <div class="d-grid gap-2 col-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
-                                                href="{{ url('/day5') }}">บันทึก</button>
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
 
                                     </div>
                                 </form>
                                 <br>
-                                <!-- Comment Form End -->
-
                             </div>
                         </div>
 
@@ -394,29 +428,8 @@
                 output.innerHTML = this.value;
             }
         </script>
+    
 
-        <script>
-            const correctAnswer = "option1";
-
-
-            function disableCheckbox() {
-                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-                for (var i = 0; i < checkboxes.length; i++) {
-                    checkboxes[i].disabled = true;
-                }
-            }
-
-            function highlightAnswer(answer) {
-
-                if (answer !== correctAnswer) {
-                    document.getElementById(correctAnswer).style.backgroundColor = "lightgreen";
-                    document.getElementById("result").innerHTML = "คำตอบ: คุณเลือกข้อ2 ข้อ1 ถูก";
-                } else {
-                    document.getElementById(answer).style.backgroundColor = "lightgreen";
-                    document.getElementById("result").innerHTML = "คำตอบ: คุณตอบถูกแล้ว";
-                }
-            }
-        </script>
 
         </html>
     @endsection
