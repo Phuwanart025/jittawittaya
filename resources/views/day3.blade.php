@@ -343,16 +343,26 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>ฝึกรู้จักอารมณ์ต่างๆ และความคิดจากการดูภาพ...</h2>
+                                        <div class="row py-5 text-center">
+                                            <div class="col-md-12">
+                                                <h1>เกมบำบัดจิตใจ...</h1>
+                                                <img class="img-fluid rounded mx-auto d-block"
+                                                    src="images/tab/สะพานบ๊อบ.jpg"
+                                                    alt="" width="550" height="550">
+                                              <br>
+                                                <textarea name="radio" id="" class="form-control mx-auto" rows="6"
+                                                    placeholder="ฟังเพลงแล้วได้ข้อคิดอะไรบ้าง..."></textarea>
+
+
+                                                <br><br>
+                                                <div class="d-grid gap-2 col-3 mx-auto">
+                                                    <button class="btn btn-primary w-100" type="submit"
+                                                        onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                                </div>
+                                            </div>
                                         </div>
 
-                                        <div class="d-grid gap-2 col-4 mx-auto py-5">
-                                            <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
-                                                href="{{ url('/day5') }}">บันทึก</button>
-                                        </div>
-
+                                        
                                     </div>
 
                                 </form>

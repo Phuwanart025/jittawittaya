@@ -132,6 +132,15 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 500px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
 </style>
 
 @section('content')
@@ -181,11 +190,10 @@
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1"
-                                                        checked>
+                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         สีเหลือง = ความสุข
                                                     </label>
@@ -193,10 +201,10 @@
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2" checked>
+                                                        name="flexRadioDefault" id="color_feel_today2">
                                                     <label class="form-check-label" for="color_feel_today2">
                                                         สีแดง = ความโกรธ
                                                     </label>
@@ -204,11 +212,10 @@
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3"
-                                                        checked>
+                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         สีเขียว = ความกลัว
                                                     </label>
@@ -217,10 +224,10 @@
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4" checked>
+                                                        name="flexRadioDefault" id="color_feel_today4">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         สีฟ้า = ความเศร้า
                                                     </label>
@@ -269,8 +276,25 @@
                                         </div>
 
 
-                                        <h2 class="text-center py-5">คุณค่าของใบไม้แห้ง...</h2>
-                                        <div class="w3-content w3-display-container">
+                                        <h2 class="text-center py-3">คุณค่าของใบไม้แห้ง...</h2>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/2.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/3.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/4.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/5.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/6.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/7.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/8.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/9.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/10.png"
+                                                style="width:100%">
+                                        </div>
+                                        <hr>
+                                        <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                        {{-- <div class="w3-content w3-display-container">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/1.png" style="width:100%">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/2.png" style="width:100%">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/3.png" style="width:100%">
@@ -286,7 +310,7 @@
                                             <h3 class="py-5" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                             <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
-                                        </div>
+                                        </div> --}}
 
 
 
@@ -321,8 +345,8 @@
                                                 <div class="col-md-6">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" id="option1"
-                                                            onclick="disableCheckbox(); highlightAnswer('option1');"
-                                                            name="v5" value="ถูก">
+                                                            name="checkbox" value="ถูก"
+                                                            onclick="disableCheckbox();highlightAnswer('option1');">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             ความคิด
                                                         </label>
@@ -331,8 +355,8 @@
                                                 <div class="col-md-6">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" id="option2"
-                                                            onclick="disableCheckbox(); highlightAnswer('option2');"
-                                                            name="v5" value="ผิด">
+                                                            name="checkbox" value="ผิด"
+                                                            onclick="disableCheckbox();highlightAnswer('option2');">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             อารมณ์
                                                         </label>
@@ -368,41 +392,45 @@
                                             <h3>เกมส์แยกอารมณ์...</h3>
                                             <h3 class="py-5">...?</h3>
                                             <div class="row py-5 mx-auto">
-                                                <div class="col-md-3 mt-3 mx-auto">
+                                                <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option11"
-                                                            onclick="disableCheckbox2(); highlightAnswer2('option11');"
-                                                            name="v6" value="ถูก">
+                                                            name="checkoEmu" value="ถูก"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option11');">
+                                                        <img src="images/emu/emu4.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             สุข
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 mt-3 mx-auto">
+                                                <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option22"
-                                                            onclick="disableCheckbox2(); highlightAnswer2('option22');"
-                                                            name="v6" value="ผิด">
+                                                            name="checkoEmu" value="ผิด"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option22');">
+                                                        <img src="images/emu/emu1.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             เศร้า
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 mt-3 mx-auto">
+                                                <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option33"
-                                                            onclick="disableCheckbox2(); highlightAnswer2('option33');"
-                                                            name="v6" value="ผิด">
+                                                            name="checkoEmu" value="ผิด"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option33');">
+                                                        <img src="images/emu/emu2.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             โกรธ
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 mt-3 mx-auto">
+                                                <div class="col-md-3 py-2 ">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option44"
-                                                            onclick="disableCheckbox2(); highlightAnswer2('option44');"
-                                                            name="v6" value="ผิด">
+                                                            name="checkoEmu" value="ผิด"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option44');">
+                                                        <img src="images/emu/emu3.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             กลัว
                                                         </label>
@@ -437,6 +465,7 @@
             </div>
         </div>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
         <script>
             let slideIndex = 1;
