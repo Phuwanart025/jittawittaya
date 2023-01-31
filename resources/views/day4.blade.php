@@ -132,6 +132,15 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 500px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
 </style>
 
 @section('content')
@@ -265,6 +274,21 @@
                                         <div class="text-center py-5">
                                             <h2>นิทานไม่มีปาฏิหาริย์ + ให้วิเคราะห์นิทานสั้นๆ...</h2>
                                         </div>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/3.png" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/4.png" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/5.png" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/6.png" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/7.png" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/8.png" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/9.png" style="width:100%">
+                                        </div>
+                                        <hr>
+                                        <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
 
                                     {{-- Content3 --}}
@@ -272,7 +296,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY4</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -288,8 +312,32 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>ฝึกรู้ทันความคิด + อารมณ์...</h2>
+                                        <div class="row py-5 text-center">
+                                            <h3>เกมส์แยกความคิด</h3>
+                                            <div class="row py-5 mx-auto">
+                                                <h3 class="py-5">...?</h3>
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="option1"
+                                                            name="checkbox" value="ถูก"
+                                                            onclick="disableCheckbox();highlightAnswer('option1');">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            ความคิด
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="option2"
+                                                            name="checkbox" value="ผิด"
+                                                            onclick="disableCheckbox();highlightAnswer('option2');">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            อารมณ์
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p id="result"></p>
                                         </div>
                                     </div>
 
@@ -298,7 +346,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY4</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -314,16 +362,61 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>เกมจำแนกอารมณ์...</h2>
+                                        <div class="row py-5 text-center">
+                                            <h3>เกมส์แยกอารมณ์...</h3>
+                                            <h3 class="py-5">...?</h3>
+                                            <div class="row py-5 mx-auto">
+                                                <div class="col-md-3 py-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" id="option11"
+                                                            name="checkoEmu" value="ถูก"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option11');">
+                                                        <img src="images/emu/emu4.png" width="100" height="100">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            สุข
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 py-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" id="option22"
+                                                            name="checkoEmu" value="ผิด"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option22');">
+                                                        <img src="images/emu/emu1.png" width="100" height="100">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            เศร้า
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 py-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" id="option33"
+                                                            name="checkoEmu" value="ผิด"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option33');">
+                                                        <img src="images/emu/emu2.png" width="100" height="100">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            โกรธ
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 py-2 ">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" id="option44"
+                                                            name="checkoEmu" value="ผิด"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option44');">
+                                                        <img src="images/emu/emu3.png" width="100" height="100">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            กลัว
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p id="result2"></p>
                                         </div>
-
-                                        <div class="d-grid gap-2 col-4 mx-auto py-5">
+                                        <div class="d-grid gap-2 col-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
-                                                href="{{ url('/day5') }}">บันทึก</button>
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-
                                     </div>
 
                                 </form>
@@ -416,6 +509,50 @@
             // Update the current slider value (each time you drag the slider handle)
             slider3.oninput = function() {
                 output3.innerHTML = this.value;
+            }
+        </script>
+
+        <script>
+            const correctAnswer = "option1";
+
+            function disableCheckbox() {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].disabled = true;
+                }
+            }
+
+            function highlightAnswer(answer) {
+
+                if (answer == correctAnswer) {
+                    document.getElementById(correctAnswer).style.backgroundColor = "lightgreen";
+                    document.getElementById("result").innerHTML = "คำตอบ: คุณเลือกตอบความคิด คุณตอบถูกแล้ว";
+                } else {
+                    document.getElementById(answer).style.backgroundColor = "red";
+                    document.getElementById("result").innerHTML = "คำตอบ: คุณเลือกตอบอารมณ์ คำตอบที่ถูกคือ ความคิด";
+                }
+            }
+        </script>
+
+        <script>
+            const correctAnswer2 = "option11";
+
+            function disableCheckbox2() {
+                var checkboxes2 = document.querySelectorAll('input[type="radio"]');
+                for (var i = 0; i < checkboxes2.length; i++) {
+                    checkboxes2[i].disabled = true;
+                }
+            }
+
+            function highlightAnswer2(answer2) {
+
+                if (answer2 == correctAnswer2) {
+                    document.getElementById(correctAnswer2).style.backgroundColor = "lightgreen";
+                    document.getElementById("result2").innerHTML = "คำตอบ: คุณตอบถูกแล้ว";
+                } else {
+                    document.getElementById(answer2).style.backgroundColor = "red";
+                    document.getElementById("result2").innerHTML = "คำตอบ: คุณตอบผิด";
+                }
             }
         </script>
 

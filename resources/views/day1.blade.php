@@ -287,26 +287,6 @@
                                         <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
-                                        {{-- <div class="w3-content w3-display-container">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/1.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/2.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/3.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/4.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/5.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/6.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/7.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/8.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/9.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/10.png"
-                                                style="width:100%">
-                                            <hr>
-                                            <h3 class="py-5" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
-                                            <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
-                                        </div> --}}
-
-
-
                                     </div>
 
                                     {{-- Content3 --}}
