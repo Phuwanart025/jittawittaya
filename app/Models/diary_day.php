@@ -12,13 +12,8 @@ class diary_day extends Model
         'sensation_level',
         'detail_t1',
         'story_d1',
-<<<<<<< HEAD
         'thoughts',
         'emotions',
-=======
-        'thoughts_emotions',
-        'thoughts_emu',
->>>>>>> 7032ea218c06260b58c632269eda151e9c420508
         'rounds_id',
     ];
     public $timestamps = false;
