@@ -154,7 +154,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post" action="{{ url('store') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -277,18 +277,15 @@
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/4.png" style="width:100%">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/5.png" style="width:100%">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/6.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/7.png"
-                                                style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/8.png"
-                                                style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/9.png"
-                                                style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/7.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/8.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/9.png" style="width:100%">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/10.png"
                                                 style="width:100%">
-                                              <hr>
-                                              <h3 class="py-5" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
-                                              <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                                  placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            <hr>
+                                            <h3 class="py-5" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                            <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                         </div>
 
 
@@ -320,59 +317,30 @@
                                             <h3>เกมส์แยกความคิด</h3>
                                             <h3 class="py-5">ฉันเศร้ารึเปล่า?</h3>
                                             <div class="row py-5 mx-auto">
-                                                <h4>ubhuibuigiuuyvyu</h4>
+                                                <h3 class="py-5">ฉันเศร้ารึเปล่า?</h3>
                                                 <div class="col-md-6">
                                                     <div class="form-check">
-
                                                         <input class="form-check-input" type="checkbox" id="option1"
                                                             onclick="disableCheckbox(); highlightAnswer('option1');"
                                                             name="v5" value="ถูก">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             ความคิด
                                                         </label>
-
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-check">
-
                                                         <input class="form-check-input" type="checkbox" id="option2"
                                                             onclick="disableCheckbox(); highlightAnswer('option2');"
                                                             name="v5" value="ผิด">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             อารมณ์
                                                         </label>
-
                                                     </div>
-
                                                 </div>
                                             </div>
-                                            <p id="result"></p>
-
+                                            <p id="result" name="result1a" type="text"></p>
                                         </div>
-                                        <script>
-                                            const correctAnswer = "option1";
-
-
-                                            function disableCheckbox() {
-                                                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-                                                for (var i = 0; i < checkboxes.length; i++) {
-                                                    checkboxes[i].disabled = true;
-                                                }
-                                            }
-
-                                            function highlightAnswer(answer) {
-
-                                                if (answer !== correctAnswer) {
-                                                    document.getElementById(correctAnswer).style.backgroundColor = "red";
-                                                    document.getElementById("result").innerHTML = "คำตอบ: ข้อ1 ถูก";
-                                                } else {
-                                                    document.getElementById(answer).style.backgroundColor = "lightgreen";
-                                                    document.getElementById("result").innerHTML = "คำตอบ: คุณตอบถูกแล้ว";
-                                                }
-                                            }
-                                        </script>
-
                                     </div>
 
                                     {{-- Content4 --}}
@@ -400,7 +368,7 @@
                                             <h3>เกมส์แยกอารมณ์...</h3>
                                             <h3 class="py-5">...?</h3>
                                             <div class="row py-5 mx-auto">
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-3 mx-auto">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option11"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option11');"
@@ -410,7 +378,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-3 mx-auto">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option22"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option22');"
@@ -420,7 +388,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-3 mx-auto">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option33"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option33');"
@@ -430,7 +398,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 mt-3 mx-auto">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option44"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option44');"
@@ -441,15 +409,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <p id="result2"></p>
+                                            <p id="result2" name="result2a" type="text"></p>
                                         </div>
                                         <div class="d-grid gap-2 col-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-
                                     </div>
-
                                 </form>
                                 <br>
                             </div>
@@ -466,11 +432,9 @@
                             <span class="dot" onclick="currentSlide(3)"></span>
                             <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
         </div>
 
 
@@ -507,7 +471,6 @@
             }
         </script>
 
-
         <script>
             var slider = document.getElementById("myRange");
             var output = document.getElementById("demo");
@@ -518,7 +481,6 @@
                 output.innerHTML = this.value;
             }
         </script>
-    
 
         <script>
             const correctAnswer = "option1";
@@ -563,7 +525,6 @@
                 }
             }
         </script>
-
 
         </html>
     @endsection
