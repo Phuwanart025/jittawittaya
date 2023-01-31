@@ -132,6 +132,15 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 500px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
 </style>
 
 @section('content')
@@ -177,8 +186,7 @@
                                             <div class="col-md-3 mt-3">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1"
-                                                        checked>
+                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         สีเหลือง = ความสุข
                                                     </label>
@@ -189,7 +197,7 @@
                                             <div class="col-md-3 mt-3">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2" checked>
+                                                        name="flexRadioDefault" id="color_feel_today2">
                                                     <label class="form-check-label" for="color_feel_today2">
                                                         สีแดง = ความโกรธ
                                                     </label>
@@ -200,8 +208,7 @@
                                             <div class="col-md-3 mt-3">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3"
-                                                        checked>
+                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         สีเขียว = ความกลัว
                                                     </label>
@@ -213,7 +220,7 @@
                                             <div class="col-md-3 mt-3">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4" checked>
+                                                        name="flexRadioDefault" id="color_feel_today4">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         สีฟ้า = ความเศร้า
                                                     </label>
@@ -262,8 +269,25 @@
                                         </div>
 
 
-                                        <h2 class="text-center py-5">คุณค่าของใบไม้แห้ง...</h2>
-                                        <div class="w3-content w3-display-container">
+                                        <h2 class="text-center py-3">คุณค่าของใบไม้แห้ง...</h2>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/2.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/3.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/4.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/5.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/6.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/7.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/8.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/9.png" style="width:100%">
+                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/10.png"
+                                                style="width:100%">
+                                        </div>
+                                        <hr>
+                                        <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                        {{-- <div class="w3-content w3-display-container">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/1.png" style="width:100%">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/2.png" style="width:100%">
                                             <img class="mySlides1" src="images/คุณค่าของใบแห้ง/3.png" style="width:100%">
@@ -279,7 +303,7 @@
                                             <h3 class="py-5" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                             <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
-                                        </div>
+                                        </div> --}}
 
 
 
@@ -313,8 +337,8 @@
                                                 <div class="col-md-6">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" id="option1"
-                                                            onclick="disableCheckbox(); highlightAnswer('option1');"
-                                                            name="checkoDefault" value="ถูก">
+                                                            name="check" value="ถูก"
+                                                            onclick="disableCheckbox();highlightAnswer('option1');">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             ความคิด
                                                         </label>
@@ -323,8 +347,8 @@
                                                 <div class="col-md-6">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" id="option2"
-                                                            onclick="disableCheckbox(); highlightAnswer('option2');"
-                                                            name="checkoDefault" value="ผิด">
+                                                            name="check"
+                                                            value="ผิด"onclick="disableCheckbox();highlightAnswer('option2');">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             อารมณ์
                                                         </label>
@@ -365,7 +389,8 @@
                                                         <input class="form-check-input" type="radio" id="option11"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option11');"
                                                             name="checkoDefault" value="ถูก">
-                                                            <img src="https://cdn.pixabay.com/photo/2017/03/05/21/55/emoticon-2120024_960_720.png" width="50" height="50">
+                                                        <img src="https://cdn.pixabay.com/photo/2017/03/05/21/55/emoticon-2120024_960_720.png"
+                                                            width="50" height="50">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             สุข
                                                         </label>
@@ -376,7 +401,8 @@
                                                         <input class="form-check-input" type="radio" id="option22"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option22');"
                                                             name="checkoDefault" value="ผิด">
-                                                            <img src="https://cdn.pixabay.com/photo/2020/02/07/13/54/emoji-4827231_960_720.png" width="50" height="50">
+                                                        <img src="https://cdn.pixabay.com/photo/2020/02/07/13/54/emoji-4827231_960_720.png"
+                                                            width="50" height="50">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             เศร้า
                                                         </label>
@@ -387,7 +413,8 @@
                                                         <input class="form-check-input" type="radio" id="option33"
                                                             onclick="disableCheckbox2(); highlightAnswer2('option33');"
                                                             name="checkoDefault" value="ผิด">
-                                                            <img src="https://cdn.pixabay.com/photo/2016/09/14/16/44/emoticon-1669804_960_720.png" width="50" height="50">
+                                                        <img src="https://cdn.pixabay.com/photo/2016/09/14/16/44/emoticon-1669804_960_720.png"
+                                                            width="50" height="50">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             โกรธ
                                                         </label>
@@ -477,7 +504,6 @@
             }
         </script>
 
-
         <script>
             const correctAnswer = "option1";
 
@@ -521,6 +547,7 @@
                 }
             }
         </script>
+
 
         </html>
     @endsection

@@ -17,13 +17,16 @@ class diary_dayController extends Controller
                 'flexRadioDefault' => 'required',
                 'value' => 'required',
                 'v3' => 'required',
-                'v4' => 'required'
-
+                'v4' => 'required',
+                'check' => 'required'
             ]);
-            $latest = rounds_completed::where('user_id', Auth::user()->id)->where('jobs_id', 1)->orderBy('id', 'desc')->first();
-            $diary1 = new rounds_completed;
-            $diary = new diary_day;
-            if(empty($latest) || is_null($latest)){
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 1)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day();
+            if (empty($latest) || is_null($latest)) {
                 $diary1->rounds = 1;
             } else {
                 $diary1->rounds = $latest->rounds + 1;
@@ -35,29 +38,34 @@ class diary_dayController extends Controller
             $diary->sensation_level = $request->input('value');
             $diary->detail_t1 = $request->v3;
             $diary->story_d1 = $request->v4;
-            $diary->thoughts_emotions = $request->flexRadioDefault2;
+            $diary->thoughts_emotions = $request->check;
             $diary1->save();
             $diary->diary_day()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
-            return redirect()->back()->withErrors(['Error' => $e->getMessage()]);
+            return redirect()
+                ->back()
+                ->withErrors(['Error' => $e->getMessage()]);
         }
         return redirect('/results');
     }
 
+    //Day_2
     public function store2(Request $request)
     {
         try {
             $this->validate($request, [
-               'flexRadioDefault' => 'required',
+                'flexRadioDefault' => 'required',
                 'value' => 'required',
                 'v3' => 'required',
-                
             ]);
-            $latest = rounds_completed::where('user_id', Auth::user()->id)->where('jobs_id', 2)->orderBy('id', 'desc')->first();
-            $diary1 = new rounds_completed;
-            $diary = new diary_day2;
-            if(empty($latest) || is_null($latest)){
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 2)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day2();
+            if (empty($latest) || is_null($latest)) {
                 $diary1->rounds = 1;
             } else {
                 $diary1->rounds = $latest->rounds + 1;
@@ -72,9 +80,10 @@ class diary_dayController extends Controller
             $diary->diary_day()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
-            return redirect()->back()->withErrors(['Error' => $e->getMessage()]);
+            return redirect()
+                ->back()
+                ->withErrors(['Error' => $e->getMessage()]);
         }
         return redirect('/results');
     }
-
 }
