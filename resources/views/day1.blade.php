@@ -183,7 +183,7 @@
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-warning" type="radio"
                                                         value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
@@ -194,7 +194,7 @@
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
                                                         name="flexRadioDefault" id="color_feel_today2">
@@ -205,7 +205,7 @@
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-success" type="radio"
                                                         value="สีเขียว" name="flexRadioDefault" id="color_feel_today3">
@@ -217,7 +217,7 @@
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
                                                         name="flexRadioDefault" id="color_feel_today4">
@@ -337,7 +337,7 @@
                                                 <div class="col-md-6">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" id="option1"
-                                                            name="check" value="ถูก"
+                                                            name="checkbox" value="ถูก"
                                                             onclick="disableCheckbox();highlightAnswer('option1');">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             ความคิด
@@ -347,8 +347,8 @@
                                                 <div class="col-md-6">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" id="option2"
-                                                            name="check"
-                                                            value="ผิด"onclick="disableCheckbox();highlightAnswer('option2');">
+                                                            name="checkbox" value="ผิด"
+                                                            onclick="disableCheckbox();highlightAnswer('option2');">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             อารมณ์
                                                         </label>
@@ -384,47 +384,45 @@
                                             <h3>เกมส์แยกอารมณ์...</h3>
                                             <h3 class="py-5">...?</h3>
                                             <div class="row py-5 mx-auto">
-                                                <div class="col-md-3 mt-3 mx-auto">
+                                                <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option11"
-                                                            onclick="disableCheckbox2(); highlightAnswer2('option11');"
-                                                            name="checkoDefault" value="ถูก">
-                                                        <img src="https://cdn.pixabay.com/photo/2017/03/05/21/55/emoticon-2120024_960_720.png"
-                                                            width="50" height="50">
+                                                            name="checkoEmu" value="ถูก"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option11');">
+                                                        <img src="images/emu/emu4.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             สุข
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 mt-3 mx-auto">
+                                                <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option22"
-                                                            onclick="disableCheckbox2(); highlightAnswer2('option22');"
-                                                            name="checkoDefault" value="ผิด">
-                                                        <img src="https://cdn.pixabay.com/photo/2020/02/07/13/54/emoji-4827231_960_720.png"
-                                                            width="50" height="50">
+                                                            name="checkoEmu" value="ผิด"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option22');">
+                                                        <img src="images/emu/emu1.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             เศร้า
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 mt-3 mx-auto">
+                                                <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option33"
-                                                            onclick="disableCheckbox2(); highlightAnswer2('option33');"
-                                                            name="checkoDefault" value="ผิด">
-                                                        <img src="https://cdn.pixabay.com/photo/2016/09/14/16/44/emoticon-1669804_960_720.png"
-                                                            width="50" height="50">
+                                                            name="checkoEmu" value="ผิด"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option33');">
+                                                        <img src="images/emu/emu2.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             โกรธ
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 mt-3 mx-auto">
+                                                <div class="col-md-3 py-2 ">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option44"
-                                                            onclick="disableCheckbox2(); highlightAnswer2('option44');"
-                                                            name="checkoDefault" value="ผิด">
+                                                            name="checkoEmu" value="ผิด"
+                                                            onclick="disableCheckbox2();highlightAnswer2('option44');">
+                                                        <img src="images/emu/emu3.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             กลัว
                                                         </label>
@@ -459,6 +457,7 @@
             </div>
         </div>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
         <script>
             let slideIndex = 1;
@@ -547,7 +546,6 @@
                 }
             }
         </script>
-
 
         </html>
     @endsection

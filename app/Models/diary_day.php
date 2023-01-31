@@ -13,6 +13,7 @@ class diary_day extends Model
         'detail_t1',
         'story_d1',
         'thoughts_emotions',
+        'thoughts_emu',
         'rounds_id',
     ];
     public $timestamps = false;

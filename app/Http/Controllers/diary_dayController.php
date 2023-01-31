@@ -18,7 +18,8 @@ class diary_dayController extends Controller
                 'value' => 'required',
                 'v3' => 'required',
                 'v4' => 'required',
-                'check' => 'required'
+                'checkbox' => 'required',
+                'checkoEmu' => 'required'
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 1)
@@ -38,7 +39,8 @@ class diary_dayController extends Controller
             $diary->sensation_level = $request->input('value');
             $diary->detail_t1 = $request->v3;
             $diary->story_d1 = $request->v4;
-            $diary->thoughts_emotions = $request->check;
+            $diary->thoughts_emotions = $request->checkbox;
+            $diary->thoughts_emu = $request->checkoEmu;
             $diary1->save();
             $diary->diary_day()->associate($diary1);
             $diary->save();
