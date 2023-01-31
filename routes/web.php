@@ -29,7 +29,7 @@ Route::get('/results', function () {
     return view('results');
 });
 
-Route::get('/store', [diary_dayController::class, 'store']);
+Route::post('/store', [diary_dayController::class, 'store']);
 Route::get('/store2', [diary_dayController::class, 'store2']);
 Route::get('/store3', [diary_dayController::class, 'store2']);
 Route::get('/store4', [diary_dayController::class, 'store4']);
