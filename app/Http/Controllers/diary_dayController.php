@@ -17,8 +17,8 @@ class diary_dayController extends Controller
                 'flexRadioDefault' => 'required',
                 'value' => 'required',
                 'v3' => 'required',
-                'result1a' => 'required',
-                'result2a' => 'required'
+                'v5' => 'required',
+                'v6' => 'required',
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 1)
@@ -38,8 +38,8 @@ class diary_dayController extends Controller
             $diary->sensation_level = $request->input('value');
             $diary->detail_t1 = $request->v3;
             $diary->story_d1 = $request->v4;
-            $diary->thoughts = $request->result1a;
-            $diary->emotions = $request->result2a;
+            $diary->thoughts = $request->v5;
+            $diary->emotions = $request->v6;
             $diary1->save();
             $diary->diary_day()->associate($diary1);
             $diary->save();

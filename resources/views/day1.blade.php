@@ -325,7 +325,7 @@
                                                 <div class="col-md-6">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" id="option1"
-                                                            name="checkbox" value="ถูก"
+                                                            name="v5" value="ถูก"
                                                             onclick="disableCheckbox();highlightAnswer('option1');">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             ความคิด
@@ -335,7 +335,7 @@
                                                 <div class="col-md-6">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" id="option2"
-                                                            name="checkbox" value="ผิด"
+                                                            name="v5" value="ผิด"
                                                             onclick="disableCheckbox();highlightAnswer('option2');">
                                                         <label class="form-check-label" for="defaultCheck1">
                                                             อารมณ์
@@ -375,7 +375,7 @@
                                                 <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option11"
-                                                            name="checkoEmu" value="ถูก"
+                                                            name="v6" value="เงี่ยน"
                                                             onclick="disableCheckbox2();highlightAnswer2('option11');">
                                                         <img src="images/emu/emu4.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
@@ -386,7 +386,7 @@
                                                 <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option22"
-                                                            name="checkoEmu" value="ผิด"
+                                                            name="v6" value="เซิง"
                                                             onclick="disableCheckbox2();highlightAnswer2('option22');">
                                                         <img src="images/emu/emu1.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
@@ -397,7 +397,7 @@
                                                 <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option33"
-                                                            name="checkoEmu" value="ผิด"
+                                                            name="v6" value="่สี้"
                                                             onclick="disableCheckbox2();highlightAnswer2('option33');">
                                                         <img src="images/emu/emu2.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
@@ -408,7 +408,7 @@
                                                 <div class="col-md-3 py-2 ">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option44"
-                                                            name="checkoEmu" value="ผิด"
+                                                            name="v6" value="หี"
                                                             onclick="disableCheckbox2();highlightAnswer2('option44');">
                                                         <img src="images/emu/emu3.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
@@ -497,7 +497,9 @@
             function disableCheckbox() {
                 var checkboxes = document.querySelectorAll('input[type="checkbox"]');
                 for (var i = 0; i < checkboxes.length; i++) {
-                    checkboxes[i].disabled = true;
+                    checkboxes[i].style.pointerEvents = "none";
+                    checkboxes[i].style.color = "gray";
+                    //if(!checkboxes[i].checked) checkboxes[i].disabled = true;
                 }
             }
 
@@ -519,7 +521,8 @@
             function disableCheckbox2() {
                 var checkboxes2 = document.querySelectorAll('input[type="radio"]');
                 for (var i = 0; i < checkboxes2.length; i++) {
-                    checkboxes2[i].disabled = true;
+                    checkboxes2[i].style.pointerEvents = "none";
+                    //checkboxes2[i].disabled = true;
                 }
             }
 
