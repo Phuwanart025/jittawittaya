@@ -152,12 +152,15 @@
             <div class="container">
                 <div class="row justify-content-center">
                     @if ($message = Session::get('error'))
-                    <div class="alert alert-danger d-flex align-items-center " role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
-                            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                        </svg>
-                        <strong>{{ $message }}</strong>
-                    </div>
+                        <div class="alert alert-danger d-flex align-items-center " role="alert">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16"
+                                role="img" aria-label="Warning:">
+                                <path
+                                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+                            <strong>{{ $message }}</strong>
+                        </div>
                     @endif
                     <div class="card o-hidden border-0 shadow-lg my-5  w3-theme-l4">
                         <div class="card-body p-0">
@@ -352,7 +355,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY1</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -375,7 +378,7 @@
                                                 <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option11"
-                                                            name="v6" value="เงี่ยน"
+                                                            name="v6" value="ถูก"
                                                             onclick="disableCheckbox2();highlightAnswer2('option11');">
                                                         <img src="images/emu/emu4.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
@@ -386,7 +389,7 @@
                                                 <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option22"
-                                                            name="v6" value="เซิง"
+                                                            name="v6" value="ผิด"
                                                             onclick="disableCheckbox2();highlightAnswer2('option22');">
                                                         <img src="images/emu/emu1.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
@@ -397,7 +400,7 @@
                                                 <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option33"
-                                                            name="v6" value="่สี้"
+                                                            name="v6" value="่ผิด"
                                                             onclick="disableCheckbox2();highlightAnswer2('option33');">
                                                         <img src="images/emu/emu2.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
@@ -408,7 +411,7 @@
                                                 <div class="col-md-3 py-2 ">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option44"
-                                                            name="v6" value="หี"
+                                                            name="v6" value="ผิด"
                                                             onclick="disableCheckbox2();highlightAnswer2('option44');">
                                                         <img src="images/emu/emu3.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
