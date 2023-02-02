@@ -492,7 +492,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY1</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -515,7 +515,11 @@
                                                 <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option11"
+<<<<<<< HEAD
                                                             name="v6" value="ผิด"
+=======
+                                                            name="v6" value="ถูก"
+>>>>>>> 22ab28f0465ad4ae802c8bfd1d444c117dabf8c5
                                                             onclick="disableCheckbox2();highlightAnswer2('option11');">
                                                         <img src="images/emu/emu4.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
@@ -526,7 +530,11 @@
                                                 <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option22"
+<<<<<<< HEAD
                                                             name="v6" value="ถูก"
+=======
+                                                            name="v6" value="ผิด"
+>>>>>>> 22ab28f0465ad4ae802c8bfd1d444c117dabf8c5
                                                             onclick="disableCheckbox2();highlightAnswer2('option22');">
                                                         <img src="images/emu/emu1.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
@@ -537,7 +545,11 @@
                                                 <div class="col-md-3 py-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" id="option33"
+<<<<<<< HEAD
                                                             name="v6" value="ผิด"
+=======
+                                                            name="v6" value="่ผิด"
+>>>>>>> 22ab28f0465ad4ae802c8bfd1d444c117dabf8c5
                                                             onclick="disableCheckbox2();highlightAnswer2('option33');">
                                                         <img src="images/emu/emu2.png" width="100" height="100">
                                                         <label class="form-check-label" for="defaultCheck1">
