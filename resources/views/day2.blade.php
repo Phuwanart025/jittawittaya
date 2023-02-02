@@ -132,6 +132,15 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 600px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
 </style>
 
 @section('content')
@@ -261,6 +270,142 @@
                                             </h1>
                                         </div>
 
+
+                                        <h2 class="text-center py-5">เพื่อน 2 คน...</h2>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <img class="mySlides1" src="images/เพื่อน/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/เพื่อน/2.png" style="width:100%">
+                                            <img class="mySlides1" src="images/เพื่อน/3.png" style="width:100%">
+                                            <img class="mySlides1" src="images/เพื่อน/4.png" style="width:100%">
+                                            <img class="mySlides1" src="images/เพื่อน/5.png" style="width:100%">
+                                            <img class="mySlides1" src="images/เพื่อน/6.png" style="width:100%">
+                                        </div>
+                                        <p class="py-3">ขอบคุณนิทานจาก:<a target="_blank"
+                                                href="http://www.pakornblog.com/story.php?act=detail&storyid=47&fbclid=IwAR1q_aaH7ChQp2DEDlosUceN2DCUfLBupQ2ZxBVDHh4BuMq3fXDFQe4ZKGE">
+                                                PakornBlok</a></p>
+                                        {{-- <hr>
+                                        <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea> --}}
+                                    </div>
+
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY2</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row py-5 text-center">
+                                            <div class="col-md-12">
+                                                <h1>...</h1>
+                                                <img class="img-fluid rounded mx-auto d-block" src="images/image5.jpg"
+                                                    alt="" width="800" height="800">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- Content4 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY2</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row py-5 text-center">
+                                            <div class="col-md-12">
+                                                <h1>...</h1>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     {{-- Content5 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY2</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row py-5 text-center">
+                                            <div class="col-md-12">
+                                                <h1>...</h1>
+                                                <img class="img-fluid rounded mx-auto d-block" src="images/image6.jpg"
+                                                    alt="" width="800" height="800">
+
+                                                <div class="d-grid gap-2 col-3 mx-auto py-5">
+                                                    <button class="btn btn-primary w-100" type="submit"
+                                                        onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- Content --}}
+                                    {{-- <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY2</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
                                         <div class="row py-5 text-center">
                                             <div class="col-md-12">
                                                 <h1>เพลงบำบัดจิตใจ...</h1>
@@ -289,9 +434,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
-                                    {{-- Content3 --}} <div class="mySlides">
+                                    {{-- Content --}}
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -313,10 +459,9 @@
                                         <div class="row py-5 text-center">
                                             <div class="col-md-12">
                                                 <h1>เกมบำบัดจิตใจ...</h1>
-                                                <img class="img-fluid rounded mx-auto d-block"
-                                                    src="images/tab/day2.jpg"
+                                                <img class="img-fluid rounded mx-auto d-block" src="images/tab/day2.jpg"
                                                     alt="" width="550" height="550">
-                                              <br>
+                                                <br>
                                                 <textarea name="radio" id="" class="form-control mx-auto" rows="6"
                                                     placeholder="ฟังเพลงแล้วได้ข้อคิดอะไรบ้าง..."></textarea>
 
@@ -328,10 +473,167 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div> --}}
 
+                                    {{-- Content --}}
+                                    {{-- <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY2</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
 
+                                        <h2 class="text-center py-3">ระดับอาการทางกาย</h2>
 
-                                    </div>
+                                        <div class="row">
+                                            <div class="col-md-2 mx-auto py-5">
+                                                <h1>test.test</h1>
+                                            </div>
+                                            <div class="col-md-10 mx-auto py-5">
+                                                <div class="slidecontainer py-5">
+                                                    <h4 for="customRange2">ระดับความรู้สึก: <label for=""
+                                                            id="demo" style="font-weight:bold;color:red"></label></h4>
+                                                    <input type="range" min="0" max="10" name="value"
+                                                        value="{{ old('value') }}" class="slider" id="myRange">
+                                                    <div class="sliderticks">
+                                                        <p>ไม่มีเลย</p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p>นิดหน่อย</p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p>มาก</p>
+                                                        <p></p>
+                                                        <p>มากที่สุด</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="col-md-2 mx-auto py-5">
+                                                <h1>test.test</h1>
+                                            </div>
+                                            <div class="col-md-10 mx-auto py-5">
+                                                <div class="slidecontainer py-5">
+                                                    <h4 for="customRange2">ระดับความรู้สึก: <label for=""
+                                                            id="demo2" style="font-weight:bold;color:red"></label></h4>
+                                                    <input type="range" min="0" max="10" name="value"
+                                                        value="{{ old('value') }}" class="slider" id="myRange2">
+                                                    <div class="sliderticks">
+                                                        <p>ไม่มีเลย</p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p>นิดหน่อย</p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p>มาก</p>
+                                                        <p></p>
+                                                        <p>มากที่สุด</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="col-md-2 mx-auto py-5">
+                                                <h1>test.test</h1>
+                                            </div>
+                                            <div class="col-md-10 mx-auto py-5">
+                                                <div class="slidecontainer py-5">
+                                                    <h4 for="customRange2">ระดับความรู้สึก: <label for=""
+                                                            id="demo3" style="font-weight:bold;color:red"></label></h4>
+                                                    <input type="range" min="0" max="10" name="value"
+                                                        value="{{ old('value') }}" class="slider" id="myRange3">
+                                                    <div class="sliderticks">
+                                                        <p>ไม่มีเลย</p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p>นิดหน่อย</p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p>มาก</p>
+                                                        <p></p>
+                                                        <p>มากที่สุด</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="col-md-2 mx-auto py-5">
+                                                <h1>test.test</h1>
+                                            </div>
+                                            <div class="col-md-10 mx-auto py-5">
+                                                <div class="slidecontainer py-5">
+                                                    <h4 for="customRange2">ระดับความรู้สึก: <label for=""
+                                                            id="demo4" style="font-weight:bold;color:red"></label></h4>
+                                                    <input type="range" min="0" max="10" name="value"
+                                                        value="{{ old('value') }}" class="slider" id="myRange4">
+                                                    <div class="sliderticks">
+                                                        <p>ไม่มีเลย</p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p>นิดหน่อย</p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p>มาก</p>
+                                                        <p></p>
+                                                        <p>มากที่สุด</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="col-md-2 mx-auto py-5">
+                                                <h1>test.test</h1>
+                                            </div>
+                                            <div class="col-md-10 mx-auto py-5">
+                                                <div class="slidecontainer py-5">
+                                                    <h4 for="customRange2">ระดับความรู้สึก: <label for=""
+                                                            id="demo5" style="font-weight:bold;color:red"></label></h4>
+                                                    <input type="range" min="0" max="10" name="value"
+                                                        value="{{ old('value') }}" class="slider" id="myRange5">
+                                                    <div class="sliderticks">
+                                                        <p>ไม่มีเลย</p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p>นิดหน่อย</p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p>มาก</p>
+                                                        <p></p>
+                                                        <p>มากที่สุด</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div> --}}
 
                                 </form>
                                 <br>
@@ -349,6 +651,8 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
                         </div>
 
                     </div>
@@ -400,6 +704,46 @@
             // Update the current slider value (each time you drag the slider handle)
             slider.oninput = function() {
                 output.innerHTML = this.value;
+            }
+        </script>
+        <script>
+            var slider2 = document.getElementById("myRange2");
+            var output2 = document.getElementById("demo2");
+            output2.innerHTML = slider2.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider2.oninput = function() {
+                output2.innerHTML = this.value;
+            }
+        </script>
+        <script>
+            var slider3 = document.getElementById("myRange3");
+            var output3 = document.getElementById("demo3");
+            output3.innerHTML = slider3.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider3.oninput = function() {
+                output3.innerHTML = this.value;
+            }
+        </script>
+        <script>
+            var slider4 = document.getElementById("myRange4");
+            var output4 = document.getElementById("demo4");
+            output4.innerHTML = slider4.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider4.oninput = function() {
+                output4.innerHTML = this.value;
+            }
+        </script>
+        <script>
+            var slider5 = document.getElementById("myRange5");
+            var output5 = document.getElementById("demo5");
+            output5.innerHTML = slider5.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider5.oninput = function() {
+                output5.innerHTML = this.value;
             }
         </script>
 
