@@ -174,48 +174,50 @@
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1"
-                                                        checked>
+                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
+                                                        <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
-                                                        สีเหลือง = ความสุข
+                                                    ความสุข
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2" checked>
+                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                        <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
-                                                        สีแดง = ความโกรธ
+                                                        ความโกรธ
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3"
-                                                        checked>
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3">
+                                                        <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
-                                                        สีเขียว = ความกลัว
+                                                        ความกลัว
                                                     </label>
                                                 </div>
 
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4" checked>
+                                                        name="flexRadioDefault" id="color_feel_today4">
+                                                        <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
-                                                        สีฟ้า = ความเศร้า
+                                                    ความเศร้า
                                                     </label>
                                                 </div>
                                             </div>
@@ -291,7 +293,8 @@
                                         </div>
                                     </div>
 
-                                    {{-- Content3 --}} <div class="mySlides">
+                                    {{-- Content3 --}} 
+                                    <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -318,21 +321,236 @@
                                                     alt="" width="550" height="550">
                                               <br>
                                                 <textarea name="radio" id="" class="form-control mx-auto" rows="6"
-                                                    placeholder="ฟังเพลงแล้วได้ข้อคิดอะไรบ้าง..."></textarea>
-
-
-                                                <br><br>
-                                                <div class="d-grid gap-2 col-3 mx-auto">
-                                                    <button class="btn btn-primary w-100" type="submit"
-                                                        onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
-                                                </div>
+                                                    placeholder="ฟังเพลงแล้วได้ข้อคิดอะไรบ้าง..."></textarea>   
                                             </div>
                                         </div>
 
 
 
                                     </div>
+                                    {{-- Content4 --}} 
+                                      <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY2</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
 
+
+                                        <h3  class="text-center" for="customRange2">เมื่อคุณรู้สึกโกรธร่างกายของคุณมีอะไรเกิดขึ้นบ้าง:</h3>
+                                        <div class="row">
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio"
+                                                        value="หน้าแดง" name="feel_body1" id="feel_body1"
+                                                        checked>
+                                                    <label class="form-check-label" for="color_feel_today1">
+                                                        หน้าแดง
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio" value="หน้าซีด"
+                                                        name="feel_body1" id="feel_body1" checked>
+                                                    <label class="form-check-label" for="color_feel_today2">
+                                                        หน้าซีด
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value="หายใจช้า2" name="feel_body2" id="feel_body3"
+                                                        checked>
+                                                    <label class="form-check-label" for="color_feel_today3">
+                                                        หายใจช้า
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                            <br>
+
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio" value=" หายใจเร็ว"
+                                                        name="feel_body2" id="feel_body4" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        หายใจเร็ว
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio" value="กล้ามเนื้อผ่อนคลาย"
+                                                        name="feel_body3" id="feel_body5" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        กล้ามเนื้อผ่อนคลาย
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio" value="กล้ามเนื้อเกร็ง"
+                                                        name="feel_body3" id="feel_body6" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        กล้ามเนื้อเกร็ง
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio" value="กำมือแน่น"
+                                                        name="feel_body4" id="feel_body7" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                       กำมือแน่น
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio" value="กำมือขึ้นแล้วหมุนๆ"
+                                                        name="feel_body4" id="feel_body8" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        กำมือขึ้นแล้วหมุนๆ
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio" value="ตัวร้อน"
+                                                        name="feel_body5" id="feel_body9" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        ตัวร้อน
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio" value="ตัวเย็น"
+                                                        name="feel_body5" id="feel_body10" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        ตัวเย็น
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio" value="เหงื่อไม่ออก"
+                                                        name="feel_body6" id="feel_body11" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        เหงื่อไม่ออก
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio" value="เหงื่อ ออก"
+                                                        name="feel_body6" id="feel_body12" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        เหงื่อ ออก
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio" value="รู้สึกร้อนบนใบหน้า"
+                                                        name="feel_body7" id="feel_body13" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        รู้สึกร้อนบนใบหน้า 
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio" value="รู้สึกเย็นบนใบหน้า"
+                                                        name="feel_body7" id="feel_body14" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        รู้สึกเย็นบนใบหน้า
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio" value="คิ้วขมวด"
+                                                        name="feel_body8" id="feel_body15" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        คิ้วขมวด
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio" value="คิ้วโก่งเป็นคันศร "
+                                                        name="feel_body8" id="feel_body16" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        คิ้วโก่งเป็นคันศร 
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio" value="กัดฟัน"
+                                                        name="feel_body9" id="feel_body17" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        กัดฟัน 
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio" value="ยิงฝัน "
+                                                        name="feel_body9" id="feel_body18" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        ยิงฟัน 
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio" value="ลมออกทวารหนัก"
+                                                        name="feel_body10" id="feel_body19" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        ลมออกทวารหนัก
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio" value="ลมออกหู"
+                                                        name="feel_body10" id="feel_body20" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        ลมออกหู 
+                                                    </label>
+                                                </div>
+                                            </div>
+                                   
+
+                                                <br><br><br><br>   <hr>
+                                                <div class="d-grid gap-2 col-3 mx-auto">
+                                                    <button class="btn btn-primary w-100" type="submit"
+                                                        onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
@@ -349,6 +567,7 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
 
                     </div>
