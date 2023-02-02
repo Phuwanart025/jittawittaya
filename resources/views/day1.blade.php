@@ -1,5 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <style>
     .mySlides {
         display: none
@@ -197,8 +199,9 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-warning" type="radio"
                                                         value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
+                                                    <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
-                                                        สีเหลือง = ความสุข
+                                                        ความสุข
                                                     </label>
                                                 </div>
                                             </div>
@@ -208,8 +211,9 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
                                                         name="flexRadioDefault" id="color_feel_today2">
+                                                    <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
-                                                        สีแดง = ความโกรธ
+                                                        ความโกรธ
                                                     </label>
                                                 </div>
                                             </div>
@@ -217,10 +221,11 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3">
+                                                    <input class="form-check-input bg-info" type="radio" value="สีเขียว"
+                                                        name="flexRadioDefault" id="color_feel_today3">
+                                                    <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
-                                                        สีเขียว = ความกลัว
+                                                        ความกลัว
                                                     </label>
                                                 </div>
 
@@ -231,8 +236,9 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
                                                         name="flexRadioDefault" id="color_feel_today4">
+                                                    <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
-                                                        สีฟ้า = ความเศร้า
+                                                        ความเศร้า
                                                     </label>
                                                 </div>
                                             </div>
@@ -257,8 +263,139 @@
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
 
-                                    {{-- Content2 --}}
+                                     {{-- Content2 --}}
+                                     <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY1</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+
+                                        <h3 for="customRange2">อารมณ์คืออะไร :</h3>
+                                        <div class="row">
+                                            <div class="col-md-3 py-2">
+                                                <q class="badge rounded-pill bg-info">ดีใจ</q>
+                                                <q class="badge rounded-pill bg-info">เบื่อ</q>
+                                                <q class="badge rounded-pill bg-info">สวดมนต์ </q>
+                                                <q class="badge rounded-pill bg-info">ฟิน</q>
+                                                <q class="badge rounded-pill bg-info">ต่อยเพื่อน</q>
+                                                <q class="badge rounded-pill bg-info">เซ็ง</q>
+                                                <q class="badge rounded-pill bg-info">เตะบอล</q>
+                                                <q class="badge rounded-pill bg-info">ปวดท้อง</q>
+                                                <q class="badge rounded-pill bg-info">โกรธ</q>
+                                                <q class="badge rounded-pill bg-info">สนุก</q>
+                                                <q class="badge rounded-pill bg-info">กลัว</q>
+                                                <q class="badge rounded-pill bg-info">คิดเลข</q>
+
+                                                <q class="badge rounded-pill bg-info">เงิบ</q>
+                                                <q class="badge rounded-pill bg-info">ให้อาหารหมา</q>
+                                            </div>
+
+
+
+                                            <div class="col-md-3 py-2 w3-center">
+                                                <h6 class="badge rounded-pill bg-info" for="customRange2">อารมรณ์</h6>
+                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
+                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
+                                            </div>
+                                            <div class="col-md-3 py-2  w3-center">
+                                                <h6 class="badge rounded-pill bg-info" for="customRange2">ความคิด</h6>
+                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
+                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
+                                            </div>
+                                            <div class="col-md-3 py-2  w3-center">
+                                                <h6 class="badge rounded-pill bg-info" for="customRange2">การกระทำ</h6>
+                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
+                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="popover"
+                                            title="เฉลย"
+                                            data-bs-content="ในส่วนอารมรณ์นั้นจะมี  ดีใจ,เบื่อ,ฟิน,เซ็ง,โกรธ,สนุก,เงิบ /
+                                        และในส่วนความคิดจะมี  คิดเลข,ปวดท้อง,กลัว /
+                                        และในส่วนการกระทำ สวดมนต์,ต่อยเพื่อน,เตะบอล /">
+                                            เฉลย
+                                        </button> <q class="text-red">***โปรดทำก่อนกดดูเฉลยนะ***</q>
+                                    </div>
+
+                                    {{-- Content3 --}}
                                     <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY1</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+
+                                        <h2 class="text-center py-3">มารู้จักอารมณ์ดีกว่า...</h2>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <img class="mySlides1" src="images/tab/01(1).jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/tab/01(2).jpg" style="width:100%">
+                                        </div>
+
+                                    </div>
+
+                                    {{-- Content4 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY1</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+
+                                        <h2 class="text-center py-3">มารู้จักอารมณ์ดีกว่า...</h2>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <img class="mySlides1" src="images/tab/01(3).jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/tab/01(4).jpg" style="width:100%">
+                                        </div>
+
+                                    </div>
+
+                                    {{-- Content3 --}}
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -297,10 +434,11 @@
                                         <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
-                                    </div>
+                                    </div> --}}
 
-                                    {{-- Content3 --}}
-                                    <div class="mySlides">
+
+                                    {{-- Content --}}
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -348,10 +486,10 @@
                                             </div>
                                             <p id="result" name="result1a" type="text"></p>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
-                                    {{-- Content4 --}}
-                                    <div class="mySlides">
+                                    {{-- Content --}}
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -426,7 +564,7 @@
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </form>
                                 <br>
                             </div>
@@ -492,6 +630,13 @@
             slider.oninput = function() {
                 output.innerHTML = this.value;
             }
+        </script>
+
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            })
         </script>
 
         <script>

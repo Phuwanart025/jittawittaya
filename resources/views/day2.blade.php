@@ -183,48 +183,50 @@
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1"
-                                                        checked>
+                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
+                                                    <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
-                                                        สีเหลือง = ความสุข
+                                                        ความสุข
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2" checked>
+                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                    <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
-                                                        สีแดง = ความโกรธ
+                                                        ความโกรธ
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3"
-                                                        checked>
+                                                    <input class="form-check-input bg-info" type="radio" value="สีเขียว"
+                                                        name="flexRadioDefault" id="color_feel_today3">
+                                                    <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
-                                                        สีเขียว = ความกลัว
+                                                        ความกลัว
                                                     </label>
                                                 </div>
 
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4" checked>
+                                                        name="flexRadioDefault" id="color_feel_today4">
+                                                    <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
-                                                        สีฟ้า = ความเศร้า
+                                                        ความเศร้า
                                                     </label>
                                                 </div>
                                             </div>
@@ -283,10 +285,10 @@
                                         <p class="py-3">ขอบคุณนิทานจาก:<a target="_blank"
                                                 href="http://www.pakornblog.com/story.php?act=detail&storyid=47&fbclid=IwAR1q_aaH7ChQp2DEDlosUceN2DCUfLBupQ2ZxBVDHh4BuMq3fXDFQe4ZKGE">
                                                 PakornBlok</a></p>
-                                        {{-- <hr>
+                                        <hr>
                                         <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea> --}}
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
 
                                     {{-- Content3 --}}
@@ -342,15 +344,214 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
-                                            <div class="col-md-12">
-                                                <h1>...</h1>
-                                                
+
+                                        <h3 class="text-center" for="customRange2">
+                                            เมื่อคุณรู้สึกโกรธร่างกายของคุณมีอะไรเกิดขึ้นบ้าง:</h3>
+                                        <div class="row">
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio"
+                                                        value="หน้าแดง" name="feel_body1" id="feel_body1" checked>
+                                                    <label class="form-check-label" for="color_feel_today1">
+                                                        หน้าแดง
+                                                    </label>
+                                                </div>
                                             </div>
+                                            <br>
+
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio"
+                                                        value="หน้าซีด" name="feel_body1" id="feel_body1" checked>
+                                                    <label class="form-check-label" for="color_feel_today2">
+                                                        หน้าซีด
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value="หายใจช้า2" name="feel_body2" id="feel_body3" checked>
+                                                    <label class="form-check-label" for="color_feel_today3">
+                                                        หายใจช้า
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                            <br>
+
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value=" หายใจเร็ว" name="feel_body2" id="feel_body4" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        หายใจเร็ว
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value="กล้ามเนื้อผ่อนคลาย" name="feel_body3" id="feel_body5"
+                                                        checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        กล้ามเนื้อผ่อนคลาย
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value="กล้ามเนื้อเกร็ง" name="feel_body3" id="feel_body6"
+                                                        checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        กล้ามเนื้อเกร็ง
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio"
+                                                        value="กำมือแน่น" name="feel_body4" id="feel_body7" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        กำมือแน่น
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio"
+                                                        value="กำมือขึ้นแล้วหมุนๆ" name="feel_body4" id="feel_body8"
+                                                        checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        กำมือขึ้นแล้วหมุนๆ
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio"
+                                                        value="ตัวร้อน" name="feel_body5" id="feel_body9" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        ตัวร้อน
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio"
+                                                        value="ตัวเย็น" name="feel_body5" id="feel_body10" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        ตัวเย็น
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value="เหงื่อไม่ออก" name="feel_body6" id="feel_body11" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        เหงื่อไม่ออก
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value="เหงื่อ ออก" name="feel_body6" id="feel_body12" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        เหงื่อ ออก
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value="รู้สึกร้อนบนใบหน้า" name="feel_body7" id="feel_body13"
+                                                        checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        รู้สึกร้อนบนใบหน้า
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value="รู้สึกเย็นบนใบหน้า" name="feel_body7" id="feel_body14"
+                                                        checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        รู้สึกเย็นบนใบหน้า
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio"
+                                                        value="คิ้วขมวด" name="feel_body8" id="feel_body15" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        คิ้วขมวด
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio"
+                                                        value="คิ้วโก่งเป็นคันศร " name="feel_body8" id="feel_body16"
+                                                        checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        คิ้วโก่งเป็นคันศร
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio"
+                                                        value="กัดฟัน" name="feel_body9" id="feel_body17" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        กัดฟัน
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-primary" type="radio"
+                                                        value="ยิงฝัน " name="feel_body9" id="feel_body18" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        ยิงฟัน
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value="ลมออกทวารหนัก" name="feel_body10" id="feel_body19"
+                                                        checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        ลมออกทวารหนัก
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input bg-info" type="radio"
+                                                        value="ลมออกหู" name="feel_body10" id="feel_body20" checked>
+                                                    <label class="form-check-label" for="color_feel_today4">
+                                                        ลมออกหู
+                                                    </label>
+                                                </div>
+                                            </div>
+
+
+                                            <br><br><br><br>
+                                            <hr>
+
                                         </div>
                                     </div>
 
-                                     {{-- Content5 --}}
+
+                                    {{-- Content5 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -371,269 +572,17 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
-                                            <div class="col-md-12">
-                                                <h1>...</h1>
-                                                <img class="img-fluid rounded mx-auto d-block" src="images/image6.jpg"
-                                                    alt="" width="800" height="800">
+                                        <h1 class="text-center py-5">...</h1>
+                                        <img class="img-fluid rounded mx-auto d-block" src="images/image6.jpg"
+                                            alt="" width="800" height="800">
 
-                                                <div class="d-grid gap-2 col-3 mx-auto py-5">
-                                                    <button class="btn btn-primary w-100" type="submit"
-                                                        onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
-                                                </div>
-                                            </div>
+                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
+
+
                                     </div>
-
-                                    {{-- Content --}}
-                                    {{-- <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY2</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-
-                                        <div class="row py-5 text-center">
-                                            <div class="col-md-12">
-                                                <h1>เพลงบำบัดจิตใจ...</h1>
-                                                <img class="img-fluid rounded mx-auto d-block"
-                                                    src="http://thebandmusicschool.com/wp-content/uploads/2020/08/musical-healing-1-999x1024.jpg"
-                                                    alt="" width="150" height="150">
-                                                <div class="py-2">
-                                                    <a class="btn btn-danger " href="https://youtu.be/2FxYYY9E6hs"
-                                                        target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-                                                            width="20" height="20" fill="currentColor"
-                                                            class="bi bi-filetype-mp3" viewBox="0 0 16 16">
-                                                            <path fill-rule="evenodd"
-                                                                d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-4.911 9.67h-.443v-.609h.422a.688.688 0 0 0 .322-.073.558.558 0 0 0 .22-.2.505.505 0 0 0 .076-.284.49.49 0 0 0-.176-.392.652.652 0 0 0-.442-.15.74.74 0 0 0-.252.041.625.625 0 0 0-.193.112.496.496 0 0 0-.179.349H7.71c.006-.157.04-.302.102-.437.063-.135.153-.252.27-.352.117-.101.26-.18.428-.237.17-.057.364-.086.583-.088.279-.002.52.042.723.132.203.09.36.214.472.372a.91.91 0 0 1 .173.539.833.833 0 0 1-.12.478.96.96 0 0 1-.619.439v.041a1.008 1.008 0 0 1 .718.434.909.909 0 0 1 .144.521c.002.19-.037.359-.117.507a1.104 1.104 0 0 1-.329.378c-.14.101-.302.18-.486.234-.182.053-.376.08-.583.08-.3 0-.558-.051-.77-.153a1.206 1.206 0 0 1-.487-.41 1.094 1.094 0 0 1-.178-.563h.726a.457.457 0 0 0 .106.258.664.664 0 0 0 .249.179.98.98 0 0 0 .357.067.903.903 0 0 0 .384-.076.598.598 0 0 0 .252-.217.56.56 0 0 0 .088-.319.556.556 0 0 0-.334-.522.81.81 0 0 0-.372-.079ZM.706 15.925v-2.66h.038l.952 2.16h.516l.946-2.16h.038v2.66h.715v-3.999h-.8l-1.14 2.596h-.026l-1.14-2.596H0v4h.706Zm5.458-3.999h-1.6v4h.792v-1.342h.803c.287 0 .53-.058.732-.173.203-.118.357-.276.463-.475a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.475-.158-.677a1.175 1.175 0 0 0-.46-.477 1.4 1.4 0 0 0-.733-.179Zm.545 1.333a.795.795 0 0 1-.085.381.574.574 0 0 1-.237.24.793.793 0 0 1-.375.082h-.66v-1.406h.66c.219 0 .39.06.513.182.123.12.184.295.184.521Z" />
-                                                        </svg> กดปุ่มเพื่อฟังเพลง</a>
-                                                </div>
-
-
-                                                <textarea name="radio" id="" class="form-control mx-auto" rows="6"
-                                                    placeholder="ฟังเพลงแล้วได้ข้อคิดอะไรบ้าง..."></textarea>
-
-
-                                                <br><br>
-                                                <div class="d-grid gap-2 col-3 mx-auto">
-                                                    <button class="btn btn-primary w-100" type="submit"
-                                                        onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> --}}
-
-                                    {{-- Content --}}
-                                    {{-- <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY2</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-                                        <div class="row py-5 text-center">
-                                            <div class="col-md-12">
-                                                <h1>เกมบำบัดจิตใจ...</h1>
-                                                <img class="img-fluid rounded mx-auto d-block" src="images/tab/day2.jpg"
-                                                    alt="" width="550" height="550">
-                                                <br>
-                                                <textarea name="radio" id="" class="form-control mx-auto" rows="6"
-                                                    placeholder="ฟังเพลงแล้วได้ข้อคิดอะไรบ้าง..."></textarea>
-
-
-                                                <br><br>
-                                                <div class="d-grid gap-2 col-3 mx-auto">
-                                                    <button class="btn btn-primary w-100" type="submit"
-                                                        onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> --}}
-
-                                    {{-- Content --}}
-                                    {{-- <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY2</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-
-                                        <h2 class="text-center py-3">ระดับอาการทางกาย</h2>
-
-                                        <div class="row">
-                                            <div class="col-md-2 mx-auto py-5">
-                                                <h1>test.test</h1>
-                                            </div>
-                                            <div class="col-md-10 mx-auto py-5">
-                                                <div class="slidecontainer py-5">
-                                                    <h4 for="customRange2">ระดับความรู้สึก: <label for=""
-                                                            id="demo" style="font-weight:bold;color:red"></label></h4>
-                                                    <input type="range" min="0" max="10" name="value"
-                                                        value="{{ old('value') }}" class="slider" id="myRange">
-                                                    <div class="sliderticks">
-                                                        <p>ไม่มีเลย</p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p>นิดหน่อย</p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p>มาก</p>
-                                                        <p></p>
-                                                        <p>มากที่สุด</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <hr>
-
-                                            <div class="col-md-2 mx-auto py-5">
-                                                <h1>test.test</h1>
-                                            </div>
-                                            <div class="col-md-10 mx-auto py-5">
-                                                <div class="slidecontainer py-5">
-                                                    <h4 for="customRange2">ระดับความรู้สึก: <label for=""
-                                                            id="demo2" style="font-weight:bold;color:red"></label></h4>
-                                                    <input type="range" min="0" max="10" name="value"
-                                                        value="{{ old('value') }}" class="slider" id="myRange2">
-                                                    <div class="sliderticks">
-                                                        <p>ไม่มีเลย</p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p>นิดหน่อย</p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p>มาก</p>
-                                                        <p></p>
-                                                        <p>มากที่สุด</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <hr>
-
-                                            <div class="col-md-2 mx-auto py-5">
-                                                <h1>test.test</h1>
-                                            </div>
-                                            <div class="col-md-10 mx-auto py-5">
-                                                <div class="slidecontainer py-5">
-                                                    <h4 for="customRange2">ระดับความรู้สึก: <label for=""
-                                                            id="demo3" style="font-weight:bold;color:red"></label></h4>
-                                                    <input type="range" min="0" max="10" name="value"
-                                                        value="{{ old('value') }}" class="slider" id="myRange3">
-                                                    <div class="sliderticks">
-                                                        <p>ไม่มีเลย</p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p>นิดหน่อย</p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p>มาก</p>
-                                                        <p></p>
-                                                        <p>มากที่สุด</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <hr>
-
-                                            <div class="col-md-2 mx-auto py-5">
-                                                <h1>test.test</h1>
-                                            </div>
-                                            <div class="col-md-10 mx-auto py-5">
-                                                <div class="slidecontainer py-5">
-                                                    <h4 for="customRange2">ระดับความรู้สึก: <label for=""
-                                                            id="demo4" style="font-weight:bold;color:red"></label></h4>
-                                                    <input type="range" min="0" max="10" name="value"
-                                                        value="{{ old('value') }}" class="slider" id="myRange4">
-                                                    <div class="sliderticks">
-                                                        <p>ไม่มีเลย</p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p>นิดหน่อย</p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p>มาก</p>
-                                                        <p></p>
-                                                        <p>มากที่สุด</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <hr>
-
-                                            <div class="col-md-2 mx-auto py-5">
-                                                <h1>test.test</h1>
-                                            </div>
-                                            <div class="col-md-10 mx-auto py-5">
-                                                <div class="slidecontainer py-5">
-                                                    <h4 for="customRange2">ระดับความรู้สึก: <label for=""
-                                                            id="demo5" style="font-weight:bold;color:red"></label></h4>
-                                                    <input type="range" min="0" max="10" name="value"
-                                                        value="{{ old('value') }}" class="slider" id="myRange5">
-                                                    <div class="sliderticks">
-                                                        <p>ไม่มีเลย</p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p>นิดหน่อย</p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p>มาก</p>
-                                                        <p></p>
-                                                        <p>มากที่สุด</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div> --}}
 
                                 </form>
                                 <br>
