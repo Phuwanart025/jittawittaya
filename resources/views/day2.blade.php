@@ -324,7 +324,7 @@
                                     </div>
 
                                     {{-- Content4 --}}
-                                    <div class="mySlides"></div>
+                                    <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
