@@ -211,7 +211,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio" value="สีเขียว"
                                                         name="flexRadioDefault" id="color_feel_today3">
-                                                    <img src="images/emu/emu2.png" width="100" height="100">
+                                                    <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
                                                     </label>
@@ -224,7 +224,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
                                                         name="flexRadioDefault" id="color_feel_today4">
-                                                    <img src="images/emu/emu3.png" width="100" height="100">
+                                                    <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
                                                     </label>
@@ -324,7 +324,7 @@
                                     </div>
 
                                     {{-- Content4 --}}
-                                    <div class="mySlides">
+                                    <div class="mySlides"></div>
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -345,207 +345,218 @@
                                         </div>
 
 
-                                        <h3 class="text-center" for="customRange2">
+                                        <h3 class="text-center py-5" for="customRange2">
                                             เมื่อคุณรู้สึกโกรธร่างกายของคุณมีอะไรเกิดขึ้นบ้าง:</h3>
                                         <div class="row">
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio"
-                                                        value="หน้าแดง" name="feel_body1" id="feel_body1" checked>
+                                                        value="หน้าแดง" name="feel_body1" id="feel_body1">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         หน้าแดง
                                                     </label>
                                                 </div>
                                             </div>
-                                            <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio"
-                                                        value="หน้าซีด" name="feel_body1" id="feel_body1" checked>
+                                                        value="หน้าซีด" name="feel_body1" id="feel_body1">
                                                     <label class="form-check-label" for="color_feel_today2">
                                                         หน้าซีด
                                                     </label>
                                                 </div>
                                             </div>
-                                            <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio"
-                                                        value="หายใจช้า2" name="feel_body2" id="feel_body3" checked>
+                                                        value="หายใจช้า2" name="feel_body2" id="feel_body3">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         หายใจช้า
                                                     </label>
                                                 </div>
 
                                             </div>
-                                            <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio"
-                                                        value=" หายใจเร็ว" name="feel_body2" id="feel_body4" checked>
+                                                        value=" หายใจเร็ว" name="feel_body2" id="feel_body4">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         หายใจเร็ว
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio"
                                                         value="กล้ามเนื้อผ่อนคลาย" name="feel_body3" id="feel_body5"
-                                                        checked>
+                                                    >
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         กล้ามเนื้อผ่อนคลาย
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio"
                                                         value="กล้ามเนื้อเกร็ง" name="feel_body3" id="feel_body6"
-                                                        checked>
+                                                    >
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         กล้ามเนื้อเกร็ง
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio"
-                                                        value="กำมือแน่น" name="feel_body4" id="feel_body7" checked>
+                                                        value="กำมือแน่น" name="feel_body4" id="feel_body7">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         กำมือแน่น
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio"
                                                         value="กำมือขึ้นแล้วหมุนๆ" name="feel_body4" id="feel_body8"
-                                                        checked>
+                                                    >
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         กำมือขึ้นแล้วหมุนๆ
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio"
-                                                        value="ตัวร้อน" name="feel_body5" id="feel_body9" checked>
+                                                        value="ตัวร้อน" name="feel_body5" id="feel_body9">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ตัวร้อน
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio"
-                                                        value="ตัวเย็น" name="feel_body5" id="feel_body10" checked>
+                                                        value="ตัวเย็น" name="feel_body5" id="feel_body10">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ตัวเย็น
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio"
-                                                        value="เหงื่อไม่ออก" name="feel_body6" id="feel_body11" checked>
+                                                        value="เหงื่อไม่ออก" name="feel_body6" id="feel_body11">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         เหงื่อไม่ออก
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio"
-                                                        value="เหงื่อ ออก" name="feel_body6" id="feel_body12" checked>
+                                                        value="เหงื่อ ออก" name="feel_body6" id="feel_body12">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         เหงื่อ ออก
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio"
                                                         value="รู้สึกร้อนบนใบหน้า" name="feel_body7" id="feel_body13"
-                                                        checked>
+                                                    >
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         รู้สึกร้อนบนใบหน้า
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio"
                                                         value="รู้สึกเย็นบนใบหน้า" name="feel_body7" id="feel_body14"
-                                                        checked>
+                                                    >
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         รู้สึกเย็นบนใบหน้า
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio"
-                                                        value="คิ้วขมวด" name="feel_body8" id="feel_body15" checked>
+                                                        value="คิ้วขมวด" name="feel_body8" id="feel_body15">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         คิ้วขมวด
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio"
                                                         value="คิ้วโก่งเป็นคันศร " name="feel_body8" id="feel_body16"
-                                                        checked>
+                                                    >
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         คิ้วโก่งเป็นคันศร
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio"
-                                                        value="กัดฟัน" name="feel_body9" id="feel_body17" checked>
+                                                        value="กัดฟัน" name="feel_body9" id="feel_body17">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         กัดฟัน
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio"
-                                                        value="ยิงฝัน " name="feel_body9" id="feel_body18" checked>
+                                                        value="ยิงฝัน " name="feel_body9" id="feel_body18">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ยิงฟัน
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio"
                                                         value="ลมออกทวารหนัก" name="feel_body10" id="feel_body19"
-                                                        checked>
+                                                    >
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ลมออกทวารหนัก
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mt-3">
+
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio"
-                                                        value="ลมออกหู" name="feel_body10" id="feel_body20" checked>
+                                                        value="ลมออกหู" name="feel_body10" id="feel_body20">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ลมออกหู
                                                     </label>
                                                 </div>
                                             </div>
 
-
-                                            <br><br><br><br>
-                                            <hr>
+                                            <hr class="mt-3">
 
                                         </div>
                                     </div>
@@ -572,7 +583,7 @@
                                             </h1>
                                         </div>
 
-                                        <h1 class="text-center py-5">...</h1>
+                                        <h1 class="text-center py-5"></h1>
                                         <img class="img-fluid rounded mx-auto d-block" src="images/image6.jpg"
                                             alt="" width="800" height="800">
 
