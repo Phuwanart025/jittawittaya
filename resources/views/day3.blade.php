@@ -132,6 +132,25 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 600px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
 </style>
 
 @section('content')
@@ -174,48 +193,50 @@
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1"
-                                                        checked>
+                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
+                                                    <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
-                                                        สีเหลือง = ความสุข
+                                                        ความสุข
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2" checked>
+                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                    <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
-                                                        สีแดง = ความโกรธ
+                                                        ความโกรธ
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3"
-                                                        checked>
+                                                    <input class="form-check-input bg-info" type="radio" value="สีเขียว"
+                                                        name="flexRadioDefault" id="color_feel_today3">
+                                                    <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
-                                                        สีเขียว = ความกลัว
+                                                        ความกลัว
                                                     </label>
                                                 </div>
 
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4" checked>
+                                                        name="flexRadioDefault" id="color_feel_today4">
+                                                    <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
-                                                        สีฟ้า = ความเศร้า
+                                                        ความเศร้า
                                                     </label>
                                                 </div>
                                             </div>
@@ -261,6 +282,234 @@
                                             </h1>
                                         </div>
 
+
+                                        <h2 class="text-center py-5">นิทานเรื่องนี้ไม่มีปฏิหาริย์...</h2>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/1.jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/2.jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/3.jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/4.jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/5.jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/6.jpg" style="width:100%">
+                                        </div>
+                                        <p class="py-3">ขอบคุณนิทานจาก: คุณสโรชา กิตติสิริพันธุ์</p>
+                                        <hr>
+                                        <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                    </div>
+
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY3</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row py-5 text-center">
+                                            <div class="col-md-12">
+                                                <h2></h2>ร่างกายของเราเป็นอย่างไร เมื่อเกิดอาการรู้สึกกลัว...</h2>
+                                                <img class="img-fluid rounded mx-auto d-block" src="images/image7.jpg"
+                                                    alt="" width="800" height="800">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- Content4 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY3</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="py-5 text-center">
+                                            <h3>เมื่อเกิดเหตุการณ์ต่างๆ และรู้สึกกลัว คุณมีระดับอาการอย่างไร...</h3>
+                                            {{-- <img class="img-fluid rounded mx-auto d-block" src="images/image7.jpg"
+                                                    alt="" width="800" height="800"> --}}
+                                            <div class="row py-5">
+                                                <div class="col-md-4 mt-3">
+                                                    <h3>อาการปวดหัว</h3>
+                                                </div>
+                                                <div class="col-md-8 mt-3">
+                                                    <div class="slidecontainer">
+                                                        <h4 class="text-start" for="customRange2">ระดับอาการ: <label
+                                                                for="" id="demo2"
+                                                                style="font-weight:bold;color:red"></label></h4>
+                                                        <input type="range" min="0" max="10"
+                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            id="myRange2">
+                                                        <div class="sliderticks">
+                                                            <p>0:น้อย</p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p>10:มาก</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row py-5">
+                                                <div class="col-md-4 mt-3">
+                                                    <h3>ใจเต้น</h3>
+                                                </div>
+                                                <div class="col-md-8 mt-3">
+                                                    <div class="slidecontainer">
+                                                        <h4 class="text-start" for="customRange2">ระดับอาการ: <label
+                                                                for="" id="demo3"
+                                                                style="font-weight:bold;color:red"></label></h4>
+                                                        <input type="range" min="0" max="10"
+                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            id="myRange3">
+                                                        <div class="sliderticks">
+                                                            <p>0:น้อย</p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p>10:มาก</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row py-5">
+                                                <div class="col-md-4 mt-3">
+                                                    <h3>ขาสั่น</h3>
+                                                </div>
+                                                <div class="col-md-8 mt-3">
+                                                    <div class="slidecontainer">
+                                                        <h4 class="text-start" for="customRange2">ระดับอาการ: <label
+                                                                for="" id="demo4"
+                                                                style="font-weight:bold;color:red"></label></h4>
+                                                        <input type="range" min="0" max="10"
+                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            id="myRange4">
+                                                        <div class="sliderticks">
+                                                            <p>0:น้อย</p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p>10:มาก</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    {{-- Content5 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY3</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="py-5 text-center">
+                                            <div class="py-3">
+                                                <h3>มาฝึกผ่อนคลายกล้ามเนื้อกันเถอะ...</h3>
+                                                <h4>(PROGRESSIVE MUSCLE RELAXATION)</h4>
+                                                {{-- <img class="img-fluid rounded mx-auto d-block" src="images/image7.jpg"
+                                                alt="" width="350" height="350"> --}}
+                                            </div>
+
+                                            <div class="ratio ratio-16x9 py-2">
+                                                <iframe src="https://www.youtube.com/embed/YaJlJ6MroNE"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreenn></iframe>
+                                            </div>
+
+                                            <p class="py-3">ขอบคุณคลิปจาก:<a target="_blank"
+                                                    href="https://www.youtube.com/watch?v=YaJlJ6MroNE">
+                                                    กรมสุขภาพจิต</a></p>
+                                            {{-- <a class="btn btn-success " href="https://www.youtube.com/watch?v=YaJlJ6MroNE"
+                                                target="_blank">คลิก</a> --}}
+                                        </div>
+                                    </div>
+
+                                    {{-- Content --}}
+                                    {{-- <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY3</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
                                         <div class="text-center py-5">
                                             <h2>รู้ทันกาย รู้ทันใจ รู้ทันความคิดในชีวิตประจำวัน...</h2>
                                             <h3>(Daili thought record)</h3>
@@ -276,7 +525,8 @@
                                             <div class="row mb-3">
                                                 <div class="col">
                                                     <label for="">สถานการณ์: </label>
-                                                    <input type="text" class="form-control" placeholder="สถานการณ์...">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="สถานการณ์...">
                                                 </div>
                                                 <div class="col">
                                                     <div class="slidecontainer">
@@ -320,10 +570,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
-                                    {{-- Content3 --}}
-                                    <div class="mySlides">
+                                    {{-- Content --}}
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -347,9 +597,9 @@
                                             <div class="col-md-12">
                                                 <h1>เกมบำบัดจิตใจ...</h1>
                                                 <img class="img-fluid rounded mx-auto d-block"
-                                                    src="images/tab/สะพานบ๊อบ.jpg"
-                                                    alt="" width="550" height="550">
-                                              <br>
+                                                    src="images/tab/สะพานบ๊อบ.jpg" alt="" width="550"
+                                                    height="550">
+                                                <br>
                                                 <textarea name="radio" id="" class="form-control mx-auto" rows="6"
                                                     placeholder="ฟังเพลงแล้วได้ข้อคิดอะไรบ้าง..."></textarea>
 
@@ -362,8 +612,8 @@
                                             </div>
                                         </div>
 
-                                        
-                                    </div>
+
+                                    </div> --}}
 
                                 </form>
                                 <br>
@@ -380,6 +630,8 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
                         </div>
 
                     </div>
@@ -454,6 +706,17 @@
             // Update the current slider value (each time you drag the slider handle)
             slider3.oninput = function() {
                 output3.innerHTML = this.value;
+            }
+        </script>
+
+        <script>
+            var slider4 = document.getElementById("myRange4");
+            var output4 = document.getElementById("demo4");
+            output4.innerHTML = slider4.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider4.oninput = function() {
+                output4.innerHTML = this.value;
             }
         </script>
 
