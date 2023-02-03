@@ -322,7 +322,7 @@
 
                                         <div class="row py-5 text-center">
                                             <div class="col-md-12">
-                                                <h2></h2>ร่างกายของเราเป็นอย่างไร เมื่อเกิดอาการรู้สึกกลัว...</h2>
+                                                <h2>ร่างกายของเราเป็นอย่างไร เมื่อเกิดอาการรู้สึกกลัว...</h2>
                                                 <img class="img-fluid rounded mx-auto d-block" src="images/image7.jpg"
                                                     alt="" width="800" height="800">
 

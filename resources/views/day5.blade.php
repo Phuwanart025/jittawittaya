@@ -1,5 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <style>
     .mySlides {
         display: none
@@ -132,6 +134,14 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 600px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
 </style>
 
 @section('content')
@@ -174,48 +184,50 @@
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1"
-                                                        checked>
+                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
+                                                    <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
-                                                        สีเหลือง = ความสุข
+                                                        ความสุข
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2" checked>
+                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                    <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
-                                                        สีแดง = ความโกรธ
+                                                        ความโกรธ
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3"
-                                                        checked>
+                                                    <input class="form-check-input bg-success" type="radio" value="สีเขียว"
+                                                        name="flexRadioDefault" id="color_feel_today3">
+                                                    <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
-                                                        สีเขียว = ความกลัว
+                                                        ความกลัว
                                                     </label>
                                                 </div>
 
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4" checked>
+                                                        name="flexRadioDefault" id="color_feel_today4">
+                                                    <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
-                                                        สีฟ้า = ความเศร้า
+                                                        ความเศร้า
                                                     </label>
                                                 </div>
                                             </div>
@@ -240,6 +252,7 @@
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
 
+
                                     {{-- Content2 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
@@ -261,16 +274,102 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>วันสบายๆ...</h2>
-                                            <h3>ไปฟังเพลงจากปุ่มด้านล่างนี้กันเล๊ย...</h3>
-                                            <div class="py-2">
-                                                <a class="btn btn-success "
-                                                    href="https://www.youtube.com/watch?v=P5VFTPL3Er4"
-                                                    target="_blank">ฟังเพลง</a>
+
+                                        <h3 class="py-3" for="customRange2">อารมณ์คืออะไร :</h3>
+                                        <div class="row">
+                                            <div class="w3-center">
+                                                <span class="mt-2 badge rounded-pill bg-info">ฉันดูไม่ดี</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">เศร้า</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ปวดหัว</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">เหงา</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">เพื่อนไม่ชอบฉัน</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ไม่อยากไปใหน</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ไม่อยากลุกจากที่นอน</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">เก็บตัว</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ขี้ลืม</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ร้องให้</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ฉันผิดอีกแล้ว</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">กินน้อยลง</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ไม่เก่ง</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">เครียด</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ไม่มีสมาธิ</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">เสียใจ</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ไร้ค่า</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ไม่มีอนาคต</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">เพลีย</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ไม่มีแรง</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ไม่อยากไปเที่ยว</span>
+                                            </div>
+                                           
+                                            <div class="col-md-3 py-5 w3-center">
+                                                <h4><span class="badge rounded-pill bg-danger"
+                                                        for="customRange2">สีแดง</span></h4>
+                                                        <q>เติมคำที่มีคำเกี่ยวกับอารมณ์</q>
+                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
+                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
+                                            </div>
+
+                                            <div class="col-md-3 py-5  w3-center">
+                                                <h4><span class="badge rounded-pill bg-primary"
+                                                        for="customRange2">สีฟ้า</span></h4>
+                                                        <q>เติมคำที่มีคำเกี่ยวกับความคิด</q>
+                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
+                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
+                                            </div>
+                                            <div class="col-md-3 py-5  w3-center">
+                                                <h4><span class="badge rounded-pill bg-success"
+                                                        for="customRange2">สีเขียว</span></h4>
+                                                        <q>เติมคำที่มีคำเกี่ยวกับพฤติกรรม</q>
+                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
+                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
+                                            </div>
+                                            <div class="col-md-3 py-5 w3-center">
+                                                <h4><span class="badge rounded-pill bg-warning"
+                                                        for="customRange2">สีเหลือง</span></h4>
+                                                        <q>เติมคำที่มีคำเกี่ยวกับอาการทางกาย</q>
+                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
+                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
+                                            </div>
+                                        </div>
+
+                                        <hr>
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="mt-3 btn btn-danger btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            เฉลย
+                                        </button><span class="text-red"> ***โปรดทำก่อนกดดูเฉลยนะ</span>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h3 class="modal-title" id="exampleModalLabel">เฉลย
+                                                            อารมณ์คืออะไร???
+                                                        </h3>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h4>ในส่วนที่เป็นอารมรณ์นั้นจะมี...</h4>
+                                                        <p>ดีใจ, เบื่อ, ฟิน, เซ็ง, โกรธ, สนุก, เงิบ</p>
+                                                        <hr>
+                                                        <h4>ในส่วนที่เป็นความคิดจะมี...</h4>
+                                                        <p> คิดเลข, ปวดท้อง, กลัว</p>
+                                                        <hr>
+                                                        <h4>และในส่วนที่เป็นการกระทำ...</h4>
+                                                        <p> สวดมนต์, ต่อยเพื่อน, เตะบอล</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-bs-dismiss="modal">ปิด</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
 
                                     {{-- Content3 --}}
                                     <div class="mySlides">
@@ -294,7 +393,12 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <h2>ลองมองสิ่งดีดีรอบตัวจากเรื่องแย่งๆ...</h2>
+                                            <h2>ความรู้ส่งท้าย.....</h2>
+                                            <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                                <img class="mySlides1" src="images/image.jpg" style="width:100%">
+                                                <img class="mySlides1" src="images/image1.jpg" style="width:100%">
+                                            
+                                            </div>
                                         </div>
 
                                         <div class="d-grid gap-2 col-4 mx-auto py-5">
