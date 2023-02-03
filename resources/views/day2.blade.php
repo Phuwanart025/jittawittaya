@@ -209,7 +209,7 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-info" type="radio" value="สีเขียว"
+                                                    <input class="form-check-input bg-success" type="radio" value="สีเขียว"
                                                         name="flexRadioDefault" id="color_feel_today3">
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
