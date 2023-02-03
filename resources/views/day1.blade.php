@@ -223,7 +223,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-info" type="radio" value="สีเขียว"
                                                         name="flexRadioDefault" id="color_feel_today3">
-                                                    <img src="images/emu/emu2.png" width="100" height="100">
+                                                    <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
                                                     </label>
@@ -236,7 +236,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
                                                         name="flexRadioDefault" id="color_feel_today4">
-                                                    <img src="images/emu/emu3.png" width="100" height="100">
+                                                    <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
                                                     </label>
@@ -263,8 +263,8 @@
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
 
-                                     {{-- Content2 --}}
-                                     <div class="mySlides">
+                                    {{-- Content2 --}}
+                                    <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -285,53 +285,83 @@
                                         </div>
 
 
-                                        <h3 for="customRange2">อารมณ์คืออะไร :</h3>
+                                        <h3 class="py-3" for="customRange2">อารมณ์คืออะไร :</h3>
                                         <div class="row">
                                             <div class="col-md-3 py-2">
-                                                <q class="badge rounded-pill bg-info">ดีใจ</q>
-                                                <q class="badge rounded-pill bg-info">เบื่อ</q>
-                                                <q class="badge rounded-pill bg-info">สวดมนต์ </q>
-                                                <q class="badge rounded-pill bg-info">ฟิน</q>
-                                                <q class="badge rounded-pill bg-info">ต่อยเพื่อน</q>
-                                                <q class="badge rounded-pill bg-info">เซ็ง</q>
-                                                <q class="badge rounded-pill bg-info">เตะบอล</q>
-                                                <q class="badge rounded-pill bg-info">ปวดท้อง</q>
-                                                <q class="badge rounded-pill bg-info">โกรธ</q>
-                                                <q class="badge rounded-pill bg-info">สนุก</q>
-                                                <q class="badge rounded-pill bg-info">กลัว</q>
-                                                <q class="badge rounded-pill bg-info">คิดเลข</q>
-
-                                                <q class="badge rounded-pill bg-info">เงิบ</q>
-                                                <q class="badge rounded-pill bg-info">ให้อาหารหมา</q>
+                                                <span class="mt-2 badge rounded-pill bg-info">ดีใจ</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">เบื่อ</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">สวดมนต์ </span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ฟิน</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ต่อยเพื่อน</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">เซ็ง</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">เตะบอล</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ปวดท้อง</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">โกรธ</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">สนุก</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">กลัว</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">คิดเลข</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">เงิบ</span>
+                                                <span class="mt-2 badge rounded-pill bg-info">ให้อาหารหมา</span>
                                             </div>
-
-
 
                                             <div class="col-md-3 py-2 w3-center">
-                                                <h6 class="badge rounded-pill bg-info" for="customRange2">อารมรณ์</h6>
+                                                <h4><span class="badge rounded-pill bg-info"
+                                                        for="customRange2">อารมรณ์</span></h4>
                                                 <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                                     placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
                                             </div>
+
                                             <div class="col-md-3 py-2  w3-center">
-                                                <h6 class="badge rounded-pill bg-info" for="customRange2">ความคิด</h6>
+                                                <h4><span class="badge rounded-pill bg-info"
+                                                        for="customRange2">ความคิด</span></h4>
                                                 <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                                     placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
                                             </div>
-                                            <div class="col-md-3 py-2  w3-center">
-                                                <h6 class="badge rounded-pill bg-info" for="customRange2">การกระทำ</h6>
+
+                                            <div class="col-md-3 py-2 w3-center">
+                                                <h4><span class="badge rounded-pill bg-info"
+                                                        for="customRange2">การกระทำ</span></h4>
                                                 <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                                     placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
                                             </div>
                                         </div>
+
                                         <hr>
 
-                                        <button type="button" class="btn btn-danger" data-bs-toggle="popover"
-                                            title="เฉลย"
-                                            data-bs-content="ในส่วนอารมรณ์นั้นจะมี  ดีใจ,เบื่อ,ฟิน,เซ็ง,โกรธ,สนุก,เงิบ /
-                                        และในส่วนความคิดจะมี  คิดเลข,ปวดท้อง,กลัว /
-                                        และในส่วนการกระทำ สวดมนต์,ต่อยเพื่อน,เตะบอล /">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="mt-3 btn btn-danger btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
                                             เฉลย
-                                        </button> <q class="text-red">***โปรดทำก่อนกดดูเฉลยนะ***</q>
+                                        </button><span class="text-red"> ***โปรดทำก่อนกดดูเฉลยนะ</span>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h3 class="modal-title" id="exampleModalLabel">เฉลย
+                                                            อารมณ์คืออะไร???
+                                                        </h3>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h4>ในส่วนที่เป็นอารมรณ์นั้นจะมี...</h4>
+                                                        <p>ดีใจ, เบื่อ, ฟิน, เซ็ง, โกรธ, สนุก, เงิบ</p>
+                                                        <hr>
+                                                        <h4>ในส่วนที่เป็นความคิดจะมี...</h4>
+                                                        <p> คิดเลข, ปวดท้อง, กลัว</p>
+                                                        <hr>
+                                                        <h4>และในส่วนที่เป็นการกระทำ...</h4>
+                                                        <p> สวดมนต์, ต่อยเพื่อน, เตะบอล</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-bs-dismiss="modal">ปิด</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     {{-- Content3 --}}
