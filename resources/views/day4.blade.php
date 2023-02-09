@@ -360,7 +360,9 @@
                                                     <br><br>
                                                     <div class="row py-5 text-center">
                                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/0UYoV6KzcCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                        <q class="py-3">เครดิตคือ E-LIBRARY กรมสุขภาพจิต</q>
+                                                        <p class="py-3">ขอบคุณคลิปจาก:<a target="_blank"
+                                                            href="https://www.youtube.com/embed/0UYoV6KzcCg">
+                                                            กรมสุขภาพจิต</a></p>
                                                     </div>
                                                 </div>
                                             </div>
