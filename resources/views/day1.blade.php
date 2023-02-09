@@ -1,6 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <style>
     .mySlides {
@@ -143,6 +144,84 @@
         overflow: auto;
         overflow-x: hidden;
     }
+
+    /* checkbox */
+    .container {
+        max-width: 640px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+    }
+
+    ul.ks-cboxtags {
+        list-style: none;
+        padding: 20px;
+    }
+
+    ul.ks-cboxtags li {
+        display: inline;
+    }
+
+    ul.ks-cboxtags li label {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, .9);
+        border: 2px solid rgba(139, 139, 139, .3);
+        color: #adadad;
+        border-radius: 25px;
+        white-space: nowrap;
+        margin: 3px 0px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: all .2s;
+    }
+
+    ul.ks-cboxtags li label {
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+    ul.ks-cboxtags li label::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 12px;
+        padding: 2px 6px 2px 2px;
+        content: "\f067";
+        transition: transform .3s ease-in-out;
+    }
+
+    ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
+        content: "\f00c";
+        transform: rotate(-360deg);
+        transition: transform .3s ease-in-out;
+    }
+
+    ul.ks-cboxtags li input[type="checkbox"]:checked+label {
+        border: 2px solid #1bdbf8;
+        background-color: #12bbd4;
+        color: #fff;
+        transition: all .2s;
+    }
+
+    ul.ks-cboxtags li input[type="checkbox"] {
+        display: absolute;
+    }
+
+    ul.ks-cboxtags li input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+    }
+
+    ul.ks-cboxtags li input[type="checkbox"]:focus+label {
+        border: 2px solid #e9a1ff;
+    }
 </style>
 
 @section('content')
@@ -221,8 +300,8 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio" value="สีเขียว"
-                                                        name="flexRadioDefault" id="color_feel_today3">
+                                                    <input class="form-check-input bg-success" type="radio"
+                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3">
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -284,9 +363,70 @@
                                             </h1>
                                         </div>
 
+                                        <h3 class="mt-5" for="customRange2">อารมณ์คืออะไร :</h3>
 
-                                        <h3 class="py-3" for="customRange2">อารมณ์คืออะไร :</h3>
-                                        <div class="row">
+                                        <div class="container mb-5">
+                                            <div class="row">
+                                                <div class="col-sm-6 mt-2 mx-auto">
+                                                    <ul class="ks-cboxtags">
+                                                        <li><input type="checkbox" id="1" name="v4[]"
+                                                                value="ดีใจ"><label for="1">ดีใจ</label></li>
+
+                                                        <li><input type="checkbox" id="2" name="v4[]"
+                                                                value="เบื่อ"><label for="2">เบื่อ</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="3" name="v4[]"
+                                                                value="สวดมนต์"><label for="3">สวดมนต์</label></li>
+
+                                                        <li><input type="checkbox" id="4" name="v4[]"
+                                                                value="ฟิน"><label for="4">ฟิน</label></li>
+
+                                                        <li><input type="checkbox" id="5" name="v4[]"
+                                                                value="ต่อยเพื่อน"><label
+                                                                for="5">ต่อยเพื่อน</label></li>
+
+                                                        <li><input type="checkbox" id="6" name="v4[]"
+                                                                value="เซ็ง"><label for="6">เซ็ง</label></li>
+
+                                                        <li><input type="checkbox" id="7" name="v4[]"
+                                                                value="เตะบอล"><label for="7">เตะบอล</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="8" name="v4[]"
+                                                                value="ปวดท้อง"><label for="8">ปวดท้อง</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="9" name="v4[]"
+                                                                value="โกรธ"><label for="9">โกรธ</label></li>
+
+                                                        <li><input type="checkbox" id="10" name="v4[]"
+                                                                value="สนุก"><label for="10">สนุก</label></li>
+
+                                                        <li class="ks-selected"><input type="checkbox" id="11"
+                                                                name="v4[]" value="กลัว"><label
+                                                                for="11">กลัว</label></li>
+
+                                                        <li><input type="checkbox" id="12" name="v4[]"
+                                                                value="คิดเลข"><label for="12">คิดเลข</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="13" name="v4[]"
+                                                                value="เงิบ"><label for="13">เงิบ</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="14" name="v4[]"
+                                                                value="ให้อาหารหมา"><label
+                                                                for="14">ให้อาหารหมา</label></li>
+
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        {{-- <div class="row">
                                             <div class="col-md-3 py-2">
                                                 <span class="mt-2 badge rounded-pill bg-info">ดีใจ</span>
                                                 <span class="mt-2 badge rounded-pill bg-info">เบื่อ</span>
@@ -311,22 +451,8 @@
                                                     placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
                                             </div>
 
-                                            <div class="col-md-3 py-2  w3-center">
-                                                <h4><span class="badge rounded-pill bg-info"
-                                                        for="customRange2">ความคิด</span></h4>
-                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
-                                            </div>
+                                        </div> --}}
 
-                                            <div class="col-md-3 py-2 w3-center">
-                                                <h4><span class="badge rounded-pill bg-info"
-                                                        for="customRange2">การกระทำ</span></h4>
-                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
-                                            </div>
-                                        </div>
-
-                                        <hr>
 
                                         <!-- Button trigger modal -->
                                         <button type="button" class="mt-3 btn btn-danger btn-sm" data-bs-toggle="modal"
@@ -339,24 +465,40 @@
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h3 class="modal-title" id="exampleModalLabel">เฉลย
-                                                            อารมณ์คืออะไร???
+                                                        <h3 class="modal-title" id="exampleModalLabel"><i
+                                                                class="fas fa-comment-dots"> เฉลยอารมณ์คืออะไร?</i>
                                                         </h3>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h4>ในส่วนที่เป็นอารมรณ์นั้นจะมี...</h4>
-                                                        <p>ดีใจ, เบื่อ, ฟิน, เซ็ง, โกรธ, สนุก, เงิบ</p>
-                                                        <hr>
-                                                        <h4>ในส่วนที่เป็นความคิดจะมี...</h4>
-                                                        <p> คิดเลข, ปวดท้อง, กลัว</p>
-                                                        <hr>
-                                                        <h4>และในส่วนที่เป็นการกระทำ...</h4>
-                                                        <p> สวดมนต์, ต่อยเพื่อน, เตะบอล</p>
+                                                        <div class="row py-3">
+                                                            <div class="col-md-4">
+                                                                <img src="https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-26-181_512.gif"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <h3><span
+                                                                        class="badge bg-info">ในส่วนที่เป็นอารมรณ์นั้นจะมี...</span>
+                                                                </h3>
+                                                                <div class="row py-3">
+                                                                    <div class="col-6 col-sm-6">
+                                                                        <p><i class="fas fa-check-circle"> ดีใจ</i></p>
+                                                                        <p><i class="fas fa-check-circle"> เบื่อ</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ฟิน</i></p>
+                                                                        <p><i class="fas fa-check-circle"> เซ็ง</i></p>
+                                                                    </div>
+                                                                    <div class="col-6 col-sm-6">
+                                                                        <p><i class="fas fa-check-circle"> โกรธ</i></p>
+                                                                        <p><i class="fas fa-check-circle"> สนุก</i></p>
+                                                                        <p><i class="fas fa-check-circle"> เงิบ</i></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-danger"
+                                                        <button type="button" class="btn btn-danger btn-sm"
                                                             data-bs-dismiss="modal">ปิด</button>
                                                     </div>
                                                 </div>
@@ -420,11 +562,17 @@
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <img class="mySlides1" src="images/tab/01(3).jpg" style="width:100%">
                                             <img class="mySlides1" src="images/tab/01(4).jpg" style="width:100%">
+
+                                        </div>
+
+                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
 
                                     </div>
 
-                                    {{-- Content3 --}}
+                                    {{-- Content4 --}}
                                     {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -669,7 +817,7 @@
             })
         </script>
 
-        <script>
+        {{-- <script>
             const correctAnswer = "option1";
 
             function disableCheckbox() {
@@ -714,7 +862,7 @@
                     document.getElementById("result2").innerHTML = "คำตอบ: คุณตอบผิด";
                 }
             }
-        </script>
+        </script> --}}
 
         </html>
     @endsection

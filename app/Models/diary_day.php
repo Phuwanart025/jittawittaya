@@ -12,9 +12,9 @@ class diary_day extends Model
         'sensation_level',
         'detail_t1',
         'story_d1',
-        'thoughts',
-        'emotions',
-        'rounds_id',
+        // 'thoughts',
+        // 'emotions',
+        // 'rounds_id',
     ];
     public $timestamps = false;
     protected $table = 'day1';

@@ -487,6 +487,11 @@
                                             {{-- <a class="btn btn-success " href="https://www.youtube.com/watch?v=YaJlJ6MroNE"
                                                 target="_blank">คลิก</a> --}}
                                         </div>
+
+                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                        </div>
                                     </div>
 
                                     {{-- Content --}}
