@@ -40,7 +40,7 @@ class diary_dayController extends Controller
             $diary->sensation_level = $request->input('value');
             $diary->detail_t1 = $request->v3;
             //
-            $v4 = implode(',', $request->v4);
+            $v4 = implode(',', $request->input('v4'));
             $serialized_v4 = serialize($v4);
             $diary->story_d1 = $serialized_v4;
             // $diary->thoughts = $request->v5;

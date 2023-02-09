@@ -207,6 +207,7 @@
         border: 2px solid #1bdbf8;
         background-color: #12bbd4;
         color: #fff;
+        fo
         transition: all .2s;
     }
 
@@ -222,6 +223,7 @@
     ul.ks-cboxtags li input[type="checkbox"]:focus+label {
         border: 2px solid #e9a1ff;
     }
+
 </style>
 
 @section('content')
@@ -464,10 +466,12 @@
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h3 class="modal-title" id="exampleModalLabel"><i
-                                                                class="fas fa-comment-dots"> เฉลยอารมณ์คืออะไร?</i>
-                                                        </h3>
+                                                    <div class="modal-header bg-primary text-white">
+                                                        <label class="modal-title" id="exampleModalLabel" style="font-size: 24">
+                                                            
+                                                                <i class="fas fa-comment-dots"></i>
+                                                                เฉลยอารมณ์คืออะไร?
+                                                        </label>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
