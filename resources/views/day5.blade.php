@@ -134,6 +134,7 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+
     .my-custom-scrollbar {
         position: relative;
         width: 100%;
@@ -141,6 +142,84 @@
         height: 600px;
         overflow: auto;
         overflow-x: hidden;
+    }
+
+    /* checkbox */
+    .container {
+        max-width: 640px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+    }
+
+    ul.ks-cboxtags {
+        list-style: none;
+        padding: 20px;
+    }
+
+    ul.ks-cboxtags li {
+        display: inline;
+    }
+
+    ul.ks-cboxtags li label {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, .9);
+        border: 2px solid rgba(139, 139, 139, .3);
+        color: #adadad;
+        border-radius: 25px;
+        white-space: nowrap;
+        margin: 3px 0px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: all .2s;
+    }
+
+    ul.ks-cboxtags li label {
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+    ul.ks-cboxtags li label::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 12px;
+        padding: 2px 6px 2px 2px;
+        content: "\f067";
+        transition: transform .3s ease-in-out;
+    }
+
+    ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
+        content: "\f00c";
+        transform: rotate(-360deg);
+        transition: transform .3s ease-in-out;
+    }
+
+    ul.ks-cboxtags li input[type="checkbox"]:checked+label {
+        border: 2px solid #1bdbf8;
+        background-color: #12bbd4;
+        color: #fff;
+        fo transition: all .2s;
+    }
+
+    ul.ks-cboxtags li input[type="checkbox"] {
+        display: absolute;
+    }
+
+    ul.ks-cboxtags li input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+    }
+
+    ul.ks-cboxtags li input[type="checkbox"]:focus+label {
+        border: 2px solid #e9a1ff;
     }
 </style>
 
@@ -210,8 +289,8 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio" value="สีเขียว"
-                                                        name="flexRadioDefault" id="color_feel_today3">
+                                                    <input class="form-check-input bg-success" type="radio"
+                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3">
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -252,7 +331,6 @@
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
 
-
                                     {{-- Content2 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
@@ -274,65 +352,107 @@
                                             </h1>
                                         </div>
 
+                                        <h3 class="mt-5" for="customRange2">ความคิดคืออะไร :</h3>
 
-                                        <h3 class="py-3" for="customRange2">อารมณ์คืออะไร :</h3>
-                                        <div class="row">
-                                            <div class="w3-center">
-                                                <span class="mt-2 badge rounded-pill bg-info">ฉันดูไม่ดี</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">เศร้า</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ปวดหัว</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">เหงา</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">เพื่อนไม่ชอบฉัน</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ไม่อยากไปใหน</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ไม่อยากลุกจากที่นอน</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">เก็บตัว</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ขี้ลืม</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ร้องให้</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ฉันผิดอีกแล้ว</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">กินน้อยลง</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ไม่เก่ง</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">เครียด</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ไม่มีสมาธิ</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">เสียใจ</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ไร้ค่า</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ไม่มีอนาคต</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">เพลีย</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ไม่มีแรง</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ไม่อยากไปเที่ยว</span>
-                                            </div>
-                                           
-                                            <div class="col-md-3 py-5 w3-center">
-                                                <h4><span class="badge rounded-pill bg-danger"
-                                                        for="customRange2">สีแดง</span></h4>
-                                                        <q>เติมคำที่มีคำเกี่ยวกับอารมณ์</q>
-                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
-                                            </div>
+                                        <div class="container mb-5">
+                                            <div class="row">
+                                                <div class="col-sm-6 mt-2 mx-auto">
+                                                    <ul class="ks-cboxtags">
+                                                        <li><input type="checkbox" id="1" name="v4[]"
+                                                                value="ฉันดูไม่ดี"><label
+                                                                for="1">ฉันดูไม่ดี</label>
+                                                        </li>
 
-                                            <div class="col-md-3 py-5  w3-center">
-                                                <h4><span class="badge rounded-pill bg-primary"
-                                                        for="customRange2">สีฟ้า</span></h4>
-                                                        <q>เติมคำที่มีคำเกี่ยวกับความคิด</q>
-                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
-                                            </div>
-                                            <div class="col-md-3 py-5  w3-center">
-                                                <h4><span class="badge rounded-pill bg-success"
-                                                        for="customRange2">สีเขียว</span></h4>
-                                                        <q>เติมคำที่มีคำเกี่ยวกับพฤติกรรม</q>
-                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
-                                            </div>
-                                            <div class="col-md-3 py-5 w3-center">
-                                                <h4><span class="badge rounded-pill bg-warning"
-                                                        for="customRange2">สีเหลือง</span></h4>
-                                                        <q>เติมคำที่มีคำเกี่ยวกับอาการทางกาย</q>
-                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
+                                                        <li><input type="checkbox" id="2" name="v4[]"
+                                                                value="เศร้า"><label for="2">เศร้า</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="3" name="v4[]"
+                                                                value="ปวดหัว"><label for="3">ปวดหัว</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="4" name="v4[]"
+                                                                value="เหงา"><label for="4">เหงา</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="5" name="v4[]"
+                                                                value="เพื่อนไม่ชอบฉัน"><label
+                                                                for="5">เพื่อนไม่ชอบฉัน</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="6" name="v4[]"
+                                                                value="ไม่อยากไปใหน"><label
+                                                                for="6">ไม่อยากไปใหน</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="7" name="v4[]"
+                                                                value="ไม่อยากลุกจากที่นอน"><label
+                                                                for="7">ไม่อยากลุกจากที่นอน</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="8" name="v4[]"
+                                                                value="เก็บตัว"><label for="8">เก็บตัว</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="9" name="v4[]"
+                                                                value="ขี้ลืม"><label for="9">ขี้ลืม</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="10" name="v4[]"
+                                                                value="ร้องให้"><label for="10">ร้องให้</label>
+                                                        </li>
+
+                                                        <li class="ks-selected"><input type="checkbox" id="11"
+                                                                name="v4[]" value="ฉันผิดอีกแล้ว"><label
+                                                                for="11">ฉันผิดอีกแล้ว</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="12" name="v4[]"
+                                                                value="กินน้อยลง"><label for="12">กินน้อยลง</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="13" name="v4[]"
+                                                                value="ไม่เก่ง"><label for="13">ไม่เก่ง</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="14" name="v4[]"
+                                                                value="เครียด"><label for="14">เครียด</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="15" name="v4[]"
+                                                                value="ไม่มีสมาธิ"><label
+                                                                for="15">ไม่มีสมาธิ</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="16" name="v4[]"
+                                                                value="เสียใจ"><label for="16">เสียใจ</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="17" name="v4[]"
+                                                                value="ไร้ค่า"><label for="17">ไร้ค่า</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="18" name="v4[]"
+                                                                value="ไม่มีอนาคต"><label
+                                                                for="18">ไม่มีอนาคต</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="19" name="v4[]"
+                                                                value="เพลีย"><label for="19">เพลีย</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="20" name="v4[]"
+                                                                value="ไม่มีแรง"><label for="20">ไม่มีแรง</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="21" name="v4[]"
+                                                                value="ไม่อยากไปเที่ยว"><label
+                                                                for="21">ไม่อยากไปเที่ยว</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <hr>
 
                                         <!-- Button trigger modal -->
                                         <button type="button" class="mt-3 btn btn-danger btn-sm" data-bs-toggle="modal"
@@ -344,32 +464,46 @@
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h3 class="modal-title" id="exampleModalLabel">เฉลย
-                                                            อารมณ์คืออะไร???
-                                                        </h3>
+                                                    <div class="modal-header bg-primary text-white">
+                                                        <label class="modal-title" id="exampleModalLabel"
+                                                            style="font-size: 24">
+
+                                                            <i class="fas fa-comment-dots"></i>
+                                                            เฉลยความคิดคืออะไร?
+                                                        </label>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <h4>ในส่วนที่เป็นอารมรณ์นั้นจะมี...</h4>
-                                                        <p>ดีใจ, เบื่อ, ฟิน, เซ็ง, โกรธ, สนุก, เงิบ</p>
-                                                        <hr>
-                                                        <h4>ในส่วนที่เป็นความคิดจะมี...</h4>
-                                                        <p> คิดเลข, ปวดท้อง, กลัว</p>
-                                                        <hr>
-                                                        <h4>และในส่วนที่เป็นการกระทำ...</h4>
-                                                        <p> สวดมนต์, ต่อยเพื่อน, เตะบอล</p>
+                                                        <div class="row py-3">
+                                                            <div class="col-md-4">
+                                                                <img src="https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-26-181_512.gif"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <h3><span
+                                                                        class="badge bg-info">ในส่วนที่เป็นความคิดนั้นจะมี...</span>
+                                                                </h3>
+                                                                <div class="row py-3">
+                                                                    <div class="col-6 col-sm-6">
+                                                                        <p><i class="fas fa-check-circle"> คิดเลข</i></p>
+                                                                        <p><i class="fas fa-check-circle"> กลัว</i></p>
+                                                                    </div>
+                                                                    <div class="col-6 col-sm-6">
+                                                                        <p><i class="fas fa-check-circle"> ปวดท้อง</i></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-danger"
+                                                        <button type="button" class="btn btn-danger btn-sm"
                                                             data-bs-dismiss="modal">ปิด</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
 
                                     {{-- Content3 --}}
                                     <div class="mySlides">
@@ -395,22 +529,54 @@
                                         <div class="text-center py-5">
                                             <h2>ความรู้ส่งท้าย.....</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/image.jpg" style="width:100%">
-                                                <img class="mySlides1" src="images/image1.jpg" style="width:100%">
-                                            
+                                                <img class="mySlides1" src="images/day5/05(1).jpg" style="width:100%">
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div class="d-grid gap-2 col-4 mx-auto py-5">
+                                    {{-- Content4 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY5</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <h2 class="text-center py-5">นิทานเรื่องคนขายรองเท้า...</h2>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <img class="mySlides1" src="images/day5/รองเท้า/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day5/รองเท้า/2.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day5/รองเท้า/3.png" style="width:100%">
+                                        </div>
+
+                                        <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
+                                        <hr>
+                                        <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+
+                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
-                                                href="{{ url('/day5') }}">บันทึก</button>
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
                                     </div>
 
                                 </form>
-                                <br>
                                 <!-- Comment Form End -->
+                                <br>
                             </div>
                         </div>
 
@@ -423,13 +589,14 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+        
 
 
         <script>

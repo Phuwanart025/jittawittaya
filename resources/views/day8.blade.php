@@ -132,6 +132,16 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
 </style>
 
 @section('content')
@@ -235,9 +245,13 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="mt-5 mb-2" for="customRange2">เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
+
+                                        <h3 class="mt-5 mb-2" for="customRange2">คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -261,17 +275,59 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>...</h2>
-                                        </div>
+                                        <div class="row py-5 text-center">
 
-                                        <div class="d-grid gap-2 col-4 mx-auto">
-                                            <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
-                                                href="{{ url('/day5') }}">บันทึก</button>
+                                            <h1>กับดักความคิด...</h1>
+                                            <img class="mb-3" src="images/day8/08(1).jpg" style="width:100%">
                                         </div>
-
                                     </div>
+
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY8</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row py-5 text-center">
+
+                                            <h1 class="mb-3">เพลงบำบัดจิตใจ...</h1>
+
+                                            <div class="ratio ratio-16x9 py-3">
+                                                <iframe src="https://www.youtube.com/embed/sv7TVjOq1Fs"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen>
+                                                </iframe>
+                                            </div>
+
+                                            <p class="py-3">ขอบคุณเพลง:<a target="_blank"
+                                                    href="https://www.youtube.com/watch?v=sv7TVjOq1Fs">
+                                                    ครึ่งหนึ่งของชีวิต - แอม เสาวลักษณ์【OFFICIAL MV】</a>
+                                            </p>
+
+                                        </div>
+
+                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                        </div>
+                                    </div>
+
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
@@ -286,12 +342,11 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
         </div>
 
 
