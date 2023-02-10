@@ -278,11 +278,48 @@
 
                                         <div class="text-center py-5">
                                             <h2>เกมส์?...</h2>
+
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-Warning table-highlight">
+                                                    <thead class="thead-Warning">
+                                                        <th>เหตุการณ์ที่เกิดขึ้น</th>
+                                                        <th>ความคิด</th>
+                                                        <th>ความรู้สึก</th>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>สอบไม่ผ่าน</td>
+                                                            <td>ฉันทำอะไรก็ไม่เก่งสักอย่าง</td>
+                                                            <td><input type="text" class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>สอบไม่ผ่าน</td>
+                                                            <td>ครูออกข้อสอบยากเกินไปแล้ว</td>
+                                                            <td><input type="text" class="form-control" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>สอบไม่ผ่าน</td>
+                                                            <td>ฉันจะต้องติดF แน่ๆ</td>
+                                                            <td><input type="text" class="form-control" /></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>สอบไม่ผ่าน</td>
+                                                            <td>ครั้งหน้าฉันจะตั้งใจและอ่านมากขึ้น</td>
+                                                            <td><input type="text" class="form-control" /></td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
                                         </div>
 
                                     </div>
 
-                                    {{-- Content3 --}}
+                                   
+                                    {{-- Content4 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -339,7 +376,7 @@
                 </div>
             </div>
         </div>
-        
+
 
 
         <script>
