@@ -207,8 +207,7 @@
         border: 2px solid #1bdbf8;
         background-color: #12bbd4;
         color: #fff;
-        fo
-        transition: all .2s;
+        fo transition: all .2s;
     }
 
     ul.ks-cboxtags li input[type="checkbox"] {
@@ -223,7 +222,6 @@
     ul.ks-cboxtags li input[type="checkbox"]:focus+label {
         border: 2px solid #e9a1ff;
     }
-
 </style>
 
 @section('content')
@@ -372,24 +370,28 @@
                                                 <div class="col-sm-6 mt-2 mx-auto">
                                                     <ul class="ks-cboxtags">
                                                         <li><input type="checkbox" id="1" name="v4[]"
-                                                                value="ดีใจ"><label for="1">ดีใจ</label></li>
+                                                                value="ดีใจ"><label for="1">ดีใจ</label>
+                                                        </li>
 
                                                         <li><input type="checkbox" id="2" name="v4[]"
                                                                 value="เบื่อ"><label for="2">เบื่อ</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="3" name="v4[]"
-                                                                value="สวดมนต์"><label for="3">สวดมนต์</label></li>
+                                                                value="สวดมนต์"><label for="3">สวดมนต์</label>
+                                                        </li>
 
                                                         <li><input type="checkbox" id="4" name="v4[]"
-                                                                value="ฟิน"><label for="4">ฟิน</label></li>
+                                                                value="ฟิน"><label for="4">ฟิน</label>
+                                                        </li>
 
                                                         <li><input type="checkbox" id="5" name="v4[]"
                                                                 value="ต่อยเพื่อน"><label
                                                                 for="5">ต่อยเพื่อน</label></li>
 
                                                         <li><input type="checkbox" id="6" name="v4[]"
-                                                                value="เซ็ง"><label for="6">เซ็ง</label></li>
+                                                                value="เซ็ง"><label for="6">เซ็ง</label>
+                                                        </li>
 
                                                         <li><input type="checkbox" id="7" name="v4[]"
                                                                 value="เตะบอล"><label for="7">เตะบอล</label>
@@ -400,14 +402,17 @@
                                                         </li>
 
                                                         <li><input type="checkbox" id="9" name="v4[]"
-                                                                value="โกรธ"><label for="9">โกรธ</label></li>
+                                                                value="โกรธ"><label for="9">โกรธ</label>
+                                                        </li>
 
                                                         <li><input type="checkbox" id="10" name="v4[]"
-                                                                value="สนุก"><label for="10">สนุก</label></li>
+                                                                value="สนุก"><label for="10">สนุก</label>
+                                                        </li>
 
                                                         <li class="ks-selected"><input type="checkbox" id="11"
                                                                 name="v4[]" value="กลัว"><label
-                                                                for="11">กลัว</label></li>
+                                                                for="11">กลัว</label>
+                                                        </li>
 
                                                         <li><input type="checkbox" id="12" name="v4[]"
                                                                 value="คิดเลข"><label for="12">คิดเลข</label>
@@ -419,42 +424,12 @@
 
                                                         <li><input type="checkbox" id="14" name="v4[]"
                                                                 value="ให้อาหารหมา"><label
-                                                                for="14">ให้อาหารหมา</label></li>
-
+                                                                for="14">ให้อาหารหมา</label>
+                                                        </li>
                                                     </ul>
                                                 </div>
-
                                             </div>
-
                                         </div>
-
-                                        {{-- <div class="row">
-                                            <div class="col-md-3 py-2">
-                                                <span class="mt-2 badge rounded-pill bg-info">ดีใจ</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">เบื่อ</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">สวดมนต์ </span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ฟิน</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ต่อยเพื่อน</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">เซ็ง</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">เตะบอล</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ปวดท้อง</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">โกรธ</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">สนุก</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">กลัว</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">คิดเลข</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">เงิบ</span>
-                                                <span class="mt-2 badge rounded-pill bg-info">ให้อาหารหมา</span>
-                                            </div>
-
-                                            <div class="col-md-3 py-2 w3-center">
-                                                <h4><span class="badge rounded-pill bg-info"
-                                                        for="customRange2">อารมรณ์</span></h4>
-                                                <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                                    placeholder="พิมพ์คำตอบลงที่นี่..."></textarea>
-                                            </div>
-
-                                        </div> --}}
-
 
                                         <!-- Button trigger modal -->
                                         <button type="button" class="mt-3 btn btn-danger btn-sm" data-bs-toggle="modal"
@@ -467,10 +442,11 @@
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
                                                     <div class="modal-header bg-primary text-white">
-                                                        <label class="modal-title" id="exampleModalLabel" style="font-size: 24">
-                                                            
-                                                                <i class="fas fa-comment-dots"></i>
-                                                                เฉลยอารมณ์คืออะไร?
+                                                        <label class="modal-title" id="exampleModalLabel"
+                                                            style="font-size: 24">
+
+                                                            <i class="fas fa-comment-dots"></i>
+                                                            เฉลยอารมณ์คืออะไร?
                                                         </label>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
@@ -534,8 +510,8 @@
 
                                         <h2 class="text-center py-3">มารู้จักอารมณ์ดีกว่า...</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/tab/01(1).jpg" style="width:100%">
-                                            <img class="mySlides1" src="images/tab/01(2).jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/day1/01(1).jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/day1/01(2).jpg" style="width:100%">
                                         </div>
 
                                     </div>
@@ -564,8 +540,8 @@
 
                                         <h2 class="text-center py-3">มารู้จักอารมณ์ดีกว่า...</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/tab/01(3).jpg" style="width:100%">
-                                            <img class="mySlides1" src="images/tab/01(4).jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/day1/01(3).jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/day1/01(4).jpg" style="width:100%">
 
                                         </div>
 
@@ -575,49 +551,6 @@
                                         </div>
 
                                     </div>
-
-                                    {{-- Content4 --}}
-                                    {{-- <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY1</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-
-
-                                        <h2 class="text-center py-3">คุณค่าของใบไม้แห้ง...</h2>
-                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/1.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/2.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/3.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/4.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/5.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/6.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/7.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/8.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/9.png" style="width:100%">
-                                            <img class="mySlides1" src="images/คุณค่าของใบแห้ง/10.png"
-                                                style="width:100%">
-                                        </div>
-                                        <hr>
-                                        <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
-                                    </div> --}}
-
 
                                     {{-- Content --}}
                                     {{-- <div class="mySlides">
@@ -748,6 +681,7 @@
                                         </div>
                                     </div> --}}
                                 </form>
+                                <!-- Comment Form End -->
                                 <br>
                             </div>
                         </div>

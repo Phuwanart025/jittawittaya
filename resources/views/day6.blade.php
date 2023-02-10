@@ -132,6 +132,15 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 600px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
 </style>
 
 @section('content')
@@ -235,12 +244,52 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="mt-5 mb-2" for="customRange2">เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
+
+                                        <h3 class="mt-5 mb-2" for="customRange2">คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
                                     </div>
 
-                                    {{-- Content2 --}}
+                                    {{-- Content4 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY6</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <h2 class="text-center py-5">นิทานเรื่องคุณยายและความห่วงใย...</h2>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <img class="mySlides1" src="images/day6/คุณยาย/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day6/คุณยาย/2.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day6/คุณยาย/3.png" style="width:100%">
+                                        </div>
+
+                                        <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
+                                        <hr>
+                                        <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+
+                                    </div>
+
+                                    {{-- Content3 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -262,19 +311,23 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <h2>ทำความเข้าใจอารมณ์ ความคิด...</h2>
+                                            <h2>ความรู้...</h2>
+                                            <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                                <img class="mySlides1" src="images/day6/06(1).png" style="width:100%">
+                                                <img class="mySlides1" src="images/day6/06(2).png" style="width:100%">
+                                                <img class="mySlides1" src="images/day6/06(3).png" style="width:100%">
+                                            </div>
                                         </div>
 
-                                        <div class="d-grid gap-2 col-4 mx-auto">
+                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
-                                                href="{{ url('/day5') }}">บันทึก</button>
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-
                                     </div>
+
                                 </form>
-                                <br>
                                 <!-- Comment Form End -->
+                                <br>
                             </div>
                         </div>
 
@@ -286,13 +339,14 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+
 
 
         <script>

@@ -151,6 +151,13 @@
         width: 100%;
         height: 100%;
     }
+
+    video {
+        /* override other styles to make responsive */
+        width: 100% !important;
+        height: auto !important;
+
+    }
 </style>
 
 @section('content')
@@ -285,12 +292,16 @@
 
                                         <h2 class="text-center py-5">นิทานเรื่องนี้ไม่มีปฏิหาริย์...</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/1.jpg" style="width:100%">
-                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/2.jpg" style="width:100%">
-                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/3.jpg" style="width:100%">
-                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/4.jpg" style="width:100%">
-                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/5.jpg" style="width:100%">
-                                            <img class="mySlides1" src="images/ปฏิหารไม่มี/6.jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/1.jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/2.jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/3.jpg"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/4.jpg"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/5.jpg"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/6.jpg"
+                                                style="width:100%">
                                         </div>
                                         <p class="py-3">ขอบคุณนิทานจาก: คุณสโรชา กิตติสิริพันธุ์</p>
                                         <hr>
@@ -321,11 +332,12 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
-                                            <div class="col-md-12">
-                                                <h2>ร่างกายของเราเป็นอย่างไร เมื่อเกิดอาการรู้สึกกลัว...</h2>
-                                                <img class="img-fluid rounded mx-auto d-block" src="images/image7.jpg"
-                                                    alt="" width="800" height="800">
-
+                                            <h2>ร่างกายของเราเป็นอย่างไร เมื่อเกิดอาการรู้สึกกลัว...</h2>
+                                            <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                                <video autoplay muted loop="true">
+                                                    <source src="images/day3/vdo-03(1).mp4" type="video/mp4">
+                                                </video>
+                                                <img class="mySlides1" src="images/day3/03(2).png" style="width:100%">
                                             </div>
                                         </div>
                                     </div>
@@ -353,11 +365,9 @@
 
                                         <div class="py-5 text-center">
                                             <h3>เมื่อเกิดเหตุการณ์ต่างๆ และรู้สึกกลัว คุณมีระดับอาการอย่างไร...</h3>
-                                            {{-- <img class="img-fluid rounded mx-auto d-block" src="images/image7.jpg"
-                                                    alt="" width="800" height="800"> --}}
                                             <div class="row py-5">
                                                 <div class="col-md-4 mt-3">
-                                                    <h3>อาการปวดหัว</h3>
+                                                    <h3>ปวดหัว</h3>
                                                 </div>
                                                 <div class="col-md-8 mt-3">
                                                     <div class="slidecontainer">
@@ -386,7 +396,7 @@
 
                                             <div class="row py-5">
                                                 <div class="col-md-4 mt-3">
-                                                    <h3>ใจเต้น</h3>
+                                                    <h3>ปวดท้อง</h3>
                                                 </div>
                                                 <div class="col-md-8 mt-3">
                                                     <div class="slidecontainer">
@@ -415,7 +425,7 @@
 
                                             <div class="row py-5">
                                                 <div class="col-md-4 mt-3">
-                                                    <h3>ขาสั่น</h3>
+                                                    <h3>ใจสั่น</h3>
                                                 </div>
                                                 <div class="col-md-8 mt-3">
                                                     <div class="slidecontainer">
@@ -425,6 +435,93 @@
                                                         <input type="range" min="0" max="10"
                                                             name="value" value="{{ old('value') }}" class="slider"
                                                             id="myRange4">
+                                                        <div class="sliderticks">
+                                                            <p>0:น้อย</p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p>10:มาก</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row py-5">
+                                                <div class="col-md-4 mt-3">
+                                                    <h3>มือสั่น</h3>
+                                                </div>
+                                                <div class="col-md-8 mt-3">
+                                                    <div class="slidecontainer">
+                                                        <h4 class="text-start" for="customRange2">ระดับอาการ: <label
+                                                                for="" id="demo5"
+                                                                style="font-weight:bold;color:red"></label></h4>
+                                                        <input type="range" min="0" max="10"
+                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            id="myRange5">
+                                                        <div class="sliderticks">
+                                                            <p>0:น้อย</p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p>10:มาก</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row py-5">
+                                                <div class="col-md-4 mt-3">
+                                                    <h3>ขาสั่น</h3>
+                                                </div>
+                                                <div class="col-md-8 mt-3">
+                                                    <div class="slidecontainer">
+                                                        <h4 class="text-start" for="customRange2">ระดับอาการ: <label
+                                                                for="" id="demo6"
+                                                                style="font-weight:bold;color:red"></label></h4>
+                                                        <input type="range" min="0" max="10"
+                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            id="myRange6">
+                                                        <div class="sliderticks">
+                                                            <p>0:น้อย</p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p></p>
+                                                            <p>10:มาก</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row py-5">
+                                                <div class="col-md-4 mt-3">
+                                                    <h3>เหงื่อออก</h3>
+                                                </div>
+                                                <div class="col-md-8 mt-3">
+                                                    <div class="slidecontainer">
+                                                        <h4 class="text-start" for="customRange2">ระดับอาการ: <label
+                                                                for="" id="demo7"
+                                                                style="font-weight:bold;color:red"></label></h4>
+                                                        <input type="range" min="0" max="10"
+                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            id="myRange7">
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
                                                             <p></p>
@@ -470,8 +567,6 @@
                                             <div class="py-3">
                                                 <h3>มาฝึกผ่อนคลายกล้ามเนื้อกันเถอะ...</h3>
                                                 <h4>(PROGRESSIVE MUSCLE RELAXATION)</h4>
-                                                {{-- <img class="img-fluid rounded mx-auto d-block" src="images/image7.jpg"
-                                                alt="" width="350" height="350"> --}}
                                             </div>
 
                                             <div class="ratio ratio-16x9 py-2">
@@ -621,8 +716,8 @@
                                     </div> --}}
 
                                 </form>
-                                <br>
                                 <!-- Comment Form End -->
+                                <br>
                             </div>
                         </div>
 
@@ -643,8 +738,6 @@
                 </div>
             </div>
         </div>
-        </div>
-
 
         <script>
             let slideIndex = 1;
@@ -722,6 +815,39 @@
             // Update the current slider value (each time you drag the slider handle)
             slider4.oninput = function() {
                 output4.innerHTML = this.value;
+            }
+        </script>
+
+        <script>
+            var slider5 = document.getElementById("myRange5");
+            var output5 = document.getElementById("demo5");
+            output5.innerHTML = slider5.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider5.oninput = function() {
+                output5.innerHTML = this.value;
+            }
+        </script>
+
+        <script>
+            var slider6 = document.getElementById("myRange6");
+            var output6 = document.getElementById("demo6");
+            output6.innerHTML = slider6.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider6.oninput = function() {
+                output6.innerHTML = this.value;
+            }
+        </script>
+
+        <script>
+            var slider7 = document.getElementById("myRange7");
+            var output7 = document.getElementById("demo7");
+            output7.innerHTML = slider7.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider7.oninput = function() {
+                output7.innerHTML = this.value;
             }
         </script>
 
