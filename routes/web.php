@@ -131,7 +131,7 @@ Route::get('/profile', function () {
 Auth::routes();
 
 Route::get('/mypdf/{rounds}', [App\Http\Controllers\PDFController::class, 'pdf']);
-Route::get('/mypdf', [App\Http\Controllers\PDFController::class, 'pdf2']);
+
 
 Route::middleware(['auth:sanctum'])->get('/record', function () {
     $rounds_story = DB::table('rounds_completed')
