@@ -14,7 +14,7 @@ class diary_day extends Model
         'story_d1',
         // 'thoughts',
         // 'emotions',
-        // 'rounds_id',
+         'rounds_id',
     ];
     public $timestamps = false;
     protected $table = 'day1';

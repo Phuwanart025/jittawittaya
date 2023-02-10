@@ -89,6 +89,7 @@
             width: 33.33%;
             padding: 10px;
             height: 100px;
+            text-align: center;
             /* Should be removed. Only for demonstration */
         }
 
@@ -96,6 +97,10 @@
         .lable {
             color: rgb(15, 42, 240);
             font-size: 20px;
+        }
+        
+        .text-red {
+            color: rgb(244, 3, 3);
         }
 
         .page-break {
@@ -113,45 +118,29 @@
     <hr>
 
     <div class="container">
-        <div class="page-break row1">
+        <div class="page-break row1 ">
             <h3>วันที่1</h3>
-            <table class="table table-bordered">
-                <thead class="table-dark">
-                    <tr>
-                        <th scope="col">เลขที่ลำดับ</th>
-                        <th scope="col">ครั้งที่</th>
-                        <th scope="col">เวลาทำครั้งแรก</th>
-                        <th scope="col">สิ้นสุด</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($data as $item)
-                        <tr class="table-secondary">
-                            <td><span class="badge bg-success">{{ $item->id }}</span>
-                            </td>
-                            <td>{{ $item->rounds }}</td>
-                            <td>{{ $item->created_at }}</td>
-                            <td>{{ $item->updated_at }}</td>
-                        </tr>
-                    @endforeach
-                </tbody>
-            </table>
-            <hr>
+           @foreach ($data as $item)
             <div class="column">
                 <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
-                <q>{{ $item->rounds }}</q><br>
+                <q>{{ $item->color_feel_today }}</q><br>
             </div>
             <div class="column">
                 <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->rounds }}</q><br>
+                <q>{{ $item->sensation_level}}</q><br>
             </div>
             <div class="column">
                 <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
-                <q>{{ $item->created_at }}</q><br>
+                <q>{{ $item->detail_t1 }}</q><br>
             </div>
+            <div class="row">
+                <label class="lable" for="fname">อารมณ์คืออะไร :</label><br>
+                <q>{{ $item->story_d1 }}</q><br>
+                <q class="text-red">--เฉลย 1 2 3 4--</q><br>
+            </div>
+       
         </div>
-
+  @endforeach
         <div class="page-break row">
             <h3>วันที่2</h3>
             <table class="table table-bordered">
