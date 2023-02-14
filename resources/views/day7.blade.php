@@ -245,11 +245,11 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="mt-5 mb-2" for="customRange2">เหตุการณ์ที่เกิดขึ้น:</h3>
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i> เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
 
-                                        <h3 class="mt-5 mb-2" for="customRange2">คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i> คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
                                     </div>
@@ -274,7 +274,6 @@
                                                 </span>
                                             </h1>
                                         </div>
-
 
                                         <div class="text-center py-5">
                                             <h2>เกมส์?...</h2>
@@ -313,9 +312,7 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-
                                         </div>
-
                                     </div>
 
                                    

@@ -132,6 +132,25 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 600px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
 </style>
 
 @section('content')
@@ -235,9 +254,15 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                            เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
+
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                            คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -261,17 +286,93 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>...</h2>
+                                        <div class="py-5">
+                                            <h1 class="text-center "><span
+                                                    class="badge rounded-pill bg-primary">มาทบทวนความรู้กัน'นน...</span>
+                                            </h1>
+                                            <div
+                                                class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">
+                                                <h2 class="mt-4">
+                                                    <span class="badge rounded-pill bg-warning">
+                                                        naïve model...
+                                                    </span>
+                                                </h2>
+                                                <img class="mySlides1 mb-3" src="images/day10/10(1).png" style="width:100%">
+                                                <hr>
+
+                                                <h2 class="mt-4">
+                                                    <span class="badge rounded-pill bg-warning">
+                                                        cognitive model...
+                                                    </span>
+                                                </h2>
+                                                <img class="mySlides1 mb-3" src="images/day10/10(2).png"
+                                                    style="width:100%">
+                                                <hr>
+
+                                                <h2 class="mt-4">
+                                                    <span class="badge rounded-pill bg-primary">
+                                                        interactional model...
+                                                    </span>
+                                                </h2>
+                                                <img class="mySlides1 mb-3" src="images/day10/10(3).png"
+                                                    style="width:100%">
+                                                <hr>
+
+                                                <h2 class="mt-4">
+                                                    <span class="badge rounded-pill bg-danger">
+                                                        คิดแบบไหนทำให้เศร้า...
+                                                    </span>
+                                                </h2>
+                                                <img class="mySlides1 mb-3" src="images/day10/10(4).png"
+                                                    style="width:100%">
+                                                <hr>
+
+                                                <h2 class="mt-4">
+                                                    <span class="badge rounded-pill bg-danger">
+                                                        คิดแบบไหนทำให้กลัว...
+                                                    </span>
+                                                </h2>
+                                                <img class="mySlides1 mb-3" src="images/day10/10(5).png"
+                                                    style="width:100%">
+                                                <hr>
+
+                                                <h2 class="mt-4">
+                                                    <span class="badge rounded-pill bg-danger">
+                                                        คิดแบบไหนทำให้โกรธ...
+                                                    </span>
+                                                </h2>
+                                                <img class="mySlides1 mb-3" src="images/day10/10(6).png"
+                                                    style="width:100%">
+                                                <hr>
+
+                                                <h2 class="mt-4">
+                                                    <span class="badge rounded-pill bg-warning">
+                                                        กับดักความคิด...
+                                                    </span>
+                                                </h2>
+                                                <img class="mySlides1 mb-3" src="images/day10/10(7).jpg"
+                                                    style="width:100%">
+
+                                            </div>
+                                            <hr>
+
+                                            <h3 class="mt-5 mb-3">
+                                                <i class="fas fa-edit">ใน 4 วันที่ผ่านมา คุณได้เรียนรู้อะไรบ้าง:</i>
+                                            </h3>
+                                            <textarea name="v3" id="v3" class="form-control shadow-textarea" rows="8"
+                                                placeholder="ใน 4 วันที่ผ่านมา คุณได้เรียนรู้อะไรบ้าง..."></textarea>
                                         </div>
 
-                                        <div class="d-grid gap-2 col-4 mx-auto">
+                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
-                                                href="{{ url('/day5') }}">บันทึก</button>
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
 
                                     </div>
+
+                                    {{-- Content3 --}}
+
+
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
@@ -286,12 +387,11 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
+                            {{-- <span class="dot" onclick="currentSlide(3)"></span> --}}
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
         </div>
 
 

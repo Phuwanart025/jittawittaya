@@ -75,7 +75,7 @@
 
 
     input[type=radio] {
-        transform: scale(1.5);
+        transform: scale(1.4);
     }
 
     /* Range */
@@ -253,7 +253,7 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i> อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -293,7 +293,7 @@
                                                 href="http://www.pakornblog.com/story.php?act=detail&storyid=47&fbclid=IwAR1q_aaH7ChQp2DEDlosUceN2DCUfLBupQ2ZxBVDHh4BuMq3fXDFQe4ZKGE">
                                                 PakornBlok</a></p>
                                         <hr>
-                                        <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i> คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -352,223 +352,358 @@
                                         </div>
 
 
-                                        <h3 class="text-center py-5" for="customRange2">
-                                            เมื่อคุณรู้สึกโกรธร่างกายของคุณมีอะไรเกิดขึ้นบ้าง:</h3>
+                                        <div class="row py-5">
+                                            <h1 class="text-center mt-2 mb-4">
+                                                <i class="fas fa-angry"></i>
+                                                เมื่อคุณรู้สึกโกรธร่างกายของคุณมีอะไรเกิดขึ้นบ้าง...
+                                                <i class="fas fa-angry"></i>
+                                            </h1>
 
-                                        <div class="container">
-                                            <div class="row justify-content-center">
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-primary" type="radio"
-                                                            value="หน้าแดง" name="feel_body1" id="feel_body1">
-                                                        <label class="form-check-label" for="color_feel_today1">
-                                                            1. หน้าแดง
-                                                        </label>
+                                            <div class="container">
+                                                <div class="row w3-center">
+                                                    {{-- ข้อ1 --}}
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-primary">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="หน้าแดง"
+                                                                            name="feel_body1" id="feel_body1">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today1">
+                                                                            1.หน้าแดง
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-primary">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="หน้าซีด"
+                                                                            name="feel_body1" id="feel_body1">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today2">
+                                                                            1.หน้าซีด
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-primary" type="radio"
-                                                            value="หน้าซีด" name="feel_body1" id="feel_body1">
-                                                        <label class="form-check-label" for="color_feel_today2">
-                                                            1.หน้าซีด
-                                                        </label>
+
+                                                    {{-- ข้อ2 --}}
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-info">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="หายใจช้า"
+                                                                            name="feel_body2" id="feel_body3">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today3">
+                                                                            2.หายใจช้า
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-info">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value=" หายใจเร็ว"
+                                                                            name="feel_body2" id="feel_body4">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            2.หายใจเร็ว
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
                                                     </div>
+
+                                                    {{-- ข้อ3 --}}
+                                                    <div class="row justify-content-center">
+                                                        <div class="col mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-danger">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="กล้ามเนื้อผ่อนคลาย"
+                                                                            name="feel_body3" id="feel_body5">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            3.กล้ามเนื้อผ่อนคลาย
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="col mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-danger">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="กล้ามเนื้อเกร็ง"
+                                                                            name="feel_body3" id="feel_body6">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            3.กล้ามเนื้อเกร็ง
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+
+                                                    {{-- ข้อ4 --}}
+                                                    <div class="row justify-content-center">
+                                                        <div class="col mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-success">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="กำมือแน่น"
+                                                                            name="feel_body4" id="feel_body7">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            4.กำมือแน่น
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="col mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-success">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="กำมือขึ้นแล้วหมุนๆ"
+                                                                            name="feel_body4" id="feel_body8">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            4.กำมือขึ้นแล้วหมุนๆ
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+
+                                                    {{-- ข้อ5 --}}
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-warning">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="ตัวร้อน"
+                                                                            name="feel_body5" id="feel_body9">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            5.ตัวร้อน
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-warning">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="ตัวเย็น"
+                                                                            name="feel_body5" id="feel_body10">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            5.ตัวเย็น
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+
+                                                    {{-- ข้อ6 --}}
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-primary">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="เหงื่อไม่ออก"
+                                                                            name="feel_body6" id="feel_body11">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            6.เหงื่อออก
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-primary">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="เหงื่อ ออก"
+                                                                            name="feel_body6" id="feel_body12">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            6.เหงื่อไม่ออก
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+
+                                                    {{-- ข้อ7 --}}
+                                                    <div class="row justify-content-center">
+                                                        <div class="col mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-info">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="รู้สึกร้อนบนใบหน้า"
+                                                                            name="feel_body7" id="feel_body13">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            7.รู้สึกร้อนบนใบหน้า
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="col mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-info">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="รู้สึกเย็นบนใบหน้า"
+                                                                            name="feel_body7" id="feel_body14">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            7.รู้สึกเย็นบนใบหน้า
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+
+                                                    {{-- ข้อ8 --}}
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-danger">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="คิ้วขมวด"
+                                                                            name="feel_body8" id="feel_body15">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            8.คิ้วขมวด
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-danger">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="คิ้วโก่งเป็นคันศร "
+                                                                            name="feel_body8" id="feel_body16">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            8.คิ้วโก่งเป็นคันศร
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+
+                                                    {{-- ข้อ9 --}}
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-success">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="กัดฟัน"
+                                                                            name="feel_body9" id="feel_body17">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            9.กัดฟัน
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-success">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="ยิงฝัน "
+                                                                            name="feel_body9" id="feel_body18">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            9.ยิงฟัน
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+
+                                                    {{-- ข้อ10 --}}
+                                                    <div class="row justify-content-center">
+                                                        <div class="col mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-warning">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="ลมออกทวารหนัก"
+                                                                            name="feel_body10" id="feel_body19">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            10.ลมออกทวารหนัก
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="col mb-3">
+                                                            <h3>
+                                                                <span class="badge rounded-pill bg-warning">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input bg-dark"
+                                                                            type="radio" value="ลมออกหู"
+                                                                            name="feel_body10" id="feel_body20">
+                                                                        <label class="form-check-label"
+                                                                            for="color_feel_today4">
+                                                                            10.ลมออกหู
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
+
                                             </div>
-
-                                            <div class="row justify-content-center">
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-info" type="radio"
-                                                            value="หายใจช้า" name="feel_body2" id="feel_body3">
-                                                        <label class="form-check-label" for="color_feel_today3">
-                                                            2.หายใจช้า
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-info" type="radio"
-                                                            value=" หายใจเร็ว" name="feel_body2" id="feel_body4">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            2.หายใจเร็ว
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center">
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-danger" type="radio"
-                                                            value="กล้ามเนื้อผ่อนคลาย" name="feel_body3" id="feel_body5">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            3.กล้ามเนื้อผ่อนคลาย
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-danger" type="radio"
-                                                            value="กล้ามเนื้อเกร็ง" name="feel_body3" id="feel_body6">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            3.กล้ามเนื้อเกร็ง
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center">
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-success" type="radio"
-                                                            value="กำมือแน่น" name="feel_body4" id="feel_body7">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            4.กำมือแน่น
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-success" type="radio"
-                                                            value="กำมือขึ้นแล้วหมุนๆ" name="feel_body4" id="feel_body8">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            4.กำมือขึ้นแล้วหมุนๆ
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center">
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-warning" type="radio"
-                                                            value="ตัวร้อน" name="feel_body5" id="feel_body9">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            5.ตัวร้อน
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-warning" type="radio"
-                                                            value="ตัวเย็น" name="feel_body5" id="feel_body10">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            5.ตัวเย็น
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center">
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-primary" type="radio"
-                                                            value="เหงื่อไม่ออก" name="feel_body6" id="feel_body11">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            6.เหงื่อไม่ออก
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-primary" type="radio"
-                                                            value="เหงื่อ ออก" name="feel_body6" id="feel_body12">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            6.เหงื่อออก
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center">
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-dark" type="radio"
-                                                            value="รู้สึกร้อนบนใบหน้า" name="feel_body7"
-                                                            id="feel_body13">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            7.รู้สึกร้อนบนใบหน้า
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-dark" type="radio"
-                                                            value="รู้สึกเย็นบนใบหน้า" name="feel_body7"
-                                                            id="feel_body14">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            7.รู้สึกเย็นบนใบหน้า
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center">
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-primary" type="radio"
-                                                            value="คิ้วขมวด" name="feel_body8" id="feel_body15">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            8.คิ้วขมวด
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-primary" type="radio"
-                                                            value="คิ้วโก่งเป็นคันศร " name="feel_body8"
-                                                            id="feel_body16">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            8.คิ้วโก่งเป็นคันศร
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center">
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-danger" type="radio"
-                                                            value="กัดฟัน" name="feel_body9" id="feel_body17">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            9.กัดฟัน
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-danger" type="radio"
-                                                            value="ยิงฝัน " name="feel_body9" id="feel_body18">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            9.ยิงฟัน
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row justify-content-center">
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-warning" type="radio"
-                                                            value="ลมออกทวารหนัก" name="feel_body10" id="feel_body19">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            10.ลมออกทวารหนัก
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4 mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input bg-warning" type="radio"
-                                                            value="ลมออกหู" name="feel_body10" id="feel_body20">
-                                                        <label class="form-check-label" for="color_feel_today4">
-                                                            10.ลมออกหู
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
                                         </div>
                                     </div>
 

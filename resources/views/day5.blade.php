@@ -326,7 +326,7 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i> อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -564,7 +564,7 @@
 
                                         <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
                                         <hr>
-                                        <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i> คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
 
