@@ -52,6 +52,7 @@
 </head>
 
 <body>
+    @include('sweetalert::alert');
     <div id="app">
         <div class="header_section background_bg fixed-top">
             <div class="container-fluid">

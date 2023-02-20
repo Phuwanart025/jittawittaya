@@ -160,6 +160,15 @@
         width: 100%;
         height: 100%;
     }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 600px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
 </style>
 
 @section('content')
@@ -265,7 +274,8 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i> อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i>
+                                            อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -295,7 +305,7 @@
 
                                             <h1 class="mb-3">เพลงบำบัดจิตใจ...</h1>
 
-                                            <img class="mb-3" src="images/day4/04(1).jpg" style="width:100%">
+                                            <img class="mb-3" src="images/day4/04(1)_new.png" style="width:100%">
                                             <div class="ratio ratio-16x9 py-3">
                                                 <iframe src="https://www.youtube.com/embed/bJDuQi7gVMU"
                                                     title="YouTube video player" frameborder="0"
@@ -332,8 +342,11 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
-                                            <h1>สังเกตความเศร้าของคุณ...</h1>
-                                            <img class="mb-3" src="images/day4/04(2).jpg" style="width:100%">
+                                            <h1>สัมผัสความ "เศร้า" ในร่างกายเรา...</h1>
+                                            <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                                <img class="mb-3" src="images/day4/04(2)_new.png" style="width:100%">
+                                                <img class="mb-3" src="images/day4/04(3)_new.png" style="width:100%">
+                                            </div>
                                         </div>
                                     </div>
 
@@ -360,7 +373,7 @@
 
                                         <div class="row py-5 text-center">
 
-                                            <h1>มาฝึกหายใจลดความเศร้ากันเถอะ...</h1>
+                                            <h1>มาฝึกหายใจ ลดความเศร้ากันเถอะ...</h1>
                                             <img class="mb-3" src="images/day4/04(3).jpg" style="width:100%">
 
                                             <div class="ratio ratio-16x9 py-3">

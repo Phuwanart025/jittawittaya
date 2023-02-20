@@ -245,11 +245,13 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i> เหตุการณ์ที่เกิดขึ้น:</h3>
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                            เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
 
-                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i> คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                            คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
                                     </div>
@@ -306,9 +308,9 @@
                                         <div class="row py-5 text-center">
 
                                             <h1 class="mb-3">เพลงบำบัดจิตใจ...</h1>
-
+                                            <img class="mb-3" src="images/day8/08(1)_new.png" style="width:100%">
                                             <div class="ratio ratio-16x9 py-3">
-                                                <iframe src="https://www.youtube.com/embed/sv7TVjOq1Fs"
+                                                <iframe src="https://www.youtube.com/embed/gqeA_B7pK9s"
                                                     title="YouTube video player" frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     allowfullscreen>
@@ -316,8 +318,9 @@
                                             </div>
 
                                             <p class="py-3">ขอบคุณเพลง:<a target="_blank"
-                                                    href="https://www.youtube.com/watch?v=sv7TVjOq1Fs">
-                                                    ครึ่งหนึ่งของชีวิต - แอม เสาวลักษณ์【OFFICIAL MV】</a>
+                                                    href="https://www.youtube.com/watch?v=gqeA_B7pK9s">
+                                                    ด้านที่ดีกว่าของชีวิต - BOYd KOSIYABONG
+                                                </a>
                                             </p>
 
                                         </div>

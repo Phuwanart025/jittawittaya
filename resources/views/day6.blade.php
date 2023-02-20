@@ -311,11 +311,12 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <h2>ความรู้...</h2>
+                                            <h2>naïve model และ cognitive model...</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day6/06(1).png" style="width:100%">
-                                                <img class="mySlides1" src="images/day6/06(2).png" style="width:100%">
-                                                <img class="mySlides1" src="images/day6/06(3).png" style="width:100%">
+                                                <img class="mySlides1" src="images/day6/06(1)_new.png" style="width:100%">
+                                                <img class="mySlides1" src="images/day6/06(2)_new.png" style="width:100%">
+                                                <img class="mySlides1" src="images/day6/06(3)_new.png" style="width:100%">
+                                                <img class="mySlides1" src="images/day6/06(4)_new.png" style="width:100%">
                                             </div>
                                         </div>
 

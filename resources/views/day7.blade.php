@@ -276,11 +276,11 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <h2>เกมส์?...</h2>
+                                            <h2>ถ้าฉัน คิดแบบนี้ ฉันจะรู้สึก.......</h2>
 
                                             <div class="table-responsive">
-                                                <table class="table table-bordered table-Warning table-highlight">
-                                                    <thead class="thead-Warning">
+                                                <table class="table text-black table-bordered table-info table-highlight">
+                                                    <thead class="thead-info">
                                                         <th>เหตุการณ์ที่เกิดขึ้น</th>
                                                         <th>ความคิด</th>
                                                         <th>ความรู้สึก</th>
@@ -290,23 +290,23 @@
                                                         <tr>
                                                             <td>สอบไม่ผ่าน</td>
                                                             <td>ฉันทำอะไรก็ไม่เก่งสักอย่าง</td>
-                                                            <td><input type="text" class="form-control" /></td>
+                                                            <td><input type="text" class="form-control" placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                         </tr>
                                                         <tr>
                                                             <td>สอบไม่ผ่าน</td>
                                                             <td>ครูออกข้อสอบยากเกินไปแล้ว</td>
-                                                            <td><input type="text" class="form-control" /></td>
+                                                            <td><input type="text" class="form-control" placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."/></td>
                                                         </tr>
                                                         <tr>
                                                             <td>สอบไม่ผ่าน</td>
                                                             <td>ฉันจะต้องติดF แน่ๆ</td>
-                                                            <td><input type="text" class="form-control" /></td>
+                                                            <td><input type="text" class="form-control" placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
 
                                                         </tr>
                                                         <tr>
                                                             <td>สอบไม่ผ่าน</td>
                                                             <td>ครั้งหน้าฉันจะตั้งใจและอ่านมากขึ้น</td>
-                                                            <td><input type="text" class="form-control" /></td>
+                                                            <td><input type="text" class="form-control" placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."/></td>
 
                                                         </tr>
                                                     </tbody>

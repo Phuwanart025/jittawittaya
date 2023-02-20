@@ -148,7 +148,7 @@
     .container {
         max-width: 640px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 13px;
+        font-size: 20px;
     }
 
     ul.ks-cboxtags {
@@ -190,7 +190,7 @@
         -webkit-font-smoothing: antialiased;
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-        font-size: 12px;
+        font-size: 20px;
         padding: 2px 6px 2px 2px;
         content: "\f067";
         transition: transform .3s ease-in-out;
@@ -326,7 +326,8 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i> อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i>
+                                            อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -352,7 +353,11 @@
                                             </h1>
                                         </div>
 
-                                        <h3 class="mt-5" for="customRange2">ความคิดคืออะไร :</h3>
+                                        <h2 class="mt-5 w3-center" for="customRange2">คำใหนคือ
+                                            <span class="badge rounded-pill"
+                                                style="background-color: #12bbd4">ความคิดบ้างนะ?
+                                            </span>
+                                        </h2>
 
                                         <div class="container mb-5">
                                             <div class="row">
@@ -527,15 +532,24 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <h2>ความรู้ส่งท้าย.....</h2>
+                                            <h2>ความรู้ส่งท้าย...ฝึกรู้ทันความคิด</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day5/05(1).jpg" style="width:100%">
+                                                <img class="mySlides1" src="images/day5/05(1)_new.png"
+                                                    style="width:100%">
+                                                <img class="mySlides1" src="images/day5/05(2)_new.png"
+                                                    style="width:100%">
                                             </div>
                                         </div>
+
+                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                        </div>
+
                                     </div>
 
                                     {{-- Content4 --}}
-                                    <div class="mySlides">
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -572,7 +586,7 @@
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
                                 </form>
                                 <!-- Comment Form End -->
@@ -589,14 +603,14 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
+                            {{-- <span class="dot" onclick="currentSlide(4)"></span> --}}
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-        
+
 
 
         <script>

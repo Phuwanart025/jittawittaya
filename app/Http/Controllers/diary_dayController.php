@@ -7,6 +7,7 @@ use App\Models\diary_day;
 use App\Models\rounds_completed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class diary_dayController extends Controller
 {
@@ -49,10 +50,11 @@ class diary_dayController extends Controller
             $diary->diary_day()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
-            return redirect()->back()->with([
-                'error' => 'ไม่สามารถบันทึกได้ ข้อมูลไม่ถูกต้อง.',
+            return redirect()->back()->with([Alert::error('เกิดข้อผิดพลาด','ไม่สามารถบันทึกข้อมูลได้ คุณกรอกข้อมูลไม่ครบ'),
+                // 'error' => 'ไม่สามารถบันทึกได้ ข้อมูลไม่ถูกต้อง.', 
             ]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ','');
         return redirect('/results');
     }
 

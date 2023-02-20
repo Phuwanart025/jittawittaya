@@ -55,6 +55,7 @@
         transition: background-color 0.6s ease;
     }
 
+
     .active,
     .dot:hover {
         background-color: #717171;
@@ -149,7 +150,7 @@
     .container {
         max-width: 640px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 13px;
+        font-size: 20px;
     }
 
     ul.ks-cboxtags {
@@ -181,6 +182,7 @@
     ul.ks-cboxtags li label {
         padding: 8px 12px;
         cursor: pointer;
+
     }
 
     ul.ks-cboxtags li label::before {
@@ -191,7 +193,7 @@
         -webkit-font-smoothing: antialiased;
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-        font-size: 12px;
+        font-size: 20px;
         padding: 2px 6px 2px 2px;
         content: "\f067";
         transition: transform .3s ease-in-out;
@@ -221,6 +223,13 @@
 
     ul.ks-cboxtags li input[type="checkbox"]:focus+label {
         border: 2px solid #e9a1ff;
+    }
+
+    video {
+        /* override other styles to make responsive */
+        width: 100% !important;
+        height: auto !important;
+
     }
 </style>
 
@@ -364,68 +373,70 @@
                                             </h1>
                                         </div>
 
-                                        <h3 class="mt-5" for="customRange2">อารมณ์คืออะไร :</h3>
+                                        <h2 class="mt-5 w3-center" for="customRange2">คำใหนคือ
+                                            <span class="badge rounded-pill"
+                                                style="background-color: #12bbd4">อารมณ์บ้างนะ?
+                                            </span>
+                                        </h2>
 
-                                        <div class="container mb-5">
+                                        <div class="container-fluid mb-5">
                                             <div class="row">
-                                                <div class="col-sm-6 mt-2 mx-auto">
+                                                <div class="col-10 col-xs-3 mt-2 mx-auto">
                                                     <ul class="ks-cboxtags">
                                                         <li><input type="checkbox" id="1" name="v4[]"
-                                                                value="ดีใจ"><label for="1">ดีใจ</label>
+                                                                value="กัดฟัน"><label for="1">กัดฟัน</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="2" name="v4[]"
-                                                                value="เบื่อ"><label for="2">เบื่อ</label>
+                                                                value="ตาแข็ง"><label for="2">ตาแข็ง</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="3" name="v4[]"
-                                                                value="สวดมนต์"><label for="3">สวดมนต์</label>
+                                                                value="กำหมัด"><label for="3">กำหมัด</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="4" name="v4[]"
-                                                                value="ฟิน"><label for="4">ฟิน</label>
+                                                                value="หน้าแดง"><label for="4">หน้าแดง</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="5" name="v4[]"
-                                                                value="ต่อยเพื่อน"><label
-                                                                for="5">ต่อยเพื่อน</label></li>
+                                                                value="หน้าแห้ง"><label for="5">หน้าแห้ง</label>
+                                                        </li>
 
                                                         <li><input type="checkbox" id="6" name="v4[]"
-                                                                value="เซ็ง"><label for="6">เซ็ง</label>
+                                                                value="แก้มป่อง"><label for="6">แก้มป่อง</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="7" name="v4[]"
-                                                                value="เตะบอล"><label for="7">เตะบอล</label>
+                                                                value="ใจเต้นเร็ว"><label
+                                                                for="7">ใจเต้นเร็ว</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="8" name="v4[]"
-                                                                value="ปวดท้อง"><label for="8">ปวดท้อง</label>
+                                                                value="หายใจโล่ง"><label for="8">หายใจโล่ง</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="9" name="v4[]"
-                                                                value="โกรธ"><label for="9">โกรธ</label>
+                                                                value="เหงื่อออก"><label for="9">เหงื่อออก</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="10" name="v4[]"
-                                                                value="สนุก"><label for="10">สนุก</label>
+                                                                value="หายใจแรง"><label for="10">หายใจแรง</label>
                                                         </li>
 
                                                         <li class="ks-selected"><input type="checkbox" id="11"
-                                                                name="v4[]" value="กลัว"><label
-                                                                for="11">กลัว</label>
+                                                                name="v4[]" value="ตาเป็นประกาย"><label
+                                                                for="11">ตาเป็นประกาย</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="12" name="v4[]"
-                                                                value="คิดเลข"><label for="12">คิดเลข</label>
+                                                                value="ตัวอ่อนปรกเปียก"><label
+                                                                for="12">ตัวอ่อนปรกเปียก</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="13" name="v4[]"
-                                                                value="เงิบ"><label for="13">เงิบ</label>
-                                                        </li>
-
-                                                        <li><input type="checkbox" id="14" name="v4[]"
-                                                                value="ให้อาหารหมา"><label
-                                                                for="14">ให้อาหารหมา</label>
+                                                                value="หน้างิ่ว คิ้วขมวด"><label for="13">หน้างิ่ว
+                                                                คิ้วขมวด</label>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -433,7 +444,7 @@
                                         </div>
 
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="mt-3 btn btn-danger btn-sm" data-bs-toggle="modal"
+                                        <button type="button" class="mt-3 btn btn-danger" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal">
                                             เฉลย
                                         </button><span class="text-red"> ***โปรดทำก่อนกดดูเฉลยนะ</span>
@@ -447,7 +458,7 @@
                                                             style="font-size: 24">
 
                                                             <i class="fas fa-comment-dots"></i>
-                                                            เฉลยอารมณ์คืออะไร?
+                                                            เฉลย คำไหนคืออารมณ์กันนะ?
                                                         </label>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
@@ -460,19 +471,19 @@
                                                             </div>
                                                             <div class="col-md-8">
                                                                 <h3><span
-                                                                        class="badge bg-info">ในส่วนที่เป็นอารมรณ์นั้นจะมี...</span>
+                                                                        class="badge bg-info">ในส่วนที่เป็นอารมรณ์นั้นจะมีคำว่า...</span>
                                                                 </h3>
                                                                 <div class="row py-3">
                                                                     <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> ดีใจ</i></p>
-                                                                        <p><i class="fas fa-check-circle"> เบื่อ</i></p>
-                                                                        <p><i class="fas fa-check-circle"> ฟิน</i></p>
-                                                                        <p><i class="fas fa-check-circle"> เซ็ง</i></p>
+                                                                        <p><i class="fas fa-check-circle"> กัดฟัน</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ตาแข็ง</i></p>
+                                                                        <p><i class="fas fa-check-circle"> กำหมัด</i></p>
+                                                                        <p><i class="fas fa-check-circle"> หน้าแดง</i></p>
                                                                     </div>
                                                                     <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> โกรธ</i></p>
-                                                                        <p><i class="fas fa-check-circle"> สนุก</i></p>
-                                                                        <p><i class="fas fa-check-circle"> เงิบ</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ใจเต้นเร็ว</i></p>
+                                                                        <p><i class="fas fa-check-circle"> เหงื่อออก</i></p>
+                                                                        <p><i class="fas fa-check-circle"> หน้างิ่ว คิ้วขมวด</i></p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -509,10 +520,10 @@
                                         </div>
 
 
-                                        <h2 class="text-center py-3">มารู้จักอารมณ์ดีกว่า...</h2>
+                                        <h2 class="text-center py-3">มารู้จักอารมณ์ต่างๆ ดีกันกว่า...</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <img class="mySlides1" src="images/day1/01(1).jpg" style="width:100%">
-                                            <img class="mySlides1" src="images/day1/01(2).jpg" style="width:100%">
+                                            <img class="mySlides1" src="images/day1/01(2).png" style="width:100%">
                                         </div>
 
                                     </div>
@@ -539,16 +550,17 @@
                                         </div>
 
 
-                                        <h2 class="text-center py-3">มารู้จักอารมณ์ดีกว่า...</h2>
+                                        <h2 class="text-center py-3">อารมณ์มาจากไหนกันนะ...</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day1/01(3).jpg" style="width:100%">
+                                            <video class="mySlides1" autoplay muted loop="true">
+                                                <source src="images/day1/01(3).mp4" type="video/mp4">
+                                            </video>
                                             <img class="mySlides1" src="images/day1/01(4).jpg" style="width:100%">
-
                                         </div>
 
                                         <div class="d-grid gap-2 col-3 mx-auto py-5">
-                                            <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                            <button class="btn btn-primary w-100 btn-confirm"
+                                                type="submit">บันทึก</button>
                                         </div>
 
                                     </div>
@@ -754,6 +766,27 @@
             var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
                 return new bootstrap.Popover(popoverTriggerEl)
             })
+        </script>
+
+        <script>
+            $('.btn-confirm').click(function(event) {
+                var form = $(this).closest("form");
+                a event.preventDefault();
+                Swal.fire({
+                    title: 'ยืนยันการบันทึกข้อมูล!',
+                    text: "คุณต้องการยืนยันการบันทึกข้อมูล หรือไม่?",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'บันทึก',
+                    cancelButtonText: 'ยกเลิก',
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit();
+                    }
+                });
+            });
         </script>
 
         {{-- <script>

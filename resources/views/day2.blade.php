@@ -253,7 +253,8 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i> อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i>
+                                            อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -280,20 +281,21 @@
                                         </div>
 
 
-                                        <h2 class="text-center py-5">เพื่อน 2 คน...</h2>
+                                        <h1 class="text-center py-5"><span
+                                                class="badge rounded-pill bg-info">นิทานเรื่อง...เพื่อน 2 คน</span></h1>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day2/เพื่อน/1.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day2/เพื่อน/2.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day2/เพื่อน/3.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day2/เพื่อน/4.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day2/เพื่อน/5.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day2/เพื่อน/6.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day2/เพื่อน_new/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day2/เพื่อน_new/2.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day2/เพื่อน_new/3.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day2/เพื่อน_new/4.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day2/เพื่อน_new/5.png" style="width:100%">
                                         </div>
                                         <p class="py-3">ขอบคุณนิทานจาก:<a target="_blank"
                                                 href="http://www.pakornblog.com/story.php?act=detail&storyid=47&fbclid=IwAR1q_aaH7ChQp2DEDlosUceN2DCUfLBupQ2ZxBVDHh4BuMq3fXDFQe4ZKGE">
                                                 PakornBlok</a></p>
                                         <hr>
-                                        <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i> คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
+                                            คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -320,12 +322,12 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
-                                            <h2 class="text-center py-5">สัมผัสความโกรธในร่างกายเรา...</h2>
+                                            <h2 class="text-center py-5">สัมผัสความ "โกรธ" ในร่างกายเรา...</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                                <img class="mySlides1" src="images/day2/02(1)_new.png" style="width:100%">
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day2/vdo-02(1).mp4" type="video/mp4">
+                                                    <source src="images/day2/02(2)_new.mp4" type="video/mp4">
                                                 </video>
-                                                <img class="mySlides1" src="images/day2/02(2).png" style="width:100%">
                                             </div>
                                         </div>
                                     </div>
@@ -732,9 +734,9 @@
                                         <div class="row py-5 text-center">
                                             <h2 class="text-center py-5">เทคนิคการขจัดโกรธ...</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day2/02(3).png" style="width:100%">
-                                                <img class="mySlides1" src="images/day2/02(4).png" style="width:100%">
-                                                <img class="mySlides1" src="images/day2/02(5).png" style="width:100%">
+                                                <img class="mySlides1" src="images/day2/02(3)_new.jpg" style="width:100%">
+                                                {{-- <img class="mySlides1" src="images/day2/02(4).png" style="width:100%">
+                                                <img class="mySlides1" src="images/day2/02(5).png" style="width:100%"> --}}
                                             </div>
                                         </div>
 

@@ -263,7 +263,8 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i> อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i>
+                                            อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -290,22 +291,22 @@
                                         </div>
 
 
-                                        <h2 class="text-center py-5">นิทานเรื่องนี้ไม่มีปฏิหาริย์...</h2>
+                                        <h1 class="text-center mt-5 mb-2"><span
+                                            class="badge rounded-pill bg-info">นิทานเรื่อง...อิฐขี้กลัว</span></h1>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/1.jpg" style="width:100%">
-                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/2.jpg" style="width:100%">
-                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/3.jpg"
-                                                style="width:100%">
-                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/4.jpg"
-                                                style="width:100%">
-                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/5.jpg"
-                                                style="width:100%">
-                                            <img class="mySlides1" src="images/day3/ปฏิหารไม่มี/6.jpg"
-                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day3/อิฐขี้กลัว/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day3/อิฐขี้กลัว/2.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day3/อิฐขี้กลัว/3.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day3/อิฐขี้กลัว/4.png" style="width:100%">
                                         </div>
-                                        <p class="py-3">ขอบคุณนิทานจาก: คุณสโรชา กิตติสิริพันธุ์</p>
+                                        <p class="py-3">ขอบคุณนิทานจาก:
+                                            <a target="_blank"
+                                                href="https://kalyanamitra.org/th/article_detail.php?i=11083">
+                                                kalyanamitra.org</a>
+                                        </p>
                                         <hr>
-                                        <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i> คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
+                                            คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -332,12 +333,12 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
-                                            <h2>ร่างกายของเราเป็นอย่างไร เมื่อเกิดอาการรู้สึกกลัว...</h2>
+                                            <h2>สัมผัสความ "กลัว" ในร่างกายเรา...</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                                <img class="mySlides1" src="images/day3/03(1)_new.png" style="width:100%">
                                                 <video autoplay muted loop="true">
-                                                    <source src="images/day3/vdo-03(1).mp4" type="video/mp4">
+                                                    <source src="images/day3/03(2)_new.mp4" type="video/mp4">
                                                 </video>
-                                                <img class="mySlides1" src="images/day3/03(2).png" style="width:100%">
                                             </div>
                                         </div>
                                     </div>
