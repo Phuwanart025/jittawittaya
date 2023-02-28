@@ -213,8 +213,9 @@
                                         <div class="row">
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
+                                                    <input class="form-check-input" style="background-color: #FFFF00"
+                                                        type="radio" value="สีเหลือง" name="flexRadioDefault"
+                                                        id="color_feel_today1">
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -237,8 +238,9 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3">
+                                                    <input class="form-check-input" style="background-color: #A084DC"
+                                                        type="radio" value="สีเขียว" name="flexRadioDefault"
+                                                        id="color_feel_today3">
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -250,8 +252,9 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4">
+                                                    <input class="form-check-input" style="background-color: #7286D3"
+                                                        type="radio" value="สีฟ้า" name="flexRadioDefault"
+                                                        id="color_feel_today4">
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -277,7 +280,7 @@
                                         <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i>
                                             อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -342,7 +345,8 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
-                                            <h1>สัมผัสความ "เศร้า" ในร่างกายเรา...</h1>
+                                            <h1>สัมผัสความ "<span style="font-weight:bold;color:#00679e">เศร้า</span>"
+                                                ในร่างกายเรา...</h1>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                                 <img class="mb-3" src="images/day4/04(2)_new.png" style="width:100%">
                                                 <img class="mb-3" src="images/day4/04(3)_new.png" style="width:100%">
@@ -373,11 +377,10 @@
 
                                         <div class="row py-5 text-center">
 
-                                            <h1>มาฝึกหายใจ ลดความเศร้ากันเถอะ...</h1>
-                                            <img class="mb-3" src="images/day4/04(3).jpg" style="width:100%">
+                                            <h1 class="mb-2">มาฝึกสมาธิ ช่วยคลายเครียดกัน...</h1>
 
                                             <div class="ratio ratio-16x9 py-3">
-                                                <iframe src="https://www.youtube.com/embed/0UYoV6KzcCg"
+                                                <iframe src="https://www.youtube.com/embed/TooMaqEjh5s"
                                                     title="YouTube video player" frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     allowfullscreen>
@@ -385,7 +388,7 @@
                                             </div>
 
                                             <p class="py-3">ขอบคุณคลิปจาก:<a target="_blank"
-                                                    href="https://www.youtube.com/watch?v=0UYoV6KzcCg">
+                                                    href="https://youtu.be/TooMaqEjh5s">
                                                     กรมสุขภาพจิต</a></p>
 
                                             <div class="d-grid gap-2 col-3 py-3 mx-auto">

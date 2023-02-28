@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class HomeController extends Controller
 {
@@ -40,8 +42,8 @@ class HomeController extends Controller
         
 
         $update->update();;
-       
-        return redirect('/profile')->with('Success', "อัพเดตข้อมูลเรียบร้อย");
+        Alert::success('บันทึกข้อมูลสำเร็จ','');
+        return redirect('/profile');
     }
 
 

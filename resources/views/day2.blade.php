@@ -192,8 +192,9 @@
                                         <div class="row">
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
+                                                    <input class="form-check-input" style="background-color: #FFFF00"
+                                                        type="radio" value="สีเหลือง" name="flexRadioDefault"
+                                                        id="color_feel_today1">
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -216,8 +217,9 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3">
+                                                    <input class="form-check-input" style="background-color: #A084DC"
+                                                        type="radio" value="สีเขียว" name="flexRadioDefault"
+                                                        id="color_feel_today3">
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -229,8 +231,9 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4">
+                                                    <input class="form-check-input" style="background-color: #7286D3"
+                                                        type="radio" value="สีฟ้า" name="flexRadioDefault"
+                                                        id="color_feel_today4">
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -256,7 +259,7 @@
                                         <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i>
                                             อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -322,9 +325,11 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
-                                            <h2 class="text-center py-5">สัมผัสความ "โกรธ" ในร่างกายเรา...</h2>
+                                            <h2 class="text-center py-5">สัมผัสความ "<span class="text-red">โกรธ</span>"
+                                                ในร่างกายเรา...</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day2/02(1)_new.png" style="width:100%">
+                                                <img class="mySlides1" src="images/day2/02(1)_new.png"
+                                                    style="width:100%">
                                                 <video class="mySlides1" autoplay muted loop="true">
                                                     <source src="images/day2/02(2)_new.mp4" type="video/mp4">
                                                 </video>
@@ -356,9 +361,9 @@
 
                                         <div class="row py-5">
                                             <h1 class="text-center mt-2 mb-4">
-                                                <i class="fas fa-angry"></i>
-                                                เมื่อคุณรู้สึกโกรธร่างกายของคุณมีอะไรเกิดขึ้นบ้าง...
-                                                <i class="fas fa-angry"></i>
+                                                <i class="fas fa-angry text-red"></i>
+                                                เมื่อคุณรู้สึก "<span class="text-red">โกรธ</span>" ร่างกายของคุณมีอะไรเกิดขึ้นบ้าง...
+                                                <i class="fas fa-angry text-red"></i>
                                             </h1>
 
                                             <div class="container">
@@ -732,9 +737,11 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
-                                            <h2 class="text-center py-5">เทคนิคการขจัดโกรธ...</h2>
+                                            <h2 class="text-center py-5">5 วิธีจัดการความ "<span class="text-red">โกรธ <i
+                                                        class="fas fa-angry text-red"></i></span>"</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day2/02(3)_new.jpg" style="width:100%">
+                                                <img class="mySlides1" src="images/day2/02(3)_new.jpg"
+                                                    style="width:100%">
                                                 {{-- <img class="mySlides1" src="images/day2/02(4).png" style="width:100%">
                                                 <img class="mySlides1" src="images/day2/02(5).png" style="width:100%"> --}}
                                             </div>

@@ -202,8 +202,9 @@
                                         <div class="row">
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
+                                                    <input class="form-check-input" style="background-color: #FFFF00"
+                                                        type="radio" value="สีเหลือง" name="flexRadioDefault"
+                                                        id="color_feel_today1">
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -226,8 +227,9 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-info" type="radio" value="สีเขียว"
-                                                        name="flexRadioDefault" id="color_feel_today3">
+                                                    <input class="form-check-input" style="background-color: #A084DC"
+                                                        type="radio" value="สีเขียว" name="flexRadioDefault"
+                                                        id="color_feel_today3">
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -239,8 +241,9 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4">
+                                                    <input class="form-check-input" style="background-color: #7286D3"
+                                                        type="radio" value="สีฟ้า" name="flexRadioDefault"
+                                                        id="color_feel_today4">
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -266,7 +269,7 @@
                                         <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i>
                                             อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -292,7 +295,7 @@
 
 
                                         <h1 class="text-center mt-5 mb-2"><span
-                                            class="badge rounded-pill bg-info">นิทานเรื่อง...อิฐขี้กลัว</span></h1>
+                                                class="badge rounded-pill bg-info">นิทานเรื่อง...อิฐขี้กลัว</span></h1>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <img class="mySlides1" src="images/day3/อิฐขี้กลัว/1.png" style="width:100%">
                                             <img class="mySlides1" src="images/day3/อิฐขี้กลัว/2.png" style="width:100%">
@@ -333,9 +336,11 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
-                                            <h2>สัมผัสความ "กลัว" ในร่างกายเรา...</h2>
+                                            <h2>สัมผัสความ "<span style="font-weight:bold;color:#0081C9">กลัว</span>"
+                                                ในร่างกายเรา...</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day3/03(1)_new.png" style="width:100%">
+                                                <img class="mySlides1" src="images/day3/03(1)_new.png"
+                                                    style="width:100%">
                                                 <video autoplay muted loop="true">
                                                     <source src="images/day3/03(2)_new.mp4" type="video/mp4">
                                                 </video>
@@ -365,7 +370,9 @@
                                         </div>
 
                                         <div class="py-5 text-center">
-                                            <h3>เมื่อเกิดเหตุการณ์ต่างๆ และรู้สึกกลัว คุณมีระดับอาการอย่างไร...</h3>
+                                            <h3>เมื่อเกิดเหตุการณ์ต่างๆ และรู้สึก "<span
+                                                    style="font-weight:bold;color:#0081C9">กลัว</span>"
+                                                คุณเคยมีอาการต่อไปนี้ระดับใด...</h3>
                                             <div class="row py-5">
                                                 <div class="col-md-4 mt-3">
                                                     <h3>ปวดหัว</h3>

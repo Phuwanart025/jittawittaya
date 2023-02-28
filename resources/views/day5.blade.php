@@ -265,8 +265,9 @@
                                         <div class="row">
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
+                                                    <input class="form-check-input" style="background-color: #FFFF00"
+                                                        type="radio" value="สีเหลือง" name="flexRadioDefault"
+                                                        id="color_feel_today1">
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -289,8 +290,9 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3">
+                                                    <input class="form-check-input" style="background-color: #A084DC"
+                                                        type="radio" value="สีเขียว" name="flexRadioDefault"
+                                                        id="color_feel_today3">
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -302,8 +304,9 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4">
+                                                    <input class="form-check-input" style="background-color: #7286D3"
+                                                        type="radio" value="สีฟ้า" name="flexRadioDefault"
+                                                        id="color_feel_today4">
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -353,7 +356,7 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="mt-5 w3-center" for="customRange2">คำใหนคือ
+                                        <h2 class="mt-5 w3-center" for="customRange2">คำไหนคือ
                                             <span class="badge rounded-pill"
                                                 style="background-color: #12bbd4">ความคิดบ้างนะ?
                                             </span>
