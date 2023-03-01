@@ -379,7 +379,7 @@
                                                                             name="feel_body1" id="feel_body1">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today1">
-                                                                            1.หน้าแดง
+                                                                            1...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -394,7 +394,7 @@
                                                                             name="feel_body1" id="feel_body1">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today2">
-                                                                            1.หน้าซีด
+                                                                            1...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -413,7 +413,7 @@
                                                                             name="feel_body2" id="feel_body3">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today3">
-                                                                            2.หายใจช้า
+                                                                            2...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -428,7 +428,7 @@
                                                                             name="feel_body2" id="feel_body4">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            2.หายใจเร็ว
+                                                                            2...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -447,7 +447,7 @@
                                                                             name="feel_body3" id="feel_body5">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            3.กล้ามเนื้อผ่อนคลาย
+                                                                            3...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -462,7 +462,7 @@
                                                                             name="feel_body3" id="feel_body6">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            3.กล้ามเนื้อเกร็ง
+                                                                            3...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -481,7 +481,7 @@
                                                                             name="feel_body4" id="feel_body7">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            4.กำมือแน่น
+                                                                            4...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -496,7 +496,7 @@
                                                                             name="feel_body4" id="feel_body8">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            4.กำมือขึ้นแล้วหมุนๆ
+                                                                            4...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -515,7 +515,7 @@
                                                                             name="feel_body5" id="feel_body9">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            5.ตัวร้อน
+                                                                            5...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -530,7 +530,7 @@
                                                                             name="feel_body5" id="feel_body10">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            5.ตัวเย็น
+                                                                            5...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -549,7 +549,7 @@
                                                                             name="feel_body6" id="feel_body11">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            6.เหงื่อออก
+                                                                            6...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -564,7 +564,7 @@
                                                                             name="feel_body6" id="feel_body12">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            6.เหงื่อไม่ออก
+                                                                            6...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -583,7 +583,7 @@
                                                                             name="feel_body7" id="feel_body13">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            7.รู้สึกร้อนบนใบหน้า
+                                                                            7...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -598,7 +598,7 @@
                                                                             name="feel_body7" id="feel_body14">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            7.รู้สึกเย็นบนใบหน้า
+                                                                            7...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -617,7 +617,7 @@
                                                                             name="feel_body8" id="feel_body15">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            8.คิ้วขมวด
+                                                                            8...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -632,7 +632,7 @@
                                                                             name="feel_body8" id="feel_body16">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            8.คิ้วโก่งเป็นคันศร
+                                                                            8...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -651,7 +651,7 @@
                                                                             name="feel_body9" id="feel_body17">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            9.กัดฟัน
+                                                                            9...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -666,7 +666,7 @@
                                                                             name="feel_body9" id="feel_body18">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            9.ยิงฟัน
+                                                                            9...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -685,7 +685,7 @@
                                                                             name="feel_body10" id="feel_body19">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            10.ลมออกทวารหนัก
+                                                                            10...
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -700,7 +700,7 @@
                                                                             name="feel_body10" id="feel_body20">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            10.ลมออกหู
+                                                                            10...
                                                                         </label>
                                                                     </div>
                                                                 </span>

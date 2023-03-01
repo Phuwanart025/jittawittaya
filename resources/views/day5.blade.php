@@ -494,11 +494,11 @@
                                                                 </h3>
                                                                 <div class="row py-3">
                                                                     <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> คิดเลข</i></p>
-                                                                        <p><i class="fas fa-check-circle"> กลัว</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
                                                                     </div>
                                                                     <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> ปวดท้อง</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
                                                                     </div>
                                                                 </div>
                                                             </div>

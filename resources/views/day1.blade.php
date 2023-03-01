@@ -483,12 +483,9 @@
                                                                         <p><i class="fas fa-check-circle"> ...</i></p>
                                                                     </div>
                                                                     <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> ...</i>
-                                                                        </p>
-                                                                        <p><i class="fas fa-check-circle"> ...</i>
-                                                                        </p>
-                                                                        <p><i class="fas fa-check-circle"> ...
-                                                                                ...</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
                                                                     </div>
                                                                 </div>
                                                             </div>

@@ -372,7 +372,10 @@
                                                     </span>
                                                 </h2>
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day11/ทบทวน/วันที่10.mp4" type="video/mp4">
+                                                    <source src="images/day10/วันที่102.mp4" type="video/mp4">
+                                                </video>
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day10/วันที่103.mp4" type="video/mp4">
                                                 </video>
                                                 <hr>
 
@@ -425,8 +428,7 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <img class="mySlides1" src="images/day11/วันที่11.png"
-                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day11/วันที่11.png" style="width:100%">
                                         </div>
 
                                         <div class="d-grid gap-2 col-3 py-3 mx-auto">

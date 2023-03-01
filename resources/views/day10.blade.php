@@ -158,6 +158,15 @@
         height: auto !important;
 
     }
+
+    .form-check-label{
+        font-size: 18px
+    }
+
+    .result-text{
+        font-size: 22px;
+        color:red;
+    }
 </style>
 
 @section('content')
@@ -331,7 +340,7 @@
 
                                                     </div>
                                                 </div>
-                                                <p id="result" name="result1a" type="text"></p>
+                                                <p class="py-3 result-text" id="result" name="result1a" type="text"></p>
                                             </div>
 
                                         </div>
@@ -374,7 +383,7 @@
                                                             <input class="form-check-input" type="radio" id="option11"
                                                                 name="v6" value="ผิด"
                                                                 onclick="disableCheckbox2();highlightAnswer2('option11');">
-                                                            <label class="form-check-label" for="defaultCheck1">
+                                                            <label class="form-check-label" for="defaultCheck1" >
                                                                 ฉีดยาฆ่าแมลงแล้ว มาได้ไงนะ.
                                                             </label>
                                                         </div>
@@ -391,7 +400,7 @@
                                                     </div>
                                                 </div>
 
-                                                <p id="result2" name="result2" type="text"></p>
+                                                <p class="py-3 result-text" id="result2" name="result2" type="text"></p>
 
                                             </div>
 
@@ -452,7 +461,7 @@
                                                     </div>
                                                 </div>
 
-                                                <p id="result3" name="result3" type="text"></p>
+                                                <p class="py-3 result-text" id="result3" name="result3" type="text"></p>
 
                                             </div>
 
@@ -615,11 +624,11 @@
                 if (answer == correctAnswer) {
                     document.getElementById(correctAnswer).style.backgroundColor = "lightgreen";
                     document.getElementById("result").innerHTML =
-                        "คำตอบ: คุณเลือกตอบ ทำไมขับรถแบบนี้ไม่มีมารยาท. คุณตอบถูกแล้ว";
+                        "เฉลย: คุณเลือกตอบ ทำไมขับรถแบบนี้ไม่มีมารยาท. คุณตอบถูกแล้ว";
                 } else {
                     document.getElementById(answer).style.backgroundColor = "red";
                     document.getElementById("result").innerHTML =
-                        "คำตอบ: คุณเลือกตอบเขาจะชนเรามั้ยนะ. คำตอบที่ถูกคือ...ทำไมขับรถแบบนี้ไม่มีมารยาท.";
+                        "เฉลย: คุณเลือกตอบเขาจะชนเรามั้ยนะ. คำตอบที่ถูกคือ...ทำไมขับรถแบบนี้ไม่มีมารยาท.";
                 }
             }
         </script>
@@ -640,10 +649,10 @@
                 if (answer2 == correctAnswer2) {
                     document.getElementById(correctAnswer2).style.backgroundColor = "red";
                     document.getElementById("result2").innerHTML =
-                        "คำตอบ: คุณเลือกตอบ ฉีดยาฆ่าแมลงแล้ว มาได้ไงนะ. คำตอบที่ถูกคือ...อี๋!!! สกปรก.";
+                        "เฉลย: คุณเลือกตอบ ฉีดยาฆ่าแมลงแล้ว มาได้ไงนะ. คำตอบที่ถูกคือ...อี๋!!! สกปรก.";
                 } else {
                     document.getElementById(answer2).style.backgroundColor = "lightgreen";
-                    document.getElementById("result2").innerHTML = "คำตอบ: คุณเลือกตอบ อี๋!!! สกปรก. คุณตอบถูกแล้ว";
+                    document.getElementById("result2").innerHTML = "เฉลย: คุณเลือกตอบ อี๋!!! สกปรก. คุณตอบถูกแล้ว";
                 }
             }
         </script>
@@ -664,10 +673,10 @@
                 if (answer3 == correctAnswer3) {
                     document.getElementById(correctAnswer3).style.backgroundColor = "red";
                     document.getElementById("result3").innerHTML =
-                        "คำตอบ: คุณเลือกตอบ  เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก. คำตอบที่ถูกคือ...เขาไม่รักเราแล้ว.";
+                        "เฉลย: คุณเลือกตอบ  เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก. คำตอบที่ถูกคือ...เขาไม่รักเราแล้ว.";
                 } else {
                     document.getElementById(answer3).style.backgroundColor = "lightgreen";
-                    document.getElementById("result3").innerHTML = "คำตอบ: คุณเลือกตอบ เขาไม่รักเราแล้ว. คุณตอบถูกแล้ว";
+                    document.getElementById("result3").innerHTML = "เฉลย: คุณเลือกตอบ เขาไม่รักเราแล้ว. คุณตอบถูกแล้ว";
                 }
             }
         </script>

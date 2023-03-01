@@ -290,11 +290,8 @@
                                         </div>
 
                                         <div class="text-center py-5">
-<<<<<<< HEAD
-                                            <h2>รูปแบบความคิดและพฤติกรรม.</h2>
-=======
+
                                             <h2>ถ้าฉัน คิดแบบนี้ ฉันจะรู้สึก.......</h2>
->>>>>>> 57fa023033e4fad50ecff5f08bec217f7a821e12
 
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">
