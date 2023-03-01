@@ -277,7 +277,7 @@
 
 
                                         <div class="text-center py-5">
-                                            <h2>เกมส์?...</h2>
+                                            <h2>รูปแบบความคิดและพฤติกรรม.</h2>
 
                                             <div class="table-responsive">
                                                 <table class="table table-bordered table-Warning table-highlight">

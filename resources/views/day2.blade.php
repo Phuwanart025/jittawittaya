@@ -160,7 +160,7 @@
                 <div class="row justify-content-center">
 
                     <div class="card o-hidden border-0 shadow-lg my-5  w3-theme-l4">
-                        <div class="card-body p-0">
+                        <div class="card-body p-0 ">
                             <div class="p-5">
 
                                 <form method="get" action="{{ url('store2') }}" enctype="multipart/form-data">
