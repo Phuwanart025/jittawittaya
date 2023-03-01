@@ -151,6 +151,13 @@
         overflow: auto;
         overflow-x: hidden;
     }
+
+    video {
+        /* override other styles to make responsive */
+        width: 100% !important;
+        height: auto !important;
+
+    }
 </style>
 
 @section('content')
@@ -291,92 +298,212 @@
                                             </h1>
                                         </div>
 
-                                        <div class="py-5">
-                                            <h1 class="text-center "><span
-                                                    class="badge rounded-pill bg-primary">มาทบทวนความรู้กัน'นน...</span>
+                                        <div class="row py-5 text-center">
+
+                                            <video class="mySlides1" autoplay muted loop="true">
+                                                <source src="images/day10/เกม1.mp4" type="video/mp4">
+                                            </video>
+
+                                            <h1 class="py-5">คุณคิดว่าบุคคลในภาพน่าจะคิดอะไรอยู่...?</h1>
+
+                                            <div class="container">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-6 col-sm-6 mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="option1" name="v5" value="ถูก"
+                                                                onclick="disableCheckbox();highlightAnswer('option1');">
+                                                            <label class="form-check-label" for="defaultCheck1">
+                                                                ทำไมขับรถแบบนี้ไม่มีมารยาท.
+                                                            </label>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="option2" name="v5" value="ผิด"
+                                                                onclick="disableCheckbox();highlightAnswer('option2');">
+                                                            <label class="form-check-label" for="defaultCheck1">
+                                                                เขาจะชนเรามั้ยนะ.
+                                                            </label>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <p id="result" name="result1a" type="text"></p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY10</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
                                             </h1>
-                                            <div
-                                                class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">
-                                                <h2 class="mt-4">
-                                                    <span class="badge rounded-pill bg-warning">
-                                                        naïve model...
-                                                    </span>
-                                                </h2>
-                                                <img class="mySlides1 mb-3" src="images/day10/10(1).png" style="width:100%">
-                                                <hr>
+                                        </div>
 
-                                                <h2 class="mt-4">
-                                                    <span class="badge rounded-pill bg-warning">
-                                                        cognitive model...
-                                                    </span>
-                                                </h2>
-                                                <img class="mySlides1 mb-3" src="images/day10/10(2).png"
-                                                    style="width:100%">
-                                                <hr>
+                                        <div class="row py-5 text-center">
 
-                                                <h2 class="mt-4">
-                                                    <span class="badge rounded-pill bg-primary">
-                                                        interactional model...
-                                                    </span>
-                                                </h2>
-                                                <img class="mySlides1 mb-3" src="images/day10/10(3).png"
-                                                    style="width:100%">
-                                                <hr>
+                                            <video class="mySlides1" autoplay muted loop="true">
+                                                <source src="images/day10/เกม2.mp4" type="video/mp4">
+                                            </video>
 
-                                                <h2 class="mt-4">
-                                                    <span class="badge rounded-pill bg-danger">
-                                                        คิดแบบไหนทำให้เศร้า...
-                                                    </span>
-                                                </h2>
-                                                <img class="mySlides1 mb-3" src="images/day10/10(4).png"
-                                                    style="width:100%">
-                                                <hr>
+                                            <h1 class="py-5">คุณคิดว่าบุคคลในภาพน่าจะคิดอะไรอยู่...?</h1>
 
-                                                <h2 class="mt-4">
-                                                    <span class="badge rounded-pill bg-danger">
-                                                        คิดแบบไหนทำให้กลัว...
-                                                    </span>
-                                                </h2>
-                                                <img class="mySlides1 mb-3" src="images/day10/10(5).png"
-                                                    style="width:100%">
-                                                <hr>
+                                            <div class="container">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-6 col-sm-6 mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" id="option11"
+                                                                name="v6" value="ผิด"
+                                                                onclick="disableCheckbox2();highlightAnswer2('option11');">
+                                                            <label class="form-check-label" for="defaultCheck1">
+                                                                ฉีดยาฆ่าแมลงแล้ว มาได้ไงนะ.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" id="option22"
+                                                                name="v6" value="ถูก"
+                                                                onclick="disableCheckbox2();highlightAnswer2('option22');">
+                                                            <label class="form-check-label" for="defaultCheck1">
+                                                                อี๋!!! สกปรก.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                                <h2 class="mt-4">
-                                                    <span class="badge rounded-pill bg-danger">
-                                                        คิดแบบไหนทำให้โกรธ...
-                                                    </span>
-                                                </h2>
-                                                <img class="mySlides1 mb-3" src="images/day10/10(6).png"
-                                                    style="width:100%">
-                                                <hr>
-
-                                                <h2 class="mt-4">
-                                                    <span class="badge rounded-pill bg-warning">
-                                                        กับดักความคิด...
-                                                    </span>
-                                                </h2>
-                                                <img class="mySlides1 mb-3" src="images/day10/10(7).jpg"
-                                                    style="width:100%">
+                                                <p id="result2" name="result2" type="text"></p>
 
                                             </div>
-                                            <hr>
 
-                                            <h3 class="mt-5 mb-3">
-                                                <i class="fas fa-edit">ใน 4 วันที่ผ่านมา คุณได้เรียนรู้อะไรบ้าง:</i>
-                                            </h3>
-                                            <textarea name="v3" id="v3" class="form-control shadow-textarea" rows="8"
-                                                placeholder="ใน 4 วันที่ผ่านมา คุณได้เรียนรู้อะไรบ้าง..."></textarea>
+                                        </div>
+
+                                    </div>
+
+                                    {{-- Content4 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY10</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row py-5 text-center">
+
+                                            <video class="mySlides1" autoplay muted loop="true">
+                                                <source src="images/day10/เกม3.mp4" type="video/mp4">
+                                            </video>
+
+                                            <h1 class="py-5">คุณคิดว่าบุคคลในภาพน่าจะคิดอะไรอยู่...?</h1>
+
+                                            <div class="container">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-6 col-sm-6 mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" id="option33"
+                                                                name="v6" value="ผิด"
+                                                                onclick="disableCheckbox3();highlightAnswer3('option33');">
+                                                            <label class="form-check-label" for="defaultCheck1">
+                                                                เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" id="option44"
+                                                                name="v6" value="ถูก"
+                                                                onclick="disableCheckbox3();highlightAnswer3('option44');">
+                                                            <label class="form-check-label" for="defaultCheck1">
+                                                                เขาไม่รักเราแล้ว.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <p id="result3" name="result3" type="text"></p>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    {{-- Content5 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY10</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row py-5 text-center">
+
+                                            <h1><span class="badge rounded-pill bg-primary">Interaction Model</span></h1>
+                                            <h2><span class="badge rounded-pill bg-primary">เหตุการณ์
+                                                    <i class="fas fa-arrow-circle-right"></i> ความคิด
+                                                    <i class="fas fa-arrow-circle-right"></i> อารมณ์/พฤติกรรม
+                                                </span></h2>
+
+                                            <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day10/วันที่102.mp4" type="video/mp4">
+                                                </video>
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day10/วันที่103.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
                                         </div>
 
                                         <div class="d-grid gap-2 col-3 py-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-
                                     </div>
-
-                                    {{-- Content3 --}}
-
 
                                 </form>
                                 <br>
@@ -392,7 +519,10 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
-                            {{-- <span class="dot" onclick="currentSlide(3)"></span> --}}
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+
                         </div>
                     </div>
                 </div>
@@ -465,6 +595,80 @@
             // Update the current slider value (each time you drag the slider handle)
             slider3.oninput = function() {
                 output3.innerHTML = this.value;
+            }
+        </script>
+
+        <script>
+            const correctAnswer = "option1";
+
+            function disableCheckbox() {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].style.pointerEvents = "none";
+                    checkboxes[i].style.color = "gray";
+                    //if(!checkboxes[i].checked) checkboxes[i].disabled = true;
+                }
+            }
+
+            function highlightAnswer(answer) {
+
+                if (answer == correctAnswer) {
+                    document.getElementById(correctAnswer).style.backgroundColor = "lightgreen";
+                    document.getElementById("result").innerHTML =
+                        "คำตอบ: คุณเลือกตอบ ทำไมขับรถแบบนี้ไม่มีมารยาท. คุณตอบถูกแล้ว";
+                } else {
+                    document.getElementById(answer).style.backgroundColor = "red";
+                    document.getElementById("result").innerHTML =
+                        "คำตอบ: คุณเลือกตอบเขาจะชนเรามั้ยนะ. คำตอบที่ถูกคือ...ทำไมขับรถแบบนี้ไม่มีมารยาท.";
+                }
+            }
+        </script>
+
+        <script>
+            const correctAnswer2 = "option11";
+
+            function disableCheckbox2() {
+                var checkboxes2 = document.querySelectorAll('input[type="radio"]');
+                for (var i = 0; i < checkboxes2.length; i++) {
+                    checkboxes2[i].style.pointerEvents = "none";
+                    //checkboxes2[i].disabled = true;
+                }
+            }
+
+            function highlightAnswer2(answer2) {
+
+                if (answer2 == correctAnswer2) {
+                    document.getElementById(correctAnswer2).style.backgroundColor = "red";
+                    document.getElementById("result2").innerHTML =
+                        "คำตอบ: คุณเลือกตอบ ฉีดยาฆ่าแมลงแล้ว มาได้ไงนะ. คำตอบที่ถูกคือ...อี๋!!! สกปรก.";
+                } else {
+                    document.getElementById(answer2).style.backgroundColor = "lightgreen";
+                    document.getElementById("result2").innerHTML = "คำตอบ: คุณเลือกตอบ อี๋!!! สกปรก. คุณตอบถูกแล้ว";
+                }
+            }
+        </script>
+
+        <script>
+            const correctAnswer3 = "option33";
+
+            function disableCheckbox3() {
+                var checkboxes3 = document.querySelectorAll('input[type="radio"]');
+                for (var i = 0; i < checkboxes3.length; i++) {
+                    checkboxes3[i].style.pointerEvents = "none";
+                    //checkboxes2[i].disabled = true;
+                }
+            }
+
+            function highlightAnswer3(answer3) {
+
+                if (answer3 == correctAnswer3) {
+                    document.getElementById(correctAnswer3).style.backgroundColor = "red";
+                    document.getElementById("result3").innerHTML =
+                        "คำตอบ: คุณเลือกตอบ  เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก. คำตอบที่ถูกคือ...เขาไม่รักเราแล้ว.";
+                } else {
+                    document.getElementById(answer3).style.backgroundColor = "lightgreen";
+                    document.getElementById("result3").innerHTML = "คำตอบ: คุณเลือกตอบ เขาไม่รักเราแล้ว. คุณตอบถูกแล้ว";
+                }
             }
         </script>
 

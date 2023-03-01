@@ -132,6 +132,32 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 600px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    video {
+        /* override other styles to make responsive */
+        width: 100% !important;
+        height: auto !important;
+
+    }
 </style>
 
 @section('content')
@@ -174,48 +200,53 @@
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1"
-                                                        checked>
+                                                    <input class="form-check-input" style="background-color: #FFFF00"
+                                                        type="radio" value="สีเหลือง" name="flexRadioDefault"
+                                                        id="color_feel_today1">
+                                                    <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
-                                                        สีเหลือง = ความสุข
+                                                        ความสุข
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2" checked>
+                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                    <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
-                                                        สีแดง = ความโกรธ
+                                                        ความโกรธ
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3"
-                                                        checked>
+                                                    <input class="form-check-input" style="background-color: #A084DC"
+                                                        type="radio" value="สีเขียว" name="flexRadioDefault"
+                                                        id="color_feel_today3">
+                                                    <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
-                                                        สีเขียว = ความกลัว
+                                                        ความกลัว
                                                     </label>
                                                 </div>
 
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4" checked>
+                                                    <input class="form-check-input" style="background-color: #7286D3"
+                                                        type="radio" value="สีฟ้า" name="flexRadioDefault"
+                                                        id="color_feel_today4">
+                                                    <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
-                                                        สีฟ้า = ความเศร้า
+                                                        ความเศร้า
                                                     </label>
                                                 </div>
                                             </div>
@@ -235,9 +266,20 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                            เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
+
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                            คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
+
+                                            <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                                แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ:</h3>
+                                            <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                                placeholder="แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ..."></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -261,17 +303,49 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>...</h2>
-                                        </div>
-
-                                        <div class="d-grid gap-2 col-4 mx-auto">
-                                            <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
-                                                href="{{ url('/day5') }}">บันทึก</button>
+                                        <h2 class="text-center py-5">ตรวจสอบความคิด...</h2>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <img class="mySlides1" src="images/day12/1.png"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day12/2.png"
+                                                style="width:100%">
                                         </div>
 
                                     </div>
+
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY12</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="py-5">
+                                            <h1 class="text-center "><span
+                                                    class="badge rounded-pill bg-primary">แบบฝึกหัด...</span>
+                                            </h1>
+                                            
+                                        </div>
+
+                                    </div>
+
+                                    {{-- Content4 --}}
+                                    
+
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
@@ -286,12 +360,11 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
         </div>
 
 

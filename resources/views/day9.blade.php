@@ -262,7 +262,7 @@
                                     </div>
 
                                     {{-- Content2 --}}
-                                    <div class="mySlides">
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -327,10 +327,10 @@
 
                                         </div>
 
-                                    </div>
+                                    </div> --}}
 
                                     {{-- Content3 --}}
-                                    <div class="mySlides">
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -395,10 +395,10 @@
 
                                         </div>
 
-                                    </div>
+                                    </div> --}}
 
                                     {{-- Content4 --}}
-                                    <div class="mySlides">
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -432,7 +432,7 @@
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
                                 </form>
                                 <br>
@@ -447,9 +447,9 @@
                             <div class="w3-btn w3-round-xlarge w3-right w3-hover-text-khaki" onclick="plusSlides(1)">
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
+                            {{-- <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span> --}}
                         </div>
                     </div>
                 </div>

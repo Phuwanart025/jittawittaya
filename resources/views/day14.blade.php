@@ -346,7 +346,6 @@
                                     </div>
 
                                     {{-- Content2 --}}
-                                    {{-- Content2 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -424,7 +423,8 @@
 
 
                                     </div>
-                                    {{-- Content2 --}}
+
+                                    {{-- Content4 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -492,7 +492,6 @@
                                                 type="submit">บันทึก</button>
                                         </div>
                                     </div>
-
 
                                     {{-- Content4 --}}
                                     {{-- <div class="mySlides">

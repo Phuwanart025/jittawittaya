@@ -132,6 +132,32 @@
         line-height: 40px;
         margin: 5px 0 20px 0;
     }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 600px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    video {
+        /* override other styles to make responsive */
+        width: 100% !important;
+        height: auto !important;
+
+    }
 </style>
 
 @section('content')
@@ -272,17 +298,144 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>...</h2>
+                                        <h2 class="text-center py-5">นิทานเรื่องคุณยายและความห่วงใย...</h2>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <img class="mySlides1" src="images/day11/คุณยายและความห่วงใย/1.png"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day11/คุณยายและความห่วงใย/2.png"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day11/คุณยายและความห่วงใย/3.png"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day11/คุณยายและความห่วงใย/4.png"
+                                                style="width:100%">
                                         </div>
 
-                                        <div class="d-grid gap-2 col-4 mx-auto">
-                                            <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')"
-                                                href="{{ url('/day5') }}">บันทึก</button>
+                                        <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
+                                        <hr>
+                                        <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
+                                            คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+
+                                    </div>
+
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY11</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="py-5">
+                                            <h1 class="text-center "><span
+                                                    class="badge rounded-pill bg-primary">มาทบทวนความรู้กัน'นน...</span>
+                                            </h1>
+                                            <div
+                                                class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">
+                                                <h2 class="mt-4">
+                                                    <span class="badge rounded-pill bg-warning">
+                                                        naïve model...
+                                                    </span>
+                                                </h2>
+                                                <img class="mySlides1 mb-3" src="images/day11/ทบทวน/วันที่6/2.png"
+                                                    style="width:100%">
+                                                <hr>
+
+                                                <h2 class="mt-4">
+                                                    <span class="badge rounded-pill bg-warning">
+                                                        cognitive model...
+                                                    </span>
+                                                </h2>
+                                                <img class="mySlides1 mb-3" src="images/day11/ทบทวน/วันที่6/3.png"
+                                                    style="width:100%">
+                                                <img class="mySlides1 mb-3" src="images/day11/ทบทวน/วันที่6/4.png"
+                                                    style="width:100%">
+                                                <hr>
+
+                                                <h2 class="mt-4">
+                                                    <span class="badge rounded-pill bg-primary">
+                                                        interactional model...
+                                                    </span>
+                                                </h2>
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day11/ทบทวน/วันที่10.mp4" type="video/mp4">
+                                                </video>
+                                                <hr>
+
+                                                <h3 class="mt-4">
+                                                    <span class="badge rounded-pill bg-danger">
+                                                        มุมมองความรู้เกี่ยวกับความคิด...?
+                                                    </span>
+                                                </h3>
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day7/07(1).mp4" type="video/mp4">
+                                                </video>
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day7/07(2).mp4" type="video/mp4">
+                                                </video>
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day7/07(3).mp4" type="video/mp4">
+                                                </video>
+
+                                            </div>
+                                            <hr>
+
+                                            <h3 class="mt-5 mb-3">
+                                                <i class="fas fa-edit">ใน 5 วันที่ผ่านมา คุณได้เรียนรู้อะไรบ้าง:</i>
+                                            </h3>
+                                            <textarea name="v3" id="v3" class="form-control shadow-textarea" rows="8"
+                                                placeholder="ใน 4 วันที่ผ่านมา คุณได้เรียนรู้อะไรบ้าง..."></textarea>
                                         </div>
 
                                     </div>
+
+                                    {{-- Content4 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY11</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="text-center py-5">
+                                            <img class="mySlides1" src="images/day11/วันที่11.png"
+                                                style="width:100%">
+                                        </div>
+
+                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                        </div>
+
+                                    </div>
+
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
@@ -297,12 +450,12 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
         </div>
 
 

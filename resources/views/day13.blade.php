@@ -221,6 +221,13 @@
     ul.ks-cboxtags li input[type="checkbox"]:focus+label {
         border: 2px solid #e9a1ff;
     }
+
+    video {
+        /* override other styles to make responsive */
+        width: 100% !important;
+        height: auto !important;
+
+    }
 </style>
 
 @section('content')
@@ -339,16 +346,13 @@
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
 
-                                            <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
-                                               แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ:</h3>
-                                            <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                                placeholder="แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ..."></textarea>
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                            แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ:</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ..."></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
-                                   
-
-                                    {{-- Content3 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -387,7 +391,8 @@
 
 
                                     </div>
-                                    {{-- Content2 --}}
+
+                                    {{-- Content3 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -410,11 +415,15 @@
 
                                         <h2 class="text-center py-5">นิทานเรื่อง คนขายรองเท้า...</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/1.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/2.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/3.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/4.png" style="width:100%">
-                                            
+                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/1.png"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/2.png"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/3.png"
+                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/4.png"
+                                                style="width:100%">
+
                                         </div>
 
                                         <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
@@ -424,9 +433,11 @@
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
 
-                                   
-                                       
+
+
                                     </div>
+
+                                    {{-- Content4 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -448,16 +459,16 @@
                                         </div>
 
                                         <h2 class="text-center py-5">เกมมมมมมมมมมม............</h2>
-                                        
 
-                                   
+
+
                                         <div class="d-grid gap-2 col-3 mx-auto py-5">
                                             <button class="btn btn-primary w-100 btn-confirm"
                                                 type="submit">บันทึก</button>
                                         </div>
                                     </div>
 
-                                    {{-- Content4 --}}
+                                    {{-- Content --}}
                                     {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
