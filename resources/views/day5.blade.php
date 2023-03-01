@@ -148,7 +148,7 @@
     .container {
         max-width: 640px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 13px;
+        font-size: 20px;
     }
 
     ul.ks-cboxtags {
@@ -190,7 +190,7 @@
         -webkit-font-smoothing: antialiased;
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-        font-size: 12px;
+        font-size: 20px;
         padding: 2px 6px 2px 2px;
         content: "\f067";
         transition: transform .3s ease-in-out;
@@ -265,8 +265,9 @@
                                         <div class="row">
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1">
+                                                    <input class="form-check-input" style="background-color: #FFFF00"
+                                                        type="radio" value="สีเหลือง" name="flexRadioDefault"
+                                                        id="color_feel_today1">
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -289,8 +290,9 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3">
+                                                    <input class="form-check-input" style="background-color: #A084DC"
+                                                        type="radio" value="สีเขียว" name="flexRadioDefault"
+                                                        id="color_feel_today3">
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -302,8 +304,9 @@
 
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4">
+                                                    <input class="form-check-input" style="background-color: #7286D3"
+                                                        type="radio" value="สีฟ้า" name="flexRadioDefault"
+                                                        id="color_feel_today4">
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -326,7 +329,8 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="py-5" for="customRange2">อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
+                                        <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i>
+                                            อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
                                     </div>
@@ -352,37 +356,41 @@
                                             </h1>
                                         </div>
 
-                                        <h3 class="mt-5" for="customRange2">ความคิดคืออะไร :</h3>
+                                        <h2 class="mt-5 w3-center" for="customRange2">คำไหนคือ
+                                            <span class="badge rounded-pill"
+                                                style="background-color: #12bbd4">ความคิดบ้างนะ?
+                                            </span>
+                                        </h2>
 
                                         <div class="container mb-5">
                                             <div class="row">
                                                 <div class="col-sm-6 mt-2 mx-auto">
                                                     <ul class="ks-cboxtags">
                                                         <li><input type="checkbox" id="1" name="v4[]"
-                                                                value="ฉันดูไม่ดี"><label
-                                                                for="1">ฉันดูไม่ดี</label>
+                                                                value="เครียด"><label
+                                                                for="1">เครียด</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="2" name="v4[]"
-                                                                value="เศร้า"><label for="2">เศร้า</label>
+                                                                value="กลัว"><label for="2">กลัว</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="3" name="v4[]"
-                                                                value="ปวดหัว"><label for="3">ปวดหัว</label>
+                                                                value="เบื่อ"><label for="3">เบื่อ</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="4" name="v4[]"
-                                                                value="เหงา"><label for="4">เหงา</label>
+                                                                value="คนอื่นไม่ชอบฉัน"><label for="4">คนอื่นไม่ชอบฉัน</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="5" name="v4[]"
-                                                                value="เพื่อนไม่ชอบฉัน"><label
-                                                                for="5">เพื่อนไม่ชอบฉัน</label>
+                                                                value="ไม่อยากไปเที่ยว"><label
+                                                                for="5">ไม่อยากไปเที่ยว</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="6" name="v4[]"
-                                                                value="ไม่อยากไปใหน"><label
-                                                                for="6">ไม่อยากไปใหน</label>
+                                                                value="อย่ามายุ่งกับฉัน"><label
+                                                                for="6">อย่ามายุ่งกับฉัน</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="7" name="v4[]"
@@ -391,7 +399,7 @@
                                                         </li>
 
                                                         <li><input type="checkbox" id="8" name="v4[]"
-                                                                value="เก็บตัว"><label for="8">เก็บตัว</label>
+                                                                value="เ"><label for="8">------------------</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="9" name="v4[]"
@@ -527,15 +535,24 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <h2>ความรู้ส่งท้าย.....</h2>
+                                            <h2>ความรู้ส่งท้าย...ฝึกรู้ทันความคิด</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day5/05(1).jpg" style="width:100%">
+                                                <img class="mySlides1" src="images/day5/05(1)_new.png"
+                                                    style="width:100%">
+                                                <img class="mySlides1" src="images/day5/05(2)_new.png"
+                                                    style="width:100%">
                                             </div>
                                         </div>
+
+                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                        </div>
+
                                     </div>
 
                                     {{-- Content4 --}}
-                                    <div class="mySlides">
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -564,7 +581,7 @@
 
                                         <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
                                         <hr>
-                                        <h3 class="py-3" for="customRange2">คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
+                                        <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i> คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
 
@@ -572,7 +589,7 @@
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
                                 </form>
                                 <!-- Comment Form End -->
@@ -589,14 +606,14 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
+                            {{-- <span class="dot" onclick="currentSlide(4)"></span> --}}
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-        
+
 
 
         <script>

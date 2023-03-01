@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class LoginController extends Controller
 {
@@ -56,14 +57,18 @@ class LoginController extends Controller
 
         if (Auth::attempt([$login_type => $email, 'password' => $password])) {
             //Auth successful here
+            Alert::success('เข้าสู่ระบบสำเร็จ','');
             return redirect()->intended($this->redirectPath());
         }
 
-
-        return redirect()->back()
+        return redirect()
+            ->back()
             ->withInput()
             ->with([
-                'error' => 'ไม่สามารถเข้าระบบได้ ข้อมูลไม่ถูกต้อง.',
+                Alert::error(
+                    'เกิดข้อผิดพลาด',
+                    'ไม่สามารถเข้าระบบได้ ข้อมูลไม่ถูกต้อง.'
+                ),
             ]);
     }
     public function redirectTo()
@@ -71,6 +76,7 @@ class LoginController extends Controller
        
        
         {
+            
             return ('/');
         }
     }

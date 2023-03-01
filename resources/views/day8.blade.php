@@ -184,48 +184,53 @@
 
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-warning" type="radio"
-                                                        value="สีเหลือง" name="flexRadioDefault" id="color_feel_today1"
-                                                        checked>
+                                                    <input class="form-check-input" style="background-color: #FFFF00"
+                                                        type="radio" value="สีเหลือง" name="flexRadioDefault"
+                                                        id="color_feel_today1">
+                                                    <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
-                                                        สีเหลือง = ความสุข
+                                                        ความสุข
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2" checked>
+                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                    <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
-                                                        สีแดง = ความโกรธ
+                                                        ความโกรธ
                                                     </label>
                                                 </div>
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-success" type="radio"
-                                                        value="สีเขียว" name="flexRadioDefault" id="color_feel_today3"
-                                                        checked>
+                                                    <input class="form-check-input" style="background-color: #A084DC"
+                                                        type="radio" value="สีเขียว" name="flexRadioDefault"
+                                                        id="color_feel_today3">
+                                                    <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
-                                                        สีเขียว = ความกลัว
+                                                        ความกลัว
                                                     </label>
                                                 </div>
 
                                             </div>
                                             <br>
 
-                                            <div class="col-md-3 mt-3">
+                                            <div class="col-md-3 py-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input bg-primary" type="radio" value="สีฟ้า"
-                                                        name="flexRadioDefault" id="color_feel_today4" checked>
+                                                    <input class="form-check-input" style="background-color: #7286D3"
+                                                        type="radio" value="สีฟ้า" name="flexRadioDefault"
+                                                        id="color_feel_today4">
+                                                    <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
-                                                        สีฟ้า = ความเศร้า
+                                                        ความเศร้า
                                                     </label>
                                                 </div>
                                             </div>
@@ -245,17 +250,19 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="mt-5 mb-2" for="customRange2">เหตุการณ์ที่เกิดขึ้น:</h3>
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                            เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
                                             placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
 
-                                        <h3 class="mt-5 mb-2" for="customRange2">คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                            คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
                                     </div>
 
-                                    {{-- Content2 --}}
-                                    <div class="mySlides">
+                                    {{-- Content --}}
+                                    {{-- <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -280,9 +287,9 @@
                                             <h1>กับดักความคิด...</h1>
                                             <img class="mb-3" src="images/day8/08(1).jpg" style="width:100%">
                                         </div>
-                                    </div>
+                                    </div> --}}
 
-                                    {{-- Content3 --}}
+                                    {{-- Content2 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -306,9 +313,9 @@
                                         <div class="row py-5 text-center">
 
                                             <h1 class="mb-3">เพลงบำบัดจิตใจ...</h1>
-
+                                            <img class="mb-3" src="images/day8/08(1)_new.png" style="width:100%">
                                             <div class="ratio ratio-16x9 py-3">
-                                                <iframe src="https://www.youtube.com/embed/sv7TVjOq1Fs"
+                                                <iframe src="https://www.youtube.com/embed/gqeA_B7pK9s"
                                                     title="YouTube video player" frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     allowfullscreen>
@@ -316,8 +323,9 @@
                                             </div>
 
                                             <p class="py-3">ขอบคุณเพลง:<a target="_blank"
-                                                    href="https://www.youtube.com/watch?v=sv7TVjOq1Fs">
-                                                    ครึ่งหนึ่งของชีวิต - แอม เสาวลักษณ์【OFFICIAL MV】</a>
+                                                    href="https://www.youtube.com/watch?v=gqeA_B7pK9s">
+                                                    ด้านที่ดีกว่าของชีวิต - BOYd KOSIYABONG
+                                                </a>
                                             </p>
 
                                         </div>
@@ -342,7 +350,7 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
+                            {{-- <span class="dot" onclick="currentSlide(3)"></span> --}}
                         </div>
                     </div>
                 </div>
