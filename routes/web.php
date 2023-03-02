@@ -116,6 +116,34 @@ Route::get('/day14', function () {
     return view('day14');
 })->middleware('auth');
 
+Route::get('/day15', function () {
+    return view('day15');
+})->middleware('auth');
+
+Route::get('/day16', function () {
+    return view('day16');
+})->middleware('auth');
+
+Route::get('/day17', function () {
+    return view('day17');
+})->middleware('auth');
+
+Route::get('/day18', function () {
+    return view('day18');
+})->middleware('auth');
+
+Route::get('/day19', function () {
+    return view('day19');
+})->middleware('auth');
+
+Route::get('/day20', function () {
+    return view('day20');
+})->middleware('auth');
+
+Route::get('/day21', function () {
+    return view('day21');
+})->middleware('auth');
+
 Route::get('/team', function () {
     return view('team');
 })->middleware('auth');
