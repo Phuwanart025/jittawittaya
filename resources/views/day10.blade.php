@@ -159,13 +159,12 @@
 
     }
 
-    .form-check-label{
+    .form-check-label {
         font-size: 18px
     }
 
-    .result-text{
+    .result-text {
         font-size: 22px;
-        color:red;
     }
 </style>
 
@@ -319,9 +318,10 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="option1" name="v5" value="ถูก"
-                                                                onclick="disableCheckbox();highlightAnswer('option1');">
+                                                            <input class="form-check-input" type="radio" name="v5"
+                                                                id="option10" style="background-color: #A084DC"
+                                                                onclick="disableCheckbox(this.value);highlightAnswer('option10');"
+                                                                value="ถูก">
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 ทำไมขับรถแบบนี้ไม่มีมารยาท.
                                                             </label>
@@ -330,17 +330,18 @@
                                                     </div>
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="option2" name="v5" value="ผิด"
-                                                                onclick="disableCheckbox();highlightAnswer('option2');">
+                                                            <input class="form-check-input" type="radio" name="v5"
+                                                                id="option20" style="background-color: #A084DC"
+                                                                onclick="disableCheckbox(this.value);highlightAnswer('option20');"
+                                                                value="ผิด">
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 เขาจะชนเรามั้ยนะ.
                                                             </label>
                                                         </div>
-
                                                     </div>
                                                 </div>
-                                                <p class="py-3 result-text" id="result" name="result1a" type="text"></p>
+                                                <p class="py-3 result-text" id="result" name="result"
+                                                    type="text"></p>
                                             </div>
 
                                         </div>
@@ -380,19 +381,22 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" id="option11"
-                                                                name="v6" value="ผิด"
-                                                                onclick="disableCheckbox2();highlightAnswer2('option11');">
-                                                            <label class="form-check-label" for="defaultCheck1" >
-                                                                ฉีดยาฆ่าแมลงแล้ว มาได้ไงนะ.
+                                                            <input class="form-check-input" type="radio" name="v6"
+                                                                id="option30" style="background-color: #A084DC"
+                                                                onclick="disableCheckbox2(this.value);highlightAnswer2('option30');"
+                                                                value="ผิด">
+                                                            <label class="form-check-label" for="defaultCheck1">
+                                                                ฉีดยาฆ่าแมลงแล้ว
+                                                                มาได้ไงนะ.
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" id="option22"
-                                                                name="v6" value="ถูก"
-                                                                onclick="disableCheckbox2();highlightAnswer2('option22');">
+                                                            <input class="form-check-input" type="radio" name="v6"
+                                                                id="option40" style="background-color: #A084DC"
+                                                                onclick="disableCheckbox2(this.value);highlightAnswer2('option40');"
+                                                                value="ถูก">
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 อี๋!!! สกปรก.
                                                             </label>
@@ -400,7 +404,8 @@
                                                     </div>
                                                 </div>
 
-                                                <p class="py-3 result-text" id="result2" name="result2" type="text"></p>
+                                                <p class="py-3 result-text" id="result2" name="result2"
+                                                    type="text"></p>
 
                                             </div>
 
@@ -441,9 +446,10 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" id="option33"
-                                                                name="v6" value="ผิด"
-                                                                onclick="disableCheckbox3();highlightAnswer3('option33');">
+                                                            <input class="form-check-input" type="radio" name="v7"
+                                                                id="option50" style="background-color: #A084DC"
+                                                                onclick="disableCheckbox3(this.value);highlightAnswer3('option50');"
+                                                                value="ผิด">
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก.
                                                             </label>
@@ -451,17 +457,21 @@
                                                     </div>
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" id="option44"
-                                                                name="v6" value="ถูก"
-                                                                onclick="disableCheckbox3();highlightAnswer3('option44');">
+                                                            <input class="form-check-input" type="radio" name="v7"
+                                                                id="option60" style="background-color: #A084DC"
+                                                                onclick="disableCheckbox3(this.value);highlightAnswer3('option60');"
+                                                                value="ถูก">
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 เขาไม่รักเราแล้ว.
                                                             </label>
                                                         </div>
                                                     </div>
+
+                                                    
                                                 </div>
 
-                                                <p class="py-3 result-text" id="result3" name="result3" type="text"></p>
+                                                <p class="py-3 result-text" id="result3" name="result3"
+                                                    type="text"></p>
 
                                             </div>
 
@@ -608,10 +618,92 @@
         </script>
 
         <script>
+            const correctAnswer = "option10";
+
+            function disableCheckbox(v5) {
+                var checkboxes = document.querySelectorAll('input[name="v5"]');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].style.pointerEvents = "none";
+                    checkboxes[i].style.color = "gray";
+                }
+            }
+
+            function highlightAnswer(answer) {
+                if (answer == correctAnswer) {
+                    document.getElementById(correctAnswer).style.backgroundColor = "lightgreen";
+                    document.getElementById("result").innerHTML =
+                        "เฉลย: คุณเลือกตอบ ทำไมขับรถแบบนี้ไม่มีมารยาท. คุณตอบถูกแล้ว";
+                    document.getElementById("result").style.color = "green";
+
+                } else {
+                    document.getElementById(answer).style.backgroundColor = "red";
+                    document.getElementById("result").innerHTML =
+                        "เฉลย: คุณเลือกตอบเขาจะชนเรามั้ยนะ. คำตอบที่ถูกคือ...ทำไมขับรถแบบนี้ไม่มีมารยาท.";
+                    document.getElementById("result").style.color = "red";
+                }
+            }
+        </script>
+
+        <script>
+            const correctAnswer2 = "option30";
+
+            function disableCheckbox2(v6) {
+                var checkboxes2 = document.querySelectorAll('input[name="v6"]');
+                for (var i = 0; i < checkboxes2.length; i++) {
+                    checkboxes2[i].style.pointerEvents = "none";
+                    checkboxes2[i].style.color = "gray";
+                }
+            }
+
+            function highlightAnswer2(answer2) {
+                if (answer2 == correctAnswer2) {
+                    document.getElementById(correctAnswer2).style.backgroundColor = "red";
+                    document.getElementById("result2").innerHTML =
+                        "เฉลย: คุณเลือกตอบ ฉีดยาฆ่าแมลงแล้ว มาได้ไงนะ. คำตอบที่ถูกคือ...อี๋!!! สกปรก.";
+                    document.getElementById("result2").style.color = "red";
+
+                } else {
+                    document.getElementById(answer2).style.backgroundColor = "lightgreen";
+                    document.getElementById("result2").innerHTML =
+                        "เฉลย: คุณเลือกตอบ อี๋!!! สกปรก. คุณตอบถูกแล้ว";
+                    document.getElementById("result2").style.color = "green";
+                }
+            }
+        </script>
+
+        <script>
+            const correctAnswer3 = "option50";
+
+            function disableCheckbox3(v7) {
+                var checkboxes3 = document.querySelectorAll('input[name="v7"]');
+                for (var i = 0; i < checkboxes3.length; i++) {
+                    checkboxes3[i].style.pointerEvents = "none";
+                    checkboxes3[i].style.color = "gray";
+                }
+            }
+
+            function highlightAnswer3(answer3) {
+                if (answer3 == correctAnswer3) {
+                    document.getElementById(correctAnswer3).style.backgroundColor = "red";
+                    document.getElementById("result3").innerHTML =
+                        "เฉลย: คุณเลือกตอบ  เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก. คำตอบที่ถูกคือ...เขาไม่รักเราแล้ว.";
+                    document.getElementById("result3").style.color = "red";
+
+                } else {
+                    document.getElementById(answer3).style.backgroundColor = "lightgreen";
+                    document.getElementById("result3").innerHTML =
+                        "เฉลย: คุณเลือกตอบ เขาไม่รักเราแล้ว. คุณตอบถูกแล้ว";
+                    document.getElementById("result3").style.color = "green";
+                }
+            }
+        </script>
+
+
+        {{-- <script>
             const correctAnswer = "option1";
 
-            function disableCheckbox() {
-                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            function disableButton(v5) {
+                var checkboxes = document.querySelectorAll('name[name="v5"]');
                 for (var i = 0; i < checkboxes.length; i++) {
                     checkboxes[i].style.pointerEvents = "none";
                     checkboxes[i].style.color = "gray";
@@ -625,19 +717,22 @@
                     document.getElementById(correctAnswer).style.backgroundColor = "lightgreen";
                     document.getElementById("result").innerHTML =
                         "เฉลย: คุณเลือกตอบ ทำไมขับรถแบบนี้ไม่มีมารยาท. คุณตอบถูกแล้ว";
+                        document.getElementById("result").style.color = "green";
+                        
                 } else {
                     document.getElementById(answer).style.backgroundColor = "red";
                     document.getElementById("result").innerHTML =
                         "เฉลย: คุณเลือกตอบเขาจะชนเรามั้ยนะ. คำตอบที่ถูกคือ...ทำไมขับรถแบบนี้ไม่มีมารยาท.";
+                        document.getElementById("result").style.color = "red";
                 }
             }
-        </script>
+        </script> --}}
 
-        <script>
+        {{-- <script>
             const correctAnswer2 = "option11";
 
-            function disableCheckbox2() {
-                var checkboxes2 = document.querySelectorAll('input[type="radio"]');
+            function disableButton2(v6) {
+                var checkboxes2 = document.querySelectorAll('name[name="v6"]');
                 for (var i = 0; i < checkboxes2.length; i++) {
                     checkboxes2[i].style.pointerEvents = "none";
                     //checkboxes2[i].disabled = true;
@@ -650,18 +745,20 @@
                     document.getElementById(correctAnswer2).style.backgroundColor = "red";
                     document.getElementById("result2").innerHTML =
                         "เฉลย: คุณเลือกตอบ ฉีดยาฆ่าแมลงแล้ว มาได้ไงนะ. คำตอบที่ถูกคือ...อี๋!!! สกปรก.";
+                    document.getElementById("result2").style.color = "red";
                 } else {
                     document.getElementById(answer2).style.backgroundColor = "lightgreen";
                     document.getElementById("result2").innerHTML = "เฉลย: คุณเลือกตอบ อี๋!!! สกปรก. คุณตอบถูกแล้ว";
+                    document.getElementById("result2").style.color = "green";
                 }
             }
-        </script>
+        </script> --}}
 
-        <script>
+        {{-- <script>
             const correctAnswer3 = "option33";
 
-            function disableCheckbox3() {
-                var checkboxes3 = document.querySelectorAll('input[type="radio"]');
+            function disableButton3(v7) {
+                var checkboxes3 = document.querySelectorAll('name[name="v7"]');
                 for (var i = 0; i < checkboxes3.length; i++) {
                     checkboxes3[i].style.pointerEvents = "none";
                     //checkboxes2[i].disabled = true;
@@ -674,12 +771,14 @@
                     document.getElementById(correctAnswer3).style.backgroundColor = "red";
                     document.getElementById("result3").innerHTML =
                         "เฉลย: คุณเลือกตอบ  เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก. คำตอบที่ถูกคือ...เขาไม่รักเราแล้ว.";
+                    document.getElementById("result3").style.color = "red";
                 } else {
                     document.getElementById(answer3).style.backgroundColor = "lightgreen";
                     document.getElementById("result3").innerHTML = "เฉลย: คุณเลือกตอบ เขาไม่รักเราแล้ว. คุณตอบถูกแล้ว";
+                    document.getElementById("result3").style.color = "green";
                 }
             }
-        </script>
+        </script> --}}
 
         </html>
     @endsection
