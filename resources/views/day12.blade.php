@@ -314,6 +314,7 @@
                                     </div>
 
                                     {{-- Content3 --}}
+                                    
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -334,13 +335,60 @@
                                             </h1>
                                         </div>
 
-                                        <div class="py-5">
-                                            <h1 class="text-center "><span
-                                                    class="badge rounded-pill bg-primary">แบบฝึกหัด...</span>
-                                            </h1>
-                                            
-                                        </div>
+                                        <div class="text-center py-5">
+                                            <h2>หาหลักฐานตรวจสอบความคิด...</h2>
+                                            <hr>
+                                            <h6>นัดเพื่อนกินข้าว 11:00</h6>
+<hr>
+                                            <div class="table-responsive">
+                                                <table class="table text-black table-bordered table-info table-highlight">
+                                                    <thead class="thead-info">
+                                                       
+                                                        <th>หลักฐานการสนับสนุน</th>
+                                                        <th>หลักฐานคัดค้าน</th>
 
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                           
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                           
+                                                        </tr>
+                                                        <tr>
+                                                          
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                        </tr>
+                                                        <tr>
+                                                           
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
+                                            <button class="btn btn-primary w-100 btn-confirm"
+                                                type="submit">บันทึก</button>
+                                        </div>
                                     </div>
 
                                     {{-- Content4 --}}

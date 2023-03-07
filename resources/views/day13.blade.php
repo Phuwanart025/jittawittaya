@@ -437,6 +437,7 @@
 
                                     </div>
 
+                                    
                                     {{-- Content4 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
@@ -458,15 +459,87 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="text-center py-5">เกมมมมมมมมมมม............</h2>
+                                        <div class="text-center py-5">
+                                            <h2>ลองคิดแบบใหม่...</h2>
+
+                                            <div class="table-responsive">
+                                                <table class="table text-black table-bordered table-info table-highlight">
+                                                    <thead class="thead-info">
+                                                        <th>เหตุการณ์ที่เกิดขึ้น</th>
+                                                        <th>คิดอะไร</th>
+                                                        <th>อารมณ์ที่เกิดขึ้น</th>
+                                                        <th>คิดใหม่</th>
+                                                        <th>อารมณ์ที่เกิดขึ้นใหม่</th>
 
 
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>เพื่อนไม่คุยด้วย</td>
+                                                            <td><select name="cars" id="cars" class="form-control">
+                                                                <option value="volvo">Volvo</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="mercedes">Mercedes</option>
+                                                                <option value="audi">Audi</option>
+                                                              </select></td> <td><select name="cars" id="cars" class="form-control">
+                                                                <option value="volvo">Volvo</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="mercedes">Mercedes</option>
+                                                                <option value="audi">Audi</option>
+                                                              </select></td>
+                                                              <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>คนแปลกหน้าเดินเข้ามาหา</td>
+                                                            <td><select name="cars" id="cars" class="form-control">
+                                                                <option value="volvo">Volvo</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="mercedes">Mercedes</option>
+                                                                <option value="audi">Audi</option>
+                                                              </select></td> <td><select name="cars" id="cars" class="form-control">
+                                                                <option value="volvo">Volvo</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="mercedes">Mercedes</option>
+                                                                <option value="audi">Audi</option>
+                                                              </select></td>
+                                                              <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>โดนบีบแตรไส่</td>
+                                                            <td><select name="cars" id="cars" class="form-control">
+                                                                <option value="volvo">Volvo</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="mercedes">Mercedes</option>
+                                                                <option value="audi">Audi</option>
+                                                              </select></td> <td><select name="cars" id="cars" class="form-control">
+                                                                <option value="volvo">Volvo</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="mercedes">Mercedes</option>
+                                                                <option value="audi">Audi</option>
+                                                              </select></td>
+                                                              <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
 
+                                                        </tr>
+                                                       
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                         <div class="d-grid gap-2 col-3 mx-auto py-5">
                                             <button class="btn btn-primary w-100 btn-confirm"
                                                 type="submit">บันทึก</button>
                                         </div>
                                     </div>
+                                        
 
                                     {{-- Content --}}
                                     {{-- <div class="mySlides">
