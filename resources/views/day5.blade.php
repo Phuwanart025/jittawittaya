@@ -364,28 +364,30 @@
 
                                         <div class="container mb-5">
                                             <div class="row">
-                                                <div class="col-sm-6 mt-2 mx-auto">
+                                                <div class="col-10 col-xs-3 mt-2 mx-auto"></div>
                                                     <ul class="ks-cboxtags">
                                                         <li><input type="checkbox" id="1" name="v4[]"
-                                                                value="เครียด"><label
-                                                                for="1">เครียด</label>
+                                                                value="เครียด"><label for="1">เครียด</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="2" name="v4[]"
-                                                                value="กลัว"><label for="2">กลัว</label>
+                                                                value="กลัว"><label for="2">เบื่อ</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="3" name="v4[]"
-                                                                value="เบื่อ"><label for="3">เบื่อ</label>
+                                                                value="เบื่อ"><label for="3">กลัว</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="4" name="v4[]"
-                                                                value="คนอื่นไม่ชอบฉัน"><label for="4">คนอื่นไม่ชอบฉัน</label>
+                                                                value="คนอื่นไม่ชอบฉัน"><label
+                                                                for="4">ไม่อยากไปเที่ยว
+                                                            </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="5" name="v4[]"
                                                                 value="ไม่อยากไปเที่ยว"><label
-                                                                for="5">ไม่อยากไปเที่ยว</label>
+                                                                for="5">คนอื่นไม่ชอบฉัน
+                                                            </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="6" name="v4[]"
@@ -395,19 +397,23 @@
 
                                                         <li><input type="checkbox" id="7" name="v4[]"
                                                                 value="ไม่อยากลุกจากที่นอน"><label
-                                                                for="7">ไม่อยากลุกจากที่นอน</label>
+                                                                for="7">เดี๋ยวต้องเกิดเรื่องแน่ๆ
+                                                            </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="8" name="v4[]"
-                                                                value="เ"><label for="8">------------------</label>
+                                                                value="เ"><label for="8">โดนเอาเปรียบ
+                                                            </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="9" name="v4[]"
-                                                                value="ขี้ลืม"><label for="9">ขี้ลืม</label>
+                                                                value="ขี้ลืม"><label for="9">ไม่มีสมาธิ
+                                                            </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="10" name="v4[]"
-                                                                value="ร้องให้"><label for="10">ร้องให้</label>
+                                                                value="ร้องให้"><label for="10">กินน้อยลง
+                                                            </label>
                                                         </li>
 
                                                         <li class="ks-selected"><input type="checkbox" id="11"
@@ -424,39 +430,35 @@
                                                         </li>
 
                                                         <li><input type="checkbox" id="14" name="v4[]"
-                                                                value="เครียด"><label for="14">เครียด</label>
+                                                                value="เครียด"><label for="14">หลบตา
+                                                            </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="15" name="v4[]"
-                                                                value="ไม่มีสมาธิ"><label
-                                                                for="15">ไม่มีสมาธิ</label>
+                                                                value="ไม่มีสมาธิ"><label for="15">ไม่ฟัง
+                                                            </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="16" name="v4[]"
-                                                                value="เสียใจ"><label for="16">เสียใจ</label>
+                                                                value="เสียใจ"><label for="16">ไม่มีแรง
+                                                            </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="17" name="v4[]"
-                                                                value="ไร้ค่า"><label for="17">ไร้ค่า</label>
+                                                                value="ไร้ค่า"><label for="17">เพลีย
+                                                            </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="18" name="v4[]"
-                                                                value="ไม่มีอนาคต"><label
-                                                                for="18">ไม่มีอนาคต</label>
+                                                                value="ไม่มีอนาคต"><label for="18">ตาสั่น
+                                                            </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="19" name="v4[]"
-                                                                value="เพลีย"><label for="19">เพลีย</label>
+                                                                value="เพลีย"><label for="19">ปวดท้อง
+                                                            </label>
                                                         </li>
 
-                                                        <li><input type="checkbox" id="20" name="v4[]"
-                                                                value="ไม่มีแรง"><label for="20">ไม่มีแรง</label>
-                                                        </li>
-
-                                                        <li><input type="checkbox" id="21" name="v4[]"
-                                                                value="ไม่อยากไปเที่ยว"><label
-                                                                for="21">ไม่อยากไปเที่ยว</label>
-                                                        </li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -484,21 +486,29 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="row py-3">
-                                                            <div class="col-md-4">
+                                                            <div class="col-md-3">
                                                                 <img src="https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-26-181_512.gif"
                                                                     alt="">
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-9">
                                                                 <h3><span
                                                                         class="badge bg-info">ในส่วนที่เป็นความคิดนั้นจะมี...</span>
                                                                 </h3>
                                                                 <div class="row py-3">
                                                                     <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
+                                                                        <p><i class="fas fa-check-circle"> คนอื่นไม่ชอบฉัน
+                                                                            </i></p>
+                                                                        <p><i class="fas fa-check-circle"> ไม่อยากไปเที่ยว
+                                                                            </i></p>
+                                                                        <p><i class="fas fa-check-circle"> อย่ามายุ่งกับฉัน
+                                                                            </i></p>
                                                                     </div>
                                                                     <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
+                                                                        <p><i class="fas fa-check-circle">
+                                                                                เดี๋ยวต้องเกิดเรื่องแน่ๆ
+                                                                            </i></p>
+                                                                        <p><i class="fas fa-check-circle"> โดนเอาเปรียบ
+                                                                            </i></p>
                                                                     </div>
                                                                 </div>
                                                             </div>
