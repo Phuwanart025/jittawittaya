@@ -364,7 +364,7 @@
 
                                         <div class="container mb-5">
                                             <div class="row">
-                                                <div class="col-10 col-xs-3 mt-2 mx-auto"></div>
+                                                <div class="col-10 col-xs-3 mt-2 mx-auto">
                                                     <ul class="ks-cboxtags">
                                                         <li><input type="checkbox" id="1" name="v4[]"
                                                                 value="เครียด"><label for="1">เครียด</label>
