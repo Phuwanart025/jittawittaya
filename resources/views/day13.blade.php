@@ -476,35 +476,17 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>เพื่อนไม่คุยด้วย</td>
-                                                            <td><select name="cars" id="cars" class="form-control">
-                                                                <option value="volvo">Volvo</option>
-                                                                <option value="saab">Saab</option>
-                                                                <option value="mercedes">Mercedes</option>
-                                                                <option value="audi">Audi</option>
-                                                              </select></td> <td><select name="cars" id="cars" class="form-control">
-                                                                <option value="volvo">Volvo</option>
-                                                                <option value="saab">Saab</option>
-                                                                <option value="mercedes">Mercedes</option>
-                                                                <option value="audi">Audi</option>
-                                                              </select></td>
-                                                              <td><input type="text" class="form-control"
+                                                            <td>เพื่อนน่าจะไม่ชอบฉัน</td>
+                                                            <td>เศร้า</td>
+                                                            <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                                 <td><input type="text" class="form-control"
                                                                     placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                         </tr>
                                                         <tr>
                                                             <td>คนแปลกหน้าเดินเข้ามาหา</td>
-                                                            <td><select name="cars" id="cars" class="form-control">
-                                                                <option value="volvo">Volvo</option>
-                                                                <option value="saab">Saab</option>
-                                                                <option value="mercedes">Mercedes</option>
-                                                                <option value="audi">Audi</option>
-                                                              </select></td> <td><select name="cars" id="cars" class="form-control">
-                                                                <option value="volvo">Volvo</option>
-                                                                <option value="saab">Saab</option>
-                                                                <option value="mercedes">Mercedes</option>
-                                                                <option value="audi">Audi</option>
-                                                              </select></td>
+                                                            <td>ขโมยหรือป่าว</td>
+                                                            <td>กลัว</td>
                                                               <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                                 <td><input type="text" class="form-control"
@@ -512,17 +494,8 @@
                                                         </tr>
                                                         <tr>
                                                             <td>โดนบีบแตรไส่</td>
-                                                            <td><select name="cars" id="cars" class="form-control">
-                                                                <option value="volvo">Volvo</option>
-                                                                <option value="saab">Saab</option>
-                                                                <option value="mercedes">Mercedes</option>
-                                                                <option value="audi">Audi</option>
-                                                              </select></td> <td><select name="cars" id="cars" class="form-control">
-                                                                <option value="volvo">Volvo</option>
-                                                                <option value="saab">Saab</option>
-                                                                <option value="mercedes">Mercedes</option>
-                                                                <option value="audi">Audi</option>
-                                                              </select></td>
+                                                            <td>หาเรื่องกันหรอ</td>
+                                                            <td>โกรธ</td>
                                                               <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                                 <td><input type="text" class="form-control"

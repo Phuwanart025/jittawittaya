@@ -337,8 +337,7 @@
 
                                         <div class="text-center py-5">
                                             <h2>หาหลักฐานตรวจสอบความคิด...</h2>
-                                            <hr>
-                                            <h6>นัดเพื่อนกินข้าว 11:00</h6>
+                                           
 <hr>
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">
@@ -364,27 +363,61 @@
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                         </tr>
-                                                        <tr>
-                                                           
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-
-                                                        </tr>
-                                                        <tr>
-                                                            
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-
-                                                        </tr>
+                                                       
                                                         
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
+                                        <button type="button" class="mt-3 btn btn-danger btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            เฉลย
+                                        </button><span class="text-red"> ***โปรดทำก่อนกดดูเฉลยนะ</span>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header bg-primary text-white">
+                                                        <label class="modal-title" id="exampleModalLabel"
+                                                            style="font-size: 24">
+
+                                                            <i class="fas fa-comment-dots"></i>
+                                                            เฉลยความคิดคืออะไร?
+                                                        </label>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row py-3">
+                                                            <div class="col-md-4">
+                                                                <img src="https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-26-181_512.gif"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <h3><span
+                                                                        class="badge bg-info">ในส่วนที่เป็นความคิดนั้นจะมี...</span>
+                                                                </h3>
+                                                                <div class="row py-3">
+                                                                    <div class="col-6 col-sm-6">
+                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
+                                                                    </div>
+                                                                    <div class="col-6 col-sm-6">
+                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger btn-sm"
+                                                            data-bs-dismiss="modal">ปิด</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
                                         <div class="d-grid gap-2 col-3 mx-auto py-5">
                                             <button class="btn btn-primary w-100 btn-confirm"
                                                 type="submit">บันทึก</button>
