@@ -388,58 +388,82 @@
                                                 <div class="col-10 col-xs-3 mt-2 mx-auto">
                                                     <ul class="ks-cboxtags">
                                                         <li><input type="checkbox" id="1" name="v4[]"
-                                                                value="กัดฟัน"><label for="1">...</label>
+                                                                value="กัดฟัน"><label for="1">เศร้า</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="2" name="v4[]"
-                                                                value="ตาแข็ง"><label for="2">...</label>
+                                                                value="ตาแข็ง"><label for="2">เหงา</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="3" name="v4[]"
-                                                                value="กำหมัด"><label for="3">...</label>
+                                                                value="กำหมัด"><label for="3">โกรธ</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="4" name="v4[]"
-                                                                value="หน้าแดง"><label for="4">...</label>
+                                                                value="หน้าแดง"><label for="4">ไม่เก่ง</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="5" name="v4[]"
-                                                                value="หน้าแห้ง"><label for="5">...</label>
+                                                                value="หน้าแห้ง"><label for="5">ไร้ค่า</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="6" name="v4[]"
-                                                                value="แก้มป่อง"><label for="6">...</label>
+                                                                value="แก้มป่อง"><label for="6">เก็บตัว</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="7" name="v4[]"
-                                                                value="ใจเต้นเร็ว"><label for="7">...</label>
+                                                                value="ใจเต้นเร็ว"><label for="7">ร้องไห้</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="8" name="v4[]"
-                                                                value="หายใจโล่ง"><label for="8">...</label>
+                                                                value="หายใจโล่ง"><label for="8">เดินหนี</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="9" name="v4[]"
-                                                                value="เหงื่อออก"><label for="9">...</label>
+                                                                value="เหงื่อออก"><label for="9">หงุดหงิด</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="10" name="v4[]"
-                                                                value="หายใจแรง"><label for="10">...</label>
+                                                                value="หายใจแรง"><label for="10">ฉันดูไม่ดี</label>
                                                         </li>
 
                                                         <li class="ks-selected"><input type="checkbox" id="11"
                                                                 name="v4[]" value="ตาเป็นประกาย"><label
-                                                                for="11">...</label>
+                                                                for="11">ไม่สบายใจ</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="12" name="v4[]"
-                                                                value="ตัวอ่อนปรกเปียก"><label for="12">...</label>
+                                                                value="ตัวอ่อนปรกเปียก"><label
+                                                                for="12">เหงื่อออก</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="13" name="v4[]"
                                                                 value="หน้างิ่ว คิ้วขมวด"><label
-                                                                for="13">...</label>
+                                                                for="13">ใจเต้นแรง</label>
                                                         </li>
+
+                                                        <li><input type="checkbox" id="13" name="v4[]"
+                                                                value="หน้างิ่ว คิ้วขมวด"><label
+                                                                for="13">ฉันผิดอีกแล้ว</label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="13" name="v4[]"
+                                                                value="หน้างิ่ว คิ้วขมวด"><label
+                                                                for="13">ไม่ไปโรงเรียน
+                                                            </label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="13" name="v4[]"
+                                                                value="หน้างิ่ว คิ้วขมวด"><label
+                                                                for="13">ทำไมซวยแบบนี้
+                                                            </label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="13" name="v4[]"
+                                                                value="หน้างิ่ว คิ้วขมวด"><label for="13">ไม่อยากลุก
+                                                            </label>
+                                                        </li>
+
                                                     </ul>
                                                 </div>
                                             </div>
@@ -467,25 +491,24 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="row py-3">
-                                                            <div class="col-md-4">
+                                                            <div class="col-md-3">
                                                                 <img src="https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-26-181_512.gif"
                                                                     alt="">
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-9">
                                                                 <h3><span
                                                                         class="badge bg-info">ในส่วนที่เป็นอารมรณ์นั้นจะมีคำว่า...</span>
                                                                 </h3>
                                                                 <div class="row py-3">
                                                                     <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ไร้ค่า</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ฉันดูไม่ดี</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ไม่เก่ง</i></p>
                                                                     </div>
                                                                     <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ฉันผิดอีกแล้ว</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ไม่อยากลุก</i></p>
+                                                                        <p><i class="fas fa-check-circle"> ทำไมซวยแบบนี้</i></p>
                                                                     </div>
                                                                 </div>
                                                             </div>
