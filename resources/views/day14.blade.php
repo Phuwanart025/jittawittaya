@@ -458,7 +458,7 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>สอบไม่ผ่าน</td>
+                                                            <td>บีบแตรกลับ</td>
                                                             <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                             <td><select name="cars" id="cars" class="form-control">
@@ -469,14 +469,14 @@
                                                               </select></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>สอบไม่ผ่าน</td>
+                                                            <td>ด่าในใจ</td>
                                                             <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>สอบไม่ผ่าน</td>
+                                                            <td>แผ่เมตตา</td>
                                                             <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                             <td><input type="text" class="form-control"
@@ -484,7 +484,7 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>สอบไม่ผ่าน</td>
+                                                            <td>ปาดหน้าแล้วลงไปด่า</td>
                                                             <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                             <td><input type="text" class="form-control"
