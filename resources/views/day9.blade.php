@@ -262,7 +262,7 @@
                                     </div>
 
                                     {{-- Content2 --}}
-                                    {{-- <div class="mySlides">
+                                    <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -284,53 +284,13 @@
 
                                         <div class="row py-5 text-center">
 
-                                            <h1 class="mb-3">เกมส์?...</h1>
-
-                                            <img class="mb-3" src="images/day9/09(1).jpg" style="width:100%">
-
-                                            <h1 class="py-5">
-                                                <span class="badge rounded-pill bg-info">จากภาพข้างบนคุณ...?</span>
-                                            </h1>
-
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col-6 col-sm-6 mb-3">
-                                                        <h2>
-                                                            <span class="badge rounded-pill bg-info">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input bg-dark" type="radio"
-                                                                        value="หน้าแดง" name="feel_body1"
-                                                                        id="feel_body1">
-                                                                    <label class="form-check-label"
-                                                                        for="color_feel_today1">..........?
-                                                                    </label>
-                                                                </div>
-                                                            </span>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="col-6 col-sm-6 mb-3">
-                                                        <h2>
-                                                            <span class="badge rounded-pill bg-info">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input bg-dark" type="radio"
-                                                                        value="หน้าแดง" name="feel_body1"
-                                                                        id="feel_body1">
-                                                                    <label class="form-check-label"
-                                                                        for="color_feel_today1">..........?
-                                                                    </label>
-                                                                </div>
-                                                            </span>
-                                                        </h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-
+                                            <h1>กับดักความคิด part2...</h1>
+                                            {{-- <img class="mb-3" src="images/day8/08(1).jpg" style="width:100%"> --}}
                                         </div>
-
-                                    </div> --}}
+                                    </div>
 
                                     {{-- Content3 --}}
-                                    {{-- <div class="mySlides">
+                                    <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -352,88 +312,54 @@
 
                                         <div class="row py-5 text-center">
 
-                                            <h1 class="mb-3">เกมส์?...</h1>
-
-                                            <img class="mb-3" src="images/day9/09(2).jpg" style="width:100%">
-
-                                            <h1 class="py-5">
-                                                <span class="badge rounded-pill bg-info">จากภาพข้างบนคุณ...?</span>
-                                            </h1>
-
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col-6 col-sm-6 mb-3">
-                                                        <h2>
-                                                            <span class="badge rounded-pill bg-info">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input bg-dark" type="radio"
-                                                                        value="หน้าแดง" name="feel_body1"
-                                                                        id="feel_body1">
-                                                                    <label class="form-check-label"
-                                                                        for="color_feel_today1">..........?
-                                                                    </label>
-                                                                </div>
-                                                            </span>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="col-6 col-sm-6 mb-3">
-                                                        <h2>
-                                                            <span class="badge rounded-pill bg-info">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input bg-dark" type="radio"
-                                                                        value="หน้าแดง" name="feel_body1"
-                                                                        id="feel_body1">
-                                                                    <label class="form-check-label"
-                                                                        for="color_feel_today1">..........?
-                                                                    </label>
-                                                                </div>
-                                                            </span>
-                                                        </h2>
-                                                    </div>
-                                                </div>
+                                            <h2>จากเหตุการณ์นี้ เขามีกับดักความคิดแบบไหนกันนะ...</h2>
+                                            <div class="table-responsive py-3">
+                                                <table
+                                                    class="table table-info text-black table-bordered border-Light table-striped table-hover">
+                                                    <thead class="thead-info">
+                                                        <th>เหตุการณ์</th>
+                                                        <th>ความคิด</th>
+                                                        <th>กับดักความคิด</th>
+                                                        <th>อารมณ์</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>โทรหายายที่อยู่บ้านคนเดียว แต่ยายไม่รับสาย</td>
+                                                            <td>ยายอาจจะล้มหัวฟาดพื้น เลือดออกในสมอง ยายจะตายมั้ย
+                                                                จะทำยังไงดี</td>
+                                                            <td>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option value="1">A.</option>
+                                                                    <option selected value="2">B.เฉลย..Catastrophizing
+                                                                    </option>
+                                                                    <option value="3">C.</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>กังวล</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>เมื่อวานลงชุมชนเก็บข้อมูลกับเพื่อนในกลุ่ม วันนี้นัดคุยงานกลุ่มแต่เพื่อนไม่มาช่วย</td>
+                                                            <td>ฉันทำงานกลุ่มอยู่คนเดียว เหนื่อยจัง</td>
+                                                            <td>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected value="1">A.เฉลย..Mental Filters</option>
+                                                                    <option value="2">B.</option>
+                                                                    <option value="3">C.</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>เศร้า</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-
                                         </div>
-
-                                    </div> --}}
-
-                                    {{-- Content4 --}}
-                                    {{-- <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY9</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-
-                                        <div class="row py-5 text-center">
-
-                                            <h1><span class="badge rounded-pill bg-primary">Interaction Model</span></h1>
-                                            <h2><span class="badge rounded-pill bg-primary">เหตุการณ์
-                                                    <i class="fas fa-arrow-circle-right"></i> ความคิด
-                                                    <i class="fas fa-arrow-circle-right"></i> อารมณ์/พฤติกรรม
-                                                </span></h2>
-                                            <img class="mb-3" src="" style="width:100%">
-                                        </div>
-
                                         <div class="d-grid gap-2 col-3 py-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-                                    </div> --}}
-
+                                    </div>
                                 </form>
                                 <br>
                                 <!-- Comment Form End -->
@@ -447,9 +373,8 @@
                             <div class="w3-btn w3-round-xlarge w3-right w3-hover-text-khaki" onclick="plusSlides(1)">
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
-                            {{-- <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span> --}}
                         </div>
                     </div>
                 </div>

@@ -346,50 +346,31 @@
                                             </h1>
                                             <div
                                                 class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">
-                                                <h2 class="mt-4">
-                                                    <span class="badge rounded-pill bg-warning">
-                                                        naïve model...
-                                                    </span>
-                                                </h2>
                                                 <img class="mySlides1 mb-3" src="images/day11/ทบทวน/วันที่6/2.png"
                                                     style="width:100%">
-                                                <hr>
 
-                                                <h2 class="mt-4">
-                                                    <span class="badge rounded-pill bg-warning">
-                                                        cognitive model...
-                                                    </span>
-                                                </h2>
                                                 <img class="mySlides1 mb-3" src="images/day11/ทบทวน/วันที่6/3.png"
                                                     style="width:100%">
+
                                                 <img class="mySlides1 mb-3" src="images/day11/ทบทวน/วันที่6/4.png"
                                                     style="width:100%">
-                                                <hr>
 
-                                                <h2 class="mt-4">
-                                                    <span class="badge rounded-pill bg-primary">
-                                                        interactional model...
-                                                    </span>
-                                                </h2>
                                                 <video class="mySlides1" autoplay muted loop="true">
                                                     <source src="images/day10/วันที่102.mp4" type="video/mp4">
                                                 </video>
+
                                                 <video class="mySlides1" autoplay muted loop="true">
                                                     <source src="images/day10/วันที่103.mp4" type="video/mp4">
                                                 </video>
-                                                <hr>
 
-                                                <h3 class="mt-4">
-                                                    <span class="badge rounded-pill bg-danger">
-                                                        มุมมองความรู้เกี่ยวกับความคิด...?
-                                                    </span>
-                                                </h3>
                                                 <video class="mySlides1" autoplay muted loop="true">
                                                     <source src="images/day7/07(1).mp4" type="video/mp4">
                                                 </video>
+
                                                 <video class="mySlides1" autoplay muted loop="true">
                                                     <source src="images/day7/07(2).mp4" type="video/mp4">
                                                 </video>
+
                                                 <video class="mySlides1" autoplay muted loop="true">
                                                     <source src="images/day7/07(3).mp4" type="video/mp4">
                                                 </video>
@@ -428,7 +409,13 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <img class="mySlides1" src="images/day11/วันที่11.png" style="width:100%">
+                                            <div
+                                                class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">
+                                                <img class="mySlides1" src="images/day11/วันที่111.png"
+                                                    style="width:100%">
+                                                <img class="mySlides1" src="images/day11/วันที่11.png"
+                                                    style="width:100%">
+                                            </div>
                                         </div>
 
                                         <div class="d-grid gap-2 col-3 py-3 mx-auto">
