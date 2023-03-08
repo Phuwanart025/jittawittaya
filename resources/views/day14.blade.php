@@ -445,65 +445,9 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <h2>ลองมาฝึกแก้ปัญหากัน...</h2>
-
-                                            <div class="table-responsive">
-                                                <table class="table text-black table-bordered table-info table-highlight">
-                                                    <thead class="thead-info">
-                                                        <th>ทางเลือก</th>
-                                                        <th>ข้อดี</th>
-                                                        <th>ข้อเสีย</th>
-
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-
-                                                        </tr>
-                                                        <tr class="table-dark">
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                                <td></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
-                                            <button class="btn btn-primary w-100 btn-confirm"
-                                                type="submit">บันทึก</button>
+                                            <video class="mySlides1" autoplay muted loop="true">
+                                                <source src="images/day14/ตัวอย่างวันที่14.mp4" type="video/mp4">
+                                            </video>
                                         </div>
                                     </div>
 
@@ -540,36 +484,48 @@
                                                     <tbody>
                                                         <tr>
                                                             <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
 
                                                         </tr>
                                                         <tr>
                                                             <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." />
+                                                            </td>
 
                                                         </tr>
                                                         <tr class="table-dark">
@@ -579,9 +535,7 @@
                                                                         <label for="input3"
                                                                             class="col-sm-4 col-form-label">ทางเลือกที่คิดว่าดีสำหรับฉัน</label>
                                                                         <div class="col-sm-8">
-                                                                            <textarea class="form-control"
-                                                                                id="input3"
-                                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." rows="2"></textarea>
+                                                                            <textarea class="form-control" id="input3" placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." rows="2"></textarea>
                                                                         </div>
                                                                     </div>
                                                                 </div>

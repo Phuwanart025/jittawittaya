@@ -329,9 +329,11 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option value="1">A.</option>
-                                                                    <option selected value="2">B.เฉลย..Mind reading</option>
-                                                                    <option value="3">C.</option>
+                                                                    <option selected value="1">1...</option>
+                                                                    <option value="2">2.Mind reading</option>
+                                                                    <option value="3">3...</option>
+                                                                    <option value="4">4...</option>
+                                                                    <option value="5">5...</option>
                                                                 </select>
                                                             </td>
                                                             <td>เศร้า</td>
@@ -342,9 +344,11 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option selected value="1">A.เฉลย..Should</option>
-                                                                    <option value="2">B.</option>
-                                                                    <option value="3">C.</option>
+                                                                    <option selected value="1">1.</option>
+                                                                    <option value="2">2...</option>
+                                                                    <option value="3">3...</option>
+                                                                    <option value="4">4...</option>
+                                                                    <option value="5">5...Should</option>
                                                                 </select>
                                                             </td>
                                                             <td>โกรธ</td>

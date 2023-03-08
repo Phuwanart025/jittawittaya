@@ -330,23 +330,27 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option value="1">A.</option>
-                                                                    <option selected value="2">B.เฉลย..Catastrophizing
-                                                                    </option>
-                                                                    <option value="3">C.</option>
+                                                                    <option selected value="1">1.</option>
+                                                                    <option value="2">2. Catastrophizing</option>
+                                                                    <option value="3">3.</option>
+                                                                    <option value="4">4.</option>
+                                                                    <option value="5">5.</option>
                                                                 </select>
                                                             </td>
                                                             <td>กังวล</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>เมื่อวานลงชุมชนเก็บข้อมูลกับเพื่อนในกลุ่ม วันนี้นัดคุยงานกลุ่มแต่เพื่อนไม่มาช่วย</td>
+                                                            <td>เมื่อวานลงชุมชนเก็บข้อมูลกับเพื่อนในกลุ่ม
+                                                                วันนี้นัดคุยงานกลุ่มแต่เพื่อนไม่มาช่วย</td>
                                                             <td>ฉันทำงานกลุ่มอยู่คนเดียว เหนื่อยจัง</td>
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option selected value="1">A.เฉลย..Mental Filters</option>
-                                                                    <option value="2">B.</option>
-                                                                    <option value="3">C.</option>
+                                                                    <option selected value="1">1.</option>
+                                                                    <option value="2">2.</option>
+                                                                    <option value="3">3. Mental Filters</option>
+                                                                    <option value="4">4.</option>
+                                                                    <option value="5">5.</option>
                                                                 </select>
                                                             </td>
                                                             <td>เศร้า</td>
