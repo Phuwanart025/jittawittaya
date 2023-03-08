@@ -350,65 +350,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY16</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-
-                                        <div class="row py-5 text-center">
-
-                                            <h1 class="mb-3">ฝึกคิด ...</h1>
-
-                                        </div>
-
-                                    </div>
-
-                                    {{-- Content3 --}}
-                                    <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY16</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-
-
-                                        <h2 class="text-center py-3">นิทาน...</h2>
-                                        {{-- <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-
-                                        </div> --}}
-
-                                    </div>
-
-                                    {{-- Content4 --}}
-                                    <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY16</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY20</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -425,22 +367,67 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <h2>เพลงบำบัดจิตใจ...</h2>
-                                            {{-- <img class="mb-3" src="images/day15/" style="width:100%">
-                                        <div class="ratio ratio-16x9 py-3">
-                                            <iframe src="" title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                allowfullscreen></iframe>
+                                            <h2>ลองมาฝึกคิด เกี่ยวกับความกลัว.</h2>
+
+                                            <div class="table-responsive">
+                                                <table class="table text-black table-bordered table-info table-highlight">
+                                                    <thead class="thead-info">
+                                                        <th>เหตุการณ์</th>
+                                                        <th>คิดยังไง</th>
+                                                        <th>อารมณ์</th>
+                                                        <th>ระดับอารมณ์ 1-5</th>
+                                                        <th>คิดใหม่</th>
+                                                        <th>อารมณ์ใหม่</th>
+                                                        <th>ระดับอารมณ์ใหม่ 1-5</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>อาจารย์สั่งงานกระชั้นชิด</td>
+                                                            <td>ทำไม่ทันแน่ๆเลย</td>
+                                                            <td>กังวล</td>
+                                                            <td>4</td>
+                                                           
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="..."></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="..."></td>
+                                                                    <td><select class="form-select" aria-label="Default select example">
+                                                                        <option selected>Open this select menu</option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                      </select></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ตรวจสุขภาพพบค่าไตผิดปกติ</td>
+                                                            <td>ฉันจะเป็นโรคร้ายแรงมั้ย แล้วฉันจะตายหรือเปล่า</td>                                                            </td>
+                                                            <td>กลัว</td>
+                                                            <td>5</td>
+                                                           
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="..."></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="..."></td>
+                                                                    <td><select class="form-select" aria-label="Default select example">
+                                                                        <option selected>Open this select menu</option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                      </select></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
 
-                                        <p class="py-3">ขอบคุณเพลง:<a target="_blank" href="">
-                                                ก้อนหินก้อนนั้น
-                                            </a>
-                                        </p> --}}
-                                        </div>
                                     </div>
 
-                                    {{-- Content5 --}}
+                                    {{-- Content3 --}}
+                                   
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -489,8 +476,7 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
-                            <span class="dot" onclick="currentSlide(5)"></span>
+                            
                         </div>
 
                     </div>
