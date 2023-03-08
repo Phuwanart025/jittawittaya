@@ -261,8 +261,8 @@
                                             placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
                                     </div>
 
-                                    {{-- Content --}}
-                                    {{-- <div class="mySlides">
+                                    {{-- Content2 --}}
+                                    <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
@@ -284,12 +284,78 @@
 
                                         <div class="row py-5 text-center">
 
-                                            <h1>กับดักความคิด...</h1>
-                                            <img class="mb-3" src="images/day8/08(1).jpg" style="width:100%">
+                                            <h1>กับดักความคิด part1...</h1>
+                                            {{-- <img class="mb-3" src="images/day8/08(1).jpg" style="width:100%"> --}}
                                         </div>
-                                    </div> --}}
+                                    </div>
 
-                                    {{-- Content2 --}}
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY8</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row py-5 text-center">
+
+                                            <h2>จากเหตุการณ์นี้ เขามีกับดักความคิดแบบไหนกันนะ...</h2>
+                                            <div class="table-responsive py-3">
+                                                <table
+                                                    class="table table-info text-black table-bordered border-Light table-striped table-hover">
+                                                    <thead class="thead-info">
+                                                        <th>เหตุการณ์</th>
+                                                        <th>ความคิด</th>
+                                                        <th>กับดักความคิด</th>
+                                                        <th>อารมณ์</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>แฟนอ่านแชทแล้วไม่ตอบ</td>
+                                                            <td>เขาคงคิดว่าเราไม่สำคัญ </td>
+                                                            <td>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option value="1">A.</option>
+                                                                    <option selected value="2">B.เฉลย..Mind reading</option>
+                                                                    <option value="3">C.</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>เศร้า</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>อาจารย์ออกข้อสอบนอกเหนือจากสิ่งที่สอนได้คะแนนน้อย</td>
+                                                            <td>อาจารย์ต้องออกข้อสอบให้ตรงกับที่สอนสิ</td>
+                                                            <td>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected value="1">A.เฉลย..Should</option>
+                                                                    <option value="2">B.</option>
+                                                                    <option value="3">C.</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>โกรธ</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- Content4 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -350,7 +416,8 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
-                            {{-- <span class="dot" onclick="currentSlide(3)"></span> --}}
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
                     </div>
                 </div>

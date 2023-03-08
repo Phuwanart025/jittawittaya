@@ -276,10 +276,10 @@
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
 
-                                            <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
-                                                แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ:</h3>
-                                            <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                                placeholder="แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ..."></textarea>
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                            แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ:</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ..."></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -305,16 +305,14 @@
 
                                         <h2 class="text-center py-5">ตรวจสอบความคิด...</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day12/1.png"
-                                                style="width:100%">
-                                            <img class="mySlides1" src="images/day12/2.png"
-                                                style="width:100%">
+                                            <img class="mySlides1" src="images/day12/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day12/2.png" style="width:100%">
                                         </div>
 
                                     </div>
 
                                     {{-- Content3 --}}
-                                    
+
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -337,34 +335,36 @@
 
                                         <div class="text-center py-5">
                                             <h2>หาหลักฐานตรวจสอบความคิด...</h2>
-                                           
-<hr>
-                                            <div class="table-responsive">
-                                                <table class="table text-black table-bordered table-info table-highlight">
+                                            <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
+                                                <source src="images/day12/แบบฝึกหัด1.mp4" type="video/mp4">
+                                            </video>
+                                            <hr>
+                                            <div class="table-responsive mt-3 mb-3">
+                                                <table class="table text-black table-bordered border-Light table-info table-highlight">
                                                     <thead class="thead-info">
-                                                       
+
                                                         <th>หลักฐานการสนับสนุน</th>
                                                         <th>หลักฐานคัดค้าน</th>
 
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                           
+
                                                             <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                                <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                           
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
+
                                                         </tr>
                                                         <tr>
-                                                          
+
                                                             <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
                                                         </tr>
-                                                       
-                                                        
+
+
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -383,31 +383,19 @@
                                                             style="font-size: 24">
 
                                                             <i class="fas fa-comment-dots"></i>
-                                                            เฉลยความคิดคืออะไร?
+                                                            เฉลย หาหลักฐานตรวจสอบความคิด...
                                                         </label>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="row py-3">
-                                                            <div class="col-md-4">
-                                                                <img src="https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-26-181_512.gif"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-8">
-                                                                <h3><span
-                                                                        class="badge bg-info">ในส่วนที่เป็นความคิดนั้นจะมี...</span>
-                                                                </h3>
-                                                                <div class="row py-3">
-                                                                    <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
-                                                                    </div>
-                                                                    <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> ...</i></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <video class="mySlides1 mt-2 mb-3" autoplay muted
+                                                                loop="true">
+                                                                <source src="images/day12/เฉลยแบบฝึกหัด1.mp4"
+                                                                    type="video/mp4">
+                                                            </video>
+
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
@@ -417,15 +405,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    
-                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
-                                            <button class="btn btn-primary w-100 btn-confirm"
-                                                type="submit">บันทึก</button>
+
+                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
                                     </div>
-
-                                    {{-- Content4 --}}
-                                    
 
                                 </form>
                                 <br>

@@ -221,6 +221,13 @@
     ul.ks-cboxtags li input[type="checkbox"]:focus+label {
         border: 2px solid #e9a1ff;
     }
+
+    video {
+        /* override other styles to make responsive */
+        width: 100% !important;
+        height: auto !important;
+
+    }
 </style>
 
 @section('content')
@@ -339,10 +346,10 @@
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
                                             placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
 
-                                            <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
-                                               แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ:</h3>
-                                            <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                                placeholder="แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ..."></textarea>
+                                        <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
+                                            แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ:</h3>
+                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                            placeholder="แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ..."></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -384,10 +391,7 @@
                                                     Live and Learn - กมลา สุโกศล
                                                 </a>
                                             </p>
-
                                         </div>
-
-
                                     </div>
 
                                     {{-- Content3 --}}
@@ -411,17 +415,12 @@
                                             </h1>
                                         </div>
 
-
                                         <h2 class="text-center py-3">อารมณ์มาจากไหนกันนะ...</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <video class="mySlides1" autoplay muted loop="true">
                                                 <source src="images/day14/ความรู้  ฝึกแก้ปัญหา.mp4" type="video/mp4">
                                             </video>
-
                                         </div>
-
-
-
                                     </div>
 
                                     {{-- Content4 --}}
@@ -508,12 +507,12 @@
                                         </div>
                                     </div>
 
-                                    {{-- Content4 --}}
-                                    {{-- <div class="mySlides">
+                                    {{-- Content5 --}}
+                                    <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY5</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY14</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -529,24 +528,74 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="text-center py-5">นิทานเรื่องคนขายรองเท้า...</h2>
-                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day5/รองเท้า/1.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day5/รองเท้า/2.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day5/รองเท้า/3.png" style="width:100%">
-                                        </div>
+                                        <div class="text-center py-5">
+                                            <h2>ลองมาฝึกแก้ปัญหากัน...</h2>
+                                            <div class="table-responsive">
+                                                <table class="table text-black table-bordered table-info table-highlight">
+                                                    <thead class="thead-info">
+                                                        <th>ทางเลือก</th>
+                                                        <th>ข้อดี</th>
+                                                        <th>ข้อเสีย</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
 
-                                        <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
-                                        <hr>
-                                        <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i> คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
 
-                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
-                                            <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                                        </tr>
+                                                        <tr class="table-dark">
+                                                            <td colspan="3">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <label for="input3"
+                                                                            class="col-sm-4 col-form-label">ทางเลือกที่คิดว่าดีสำหรับฉัน</label>
+                                                                        <div class="col-sm-8">
+                                                                            <textarea class="form-control"
+                                                                                id="input3"
+                                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." rows="2"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
-                                    </div> --}}
+                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
+                                            <button class="btn btn-primary w-100 btn-confirm"
+                                                type="submit">บันทึก</button>
+                                        </div>
+                                    </div>
 
                                 </form>
                                 <!-- Comment Form End -->
@@ -564,7 +613,7 @@
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
                             <span class="dot" onclick="currentSlide(4)"></span>
-                            {{-- <span class="dot" onclick="currentSlide(4)"></span> --}}
+                            <span class="dot" onclick="currentSlide(5)"></span>
                         </div>
 
                     </div>
