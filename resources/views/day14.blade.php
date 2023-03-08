@@ -458,25 +458,24 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>บีบแตรกลับ</td>
                                                             <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><select name="cars" id="cars" class="form-control">
-                                                                <option value="volvo">Volvo</option>
-                                                                <option value="saab">Saab</option>
-                                                                <option value="mercedes">Mercedes</option>
-                                                                <option value="audi">Audi</option>
-                                                              </select></td>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>ด่าในใจ</td>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                             <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>แผ่เมตตา</td>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                             <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                             <td><input type="text" class="form-control"
@@ -484,7 +483,8 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>ปาดหน้าแล้วลงไปด่า</td>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                             <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                             <td><input type="text" class="form-control"
@@ -492,7 +492,8 @@
 
                                                         </tr>
                                                         <tr class="table-dark">
-                                                            <td>ทางเลือกที่คิดว่าดีสำหรับฉัน</td>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                             <td><input type="text" class="form-control"
                                                                 placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                                 <td></td>
