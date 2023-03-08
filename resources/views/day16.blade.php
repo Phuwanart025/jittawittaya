@@ -260,7 +260,6 @@
                                             </h1>
                                         </div>
 
-
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
                                             <div class="col-md-3 py-2">
@@ -350,7 +349,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY20</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY16</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">

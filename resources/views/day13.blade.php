@@ -267,7 +267,6 @@
                                             </h1>
                                         </div>
 
-
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
                                             <div class="col-md-3 py-2">
@@ -373,7 +372,6 @@
                                             </h1>
                                         </div>
 
-
                                         <h2 class="text-center py-3">ลองคิดแบบอื่น “คิดใหม่”...</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <video class="mySlides1" autoplay muted loop="true">
@@ -385,11 +383,7 @@
                                             <video class="mySlides1" autoplay muted loop="true">
                                                 <source src="images/day13/3.mp4" type="video/mp4" style="width:100%">
                                             </video>
-
                                         </div>
-
-
-
                                     </div>
 
                                     {{-- Content3 --}}
@@ -431,13 +425,12 @@
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
-
-
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น...">
+                                        </textarea>
 
                                     </div>
 
-                                    
+
                                     {{-- Content4 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
@@ -470,8 +463,6 @@
                                                         <th>อารมณ์ที่เกิดขึ้น</th>
                                                         <th>คิดใหม่</th>
                                                         <th>อารมณ์ที่เกิดขึ้นใหม่</th>
-
-
                                                     </thead>
                                                     <tbody>
                                                         <tr>
@@ -479,81 +470,39 @@
                                                             <td>เพื่อนน่าจะไม่ชอบฉัน</td>
                                                             <td>เศร้า</td>
                                                             <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                                <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
                                                                     placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                         </tr>
                                                         <tr>
                                                             <td>คนแปลกหน้าเดินเข้ามาหา</td>
                                                             <td>ขโมยหรือป่าว</td>
                                                             <td>กลัว</td>
-                                                              <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                                <td><input type="text" class="form-control"
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td><input type="text" class="form-control"
                                                                     placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                         </tr>
                                                         <tr>
                                                             <td>โดนบีบแตรไส่</td>
                                                             <td>หาเรื่องกันหรอ</td>
                                                             <td>โกรธ</td>
-                                                              <td><input type="text" class="form-control"
-                                                                placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                                <td><input type="text" class="form-control"
+                                                            <td><input type="text" class="form-control"
                                                                     placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-
+                                                            <td><input type="text" class="form-control"
+                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
                                                         </tr>
-                                                       
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
+
                                         <div class="d-grid gap-2 col-3 mx-auto py-5">
                                             <button class="btn btn-primary w-100 btn-confirm"
                                                 type="submit">บันทึก</button>
                                         </div>
+
                                     </div>
-                                        
-
-                                    {{-- Content --}}
-                                    {{-- <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY5</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-
-                                        <h2 class="text-center py-5">นิทานเรื่องคนขายรองเท้า...</h2>
-                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day5/รองเท้า/1.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day5/รองเท้า/2.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day5/รองเท้า/3.png" style="width:100%">
-                                        </div>
-
-                                        <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
-                                        <hr>
-                                        <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i> คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
-
-                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
-                                            <button class="btn btn-primary w-100" type="submit"
-                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
-                                        </div>
-                                    </div> --}}
-
                                 </form>
                                 <!-- Comment Form End -->
                                 <br>
@@ -570,9 +519,7 @@
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
                             <span class="dot" onclick="currentSlide(4)"></span>
-                            {{-- <span class="dot" onclick="currentSlide(4)"></span> --}}
                         </div>
-
                     </div>
                 </div>
             </div>

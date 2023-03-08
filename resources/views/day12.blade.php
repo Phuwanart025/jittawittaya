@@ -307,6 +307,7 @@
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <img class="mySlides1" src="images/day12/1.png" style="width:100%">
                                             <img class="mySlides1" src="images/day12/2.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day12/3.png" style="width:100%">
                                         </div>
 
                                     </div>
@@ -340,31 +341,25 @@
                                             </video>
                                             <hr>
                                             <div class="table-responsive mt-3 mb-3">
-                                                <table class="table text-black table-bordered border-Light table-info table-highlight">
+                                                <table
+                                                    class="table text-black table-bordered border-Light table-info table-highlight">
                                                     <thead class="thead-info">
-
                                                         <th>หลักฐานการสนับสนุน</th>
                                                         <th>หลักฐานคัดค้าน</th>
-
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
-
                                                         </tr>
                                                         <tr>
-
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
                                                         </tr>
-
-
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -390,12 +385,9 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="row py-3">
-                                                            <video class="mySlides1 mt-2 mb-3" autoplay muted
-                                                                loop="true">
-                                                                <source src="images/day12/เฉลยแบบฝึกหัด1.mp4"
-                                                                    type="video/mp4">
+                                                            <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
+                                                                <source src="images/day12/เฉลยแบบฝึกหัด1.1.mp4" type="video/mp4">
                                                             </video>
-
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">

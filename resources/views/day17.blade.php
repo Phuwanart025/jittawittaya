@@ -389,7 +389,11 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example" disabled>
-                                                                    <option value="1">5</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option selected value="5">5</option>
                                                                 </select>
                                                             </td>
                                                             <td><input type="text" class="form-control"
@@ -414,7 +418,11 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example" disabled>
-                                                                    <option value="1">4</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option selected value="4">4</option>
+                                                                    <option value="5">5</option>
                                                                 </select>
                                                             </td>
                                                             <td><input type="text" class="form-control"
@@ -463,12 +471,7 @@
 
 
                                         <h2 class="text-center py-3">...</h2>
-                                        {{-- <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-
-                                        </div> --}}
-
-
-
+                                       
                                         <div class="d-grid gap-2 col-3 mx-auto mt-3 mb-3">
                                             <button class="btn btn-primary w-100 btn-confirm"
                                                 type="submit">บันทึก</button>

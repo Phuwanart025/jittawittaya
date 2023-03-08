@@ -474,6 +474,9 @@
 
                                         <div class="text-center py-5">
                                             <h2>ลองมาฝึกแก้ปัญหากัน...</h2>
+                                            <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
+                                                <source src="images/day14/โจทย์แบบฝึกหัด.mp4" type="video/mp4">
+                                            </video>
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">
                                                     <thead class="thead-info">

@@ -260,7 +260,6 @@
                                             </h1>
                                         </div>
 
-
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
                                             <div class="col-md-3 py-2">
@@ -350,7 +349,7 @@
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY20</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY15</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -427,7 +426,7 @@
                                     </div>
 
                                    
-                                    {{-- Content5 --}}
+                                    {{-- Content3 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -449,10 +448,8 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <h2 class="text-center py-3">เกมส์...</h2>
-                                            {{-- <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                               
-                                            </div> --}}
+                                            <h2 class="text-center py-3">...</h2>
+                                            
                                         </div>
 
                                         <div class="d-grid gap-2 col-3 mx-auto mt-3 mb-3">
@@ -476,9 +473,7 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
-                            
                         </div>
-
                     </div>
                 </div>
             </div>

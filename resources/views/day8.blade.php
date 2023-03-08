@@ -142,6 +142,22 @@
         width: 100%;
         height: 100%;
     }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 600px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    video {
+        /* override other styles to make responsive */
+        width: 100% !important;
+        height: auto !important;
+
+    }
 </style>
 
 @section('content')
@@ -283,9 +299,30 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
+                                            {{-- <h1>กับดักความคิด part1...</h1> --}}
+                                            <div
+                                                class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">
+                                                <img class="mySlides1 mb-3" src="images/day8/ปกกับดักความคิด.png"
+                                                    style="width:100%">
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day8/1.mp4" type="video/mp4">
+                                                </video>
 
-                                            <h1>กับดักความคิด part1...</h1>
-                                            {{-- <img class="mb-3" src="images/day8/08(1).jpg" style="width:100%"> --}}
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day8/2.mp4" type="video/mp4">
+                                                </video>
+
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day8/3.mp4" type="video/mp4">
+                                                </video>
+
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day8/4.mp4" type="video/mp4">
+                                                </video>
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day8/5.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -329,11 +366,11 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option selected value="1">1...</option>
-                                                                    <option value="2">2.Mind reading</option>
-                                                                    <option value="3">3...</option>
-                                                                    <option value="4">4...</option>
-                                                                    <option value="5">5...</option>
+                                                                    <option selected value="1">1. Magnification and Minimization</option>
+                                                                    <option value="2">2. Catastrophizing</option>
+                                                                    <option value="3">3. Overgeneralization</option>
+                                                                    <option value="4">4. All-or-Nothing Thinking</option>
+                                                                    <option value="5">5. Mental Filter</option>
                                                                 </select>
                                                             </td>
                                                             <td>เศร้า</td>
@@ -344,11 +381,11 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option selected value="1">1.</option>
-                                                                    <option value="2">2...</option>
-                                                                    <option value="3">3...</option>
-                                                                    <option value="4">4...</option>
-                                                                    <option value="5">5...Should</option>
+                                                                    <option selected value="1">1. Magnification and Minimization</option>
+                                                                    <option value="2">2. Catastrophizing</option>
+                                                                    <option value="3">3. Overgeneralization</option>
+                                                                    <option value="4">4. All-or-Nothing Thinking</option>
+                                                                    <option value="5">5. Mental Filter</option>
                                                                 </select>
                                                             </td>
                                                             <td>โกรธ</td>

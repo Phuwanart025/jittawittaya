@@ -240,13 +240,11 @@
                                     @csrf
 
                                     {{-- Content1 --}}
-                                    
-                                    
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY18</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY20</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -313,35 +311,9 @@
                                                 </table>
                                             </div>
                                         </div>
-
                                     </div>
- {{-- Content3 --}}
- <div class="mySlides">
-    <!-- Nested Row within Card Body -->
-    <div class="text-center">
-        <label class="choose_taital">
-            <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY20</span>
-        </label>
-        <h1><span>วันที่ปัจจุบัน : </span>
-            <span class="badge rounded-pill bg-info">
-                <script>
-                    var date = new Date();
-                    document.write(
-                        date.getDate() + "-" +
-                        (parseInt(date.getMonth()) + 1) + "-" +
-                        date.getFullYear()
-                    );
-                </script>
-            </span>
-        </h1>
-    </div>
 
-    <div class="row py-5 text-center">
-       คอนเทนต์
-    </div>
-
-</div>
-                                    {{-- Content4 --}}
+                                    {{-- Content2 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -363,6 +335,33 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
+                                            <h2>คอนเทนต์</h2>
+                                        </div>
+
+                                    </div>
+
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY20</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row py-3 text-center">
                                             <h2 class="mb-3">เพลงบำบัดจิตใจ...</h2>
                                             <img class="mb-3" src="images/day20/" style="width:100%">
                                             <div class="ratio ratio-16x9 py-3">
@@ -372,16 +371,15 @@
                                                     allowfullscreen></iframe>
                                             </div>
 
-                                            <p class="py-3">ขอบคุณเพลง:<a target="_blank"
+                                            <p class="mt-3">ขอบคุณเพลง:<a target="_blank"
                                                     href="https://www.youtube.com/watch?v=2FxYYY9E6hs">
                                                     ฮีลใจ
                                                 </a>
                                             </p>
                                         </div>
 
-                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
-                                            <button class="btn btn-primary w-100 btn-confirm"
-                                                type="submit">บันทึก</button>
+                                        <div class="d-grid gap-2 col-3 mx-auto py-3">
+                                            <button class="btn btn-primary w-100 btn-confirm" type="submit">บันทึก</button>
                                         </div>
                                     </div>
 
@@ -400,9 +398,7 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
-                          
                         </div>
-
                     </div>
                 </div>
             </div>

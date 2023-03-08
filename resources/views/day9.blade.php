@@ -142,6 +142,22 @@
         width: 100%;
         height: 100%;
     }
+
+    .my-custom-scrollbar {
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        height: 600px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    video {
+        /* override other styles to make responsive */
+        width: 100% !important;
+        height: auto !important;
+
+    }
 </style>
 
 @section('content')
@@ -283,9 +299,32 @@
                                         </div>
 
                                         <div class="row py-5 text-center">
+                                            <div class="row py-5 text-center">
+                                                {{-- <h1>กับดักความคิด part1...</h1> --}}
+                                                <div
+                                                    class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">
+                                                    <img class="mySlides1 mb-3" src="images/day9/ปกกับดักความคิด.png"
+                                                        style="width:100%">
+                                                    <video class="mySlides1" autoplay muted loop="true">
+                                                        <source src="images/day9/1.mp4" type="video/mp4">
+                                                    </video>
 
-                                            <h1>กับดักความคิด part2...</h1>
-                                            {{-- <img class="mb-3" src="images/day8/08(1).jpg" style="width:100%"> --}}
+                                                    <video class="mySlides1" autoplay muted loop="true">
+                                                        <source src="images/day9/2.mp4" type="video/mp4">
+                                                    </video>
+
+                                                    <video class="mySlides1" autoplay muted loop="true">
+                                                        <source src="images/day9/3.mp4" type="video/mp4">
+                                                    </video>
+
+                                                    <video class="mySlides1" autoplay muted loop="true">
+                                                        <source src="images/day9/4.mp4" type="video/mp4">
+                                                    </video>
+                                                    <video class="mySlides1" autoplay muted loop="true">
+                                                        <source src="images/day9/5.mp4" type="video/mp4">
+                                                    </video>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -330,11 +369,12 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option selected value="1">1.</option>
-                                                                    <option value="2">2. Catastrophizing</option>
-                                                                    <option value="3">3.</option>
-                                                                    <option value="4">4.</option>
-                                                                    <option value="5">5.</option>
+                                                                    <option selected value="1">1. Mind Reading
+                                                                    </option>
+                                                                    <option value="2">2. Emotional Reasoning</option>
+                                                                    <option value="3">3. Should Statements</option>
+                                                                    <option value="4">4. Labeling</option>
+                                                                    <option value="5">5. Personalization</option>
                                                                 </select>
                                                             </td>
                                                             <td>กังวล</td>
@@ -346,11 +386,12 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
-                                                                    <option selected value="1">1.</option>
-                                                                    <option value="2">2.</option>
-                                                                    <option value="3">3. Mental Filters</option>
-                                                                    <option value="4">4.</option>
-                                                                    <option value="5">5.</option>
+                                                                    <option selected value="1">1. Mind Reading
+                                                                    </option>
+                                                                    <option value="2">2. Emotional Reasoning</option>
+                                                                    <option value="3">3. Should Statements</option>
+                                                                    <option value="4">4. Labeling</option>
+                                                                    <option value="5">5. Personalization</option>
                                                                 </select>
                                                             </td>
                                                             <td>เศร้า</td>

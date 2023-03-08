@@ -240,8 +240,6 @@
                                     @csrf
 
                                     {{-- Content1 --}}
-                                    
-                                    
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -316,7 +314,7 @@
 
                                     </div>
 
-                                    {{-- Content4 --}}
+                                    {{-- Content2 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -339,7 +337,7 @@
 
                                         <h2 class="text-center py-3">...</h2>
 
-                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
+                                        <div class="d-grid gap-2 col-3 mx-auto py-3">
                                             <button class="btn btn-primary w-100 btn-confirm"
                                                 type="submit">บันทึก</button>
                                         </div>
@@ -359,10 +357,7 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                          
                         </div>
-
                     </div>
                 </div>
             </div>
