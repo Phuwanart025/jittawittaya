@@ -163,7 +163,7 @@
                         <div class="card-body p-0 ">
                             <div class="p-5">
 
-                                <form method="post"  action="{{ url('store2') }}" enctype="multipart/form-data">
+                                <form method="post" action="{{ url('store2') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -194,7 +194,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #FFFF00"
                                                         type="radio" value="สีเหลือง" name="flexRadioDefault"
-                                                        id="color_feel_today1">
+                                                        id="color_feel_today1" required>
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -206,7 +206,7 @@
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                        name="flexRadioDefault" id="color_feel_today2" required>
                                                     <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
                                                         ความโกรธ
@@ -219,7 +219,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #A084DC"
                                                         type="radio" value="สีเขียว" name="flexRadioDefault"
-                                                        id="color_feel_today3">
+                                                        id="color_feel_today3" required>
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -233,7 +233,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #7286D3"
                                                         type="radio" value="สีฟ้า" name="flexRadioDefault"
-                                                        id="color_feel_today4">
+                                                        id="color_feel_today4" required>
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -246,7 +246,7 @@
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
-                                                value="{{ old('value') }}" class="slider" id="myRange">
+                                                value="{{ old('value') }}" class="slider" id="myRange" required>
                                             <div class="sliderticks">
                                                 <p>น้อยที่สุด</p>
                                                 <p>น้อย</p>
@@ -284,8 +284,8 @@
                                         </div>
 
 
-                                        <h1 class="text-center py-5"><span
-                                                class="badge rounded-pill bg-info">นิทานเรื่อง...เพื่อน 2 คน</span></h1>
+                                        <h2 class="text-center py-5"><span
+                                                class="badge rounded-pill bg-info">นิทานเรื่อง...เพื่อน 2 คน</span></h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <img class="mySlides1" src="images/day2/เพื่อน_new/1.png" style="width:100%">
                                             <img class="mySlides1" src="images/day2/เพื่อน_new/2.png" style="width:100%">
@@ -300,7 +300,7 @@
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></textarea>
                                     </div>
 
                                     {{-- Content3 --}}
@@ -326,7 +326,7 @@
 
                                         <div class="row py-5 text-center">
                                             <h2 class="text-center py-5">สัมผัสความ "<span class="text-red">โกรธ</span>"
-                                                ในร่างกายเรา...</h2>
+                                                ในร่างกายเรา</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                                 <img class="mySlides1" src="images/day2/02(1)_new.png"
                                                     style="width:100%">
@@ -360,12 +360,12 @@
 
 
                                         <div class="row py-5">
-                                            <h1 class="text-center mt-2 mb-4">
+                                            <h2 class="text-center mt-2 mb-4">
                                                 <i class="fas fa-angry text-red"></i>
                                                 เมื่อคุณรู้สึก "<span class="text-red">โกรธ</span>"
-                                                ร่างกายของคุณมีอะไรเกิดขึ้นบ้าง...
+                                                ร่างกายของคุณมีอะไรเกิดขึ้นบ้าง
                                                 <i class="fas fa-angry text-red"></i>
-                                            </h1>
+                                            </h2>
 
                                             <div class="container">
                                                 <div class="row w3-center">
@@ -376,8 +376,8 @@
                                                                 <span class="badge rounded-pill bg-primary">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="หน้าแดง"
-                                                                            name="feel_body1" id="feel_body1">
+                                                                            type="radio" value="ตาแข็ง"
+                                                                            name="feel_body1" id="feel_body1" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today1">
                                                                             1.ตาแข็ง
@@ -391,8 +391,8 @@
                                                                 <span class="badge rounded-pill bg-primary">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="หน้าซีด"
-                                                                            name="feel_body1" id="feel_body2">
+                                                                            type="radio" value="ตาเป็นประกาย"
+                                                                            name="feel_body1" id="feel_body2" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today2">
                                                                             1.ตาเป็นประกาย
@@ -410,8 +410,8 @@
                                                                 <span class="badge rounded-pill bg-info">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="หายใจช้า"
-                                                                            name="feel_body2" id="feel_body3">
+                                                                            type="radio" value="หายใจโล่ง"
+                                                                            name="feel_body2" id="feel_body3" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today3">
                                                                             2.หายใจโล่ง
@@ -425,8 +425,8 @@
                                                                 <span class="badge rounded-pill bg-info">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value=" หายใจเร็ว"
-                                                                            name="feel_body2" id="feel_body4">
+                                                                            type="radio" value="หายใจแรง"
+                                                                            name="feel_body2" id="feel_body4" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
                                                                             2.หายใจแรง
@@ -444,11 +444,11 @@
                                                                 <span class="badge rounded-pill bg-danger">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="กล้ามเนื้อผ่อนคลาย"
-                                                                            name="feel_body3" id="feel_body5">
+                                                                            type="radio" value="หน้านิ่วคิ้วขมวด"
+                                                                            name="feel_body3" id="feel_body5" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            3.หน้างิ้วคิ้วขมวด
+                                                                            3.หน้านิ่วคิ้วขมวด
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -459,8 +459,8 @@
                                                                 <span class="badge rounded-pill bg-danger">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="กล้ามเนื้อเกร็ง"
-                                                                            name="feel_body3" id="feel_body6">
+                                                                            type="radio" value="คิ้วตก"
+                                                                            name="feel_body3" id="feel_body6" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
                                                                             3.คิ้วตก
@@ -478,8 +478,8 @@
                                                                 <span class="badge rounded-pill bg-success">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="กำมือแน่น"
-                                                                            name="feel_body4" id="feel_body7">
+                                                                            type="radio" value="กำหมัด"
+                                                                            name="feel_body4" id="feel_body7" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
                                                                             4.กำหมัด
@@ -493,8 +493,8 @@
                                                                 <span class="badge rounded-pill bg-success">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="กำมือขึ้นแล้วหมุนๆ"
-                                                                            name="feel_body4" id="feel_body8">
+                                                                            type="radio" value="มือสั่น"
+                                                                            name="feel_body4" id="feel_body8" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
                                                                             4.มือสั่น
@@ -512,8 +512,8 @@
                                                                 <span class="badge rounded-pill bg-warning">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="ตัวร้อน"
-                                                                            name="feel_body5" id="feel_body9">
+                                                                            type="radio" value="แก้มป่อง"
+                                                                            name="feel_body5" id="feel_body9" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
                                                                             5.แก้มป่อง
@@ -527,8 +527,8 @@
                                                                 <span class="badge rounded-pill bg-warning">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="ตัวเย็น"
-                                                                            name="feel_body5" id="feel_body10">
+                                                                            type="radio" value="หน้าแดง"
+                                                                            name="feel_body5" id="feel_body10" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
                                                                             5.หน้าแดง
@@ -546,8 +546,8 @@
                                                                 <span class="badge rounded-pill bg-primary">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="เหงื่อไม่ออก"
-                                                                            name="feel_body6" id="feel_body11">
+                                                                            type="radio" value="ตัวสั่น"
+                                                                            name="feel_body6" id="feel_body11" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
                                                                             6.ตัวสั่น
@@ -561,8 +561,8 @@
                                                                 <span class="badge rounded-pill bg-primary">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="เหงื่อ ออก"
-                                                                            name="feel_body6" id="feel_body12">
+                                                                            type="radio" value="ตัวอ่อนปวกเปียก"
+                                                                            name="feel_body6" id="feel_body12" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
                                                                             6.ตัวอ่อนปวกเปียก
@@ -640,8 +640,6 @@
                 </div>
             </div>
         </div>
-
-
 
         <script>
             let slideIndex = 1;

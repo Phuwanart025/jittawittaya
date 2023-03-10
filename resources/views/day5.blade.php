@@ -267,7 +267,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #FFFF00"
                                                         type="radio" value="สีเหลือง" name="flexRadioDefault"
-                                                        id="color_feel_today1">
+                                                        id="color_feel_today1" required>
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -279,7 +279,7 @@
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                        name="flexRadioDefault" id="color_feel_today2" required>
                                                     <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
                                                         ความโกรธ
@@ -292,7 +292,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #A084DC"
                                                         type="radio" value="สีเขียว" name="flexRadioDefault"
-                                                        id="color_feel_today3">
+                                                        id="color_feel_today3" required>
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -306,7 +306,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #7286D3"
                                                         type="radio" value="สีฟ้า" name="flexRadioDefault"
-                                                        id="color_feel_today4">
+                                                        id="color_feel_today4" required>
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -319,7 +319,7 @@
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
-                                                value="{{ old('value') }}" class="slider" id="myRange">
+                                                value="{{ old('value') }}" class="slider" id="myRange" required>
                                             <div class="sliderticks">
                                                 <p>น้อยที่สุด</p>
                                                 <p>น้อย</p>
@@ -332,7 +332,7 @@
                                         <h3 class="py-5" for="customRange2"><i class="fas fa-edit"></i>
                                             อะไรทำให้คุณรู้สึกอย่างนั้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -371,21 +371,21 @@
                                                         </li>
 
                                                         <li><input type="checkbox" id="2" name="v4[]"
-                                                                value="กลัว"><label for="2">เบื่อ</label>
+                                                                value="เบื่อ"><label for="2">เบื่อ</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="3" name="v4[]"
-                                                                value="เบื่อ"><label for="3">กลัว</label>
+                                                                value="กลัว"><label for="3">กลัว</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="4" name="v4[]"
-                                                                value="คนอื่นไม่ชอบฉัน"><label
+                                                                value="ไม่อยากไปเที่ยว"><label
                                                                 for="4">ไม่อยากไปเที่ยว
                                                             </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="5" name="v4[]"
-                                                                value="ไม่อยากไปเที่ยว"><label
+                                                                value="คนอื่นไม่ชอบฉัน"><label
                                                                 for="5">คนอื่นไม่ชอบฉัน
                                                             </label>
                                                         </li>
@@ -396,23 +396,23 @@
                                                         </li>
 
                                                         <li><input type="checkbox" id="7" name="v4[]"
-                                                                value="ไม่อยากลุกจากที่นอน"><label
+                                                                value="เดี๋ยวต้องเกิดเรื่องแน่ๆ"><label
                                                                 for="7">เดี๋ยวต้องเกิดเรื่องแน่ๆ
                                                             </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="8" name="v4[]"
-                                                                value="เ"><label for="8">โดนเอาเปรียบ
+                                                                value="โดนเอาเปรียบ"><label for="8">โดนเอาเปรียบ
                                                             </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="9" name="v4[]"
-                                                                value="ขี้ลืม"><label for="9">ไม่มีสมาธิ
+                                                                value="ไม่มีสมาธิ"><label for="9">ไม่มีสมาธิ
                                                             </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="10" name="v4[]"
-                                                                value="ร้องให้"><label for="10">กินน้อยลง
+                                                                value="กินน้อยลง"><label for="10">กินน้อยลง
                                                             </label>
                                                         </li>
 
@@ -422,40 +422,36 @@
                                                         </li>
 
                                                         <li><input type="checkbox" id="12" name="v4[]"
-                                                                value="กินน้อยลง"><label for="12">กินน้อยลง</label>
+                                                                value="ไม่เก่ง"><label for="12">ไม่เก่ง</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="13" name="v4[]"
-                                                                value="ไม่เก่ง"><label for="13">ไม่เก่ง</label>
+                                                                value="หลบตา"><label for="13">หลบตา
+                                                            </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="14" name="v4[]"
-                                                                value="เครียด"><label for="14">หลบตา
+                                                                value="ไม่ฟัง"><label for="14">ไม่ฟัง
                                                             </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="15" name="v4[]"
-                                                                value="ไม่มีสมาธิ"><label for="15">ไม่ฟัง
+                                                                value="ไม่มีแรง"><label for="15">ไม่มีแรง
                                                             </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="16" name="v4[]"
-                                                                value="เสียใจ"><label for="16">ไม่มีแรง
+                                                                value="เพลีย"><label for="16">เพลีย
                                                             </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="17" name="v4[]"
-                                                                value="ไร้ค่า"><label for="17">เพลีย
+                                                                value="ตาสั่น"><label for="17">ตาสั่น
                                                             </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="18" name="v4[]"
-                                                                value="ไม่มีอนาคต"><label for="18">ตาสั่น
-                                                            </label>
-                                                        </li>
-
-                                                        <li><input type="checkbox" id="19" name="v4[]"
-                                                                value="เพลีย"><label for="19">ปวดท้อง
+                                                                value="ปวดท้อง"><label for="18">ปวดท้อง
                                                             </label>
                                                         </li>
 
@@ -492,13 +488,13 @@
                                                             </div>
                                                             <div class="col-md-9">
                                                                 <h3><span
-                                                                        class="badge bg-info">ในส่วนที่เป็นความคิดนั้นจะมี...</span>
+                                                                        class="badge bg-info">ในส่วนที่เป็นความคิดนั้นจะมี</span>
                                                                 </h3>
                                                                 <div class="row py-3">
                                                                     <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> คนอื่นไม่ชอบฉัน
-                                                                            </i></p>
                                                                         <p><i class="fas fa-check-circle"> ไม่อยากไปเที่ยว
+                                                                            </i></p>
+                                                                        <p><i class="fas fa-check-circle"> คนอื่นไม่ชอบฉัน
                                                                             </i></p>
                                                                         <p><i class="fas fa-check-circle"> อย่ามายุ่งกับฉัน
                                                                             </i></p>
@@ -508,6 +504,8 @@
                                                                                 เดี๋ยวต้องเกิดเรื่องแน่ๆ
                                                                             </i></p>
                                                                         <p><i class="fas fa-check-circle"> โดนเอาเปรียบ
+                                                                            </i></p>
+                                                                            <p><i class="fas fa-check-circle"> ไม่เก่ง
                                                                             </i></p>
                                                                     </div>
                                                                 </div>

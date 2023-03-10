@@ -403,6 +403,7 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
+                                                                    <option selected>โปรดเลือกคำตอบของคุณ</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
                                                                     <option value="3">3</option>
@@ -432,6 +433,7 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                     aria-label="Default select example">
+                                                                    <option selected>โปรดเลือกคำตอบของคุณ</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
                                                                     <option value="3">3</option>
@@ -471,7 +473,7 @@
 
 
                                         <h2 class="text-center py-3">...</h2>
-                                       
+
                                         <div class="d-grid gap-2 col-3 mx-auto mt-3 mb-3">
                                             <button class="btn btn-primary w-100 btn-confirm"
                                                 type="submit">บันทึก</button>

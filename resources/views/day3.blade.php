@@ -204,7 +204,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #FFFF00"
                                                         type="radio" value="สีเหลือง" name="flexRadioDefault"
-                                                        id="color_feel_today1">
+                                                        id="color_feel_today1" required>
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -216,7 +216,7 @@
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                        name="flexRadioDefault" id="color_feel_today2" required>
                                                     <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
                                                         ความโกรธ
@@ -229,7 +229,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #A084DC"
                                                         type="radio" value="สีเขียว" name="flexRadioDefault"
-                                                        id="color_feel_today3">
+                                                        id="color_feel_today3" required>
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -243,7 +243,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #7286D3"
                                                         type="radio" value="สีฟ้า" name="flexRadioDefault"
-                                                        id="color_feel_today4">
+                                                        id="color_feel_today4" required>
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -256,7 +256,7 @@
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
-                                                value="{{ old('value') }}" class="slider" id="myRange">
+                                                value="{{ old('value') }}" class="slider" id="myRange" required>
                                             <div class="sliderticks">
                                                 <p>น้อยที่สุด</p>
                                                 <p>น้อย</p>
@@ -294,8 +294,8 @@
                                         </div>
 
 
-                                        <h1 class="text-center mt-5 mb-2"><span
-                                                class="badge rounded-pill bg-info">นิทานเรื่อง...อิฐขี้กลัว</span></h1>
+                                        <h2 class="text-center mt-5 mb-2"><span
+                                                class="badge rounded-pill bg-info">นิทานเรื่อง...อิฐขี้กลัว</span></h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <img class="mySlides1" src="images/day3/อิฐขี้กลัว/1.png" style="width:100%">
                                             <img class="mySlides1" src="images/day3/อิฐขี้กลัว/2.png" style="width:100%">
@@ -311,7 +311,7 @@
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..."></textarea>
+                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></textarea>
                                     </div>
 
                                     {{-- Content3 --}}
@@ -337,7 +337,7 @@
 
                                         <div class="row py-5 text-center">
                                             <h2>สัมผัสความ "<span style="font-weight:bold;color:#0081C9">กลัว</span>"
-                                                ในร่างกายเรา...</h2>
+                                                ในร่างกายเรา</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                                 <img class="mySlides1" src="images/day3/03(1)_new.png"
                                                     style="width:100%">
@@ -370,9 +370,9 @@
                                         </div>
 
                                         <div class="py-5 text-center">
-                                            <h3>เมื่อเกิดเหตุการณ์ต่างๆ และรู้สึก "<span
+                                            <h2>เมื่อเกิดเหตุการณ์ต่างๆ และรู้สึก "<span
                                                     style="font-weight:bold;color:#0081C9">กลัว</span>"
-                                                คุณเคยมีอาการต่อไปนี้ระดับใด...</h3>
+                                                คุณเคยมีอาการต่อไปนี้ระดับใด</h2>
                                             <div class="row py-5">
                                                 <div class="col-md-4 mt-3">
                                                     <h3>ปวดหัว</h3>
@@ -384,7 +384,7 @@
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
                                                             name="value1" value="{{ old('value1') }}" class="slider"
-                                                            id="myRange2">
+                                                            id="myRange2" required>
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
                                                             <p></p>
@@ -413,7 +413,7 @@
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
                                                             name="value2" value="{{ old('value2') }}" class="slider"
-                                                            id="myRange3">
+                                                            id="myRange3" required>
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
                                                             <p></p>
@@ -442,7 +442,7 @@
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
                                                             name="value3" value="{{ old('value3') }}" class="slider"
-                                                            id="myRange4">
+                                                            id="myRange4" required>
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
                                                             <p></p>
@@ -471,7 +471,7 @@
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
                                                             name="value4" value="{{ old('value4') }}" class="slider"
-                                                            id="myRange5">
+                                                            id="myRange5" required>
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
                                                             <p></p>
@@ -500,7 +500,7 @@
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
                                                             name="value5" value="{{ old('value5') }}" class="slider"
-                                                            id="myRange6">
+                                                            id="myRange6" required>
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
                                                             <p></p>
@@ -529,7 +529,7 @@
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
                                                             name="value6" value="{{ old('value6') }}" class="slider"
-                                                            id="myRange7">
+                                                            id="myRange7" required>
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
                                                             <p></p>
@@ -573,8 +573,8 @@
 
                                         <div class="py-5 text-center">
                                             <div class="py-3">
-                                                <h3>มาฝึกผ่อนคลายกล้ามเนื้อกันเถอะ...</h3>
-                                                <h4>(PROGRESSIVE MUSCLE RELAXATION)</h4>
+                                                <h2>มาฝึกผ่อนคลายกล้ามเนื้อกันเถอะ</h2>
+                                                <h2>(PROGRESSIVE MUSCLE RELAXATION)</h2>
                                             </div>
 
                                             <div class="ratio ratio-16x9 py-2">
