@@ -184,7 +184,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post" action="{{ url('store4') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}

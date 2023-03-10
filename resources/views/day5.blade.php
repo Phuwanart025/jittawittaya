@@ -236,7 +236,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post" action="{{ url('store5') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -693,6 +693,33 @@
                 output3.innerHTML = this.value;
             }
         </script>
+ <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
 
+<script>
+    $('.btn-confirm').click(function(event) {
+        var form = $(this).closest("name");
+        var form = $(this).closest("form");
+        event.preventDefault();
+        Swal.fire({
+            title: 'ยืนยันการบันทึกข้อมูล!',
+            text: "คุณต้องการยืนยันการบันทึกข้อมูล หรือไม่?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'บันทึก',
+            cancelButtonText: 'ยกเลิก',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                form.submit();
+            }
+        });
+    });
+</script>
         </html>
     @endsection

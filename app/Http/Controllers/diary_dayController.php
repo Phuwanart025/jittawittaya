@@ -6,6 +6,10 @@ namespace App\Http\Controllers;
 use App\Models\diary_day;
 use App\Models\diary_day2;
 use App\Models\diary_day3;
+use App\Models\diary_day4;
+use App\Models\diary_day5;
+use App\Models\diary_day6;
+use App\Models\diary_day7;
 use App\Models\rounds_completed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -92,7 +96,7 @@ class diary_dayController extends Controller
             $diary1->score = 10;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
-            $diary->detail_t1 = $request->v3;
+            $diary->detail_t2 = $request->v3;
             $diary->two_friends = $request->v4;
             $diary->feel_body1 = $request->feel_body1;
             $diary->feel_body2 = $request->feel_body2;
@@ -101,7 +105,7 @@ class diary_dayController extends Controller
             $diary->feel_body5 = $request->feel_body5;
             $diary->feel_body6 = $request->feel_body6;
             $diary1->save();
-            $diary->diary_day()->associate($diary1);
+            $diary->diary_day2()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
@@ -140,7 +144,7 @@ class diary_dayController extends Controller
             $diary1->score = 10;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
-            $diary->detail_t1 = $request->v3;
+            $diary->detail_t3 = $request->v3;
             $diary->scared_brickstory_v4 = $request->v4;
             $diary->d3_v5 = $request->input('value1');
             $diary->d3_v6 = $request->input('value2');
@@ -149,7 +153,7 @@ class diary_dayController extends Controller
             $diary->d3_v9 = $request->input('value5');
             $diary->d3_v10 = $request->input('value6');
             $diary1->save();
-            $diary->diary_day()->associate($diary1);
+            $diary->diary_day3()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
@@ -170,7 +174,7 @@ class diary_dayController extends Controller
                 ->orderBy('id', 'desc')
                 ->first();
             $diary1 = new rounds_completed();
-            $diary = new diary_day2();
+            $diary = new diary_day4();
             if (empty($latest) || is_null($latest)) {
                 $diary1->rounds = 1;
             } else {
@@ -181,9 +185,89 @@ class diary_dayController extends Controller
             $diary1->score = 10;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
-            $diary->detail_t1 = $request->v3;
+            $diary->detail_t4 = $request->v3;
             $diary1->save();
-            $diary->diary_day()->associate($diary1);
+            $diary->diary_day4()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        return redirect('/results');
+    }
+
+    public function store5(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v4' => 'required',
+               
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 5)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day5();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 5;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t5 = $request->v3;
+
+            $v4 = implode(',', $request->input('v4'));
+            $serialized_v4 = serialize($v4);
+            $diary->idea_v4 = $serialized_v4;
+           
+            $diary1->save();
+            $diary->diary_day5()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        return redirect('/results');
+    }
+
+    public function store6(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v3_2' => 'required',
+                'v4' => 'required',
+               
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 6)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day6();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 6;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t6 = $request->v3;
+            $diary->detail2_t6 = $request->v3_2;
+            $diary->grandma_v4 = $request->v4;
+            $diary1->save();
+            $diary->diary_day6()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);

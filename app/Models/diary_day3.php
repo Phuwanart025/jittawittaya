@@ -10,7 +10,7 @@ class diary_day3 extends Model
     protected $fillable = [
         'color_feel_today',
         'sensation_level',
-        'detail_t1',
+        'detail_t3',
         'scared_brickstory_v4',
         'd3_v5',
         'd3_v6',
@@ -21,9 +21,9 @@ class diary_day3 extends Model
         'rounds_id',
     ];
     public $timestamps = false;
-    protected $table = 'day2';
+    protected $table = 'day3_';
 
-public function diary_day()
+public function diary_day3()
 {
     return $this->belongsTo(rounds_completed::class, 'rounds_id');
 }
