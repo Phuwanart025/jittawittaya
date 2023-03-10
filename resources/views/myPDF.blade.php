@@ -154,32 +154,33 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($data as $item)
+                    @foreach ($data2 as $item2)
                         <tr class="table-secondary">
                             <td><span class="badge bg-success">{{ $item->id }}</span>
                             </td>
-                            <td>{{ $item->rounds }}</td>
-                            <td>{{ $item->created_at }}</td>
-                            <td>{{ $item->updated_at }}</td>
+                            <td>{{ $item2->two_friends }}</td>
+                            <td>{{ $item2->created_at }}</td>
+                            <td>{{ $item2->updated_at }}</td>
                         </tr>
                     @endforeach
                 </tbody>
             </table>
             <hr>
+            @foreach ($data2 as $item2)
             <div class="column">
                 <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
-                <q>{{ $item->rounds }}</q><br>
+                <q>{{ $item2->two_friends }}</q><br>
             </div>
             <div class="column">
                 <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
-                <q>{{ $item->rounds }}</q><br>
+                <q>{{ $item2->rounds }}</q><br>
             </div>
             <div class="column">
                 <label class="lable" for="fname">อะไรทำให้คุณรู้สึกอย่างนั้น :</label><br>
-                <q>{{ $item->created_at }}</q><br>
+                <q>{{ $item2->created_at }}</q><br>
             </div>
         </div>
-
+        @endforeach
         <div class="page-break row">
             <h3>วันที่3</h3>
             <table class="table table-bordered">

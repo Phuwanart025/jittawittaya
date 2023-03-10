@@ -21,8 +21,15 @@ class PDFController extends Controller
             ->where('rounds_completed.rounds', $rounds)
             ->select('rounds_completed.*', 'day1.*', 'users.*')
             ->get();
+            $data2 = DB::table('rounds_completed')
+            ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+            ->join('day2', 'rounds_completed.id', '=', 'day2.rounds_id')
+            ->where('rounds_completed.user_id', Auth::user()->id)
+            ->where('rounds_completed.rounds', $rounds)
+            ->select('rounds_completed.*', 'day2.*', 'users.*')
+            ->get();
 
-        $pdf = PDF::loadView('myPDF', compact('data'));
+        $pdf = PDF::loadView('myPDF', compact('data','data2'));
         //  $pdf->set_option('isRemoteEnabled', TRUE);
         $pdf->render();
         return $pdf->stream('รายงานการทำแบบบันทึก-jitdee.pdf');
