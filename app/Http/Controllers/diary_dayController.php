@@ -274,4 +274,48 @@ class diary_dayController extends Controller
         }
         return redirect('/results');
     }
+    public function store7(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v3_2' => 'required',
+                'v4_1' => 'required',
+                'v4_2' => 'required',
+                'v4_3' => 'required',
+                'v4_4' => 'required',
+               
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 7)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day7();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 7;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t7 = $request->v3;
+            $diary->detail2_t7 = $request->v3_2;
+            $diary->thoughts_feelings = $request->v4_1;
+            $diary->thoughts_feelings2 = $request->v4_2;
+            $diary->thoughts_feelings3 = $request->v4_3;
+            $diary->thoughts_feelings4 = $request->v4_4;
+            $diary1->save();
+            $diary->diary_day7()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        return redirect('/results');
+    }
 }

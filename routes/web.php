@@ -35,6 +35,10 @@ Route::post('/store3', [diary_dayController::class, 'store3']);
 Route::post('/store4', [diary_dayController::class, 'store4']);
 Route::post('/store5', [diary_dayController::class, 'store5']);
 Route::post('/store6', [diary_dayController::class, 'store6']);
+Route::post('/store7', [diary_dayController::class, 'store7']);
+Route::post('/store8', [diary_dayController::class, 'store8']);
+Route::post('/store9', [diary_dayController::class, 'store9']);
+Route::post('/store10', [diary_dayController::class, 'store10']);
 
 Route::get('/certificate1', function () {
     return view('certificate1');
