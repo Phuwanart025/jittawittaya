@@ -16,7 +16,7 @@ class diary_day18 extends Model
     public $timestamps = false;
     protected $table = 'day2';
 
-public function diary_day()
+public function diary_day18()
 {
     return $this->belongsTo(rounds_completed::class, 'rounds_id');
 }
