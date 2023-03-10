@@ -30,11 +30,11 @@ Route::get('/results', function () {
 });
 
 Route::post('/store', [diary_dayController::class, 'store']);
-Route::get('/store2', [diary_dayController::class, 'store2']);
-Route::get('/store3', [diary_dayController::class, 'store2']);
-Route::get('/store4', [diary_dayController::class, 'store4']);
-Route::get('/store5', [diary_dayController::class, 'store5']);
-Route::get('/store6', [diary_dayController::class, 'store6']);
+Route::post('/store2', [diary_dayController::class, 'store2']);
+Route::post('/store3', [diary_dayController::class, 'store3']);
+Route::post('/store4', [diary_dayController::class, 'store4']);
+Route::post('/store5', [diary_dayController::class, 'store5']);
+Route::post('/store6', [diary_dayController::class, 'store6']);
 
 Route::get('/certificate1', function () {
     return view('certificate1');

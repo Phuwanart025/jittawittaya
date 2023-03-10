@@ -163,7 +163,7 @@
                         <div class="card-body p-0 ">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store2') }}" enctype="multipart/form-data">
+                                <form method="post"  action="{{ url('store2') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -392,7 +392,7 @@
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
                                                                             type="radio" value="หน้าซีด"
-                                                                            name="feel_body1" id="feel_body1">
+                                                                            name="feel_body1" id="feel_body2">
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today2">
                                                                             1.ตาเป็นประกาย

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\diary_day2;
+
 use App\Models\diary_day;
+use App\Models\diary_day2;
+use App\Models\diary_day3;
 use App\Models\rounds_completed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -65,7 +67,14 @@ class diary_dayController extends Controller
             $this->validate($request, [
                 'flexRadioDefault' => 'required',
                 'value' => 'required',
-                'v3' => 'required'
+                'v3' => 'required',
+                'v4' => 'required',
+                'feel_body1' => 'required',
+                'feel_body2' => 'required',
+                'feel_body3' => 'required',
+                'feel_body4' => 'required',
+                'feel_body5' => 'required',
+                'feel_body6' => 'required',
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 2)
@@ -84,6 +93,13 @@ class diary_dayController extends Controller
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t1 = $request->v3;
+            $diary->two_friends = $request->v4;
+            $diary->feel_body1 = $request->feel_body1;
+            $diary->feel_body2 = $request->feel_body2;
+            $diary->feel_body3 = $request->feel_body3;
+            $diary->feel_body4 = $request->feel_body4;
+            $diary->feel_body5 = $request->feel_body5;
+            $diary->feel_body6 = $request->feel_body6;
             $diary1->save();
             $diary->diary_day()->associate($diary1);
             $diary->save();
@@ -99,14 +115,21 @@ class diary_dayController extends Controller
             $this->validate($request, [
                 'flexRadioDefault' => 'required',
                 'value' => 'required',
-                'v3' => 'required'
+                'v3' => 'required',
+                'v4' => 'required',
+                'value1' => 'required',
+                'value2' => 'required',
+                'value3' => 'required',
+                'value4' => 'required',
+                'value5' => 'required',
+                'value6' => 'required',
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 3)
                 ->orderBy('id', 'desc')
                 ->first();
             $diary1 = new rounds_completed();
-            $diary = new diary_day2();
+            $diary = new diary_day3();
             if (empty($latest) || is_null($latest)) {
                 $diary1->rounds = 1;
             } else {
@@ -118,6 +141,13 @@ class diary_dayController extends Controller
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t1 = $request->v3;
+            $diary->scared_brickstory_v4 = $request->v4;
+            $diary->d3_v5 = $request->input('value1');
+            $diary->d3_v6 = $request->input('value2');
+            $diary->d3_v7 = $request->input('value3');
+            $diary->d3_v8 = $request->input('value4');
+            $diary->d3_v9 = $request->input('value5');
+            $diary->d3_v10 = $request->input('value6');
             $diary1->save();
             $diary->diary_day()->associate($diary1);
             $diary->save();
