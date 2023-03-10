@@ -11,6 +11,13 @@ class diary_day3 extends Model
         'color_feel_today',
         'sensation_level',
         'detail_t1',
+        'scared_brickstory_v4',
+        'd3_v5',
+        'd3_v6',
+        'd3_v7',
+        'd3_v8',
+        'd3_v9',
+        'd3_v10',
         'rounds_id',
     ];
     public $timestamps = false;

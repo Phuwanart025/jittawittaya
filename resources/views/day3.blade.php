@@ -173,7 +173,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post"  action="{{ url('store3') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -383,7 +383,7 @@
                                                                 for="" id="demo2"
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
-                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            name="value1" value="{{ old('value1') }}" class="slider"
                                                             id="myRange2">
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
@@ -412,7 +412,7 @@
                                                                 for="" id="demo3"
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
-                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            name="value2" value="{{ old('value2') }}" class="slider"
                                                             id="myRange3">
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
@@ -441,7 +441,7 @@
                                                                 for="" id="demo4"
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
-                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            name="value3" value="{{ old('value3') }}" class="slider"
                                                             id="myRange4">
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
@@ -470,7 +470,7 @@
                                                                 for="" id="demo5"
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
-                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            name="value4" value="{{ old('value4') }}" class="slider"
                                                             id="myRange5">
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
@@ -499,7 +499,7 @@
                                                                 for="" id="demo6"
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
-                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            name="value5" value="{{ old('value5') }}" class="slider"
                                                             id="myRange6">
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
@@ -528,7 +528,7 @@
                                                                 for="" id="demo7"
                                                                 style="font-weight:bold;color:red"></label></h4>
                                                         <input type="range" min="0" max="10"
-                                                            name="value" value="{{ old('value') }}" class="slider"
+                                                            name="value6" value="{{ old('value6') }}" class="slider"
                                                             id="myRange7">
                                                         <div class="sliderticks">
                                                             <p>0:น้อย</p>
