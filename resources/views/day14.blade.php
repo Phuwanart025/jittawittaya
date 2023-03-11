@@ -375,8 +375,7 @@
 
                                         <div class="row text-center">
                                             <h1 class="mt-5 mb-3">เพลงบำบัดจิตใจ</h1>
-                                            <img class="mb-3" src="images/day14/1.png"
-                                                style="width:100%">
+                                            <img class="mb-3" src="images/day14/1.png" style="width:100%">
                                             <div class="ratio ratio-16x9 py-3">
                                                 <iframe src="https://www.youtube.com/embed/OMVYOsoqjIo"
                                                     title="YouTube video player" frameborder="0"
@@ -390,6 +389,7 @@
                                                     Live and Learn - กมลา สุโกศล
                                                 </a>
                                             </p>
+
                                         </div>
                                     </div>
 
@@ -414,15 +414,44 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="text-center mt-5 mb-3">อารมณ์มาจากไหนกันนะ</h2>
-                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <video class="mySlides1" autoplay muted loop="true">
-                                                <source src="images/day14/ความรู้/ความรู้  ฝึกแก้ปัญหา.mp4" type="video/mp4">
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto mt-5 mb-3">
+                                            <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
+                                                <source src="images/day14/สรุป.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>
 
                                     {{-- Content4 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY14</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <h2 class="text-center mt-5 mb-3">อารมณ์มาจากไหนกันนะ</h2>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                            <video class="mySlides1" autoplay muted loop="true">
+                                                <source src="images/day14/ความรู้/ความรู้  ฝึกแก้ปัญหา.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+
+                                    {{-- Content5 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -450,7 +479,7 @@
                                         </div>
                                     </div>
 
-                                    {{-- Content5 --}}
+                                    {{-- Content6 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -486,8 +515,8 @@
                                                     <tbody>
                                                         <tr>
                                                             <td><input type="text" class="form-control"
-                                                                placeholder="พิมพ์คำตอบของคุณที่นี่..." />
-                                                        </td>
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                            </td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." />
                                                             </td>
@@ -497,8 +526,8 @@
                                                         </tr>
                                                         <tr>
                                                             <td><input type="text" class="form-control"
-                                                                placeholder="พิมพ์คำตอบของคุณที่นี่..." />
-                                                        </td>
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                            </td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." />
                                                             </td>
@@ -520,8 +549,8 @@
                                                         </tr>
                                                         <tr>
                                                             <td><input type="text" class="form-control"
-                                                                placeholder="พิมพ์คำตอบของคุณที่นี่..." />
-                                                        </td>
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                            </td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." />
                                                             </td>
@@ -570,6 +599,7 @@
                             <span class="dot" onclick="currentSlide(3)"></span>
                             <span class="dot" onclick="currentSlide(4)"></span>
                             <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
                         </div>
 
                     </div>
