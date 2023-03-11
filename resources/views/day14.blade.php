@@ -485,7 +485,9 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>บีบแตรกลับ</td>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                        </td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." />
                                                             </td>
@@ -494,7 +496,9 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>ด่าในใจ</td>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                        </td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." />
                                                             </td>
@@ -515,7 +519,9 @@
 
                                                         </tr>
                                                         <tr>
-                                                            <td>ปาดหน้าแล้วลงไปด่า</td>
+                                                            <td><input type="text" class="form-control"
+                                                                placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                        </td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." />
                                                             </td>
