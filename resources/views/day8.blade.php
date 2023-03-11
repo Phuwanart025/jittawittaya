@@ -365,7 +365,8 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                 name="v4" id="v4" aria-label="Default select example" required>
-                                                                    <option selected value="Mind Reading">1. Mind Reading</option>
+                                                                <option selected value=""></option>
+                                                                    <option value="Mind Reading">1. Mind Reading</option>
                                                                     <option value="Emotional Reasoning">2. Emotional Reasoning</option>
                                                                     <option value="Should Statements">3. Should Statements</option>
                                                                     <option value="Labeling">4. Labeling</option>
@@ -380,7 +381,8 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                 name="v5" id="v5"aria-label="Default select example" required>
-                                                                <option selected value="Mind Readin">1. Mind Reading</option>
+                                                                <option selected value=""></option>
+                                                                <option  value="Mind Readin">1. Mind Reading</option>
                                                                 <option value="Emotional Reasoning">2. Emotional Reasoning</option>
                                                                 <option value="Should Statements">3. Should Statements</option>
                                                                 <option value="Labeling">4. Labeling</option>

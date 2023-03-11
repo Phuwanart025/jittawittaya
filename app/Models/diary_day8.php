@@ -17,7 +17,7 @@ class diary_day8 extends Model
         'rounds_id',
     ];
     public $timestamps = false;
-    protected $table = 'day2';
+    protected $table = 'day8';
 
 public function diary_day8()
 {

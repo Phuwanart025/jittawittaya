@@ -243,7 +243,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post"  action="{{ url('store14') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -514,51 +514,40 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                            <td><input name="v4_1" id="v4_1" type="text" class="form-control"
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." required/>
                                                             </td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                            <td><input name="v4_2" id="v4_2" type="text" class="form-control"
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." required/>
                                                             </td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
-                                                            </td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
-                                                            </td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                            <td><input name="v4_3" id="v4_3" type="text" class="form-control"
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." required/>
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                            <td><input name="v5_1" id="v5_1" type="text" class="form-control"
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." required/>
                                                             </td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                            <td><input name="v5_2" id="v5_2" type="text" class="form-control"
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..."required/>
                                                             </td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
+                                                            <td><input name="v5_3" id="v5_3" type="text" class="form-control"
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." required/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input name="v6_1" id="v6_1" type="text" class="form-control"
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..."required/>
+                                                            </td>
+                                                            <td><input name="v6_2" id="v6_2" type="text" class="form-control"
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." required/>
+                                                            </td>
+                                                            <td><input name="v6_3" id="v6_3" type="text" class="form-control"
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." required/>
                                                             </td>
 
                                                         </tr>
-                                                        <tr>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
-                                                            </td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
-                                                            </td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." />
-                                                            </td>
-
-                                                        </tr>
+                                                      
                                                         <tr class="table-dark">
                                                             <td colspan="3">
                                                                 <div class="container">
@@ -566,7 +555,7 @@
                                                                         <label for="input3"
                                                                             class="col-sm-4 col-form-label">ทางเลือกที่คิดว่าดีสำหรับฉัน</label>
                                                                         <div class="col-sm-8">
-                                                                            <textarea class="form-control" id="input3" placeholder="พิมพ์คำตอบของคุณที่นี่..." rows="2"></textarea>
+                                                                            <textarea name="v7" id="v7" class="form-control" placeholder="พิมพ์คำตอบของคุณที่นี่..." rows="2" required></textarea>
                                                                         </div>
                                                                     </div>
                                                                 </div>

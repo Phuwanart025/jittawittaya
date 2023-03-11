@@ -173,7 +173,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post"  action="{{ url('store11') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -443,7 +443,7 @@
                                             <h3 class="mt-5 mb-3">
                                                 <i class="fas fa-edit"> ใน 5 วันที่ผ่านมา คุณได้เรียนรู้อะไรบ้าง:</i>
                                             </h3>
-                                            <textarea name="v3" id="v3" class="form-control shadow-textarea" rows="8"
+                                            <textarea name="v5" id="v5" class="form-control shadow-textarea" rows="8"
                                                 placeholder="ใน 5 วันที่ผ่านมา คุณได้เรียนรู้อะไรบ้าง..." required></textarea>
                                         </div>
 

@@ -243,7 +243,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post"  action="{{ url('store13') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -483,11 +483,11 @@
                                                             <td>เพื่อนน่าจะไม่ชอบฉัน</td>
                                                             <td>เศร้า</td>
                                                             <td>
-                                                                <input type="text" class="form-control"
+                                                                <input name="v5_1" id="v5_1" type="text" class="form-control"
                                                                     placeholder="คิดใหม่ยังไงดี..." required>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="form-control"
+                                                                <input name="v5_2" id="v5_2" type="text" class="form-control"
                                                                     placeholder="คิดใหม่แล้วรู้สึกยังไง..." required>
                                                             </td>
                                                         </tr>
@@ -496,11 +496,11 @@
                                                             <td>ขโมยหรือป่าว</td>
                                                             <td>กลัว</td>
                                                             <td>
-                                                                <input type="text" class="form-control"
+                                                                <input name="v6_1" id="v6_1" type="text" class="form-control"
                                                                     placeholder="คิดใหม่ยังไงดี..." required>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="form-control"
+                                                                <input name="v6_2" id="v6_2" type="text" class="form-control"
                                                                     placeholder="คิดใหม่แล้วรู้สึกยังไง..." required>
                                                             </td>
                                                         </tr>
@@ -509,11 +509,11 @@
                                                             <td>หาเรื่องกันหรอ</td>
                                                             <td>โกรธ</td>
                                                             <td>
-                                                                <input type="text" class="form-control"
+                                                                <input name="v7_1" id="v7_1"type="text" class="form-control"
                                                                     placeholder="คิดใหม่ยังไงดี..." required>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="form-control"
+                                                                <input name="v7_2" id="v7_2" type="text" class="form-control"
                                                                     placeholder="คิดใหม่แล้วรู้สึกยังไง..." required>
                                                             </td>
                                                         </tr>
@@ -522,9 +522,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
-                                            <button class="btn btn-primary w-100 btn-confirm"
-                                                type="submit">บันทึก</button>
+                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
 
                                     </div>

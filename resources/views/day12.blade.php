@@ -173,7 +173,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post"  action="{{ url('store12') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -348,15 +348,15 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v4_1" id="v4_1" type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." required></td>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v4_2" id="v4_2"type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." required></td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v5_1" id="v5_1"type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." required></td>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v5_2" id="v5_2" type="text" class="form-control"
                                                                     placeholder="พิมพ์คำตอบของคุณที่นี่..." required></td>
                                                         </tr>
                                                     </tbody>

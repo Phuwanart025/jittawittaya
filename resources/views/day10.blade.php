@@ -181,7 +181,8 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store') }}" enctype="multipart/form-data">
+                               
+                                <form method="post"  action="{{ url('store10') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -318,10 +319,10 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="v5"
+                                                            <input class="form-check-input" type="radio" name="v4"
                                                                 id="option10" style="background-color: #A084DC"
                                                                 onclick="disableCheckbox(this.value);highlightAnswer('option10');"
-                                                                value="ถูก" required>
+                                                                value="  ทำไมขับรถแบบนี้ไม่มีมารยาท = ถูก" required>
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 ทำไมขับรถแบบนี้ไม่มีมารยาท.
                                                             </label>
@@ -330,10 +331,10 @@
                                                     </div>
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="v5"
+                                                            <input class="form-check-input" type="radio" name="v4"
                                                                 id="option20" style="background-color: #A084DC"
                                                                 onclick="disableCheckbox(this.value);highlightAnswer('option20');"
-                                                                value="ผิด" required>
+                                                                value="  เขาจะชนเรามั้ยนะ = ผิด" required>
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 เขาจะชนเรามั้ยนะ.
                                                             </label>
@@ -381,10 +382,11 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="v6"
+                                                            <input class="form-check-input" type="radio" name="v5"
                                                                 id="option30" style="background-color: #A084DC"
                                                                 onclick="disableCheckbox2(this.value);highlightAnswer2('option30');"
-                                                                value="ผิด" required>
+                                                                value=" ฉีดยาฆ่าแมลงแล้ว
+                                                                มาได้ไงนะ  = ผิด" required>
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 ฉีดยาฆ่าแมลงแล้ว
                                                                 มาได้ไงนะ.
@@ -393,10 +395,10 @@
                                                     </div>
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="v6"
+                                                            <input class="form-check-input" type="radio" name="v5"
                                                                 id="option40" style="background-color: #A084DC"
                                                                 onclick="disableCheckbox2(this.value);highlightAnswer2('option40');"
-                                                                value="ถูก" required>
+                                                                value=" อี๋!!! สกปรก = ถูกต้อง" required>
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 อี๋!!! สกปรก.
                                                             </label>
@@ -446,10 +448,10 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="v7"
+                                                            <input class="form-check-input" type="radio" name="v6"
                                                                 id="option50" style="background-color: #A084DC"
                                                                 onclick="disableCheckbox3(this.value);highlightAnswer3('option50');"
-                                                                value="ผิด" required>
+                                                                value=" เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก = ผิด" required>
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก.
                                                             </label>
@@ -457,10 +459,10 @@
                                                     </div>
                                                     <div class="col-6 col-sm-6 mb-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="v7"
+                                                            <input class="form-check-input" type="radio" name="v6"
                                                                 id="option60" style="background-color: #A084DC"
                                                                 onclick="disableCheckbox3(this.value);highlightAnswer3('option60');"
-                                                                value="ถูก" required>
+                                                                value=" เขาไม่รักเราแล้ว = ถูก" required>
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 เขาไม่รักเราแล้ว.
                                                             </label>
@@ -621,7 +623,7 @@
             const correctAnswer = "option10";
 
             function disableCheckbox(v5) {
-                var checkboxes = document.querySelectorAll('input[name="v5"]');
+                var checkboxes = document.querySelectorAll('input[name="v4"]');
                 for (var i = 0; i < checkboxes.length; i++) {
                     checkboxes[i].style.pointerEvents = "none";
                     checkboxes[i].style.color = "gray";
@@ -648,7 +650,7 @@
             const correctAnswer2 = "option30";
 
             function disableCheckbox2(v6) {
-                var checkboxes2 = document.querySelectorAll('input[name="v6"]');
+                var checkboxes2 = document.querySelectorAll('input[name="v5"]');
                 for (var i = 0; i < checkboxes2.length; i++) {
                     checkboxes2[i].style.pointerEvents = "none";
                     checkboxes2[i].style.color = "gray";
@@ -675,7 +677,7 @@
             const correctAnswer3 = "option50";
 
             function disableCheckbox3(v7) {
-                var checkboxes3 = document.querySelectorAll('input[name="v7"]');
+                var checkboxes3 = document.querySelectorAll('input[name="v6"]');
                 for (var i = 0; i < checkboxes3.length; i++) {
                     checkboxes3[i].style.pointerEvents = "none";
                     checkboxes3[i].style.color = "gray";

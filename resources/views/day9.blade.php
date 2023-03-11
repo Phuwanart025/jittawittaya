@@ -173,7 +173,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="post" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post" action="{{ url('store9') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -366,15 +366,17 @@
                                                             <td>ยายอาจจะล้มหัวฟาดพื้น เลือดออกในสมอง ยายจะตายมั้ย
                                                                 จะทำยังไงดี</td>
                                                             <td>
-                                                                <select class="form-select"
+                                                                <select class="form-select"  name="v4" id="v4"
                                                                     aria-label="Default select example" required>
-                                                                    <option selected value="">1. Magnification and
+                                                                    <option selected value=""></option>
+                                                                    <option value="Magnification and
+                                                                    Minimization">1. Magnification and
                                                                         Minimization</option>
-                                                                    <option value="">2. *Catastrophizing</option>
-                                                                    <option value="">3. Overgeneralization</option>
-                                                                    <option value="">4. All-or-Nothing Thinking
+                                                                    <option value="Catastrophizing">2. Catastrophizing</option>
+                                                                    <option value="Overgeneralization">3. Overgeneralization</option>
+                                                                    <option value="All-or-Nothing Thinking">4. All-or-Nothing Thinking
                                                                     </option>
-                                                                    <option value="">5. Mental Filter</option>
+                                                                    <option value="Mental Filter">5. Mental Filter</option>
                                                                 </select>
                                                             </td>
                                                             <td>กังวล</td>
@@ -384,15 +386,17 @@
                                                                 วันนี้นัดคุยงานกลุ่มแต่เพื่อนไม่มาช่วย</td>
                                                             <td>ฉันทำงานกลุ่มอยู่คนเดียว เหนื่อยจัง</td>
                                                             <td>
-                                                                <select class="form-select"
+                                                                <select class="form-select"  name="v5" id="v5"
                                                                     aria-label="Default select example" required>
-                                                                    <option selected value="">1. Magnification and
+                                                                    <option selected value=""></option>
+                                                                    <option value="Magnification and
+                                                                    Minimization">1. Magnification and
                                                                         Minimization</option>
-                                                                    <option value="">2. Catastrophizing</option>
-                                                                    <option value="">3. Overgeneralization</option>
-                                                                    <option value="">4. All-or-Nothing Thinking
+                                                                    <option value="Catastrophizing">2. Catastrophizing</option>
+                                                                    <option value="Overgeneralization">3. Overgeneralization</option>
+                                                                    <option value="All-or-Nothing Thinking">4. All-or-Nothing Thinking
                                                                     </option>
-                                                                    <option value="">5. *Mental Filter</option>
+                                                                    <option value="Mental Filter">5. Mental Filter</option>
                                                                 </select>
                                                             </td>
                                                             <td>เศร้า</td>

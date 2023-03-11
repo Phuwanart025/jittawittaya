@@ -13,6 +13,10 @@ use App\Models\diary_day7;
 use App\Models\diary_day8;
 use App\Models\diary_day9;
 use App\Models\diary_day10;
+use App\Models\diary_day11;
+use App\Models\diary_day12;
+use App\Models\diary_day13;
+use App\Models\diary_day14;
 use App\Models\rounds_completed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -362,4 +366,293 @@ class diary_dayController extends Controller
         }
         return redirect('/results');
     }
+
+    public function store9(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v3_2' => 'required',
+                'v4' => 'required',
+                'v5' => 'required',
+               
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 9)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day9();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 9;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t9 = $request->v3;
+            $diary->detail2_t9 = $request->v3_2;
+            $diary->story_d9 = $request->v4;
+            $diary->story2_d9 = $request->v5;
+            $diary1->save();
+            $diary->diary_day9()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        return redirect('/results');
+    }
+
+    public function store10(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v3_2' => 'required',
+                'v4' => 'required',
+                'v5' => 'required',
+                'v6' => 'required',
+               
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 10)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day10();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 10;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t10 = $request->v3;
+            $diary->detail2_t10 = $request->v3_2;
+            $diary->story_d10 = $request->v4;
+            $diary->story2_d10 = $request->v5;
+            $diary->story3_d10 = $request->v6;
+            $diary1->save();
+            $diary->diary_day10()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        return redirect('/results');
+    }
+
+    public function store11(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v3_2' => 'required',
+                'v4' => 'required',
+                'v5' => 'required',
+               
+               
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 11)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day11();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 11;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t11 = $request->v3;
+            $diary->detail2_t11 = $request->v3_2;
+            $diary->grandma2_v4 = $request->v4;
+            $diary->thought_pattern11 = $request->v5;
+            $diary1->save();
+            $diary->diary_day11()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        return redirect('/results');
+    }
+
+    public function store12(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v3_2' => 'required',
+                'v3_3' => 'required',
+                'v4_1' => 'required',
+                'v4_2' => 'required',
+                'v5_1' => 'required',
+                'v5_2' => 'required',
+               
+               
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 12)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day12();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 12;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t12 = $request->v3;
+            $diary->detail2_t12 = $request->v3_2;
+            $diary->detail3_t12 = $request->v3_3;
+            $diary->proof_support_v4_1 = $request->v4_1;
+            $diary->objectionable_evidence_v4_2	= $request->v4_2;
+            $diary->proof_support_v5_1 = $request->v5_1;
+            $diary->objectionable_evidence_v5_2	 = $request->v5_2;
+            $diary1->save();
+            $diary->diary_day12()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        return redirect('/results');
+    }
+
+    public function store13(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v3_2' => 'required',
+                'v3_3' => 'required',
+                'v4' => 'required',
+                'v5_1' => 'required',
+                'v5_2' => 'required',
+                'v6_1' => 'required',
+                'v6_2' => 'required',
+                'v7_1' => 'required',
+                'v7_2' => 'required',
+               
+               
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 13)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day13();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 13;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t13 = $request->v3;
+            $diary->detail2_t13 = $request->v3_2;
+            $diary->detail3_t13 = $request->v3_3;
+            $diary->story_d13 = $request->v4;
+            $diary->new_idea_v5_1	= $request->v5_1;
+            $diary->new_emotions_v5_2	= $request->v5_2;
+            $diary->new_idea_v6_1 = $request->v6_1;
+            $diary->new_emotions_v6_2	= $request->v6_2;
+            $diary->new_idea_v7_1 = $request->v7_1;
+            $diary->new_emotions_v7_2	= $request->v7_2;
+            $diary1->save();
+            $diary->diary_day13()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        return redirect('/results');
+    }
+
+    public function store14(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v3_2' => 'required',
+                'v3_3' => 'required',
+                'v4_1' => 'required',
+                'v4_2' => 'required',
+                'v4_3' => 'required',
+                'v5_1' => 'required',
+                'v5_2' => 'required',
+                'v5_3' => 'required',
+                'v6_1' => 'required',
+                'v6_2' => 'required',
+                'v6_3' => 'required',
+                'v7' => 'required',
+               
+               
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 14)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day14();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 14;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t14 = $request->v3;
+            $diary->detail2_t14 = $request->v3_2;
+            $diary->detail3_t14 = $request->v3_3;
+            $diary->story_v4 = $request->v4_1;
+            $diary->positive_v4	= $request->v4_2;
+            $diary->negative_v4	= $request->v4_3;
+            $diary->story_v5 = $request->v5_1;
+            $diary->positive_v5	= $request->v5_2;
+            $diary->negative_v5	= $request->v5_3;
+            $diary->story_v6 = $request->v6_1;
+            $diary->positive_v6	= $request->v6_2;
+            $diary->negative_v6	= $request->v6_3;
+            $diary->story_positive_v7 = $request->v7;
+            $diary1->save();
+            $diary->diary_day14()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        return redirect('/results');
+    }
+
 }
