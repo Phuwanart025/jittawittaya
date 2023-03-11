@@ -408,7 +408,7 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="text-center py-5">นิทานเรื่อง...คนขายรองเท้า</h2>
+                                        <h2 class="text-center mt-5 mb-3">นิทานเรื่อง...คนขายรองเท้า</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <video class="mySlides1" autoplay muted loop="true">
                                                 <source src="images/day13/นิทาน/1.mp4" type="video/mp4"
@@ -431,7 +431,9 @@
                                             </video>
                                         </div>
 
-                                        <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
+                                        <p class="py-3">ขอบคุณนิทานจาก:<a target="_blank"
+                                            href="https://www.bloggang.com/m/viewdiary.php?id=hrman&month=05-2015&date=14&group=3&gblog=208&fbclid=IwAR2cUmr4mWfT5Js3iqf_L5nY5AbZ5vPoyZlTpjQFyYHGiRbkxIJB8loUcJs">
+                                            BLOGGANG</a></p>
                                         <hr>
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
@@ -463,8 +465,8 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>ลองคิดแบบใหม่...</h2>
+                                        <div class="row text-center">
+                                            <h2 class="mt-5 mb-3">ลองคิดแบบใหม่</h2>
 
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">

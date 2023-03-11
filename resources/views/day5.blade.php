@@ -545,9 +545,9 @@
                                         <div class="text-center py-5">
                                             <h2>ความรู้ส่งท้าย...ฝึกรู้ทันความคิด</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day5/05(1)_new.png"
+                                                <img class="mySlides1" src="images/day5/1.png"
                                                     style="width:100%">
-                                                <img class="mySlides1" src="images/day5/05(2)_new.png"
+                                                <img class="mySlides1" src="images/day5/2.png"
                                                     style="width:100%">
                                             </div>
                                         </div>
