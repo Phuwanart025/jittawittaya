@@ -294,7 +294,7 @@
                                         </div>
 
 
-                                        <h2 class="text-center mt-5 mb-2"><span
+                                        <h2 class="text-center mt-5 mb-3"><span
                                                 class="badge rounded-pill bg-info">นิทานเรื่อง...อิฐขี้กลัว</span></h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <img class="mySlides1" src="images/day3/อิฐขี้กลัว/1.png" style="width:100%">
@@ -335,14 +335,14 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
-                                            <h2>สัมผัสความ "<span style="font-weight:bold;color:#0081C9">กลัว</span>"
+                                        <div class="row text-center">
+                                            <h2 class="mt-5 mb-3">สัมผัสความ "<span style="font-weight:bold;color:#0081C9">กลัว</span>"
                                                 ในร่างกายเรา</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day3/03(1)_new.png"
+                                                <img class="mySlides1" src="images/day3/2.png"
                                                     style="width:100%">
                                                 <video autoplay muted loop="true">
-                                                    <source src="images/day3/03(2)_new.mp4" type="video/mp4">
+                                                    <source src="images/day3/3.mp4" type="video/mp4">
                                                 </video>
                                             </div>
                                         </div>
@@ -369,8 +369,8 @@
                                             </h1>
                                         </div>
 
-                                        <div class="py-5 text-center">
-                                            <h2>เมื่อเกิดเหตุการณ์ต่างๆ และรู้สึก "<span
+                                        <div class="row text-center">
+                                            <h2 class="mt-5 mb-3">เมื่อเกิดเหตุการณ์ต่างๆ และรู้สึก "<span
                                                     style="font-weight:bold;color:#0081C9">กลัว</span>"
                                                 คุณเคยมีอาการต่อไปนี้ระดับใด</h2>
                                             <div class="row py-5">
@@ -571,8 +571,8 @@
                                             </h1>
                                         </div>
 
-                                        <div class="py-5 text-center">
-                                            <div class="py-3">
+                                        <div class="row text-center">
+                                            <div class="mt-5 mb-3">
                                                 <h2>มาฝึกผ่อนคลายกล้ามเนื้อกันเถอะ</h2>
                                                 <h2>(PROGRESSIVE MUSCLE RELAXATION)</h2>
                                             </div>
@@ -591,7 +591,7 @@
                                                 target="_blank">คลิก</a> --}}
                                         </div>
 
-                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
+                                        <div class="d-grid gap-2 col-3 mx-auto py-3">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>

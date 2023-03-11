@@ -304,11 +304,11 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
+                                        <div class="row text-center">
 
-                                            <h2 class="mb-3">เพลงบำบัดจิตใจ</h2>
+                                            <h2 class="mt-5 mb-3">เพลงบำบัดจิตใจ</h2>
 
-                                            <img class="mb-3" src="images/day4/04(1)_new.png" style="width:100%">
+                                            <img class="mb-3" src="images/day4/1.png" style="width:100%">
                                             <div class="ratio ratio-16x9 py-3">
                                                 <iframe src="https://www.youtube.com/embed/bJDuQi7gVMU"
                                                     title="YouTube video player" frameborder="0"
@@ -344,12 +344,12 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
-                                            <h2>สัมผัสความ "<span style="font-weight:bold;color:#00679e">เศร้า</span>"
+                                        <div class="row text-center">
+                                            <h2 class="mt-5 mb-3">สัมผัสความ "<span style="font-weight:bold;color:#00679e">เศร้า</span>"
                                                 ในร่างกายเรา</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mb-3" src="images/day4/04(2)_new.png" style="width:100%">
-                                                <img class="mb-3" src="images/day4/04(3)_new.png" style="width:100%">
+                                                <img class="mb-3" src="images/day4/2.png" style="width:100%">
+                                                <img class="mb-3" src="images/day4/3.png" style="width:100%">
                                             </div>
                                         </div>
                                     </div>

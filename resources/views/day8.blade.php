@@ -204,7 +204,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #FFFF00"
                                                         type="radio" value="สีเหลือง" name="flexRadioDefault"
-                                                        id="color_feel_today1">
+                                                        id="color_feel_today1" required>
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -216,7 +216,7 @@
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                        name="flexRadioDefault" id="color_feel_today2" required>
                                                     <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
                                                         ความโกรธ
@@ -229,7 +229,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #A084DC"
                                                         type="radio" value="สีเขียว" name="flexRadioDefault"
-                                                        id="color_feel_today3">
+                                                        id="color_feel_today3" required>
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -243,7 +243,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #7286D3"
                                                         type="radio" value="สีฟ้า" name="flexRadioDefault"
-                                                        id="color_feel_today4">
+                                                        id="color_feel_today4" required>
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -256,7 +256,7 @@
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
-                                                value="{{ old('value') }}" class="slider" id="myRange">
+                                                value="{{ old('value') }}" class="slider" id="myRange" required>
                                             <div class="sliderticks">
                                                 <p>น้อยที่สุด</p>
                                                 <p>น้อย</p>
@@ -269,12 +269,12 @@
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
+                                            placeholder="เหตุการณ์ที่เกิดขึ้น..." required></textarea>
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
+                                        <textarea name="v3_2" id="v3_2" class="form-control shadow-textarea " rows="8"
+                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..." required></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -298,29 +298,28 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
-                                            {{-- <h1>กับดักความคิด part1...</h1> --}}
+                                        <div class="row text-center">
                                             <div
                                                 class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">
-                                                <img class="mySlides1 mb-3" src="images/day8/ปกกับดักความคิด.png"
+                                                <img class="mySlides1 mb-3" src="images/day8/ความรู้/ปกกับดักความคิด.png"
                                                     style="width:100%">
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day8/1.mp4" type="video/mp4">
+                                                    <source src="images/day8/ความรู้/1.mp4" type="video/mp4">
                                                 </video>
 
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day8/2.mp4" type="video/mp4">
+                                                    <source src="images/day8/ความรู้/2.mp4" type="video/mp4">
                                                 </video>
 
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day8/3.mp4" type="video/mp4">
+                                                    <source src="images/day8/ความรู้/3.mp4" type="video/mp4">
                                                 </video>
 
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day8/4.mp4" type="video/mp4">
+                                                    <source src="images/day8/ความรู้/4.mp4" type="video/mp4">
                                                 </video>
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day8/5.mp4" type="video/mp4">
+                                                    <source src="images/day8/ความรู้/5.mp4" type="video/mp4">
                                                 </video>
                                             </div>
                                         </div>
@@ -347,9 +346,9 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
+                                        <div class="row text-center">
 
-                                            <h2>จากเหตุการณ์นี้ เขามีกับดักความคิดแบบไหนกันนะ...</h2>
+                                            <h2 class="mt-5 mb-3">จากเหตุการณ์นี้ เขามีกับดักความคิดแบบไหนกันนะ...</h2>
                                             <div class="table-responsive py-3">
                                                 <table
                                                     class="table table-info text-black table-bordered border-Light table-striped table-hover">
@@ -365,12 +364,12 @@
                                                             <td>เขาคงคิดว่าเราไม่สำคัญ </td>
                                                             <td>
                                                                 <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected value="1">1. Magnification and Minimization</option>
-                                                                    <option value="2">2. Catastrophizing</option>
-                                                                    <option value="3">3. Overgeneralization</option>
-                                                                    <option value="4">4. All-or-Nothing Thinking</option>
-                                                                    <option value="5">5. Mental Filter</option>
+                                                                    aria-label="Default select example" required>
+                                                                    <option selected value="">1. *Mind Reading</option>
+                                                                    <option value="">2. Emotional Reasoning</option>
+                                                                    <option value="">3. Should Statements</option>
+                                                                    <option value="">4. Labeling</option>
+                                                                    <option value="">5. Personalization</option>
                                                                 </select>
                                                             </td>
                                                             <td>เศร้า</td>
@@ -380,13 +379,13 @@
                                                             <td>อาจารย์ต้องออกข้อสอบให้ตรงกับที่สอนสิ</td>
                                                             <td>
                                                                 <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected value="1">1. Magnification and Minimization</option>
-                                                                    <option value="2">2. Catastrophizing</option>
-                                                                    <option value="3">3. Overgeneralization</option>
-                                                                    <option value="4">4. All-or-Nothing Thinking</option>
-                                                                    <option value="5">5. Mental Filter</option>
-                                                                </select>
+                                                                aria-label="Default select example" required>
+                                                                <option selected value="">1. Mind Reading</option>
+                                                                <option value="">2. Emotional Reasoning</option>
+                                                                <option value="">3. *Should Statements</option>
+                                                                <option value="">4. Labeling</option>
+                                                                <option value="">5. Personalization</option>
+                                                            </select>
                                                             </td>
                                                             <td>โกรธ</td>
                                                         </tr>
@@ -417,10 +416,10 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
+                                        <div class="row text-center">
 
-                                            <h1 class="mb-3">เพลงบำบัดจิตใจ...</h1>
-                                            <img class="mb-3" src="images/day8/08(1)_new.png" style="width:100%">
+                                            <h1 class="mt-5 mb-3">เพลงบำบัดจิตใจ...</h1>
+                                            <img class="mb-3" src="images/day8/ด้านที่ดีกว่า.png" style="width:100%">
                                             <div class="ratio ratio-16x9 py-3">
                                                 <iframe src="https://www.youtube.com/embed/gqeA_B7pK9s"
                                                     title="YouTube video player" frameborder="0"

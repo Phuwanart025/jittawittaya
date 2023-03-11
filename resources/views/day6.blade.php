@@ -160,13 +160,11 @@
                                     @csrf
 
                                     {{-- Content1 --}}
-                                   
-                                    {{-- Content1 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
                                             <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY7</span>
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY6</span>
                                             </label>
                                             <h1><span>วันที่ปัจจุบัน : </span>
                                                 <span class="badge rounded-pill bg-info">
@@ -189,7 +187,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #FFFF00"
                                                         type="radio" value="สีเหลือง" name="flexRadioDefault"
-                                                        id="color_feel_today1">
+                                                        id="color_feel_today1" required>
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -201,7 +199,7 @@
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                        name="flexRadioDefault" id="color_feel_today2" required>
                                                     <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
                                                         ความโกรธ
@@ -214,7 +212,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #A084DC"
                                                         type="radio" value="สีเขียว" name="flexRadioDefault"
-                                                        id="color_feel_today3">
+                                                        id="color_feel_today3" required>
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -228,7 +226,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #7286D3"
                                                         type="radio" value="สีฟ้า" name="flexRadioDefault"
-                                                        id="color_feel_today4">
+                                                        id="color_feel_today4" required>
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -241,7 +239,7 @@
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
-                                                value="{{ old('value') }}" class="slider" id="myRange">
+                                                value="{{ old('value') }}" class="slider" id="myRange" required>
                                             <div class="sliderticks">
                                                 <p>น้อยที่สุด</p>
                                                 <p>น้อย</p>
@@ -254,13 +252,14 @@
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
+                                            placeholder="เหตุการณ์ที่เกิดขึ้น..." required></textarea>
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3_2" id="v3_2" class="form-control shadow-textarea " rows="8"
-                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
+                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..." required></textarea>
                                     </div>
+
                                     {{-- Content2 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
@@ -282,15 +281,17 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="text-center py-5">นิทานเรื่อง...คุณยายและความห่วงใย</h2>
+                                        <h2 class="text-center mt-5 mb-3">นิทานเรื่อง...คุณยายและความห่วงใย</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day6/คุณยายและความห่วงใย_new/1.png"
+                                            <img class="mySlides1" src="images/day6/คุณยายและความห่วงใย (ครึ่งเรื่อง)/1.png"
                                                 style="width:100%">
-                                            <img class="mySlides1" src="images/day6/คุณยายและความห่วงใย_new/2.png"
+                                            <img class="mySlides1" src="images/day6/คุณยายและความห่วงใย (ครึ่งเรื่อง)/2.png"
                                                 style="width:100%">
                                         </div>
 
-                                        <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
+                                        <p class="py-3">ขอบคุณนิทานจาก:<a target="_blank"
+                                            href="https://www.bloggang.com/m/viewdiary.php?id=hrman&month=05-2015&date=14&group=3&gblog=208&fbclid=IwAR17eXg4p5ilvwCTyoyMxVex-sn7Oc99pH5fQ8v6cdoX-dk6rbF7ZASsPwY">
+                                            BLOGGANG</a></p>
                                         <hr>
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
@@ -320,16 +321,16 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>naïve model และ cognitive model</h2>
+                                        <div class="พนไ text-center">
+                                            <h2 class="mt-5 mb-3">naïve model และ cognitive model</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day6/06(1)_new.png"
+                                                <img class="mySlides1" src="images/day6/รูปแบบความคิด/1.png"
                                                     style="width:100%">
-                                                <img class="mySlides1" src="images/day6/06(2)_new.png"
+                                                <img class="mySlides1" src="images/day6/รูปแบบความคิด/2.png"
                                                     style="width:100%">
-                                                <img class="mySlides1" src="images/day6/06(3)_new.png"
+                                                <img class="mySlides1" src="images/day6/รูปแบบความคิด/3.png"
                                                     style="width:100%">
-                                                <img class="mySlides1" src="images/day6/06(4)_new.png"
+                                                <img class="mySlides1" src="images/day6/รูปแบบความคิด/4.png"
                                                     style="width:100%">
                                             </div>
                                         </div>

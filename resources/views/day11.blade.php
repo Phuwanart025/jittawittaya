@@ -197,6 +197,7 @@
                                             </h1>
                                         </div>
 
+
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
                                             <div class="col-md-3 py-2">
@@ -272,7 +273,7 @@
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                        <textarea name="v3_2" id="v3_2" class="form-control shadow-textarea " rows="8"
                                             placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..." required></textarea>
                                     </div>
 
@@ -297,19 +298,25 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="text-center py-5">นิทานเรื่อง...คุณยายและความห่วงใย</h2>
+                                        <h2 class="text-center mt-5 mb-3">นิทานเรื่อง...คุณยายและความห่วงใย</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day11/คุณยายและความห่วงใย/1.png"
+                                            <img class="mySlides1"
+                                                src="images/day11/คุณยายและความห่วงใย(เต็มเรื่อง)/1.png"
                                                 style="width:100%">
-                                            <img class="mySlides1" src="images/day11/คุณยายและความห่วงใย/2.png"
+                                            <img class="mySlides1"
+                                                src="images/day11/คุณยายและความห่วงใย(เต็มเรื่อง)/2.png"
                                                 style="width:100%">
-                                            <img class="mySlides1" src="images/day11/คุณยายและความห่วงใย/3.png"
+                                            <img class="mySlides1"
+                                                src="images/day11/คุณยายและความห่วงใย(เต็มเรื่อง)/3.png"
                                                 style="width:100%">
-                                            <img class="mySlides1" src="images/day11/คุณยายและความห่วงใย/4.png"
+                                            <img class="mySlides1"
+                                                src="images/day11/คุณยายและความห่วงใย(เต็มเรื่อง)/4.png"
                                                 style="width:100%">
                                         </div>
 
-                                        <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
+                                        <p class="py-3">ขอบคุณนิทานจาก:<a target="_blank"
+                                                href="https://www.bloggang.com/m/viewdiary.php?id=hrman&month=05-2015&date=14&group=3&gblog=208&fbclid=IwAR17eXg4p5ilvwCTyoyMxVex-sn7Oc99pH5fQ8v6cdoX-dk6rbF7ZASsPwY">
+                                                BLOGGANG</a></p>
                                         <hr>
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
@@ -340,43 +347,101 @@
                                         </div>
 
                                         <div class="py-5">
-                                            <h2 class="text-center">มาทบทวนความรู้กัน</h2>
+                                            <h2 class="mt-5 mb-3 text-center">มาทบทวนความรู้กัน</h2>
                                             <div
                                                 class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">
-                                                <img class="mySlides1 mb-3" src="images/day11/ทบทวน/วันที่6/2.png"
+                                                {{-- day6 --}}
+                                                <img class="mySlides1 mb-3"
+                                                    src="images/day11/ทบทวน/6/รูปแบบความคิด (แก้แล้ว)/1.png"
                                                     style="width:100%">
 
-                                                <img class="mySlides1 mb-3" src="images/day11/ทบทวน/วันที่6/3.png"
+                                                <img class="mySlides1 mb-3"
+                                                    src="images/day11/ทบทวน/6/รูปแบบความคิด (แก้แล้ว)/2.png"
                                                     style="width:100%">
 
-                                                <img class="mySlides1 mb-3" src="images/day11/ทบทวน/วันที่6/4.png"
+                                                <img class="mySlides1 mb-3"
+                                                    src="images/day11/ทบทวน/6/รูปแบบความคิด (แก้แล้ว)/3.png"
+                                                    style="width:100%">
+
+                                                <img class="mySlides1 mb-3"
+                                                    src="images/day11/ทบทวน/6/รูปแบบความคิด (แก้แล้ว)/4.png"
+                                                    style="width:100%">
+
+                                                {{-- day7 --}}
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day11/ทบทวน/7/1.mp4" type="video/mp4">
+                                                </video>
+
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day11/ทบทวน/7/2.mp4" type="video/mp4">
+                                                </video>
+
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day11/ทบทวน/7/3.mp4" type="video/mp4">
+                                                </video>
+
+                                                {{-- day8 --}}
+                                                <img class="mySlides1 mb-3"
+                                                    src="images/day11/ทบทวน/8/ความรู้/ปกกับดักความคิด.png"
                                                     style="width:100%">
 
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day10/วันที่102.mp4" type="video/mp4">
+                                                    <source src="images/day11/ทบทวน/8/ความรู้/1.mp4" type="video/mp4">
                                                 </video>
 
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day10/วันที่103.mp4" type="video/mp4">
+                                                    <source src="images/day11/ทบทวน/8/ความรู้/2.mp4" type="video/mp4">
                                                 </video>
 
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day7/07(1).mp4" type="video/mp4">
+                                                    <source src="images/day11/ทบทวน/8/ความรู้/3.mp4" type="video/mp4">
                                                 </video>
 
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day7/07(2).mp4" type="video/mp4">
+                                                    <source src="images/day11/ทบทวน/8/ความรู้/4.mp4" type="video/mp4">
                                                 </video>
 
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day7/07(3).mp4" type="video/mp4">
+                                                    <source src="images/day11/ทบทวน/8/ความรู้/5.mp4" type="video/mp4">
+                                                </video>
+
+                                                {{-- day9 --}}
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day11/ทบทวน/9/ความรู้/1.mp4" type="video/mp4">
+                                                </video>
+
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day11/ทบทวน/9/ความรู้/2.mp4" type="video/mp4">
+                                                </video>
+
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day11/ทบทวน/9/ความรู้/3.mp4" type="video/mp4">
+                                                </video>
+
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day11/ทบทวน/9/ความรู้/4.mp4" type="video/mp4">
+                                                </video>
+
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day11/ทบทวน/9/ความรู้/5.mp4" type="video/mp4">
+                                                </video>
+
+                                                {{-- day10 --}}
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day11/ทบทวน/10/Interactional model/1.mp4"
+                                                        type="video/mp4">
+                                                </video>
+
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day11/ทบทวน/10/Interactional model/2.mp4"
+                                                        type="video/mp4">
                                                 </video>
 
                                             </div>
                                             <hr>
 
                                             <h3 class="mt-5 mb-3">
-                                                <i class="fas fa-edit">ใน 5 วันที่ผ่านมา คุณได้เรียนรู้อะไรบ้าง:</i>
+                                                <i class="fas fa-edit"> ใน 5 วันที่ผ่านมา คุณได้เรียนรู้อะไรบ้าง:</i>
                                             </h3>
                                             <textarea name="v3" id="v3" class="form-control shadow-textarea" rows="8"
                                                 placeholder="ใน 5 วันที่ผ่านมา คุณได้เรียนรู้อะไรบ้าง..." required></textarea>
@@ -405,12 +470,12 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
+                                        <div class="row mt-5 mb-3 text-center">
                                             <div
                                                 class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">
                                                 <img class="mySlides1" src="images/day11/วันที่111.png"
                                                     style="width:100%">
-                                                <img class="mySlides1" src="images/day11/วันที่11.png"
+                                                <img class="mySlides1" src="images/day11/วันที่112.png"
                                                     style="width:100%">
                                             </div>
                                         </div>

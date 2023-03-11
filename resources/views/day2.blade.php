@@ -284,14 +284,14 @@
                                         </div>
 
 
-                                        <h2 class="text-center py-5"><span
+                                        <h2 class="text-center mt-5 mb-3"><span
                                                 class="badge rounded-pill bg-info">นิทานเรื่อง...เพื่อน 2 คน</span></h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day2/เพื่อน_new/1.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day2/เพื่อน_new/2.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day2/เพื่อน_new/3.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day2/เพื่อน_new/4.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day2/เพื่อน_new/5.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day2/เพื่อน/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day2/เพื่อน/2.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day2/เพื่อน/3.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day2/เพื่อน/4.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day2/เพื่อน/5.png" style="width:100%">
                                         </div>
                                         <p class="py-3">ขอบคุณนิทานจาก:<a target="_blank"
                                                 href="http://www.pakornblog.com/story.php?act=detail&storyid=47&fbclid=IwAR1q_aaH7ChQp2DEDlosUceN2DCUfLBupQ2ZxBVDHh4BuMq3fXDFQe4ZKGE">
@@ -324,14 +324,14 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
-                                            <h2 class="text-center py-5">สัมผัสความ "<span class="text-red">โกรธ</span>"
+                                        <div class="row text-center">
+                                            <h2 class="text-center mt-5 mb-3">สัมผัสความ "<span class="text-red">โกรธ</span>"
                                                 ในร่างกายเรา</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day2/02(1)_new.png"
+                                                <img class="mySlides1" src="images/day2/2.png"
                                                     style="width:100%">
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day2/02(2)_new.mp4" type="video/mp4">
+                                                    <source src="images/day2/3.mp4" type="video/mp4">
                                                 </video>
                                             </div>
                                         </div>
@@ -359,8 +359,8 @@
                                         </div>
 
 
-                                        <div class="row py-5">
-                                            <h2 class="text-center mt-2 mb-4">
+                                        <div class="row">
+                                            <h2 class="text-center mt-5 mb-3">
                                                 <i class="fas fa-angry text-red"></i>
                                                 เมื่อคุณรู้สึก "<span class="text-red">โกรธ</span>"
                                                 ร่างกายของคุณมีอะไรเกิดขึ้นบ้าง
@@ -601,18 +601,18 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
-                                            <h2 class="text-center py-5">5 วิธีจัดการความ "<span class="text-red">โกรธ <i
+                                        <div class="row text-center">
+                                            <h2 class="text-center mt-5 mb-3">5 วิธีจัดการความ "<span class="text-red">โกรธ <i
                                                         class="fas fa-angry text-red"></i></span>"</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day2/02(3)_new.jpg"
+                                                <img class="mySlides1" src="images/day2/4.jpg"
                                                     style="width:100%">
                                                 {{-- <img class="mySlides1" src="images/day2/02(4).png" style="width:100%">
                                                 <img class="mySlides1" src="images/day2/02(5).png" style="width:100%"> --}}
                                             </div>
                                         </div>
 
-                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
+                                        <div class="d-grid gap-2 col-3 mx-auto py-3">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>

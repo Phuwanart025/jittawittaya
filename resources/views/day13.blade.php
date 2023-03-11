@@ -267,13 +267,14 @@
                                             </h1>
                                         </div>
 
+
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #FFFF00"
                                                         type="radio" value="สีเหลือง" name="flexRadioDefault"
-                                                        id="color_feel_today1">
+                                                        id="color_feel_today1" required>
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -285,7 +286,7 @@
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                        name="flexRadioDefault" id="color_feel_today2" required>
                                                     <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
                                                         ความโกรธ
@@ -298,7 +299,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #A084DC"
                                                         type="radio" value="สีเขียว" name="flexRadioDefault"
-                                                        id="color_feel_today3">
+                                                        id="color_feel_today3" required>
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -312,7 +313,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #7286D3"
                                                         type="radio" value="สีฟ้า" name="flexRadioDefault"
-                                                        id="color_feel_today4">
+                                                        id="color_feel_today4" required>
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -325,7 +326,7 @@
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
-                                                value="{{ old('value') }}" class="slider" id="myRange">
+                                                value="{{ old('value') }}" class="slider" id="myRange" required>
                                             <div class="sliderticks">
                                                 <p>น้อยที่สุด</p>
                                                 <p>น้อย</p>
@@ -338,17 +339,17 @@
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
+                                            placeholder="เหตุการณ์ที่เกิดขึ้น..." required></textarea>
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
+                                        <textarea name="v3_2" id="v3_2" class="form-control shadow-textarea " rows="8"
+                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..." required></textarea>
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
-                                            แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ:</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ..."></textarea>
+                                            แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ:</h3>
+                                        <textarea name="v3_3" id="v3_3" class="form-control shadow-textarea " rows="8"
+                                            placeholder="แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ..." required></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -372,7 +373,7 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="text-center py-3">ลองคิดแบบอื่น “คิดใหม่”...</h2>
+                                        <h2 class="text-center mt-5 mb-3">ลองคิดแบบอื่น “คิดใหม่”</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <video class="mySlides1" autoplay muted loop="true">
                                                 <source src="images/day13/1.mp4" type="video/mp4" style="width:100%">
@@ -407,17 +408,27 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="text-center py-5">นิทานเรื่อง คนขายรองเท้า...</h2>
+                                        <h2 class="text-center py-5">นิทานเรื่อง...คนขายรองเท้า</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/1.png"
-                                                style="width:100%">
-                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/2.png"
-                                                style="width:100%">
-                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/3.png"
-                                                style="width:100%">
-                                            <img class="mySlides1" src="images/day13/คนขายรองเท้า/4.png"
-                                                style="width:100%">
+                                            <video class="mySlides1" autoplay muted loop="true">
+                                                <source src="images/day13/นิทาน/1.mp4" type="video/mp4"
+                                                    style="width:100%">
+                                            </video>
 
+                                            <video class="mySlides1" autoplay muted loop="true">
+                                                <source src="images/day13/นิทาน/2.mp4" type="video/mp4"
+                                                    style="width:100%">
+                                            </video>
+
+                                            <video class="mySlides1" autoplay muted loop="true">
+                                                <source src="images/day13/นิทาน/3.mp4" type="video/mp4"
+                                                    style="width:100%">
+                                            </video>
+
+                                            <video class="mySlides1" autoplay muted loop="true">
+                                                <source src="images/day13/นิทาน/4.mp4" type="video/mp4"
+                                                    style="width:100%">
+                                            </video>
                                         </div>
 
                                         <p class="py-3">ขอบคุณนิทานจาก: ...?</p>
@@ -469,28 +480,40 @@
                                                             <td>เพื่อนไม่คุยด้วย</td>
                                                             <td>เพื่อนน่าจะไม่ชอบฉัน</td>
                                                             <td>เศร้า</td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="คิดใหม่ยังไงดี..." required>
+                                                            </td>
+                                                            <td>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="คิดใหม่แล้วรู้สึกยังไง..." required>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>คนแปลกหน้าเดินเข้ามาหา</td>
                                                             <td>ขโมยหรือป่าว</td>
                                                             <td>กลัว</td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="คิดใหม่ยังไงดี..." required>
+                                                            </td>
+                                                            <td>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="คิดใหม่แล้วรู้สึกยังไง..." required>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>โดนบีบแตรไส่</td>
                                                             <td>หาเรื่องกันหรอ</td>
                                                             <td>โกรธ</td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." /></td>
+                                                            <td>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="คิดใหม่ยังไงดี..." required>
+                                                            </td>
+                                                            <td>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="คิดใหม่แล้วรู้สึกยังไง..." required>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>

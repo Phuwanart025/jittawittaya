@@ -377,7 +377,7 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="mt-5 w3-center" for="customRange2">คำไหนคือ
+                                        <h2 class="mt-5 mb-3 w3-center" for="customRange2">คำไหนคือ
                                             <span class="badge rounded-pill"
                                                 style="background-color: #12bbd4">อารมณ์บ้างนะ?
                                             </span>
@@ -388,31 +388,31 @@
                                                 <div class="col-10 col-xs-3 mt-2 mx-auto">
                                                     <ul class="ks-cboxtags">
                                                         <li><input type="checkbox" id="1" name="v4[]"
-                                                                value="เศร้า" required><label for="1">เศร้า</label>
+                                                                value="เศร้า"><label for="1">เศร้า</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="2" name="v4[]"
-                                                                value="เหงา" required><label for="2">เหงา</label>
+                                                                value="เหงา"><label for="2">เหงา</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="3" name="v4[]"
-                                                                value="โกรธ" required><label for="3">โกรธ</label>
+                                                                value="โกรธ"><label for="3">โกรธ</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="4" name="v4[]"
-                                                                value="ไม่เก่ง" required><label for="4">ไม่เก่ง</label>
+                                                                value="ไม่เก่ง"><label for="4">ไม่เก่ง</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="5" name="v4[]"
-                                                                value="ไร้ค่า" required><label for="5">ไร้ค่า</label>
+                                                                value="ไร้ค่า"><label for="5">ไร้ค่า</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="6" name="v4[]"
-                                                                value="เก็บตัว" required><label for="6">เก็บตัว</label>
+                                                                value="เก็บตัว"><label for="6">เก็บตัว</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="7" name="v4[]"
-                                                                value="ร้องไห้" required><label for="7">ร้องไห้</label>
+                                                                value="ร้องไห้"><label for="7">ร้องไห้</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="8" name="v4[]"
@@ -420,47 +420,47 @@
                                                         </li>
 
                                                         <li><input type="checkbox" id="9" name="v4[]"
-                                                                value="หงุดหงิด" required><label for="9">หงุดหงิด</label>
+                                                                value="หงุดหงิด"><label for="9">หงุดหงิด</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="10" name="v4[]"
-                                                                value="ฉันดูไม่ดี" required><label for="10">ฉันดูไม่ดี</label>
+                                                                value="ฉันดูไม่ดี"><label for="10">ฉันดูไม่ดี</label>
                                                         </li>
 
                                                         <li class="ks-selected"><input type="checkbox" id="11"
-                                                                name="v4[]" value="ไม่สบายใจ" required><label
+                                                                name="v4[]" value="ไม่สบายใจ"><label
                                                                 for="11">ไม่สบายใจ</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="12" name="v4[]"
-                                                                value="เหงื่อออก" required><label
+                                                                value="เหงื่อออก"><label
                                                                 for="12">เหงื่อออก</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="13" name="v4[]"
-                                                                value="ใจเต้นแรง" required><label
+                                                                value="ใจเต้นแรง"><label
                                                                 for="13">ใจเต้นแรง</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="14" name="v4[]"
-                                                                value="ฉันผิดอีกแล้ว" required><label
+                                                                value="ฉันผิดอีกแล้ว"><label
                                                                 for="14">ฉันผิดอีกแล้ว</label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="15" name="v4[]"
-                                                                value="ไม่ไปโรงเรียน" required><label
+                                                                value="ไม่ไปโรงเรียน"><label
                                                                 for="15">ไม่ไปโรงเรียน
                                                             </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="16" name="v4[]"
-                                                                value="ทำไมซวยแบบนี้" required><label
+                                                                value="ทำไมซวยแบบนี้"><label
                                                                 for="16">ทำไมซวยแบบนี้
                                                             </label>
                                                         </li>
 
                                                         <li><input type="checkbox" id="17" name="v4[]"
-                                                                value="ไม่อยากลุก" required><label for="17">ไม่อยากลุก
+                                                                value="ไม่อยากลุก"><label for="17">ไม่อยากลุก
                                                             </label>
                                                         </li>
 
@@ -544,15 +544,15 @@
                                         </div>
 
 
-                                        <h2 class="text-center py-3">อารมณ์มาจากไหนกันนะ</h2>
+                                        <h2 class="text-center mt-5 mb-3">อารมณ์มาจากไหนกันนะ</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <video class="mySlides1" autoplay muted loop="true">
-                                                <source src="images/day1/01(3).mp4" type="video/mp4">
+                                                <source src="images/day1/1.mp4" type="video/mp4">
                                             </video>
-                                            <img class="mySlides1" src="images/day1/01(2).png" style="width:100%">
+                                            <img class="mySlides1" src="images/day1/2.png" style="width:100%">
                                         </div>
 
-                                        <div class="d-grid gap-2 col-3 mx-auto py-5">
+                                        <div class="d-grid gap-2 col-3 mx-auto py-3">
                                             <button class="btn btn-primary w-100 btn-confirm"
                                                 type="submit">บันทึก</button>
                                         </div>

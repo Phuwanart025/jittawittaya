@@ -205,6 +205,7 @@
                                             </h1>
                                         </div>
 
+
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
                                             <div class="col-md-3 py-2">
@@ -280,7 +281,7 @@
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                        <textarea name="v3_2" id="v3_2" class="form-control shadow-textarea " rows="8"
                                             placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..." required></textarea>
                                     </div>
 
@@ -305,13 +306,13 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
+                                        <div class="row text-center">
 
                                             <video class="mySlides1" autoplay muted loop="true">
-                                                <source src="images/day10/เกม1.mp4" type="video/mp4">
+                                                <source src="images/day10/เกม/1.mp4" type="video/mp4">
                                             </video>
 
-                                            <h2 class="py-5">คุณคิดว่าบุคคลในภาพน่าจะคิดอะไรอยู่?</h2>
+                                            <h2 class="mt-5 mb-3">คุณคิดว่าบุคคลในภาพน่าจะคิดอะไรอยู่?</h2>
 
                                             <div class="container">
                                                 <div class="row justify-content-center">
@@ -368,13 +369,13 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
+                                        <div class="row text-center">
 
                                             <video class="mySlides1" autoplay muted loop="true">
-                                                <source src="images/day10/เกม2.mp4" type="video/mp4">
+                                                <source src="images/day10/เกม/2.mp4" type="video/mp4">
                                             </video>
 
-                                            <h2 class="py-5">คุณคิดว่าบุคคลในภาพน่าจะคิดอะไรอยู่?</h2>
+                                            <h2 class="mt-5 mb-3">คุณคิดว่าบุคคลในภาพน่าจะคิดอะไรอยู่?</h2>
 
                                             <div class="container">
                                                 <div class="row justify-content-center">
@@ -433,13 +434,13 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
+                                        <div class="row text-center">
 
                                             <video class="mySlides1" autoplay muted loop="true">
-                                                <source src="images/day10/เกม3.mp4" type="video/mp4">
+                                                <source src="images/day10/เกม/3.mp4" type="video/mp4">
                                             </video>
 
-                                            <h2 class="py-5">คุณคิดว่าบุคคลในภาพน่าจะคิดอะไรอยู่?</h2>
+                                            <h2 class="mt-5 mb-3">คุณคิดว่าบุคคลในภาพน่าจะคิดอะไรอยู่?</h2>
 
                                             <div class="container">
                                                 <div class="row justify-content-center">
@@ -499,9 +500,9 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
+                                        <div class="row text-center">
 
-                                            <h1><span class="badge rounded-pill bg-primary">Interaction Model</span></h1>
+                                            <h1 class="mt-5 mb-3"><span class="badge rounded-pill bg-primary">Interactional Model</span></h1>
                                             <h2><span class="badge rounded-pill bg-primary">เหตุการณ์
                                                     <i class="fas fa-arrow-circle-right"></i> ความคิด
                                                     <i class="fas fa-arrow-circle-right"></i> อารมณ์/พฤติกรรม
@@ -509,10 +510,10 @@
 
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day10/วันที่102.mp4" type="video/mp4">
+                                                    <source src="images/day10/Interactional model/1.mp4" type="video/mp4">
                                                 </video>
                                                 <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day10/วันที่103.mp4" type="video/mp4">
+                                                    <source src="images/day10/Interactional model/2.mp4" type="video/mp4">
                                                 </video>
                                             </div>
                                         </div>

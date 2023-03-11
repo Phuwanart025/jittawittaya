@@ -204,7 +204,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #FFFF00"
                                                         type="radio" value="สีเหลือง" name="flexRadioDefault"
-                                                        id="color_feel_today1">
+                                                        id="color_feel_today1" required>
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -216,7 +216,7 @@
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                        name="flexRadioDefault" id="color_feel_today2" required>
                                                     <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
                                                         ความโกรธ
@@ -229,7 +229,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #A084DC"
                                                         type="radio" value="สีเขียว" name="flexRadioDefault"
-                                                        id="color_feel_today3">
+                                                        id="color_feel_today3" required>
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -243,7 +243,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #7286D3"
                                                         type="radio" value="สีฟ้า" name="flexRadioDefault"
-                                                        id="color_feel_today4">
+                                                        id="color_feel_today4" required>
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -256,7 +256,7 @@
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
-                                                value="{{ old('value') }}" class="slider" id="myRange">
+                                                value="{{ old('value') }}" class="slider" id="myRange" required>
                                             <div class="sliderticks">
                                                 <p>น้อยที่สุด</p>
                                                 <p>น้อย</p>
@@ -269,17 +269,17 @@
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
+                                            placeholder="เหตุการณ์ที่เกิดขึ้น..." required></textarea>
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
+                                        <textarea name="v3_2" id="v3_2" class="form-control shadow-textarea " rows="8"
+                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..." required></textarea>
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ:</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ..."></textarea>
+                                        <textarea name="v3_3" id="v3_3" class="form-control shadow-textarea " rows="8"
+                                            placeholder="แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ..." required></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -303,17 +303,16 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="text-center py-5">ตรวจสอบความคิด...</h2>
+                                        <h2 class="text-center mt-5 mb-3">ตรวจสอบความคิด</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day12/1.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day12/2.png" style="width:100%">
-                                            <img class="mySlides1" src="images/day12/3.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day12/ความรู้/วันที่12/1.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day12/ความรู้/วันที่12/2.png" style="width:100%">
+                                            <img class="mySlides1" src="images/day12/ความรู้/วันที่12/3.png" style="width:100%">
                                         </div>
 
                                     </div>
 
                                     {{-- Content3 --}}
-
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -334,10 +333,10 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>หาหลักฐานตรวจสอบความคิด...</h2>
+                                        <div class="row text-center">
+                                            <h2 class="mt-5 mb-3">หาหลักฐานตรวจสอบความคิด</h2>
                                             <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
-                                                <source src="images/day12/แบบฝึกหัด1.mp4" type="video/mp4">
+                                                <source src="images/day12/เกม/_วันที่12 แบบฝึกหัด.mp4" type="video/mp4">
                                             </video>
                                             <hr>
                                             <div class="table-responsive mt-3 mb-3">
@@ -350,15 +349,15 @@
                                                     <tbody>
                                                         <tr>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." required></td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." required></td>
                                                         </tr>
                                                         <tr>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." required></td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." /></td>
+                                                                    placeholder="พิมพ์คำตอบของคุณที่นี่..." required></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -376,9 +375,8 @@
                                                     <div class="modal-header bg-primary text-white">
                                                         <label class="modal-title" id="exampleModalLabel"
                                                             style="font-size: 24">
-
                                                             <i class="fas fa-comment-dots"></i>
-                                                            เฉลย หาหลักฐานตรวจสอบความคิด...
+                                                            เฉลย หาหลักฐานตรวจสอบความคิด
                                                         </label>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
@@ -386,7 +384,7 @@
                                                     <div class="modal-body">
                                                         <div class="row py-3">
                                                             <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
-                                                                <source src="images/day12/เฉลยแบบฝึกหัด1.1.mp4" type="video/mp4">
+                                                                <source src="images/day12/เกม/เฉลย.mp4" type="video/mp4">
                                                             </video>
                                                         </div>
                                                     </div>
