@@ -173,7 +173,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="post" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post" action="{{ url('store8') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -364,12 +364,12 @@
                                                             <td>เขาคงคิดว่าเราไม่สำคัญ </td>
                                                             <td>
                                                                 <select class="form-select"
-                                                                    aria-label="Default select example" required>
-                                                                    <option selected value="">1. *Mind Reading</option>
-                                                                    <option value="">2. Emotional Reasoning</option>
-                                                                    <option value="">3. Should Statements</option>
-                                                                    <option value="">4. Labeling</option>
-                                                                    <option value="">5. Personalization</option>
+                                                                name="v4" id="v4" aria-label="Default select example" required>
+                                                                    <option selected value="Mind Reading">1. Mind Reading</option>
+                                                                    <option value="Emotional Reasoning">2. Emotional Reasoning</option>
+                                                                    <option value="Should Statements">3. Should Statements</option>
+                                                                    <option value="Labeling">4. Labeling</option>
+                                                                    <option value="Personalization">5. Personalization</option>
                                                                 </select>
                                                             </td>
                                                             <td>เศร้า</td>
@@ -379,12 +379,12 @@
                                                             <td>อาจารย์ต้องออกข้อสอบให้ตรงกับที่สอนสิ</td>
                                                             <td>
                                                                 <select class="form-select"
-                                                                aria-label="Default select example" required>
-                                                                <option selected value="">1. Mind Reading</option>
-                                                                <option value="">2. Emotional Reasoning</option>
-                                                                <option value="">3. *Should Statements</option>
-                                                                <option value="">4. Labeling</option>
-                                                                <option value="">5. Personalization</option>
+                                                                name="v5" id="v5"aria-label="Default select example" required>
+                                                                <option selected value="Mind Readin">1. Mind Reading</option>
+                                                                <option value="Emotional Reasoning">2. Emotional Reasoning</option>
+                                                                <option value="Should Statements">3. Should Statements</option>
+                                                                <option value="Labeling">4. Labeling</option>
+                                                                <option value="Personalization">5. Personalization</option>
                                                             </select>
                                                             </td>
                                                             <td>โกรธ</td>

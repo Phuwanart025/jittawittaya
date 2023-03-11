@@ -10,7 +10,10 @@ class diary_day8 extends Model
     protected $fillable = [
         'color_feel_today',
         'sensation_level',
-        'detail_t1',
+        'detail_t8',
+        'detail2_t8',
+        'story_d8',
+        'story2_d8',
         'rounds_id',
     ];
     public $timestamps = false;
