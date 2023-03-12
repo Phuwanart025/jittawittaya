@@ -221,6 +221,12 @@
     ul.ks-cboxtags li input[type="checkbox"]:focus+label {
         border: 2px solid #e9a1ff;
     }
+    video {
+        /* override other styles to make responsive */
+        width: 100% !important;
+        height: auto !important;
+
+    }
 </style>
 
 @section('content')
@@ -260,9 +266,8 @@
                                             </h1>
                                         </div>
 
-                                        <div class="text-center py-5">
-                                            <h2>ลองมาฝึกแก้ปัญหากัน.......</h2>
-
+                                        <div class="row text-center">
+                                            <h2 class="mt-5 mb-3">มาปรับความคิดกันเถอะ</h2>
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">
                                                     <thead class="thead-info">
@@ -276,20 +281,36 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
+                                                            <td><input type="text" class="form-control" placeholder="..."
+                                                                    required></td>
+                                                            <td><input type="text" class="form-control" placeholder="..."
+                                                                    required></td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="..."></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
+                                                            <td><select class="form-select"
+                                                                    aria-label="Default select example" required>
+                                                                    <option value="">เลือกระดับอารมณ์ของคุณ</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select>
+                                                            </td>
+                                                            <td><input type="text" class="form-control" placeholder="..."
+                                                                    required></td>
+                                                            <td><input type="text" class="form-control" placeholder="..."
+                                                                    required></td>
+                                                            <td><select class="form-select"
+                                                                    aria-label="Default select example" required>
+                                                                    <option value="">เลือกระดับอารมณ์ของคุณ</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td><input type="text" class="form-control"
@@ -298,20 +319,35 @@
                                                                     placeholder="..."></td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="..."></td>
+                                                            <td><select class="form-select"
+                                                                    aria-label="Default select example" required>
+                                                                    <option value="">เลือกระดับอารมณ์ของคุณ</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select>
+                                                            </td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="..."></td>
                                                             <td><input type="text" class="form-control"
                                                                     placeholder="..."></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
+                                                            <td><select class="form-select"
+                                                                    aria-label="Default select example" required>
+                                                                    <option value="">เลือกระดับอารมณ์ของคุณ</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
-
                                     </div>
 
                                     {{-- Content2 --}}
@@ -335,8 +371,12 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="text-center py-3">...</h2>
-
+                                        <div class="row text-center">
+                                            <h2 class="mt-5 mb-3" for="customRange2"><i class="fas fa-edit"></i>
+                                                สรุปกิจกรรม : ที่ผ่านมาคุณได้เรียนรู้อะไรบ้าง:</h2>
+                                            <textarea name="v3_2" id="v3_2" class="form-control shadow-textarea " rows="10"
+                                                placeholder="ที่ผ่านมาคุณได้เรียนรู้อะไรบ้าง..." required></textarea>
+                                        </div>
                                     </div>
 
                                     {{-- Content3 --}}
@@ -360,12 +400,17 @@
                                             </h1>
                                         </div>
 
-                                        <h2 class="text-center py-3">สรุปกิจกรรม...</h2>
-
-                                        <div class="d-grid gap-2 col-3 mx-auto py-3">
-                                            <button class="btn btn-primary w-100 btn-confirm"
-                                                type="submit">บันทึก</button>
+                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto mt-5 mb-3">
+                                            <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
+                                                <source src="images/day21/1.mp4" type="video/mp4">
+                                            </video>
                                         </div>
+
+                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                        </div>
+
                                     </div>
 
                                 </form>
@@ -383,7 +428,7 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
-                          
+
                         </div>
 
                     </div>

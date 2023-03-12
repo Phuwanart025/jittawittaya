@@ -368,7 +368,7 @@
                                                             <td>
                                                                 <select class="form-select"  name="v4" id="v4"
                                                                     aria-label="Default select example" required>
-                                                                    <option selected value=""></option>
+                                                                    <option selected value="">เลือกคำตอบของคุณ</option>
                                                                     <option value="Magnification and
                                                                     Minimization">1. Magnification and
                                                                         Minimization</option>
@@ -388,7 +388,7 @@
                                                             <td>
                                                                 <select class="form-select"  name="v5" id="v5"
                                                                     aria-label="Default select example" required>
-                                                                    <option selected value=""></option>
+                                                                    <option selected value="">เลือกคำตอบของคุณ</option>
                                                                     <option value="Magnification and
                                                                     Minimization">1. Magnification and
                                                                         Minimization</option>

@@ -311,7 +311,7 @@
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></textarea>
+                                            placeholder="คุณได้อะไรจากนิทานเรื่องนี้..." required></textarea>
                                     </div>
 
                                     {{-- Content3 --}}

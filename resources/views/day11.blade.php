@@ -321,7 +321,7 @@
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></textarea>
+                                            placeholder="คุณได้อะไรจากนิทานเรื่องนี้..." required></textarea>
 
                                     </div>
 
@@ -346,7 +346,7 @@
                                             </h1>
                                         </div>
 
-                                        <div class="py-5">
+                                        <div class="row text-center">
                                             <h2 class="mt-5 mb-3 text-center">มาทบทวนความรู้กัน</h2>
                                             <div
                                                 class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">

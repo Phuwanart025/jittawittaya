@@ -505,17 +505,19 @@
                                                                             </i></p>
                                                                         <p><i class="fas fa-check-circle"> โดนเอาเปรียบ
                                                                             </i></p>
-                                                                            <p><i class="fas fa-check-circle"> ไม่เก่ง
+                                                                        <p><i class="fas fa-check-circle"> ไม่เก่ง
                                                                             </i></p>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-danger btn-sm"
-                                                            data-bs-dismiss="modal">ปิด</button>
+
+                                                    <div class="d-grid gap-2 col-3 py-3 mx-auto">
+                                                        <button class="btn btn-primary w-100" type="submit"
+                                                            onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -543,12 +545,10 @@
                                         </div>
 
                                         <div class="text-center py-5">
-                                            <h2>ความรู้ส่งท้าย...ฝึกรู้ทันความคิด</h2>
+                                            <h2>ความรู้ส่งท้าย ฝึกรู้ทันความคิด</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day5/1.png"
-                                                    style="width:100%">
-                                                <img class="mySlides1" src="images/day5/2.png"
-                                                    style="width:100%">
+                                                <img class="mySlides1" src="images/day5/1.png" style="width:100%">
+                                                <img class="mySlides1" src="images/day5/2.png" style="width:100%">
                                             </div>
                                         </div>
 
@@ -691,33 +691,34 @@
                 output3.innerHTML = this.value;
             }
         </script>
- <script>
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-    var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-    })
-</script>
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
 
-<script>
-    $('.btn-confirm').click(function(event) {
-        var form = $(this).closest("name");
-        var form = $(this).closest("form");
-        event.preventDefault();
-        Swal.fire({
-            title: 'ยืนยันการบันทึกข้อมูล!',
-            text: "คุณต้องการยืนยันการบันทึกข้อมูล หรือไม่?",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'บันทึก',
-            cancelButtonText: 'ยกเลิก',
-        }).then((result) => {
-            if (result.isConfirmed) {
-                form.submit();
-            }
-        });
-    });
-</script>
+        <script>
+            $('.btn-confirm').click(function(event) {
+                var form = $(this).closest("name");
+                var form = $(this).closest("form");
+                event.preventDefault();
+                Swal.fire({
+                    title: 'ยืนยันการบันทึกข้อมูล!',
+                    text: "คุณต้องการยืนยันการบันทึกข้อมูล หรือไม่?",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'บันทึก',
+                    cancelButtonText: 'ยกเลิก',
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit();
+                    }
+                });
+            });
+        </script>
+
         </html>
     @endsection

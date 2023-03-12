@@ -348,7 +348,7 @@
 
                                         <div class="row text-center">
 
-                                            <h2 class="mt-5 mb-3">จากเหตุการณ์นี้ เขามีกับดักความคิดแบบไหนกันนะ...</h2>
+                                            <h2 class="mt-5 mb-3">จากเหตุการณ์นี้ เขามีกับดักความคิดแบบไหนกันนะ</h2>
                                             <div class="table-responsive py-3">
                                                 <table
                                                     class="table table-info text-black table-bordered border-Light table-striped table-hover">
@@ -361,11 +361,11 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>แฟนอ่านแชทแล้วไม่ตอบ</td>
-                                                            <td>เขาคงคิดว่าเราไม่สำคัญ </td>
+                                                            <td>เขาคงคิดว่าเราไม่สำคัญ</td>
                                                             <td>
                                                                 <select class="form-select"
                                                                 name="v4" id="v4" aria-label="Default select example" required>
-                                                                <option selected value=""></option>
+                                                                <option selected value="">เลือกคำตอบของคุณ</option>
                                                                     <option value="Mind Reading">1. Mind Reading</option>
                                                                     <option value="Emotional Reasoning">2. Emotional Reasoning</option>
                                                                     <option value="Should Statements">3. Should Statements</option>
@@ -381,7 +381,7 @@
                                                             <td>
                                                                 <select class="form-select"
                                                                 name="v5" id="v5"aria-label="Default select example" required>
-                                                                <option selected value=""></option>
+                                                                <option selected value="">เลือกคำตอบของคุณ</option>
                                                                 <option  value="Mind Readin">1. Mind Reading</option>
                                                                 <option value="Emotional Reasoning">2. Emotional Reasoning</option>
                                                                 <option value="Should Statements">3. Should Statements</option>
@@ -420,7 +420,7 @@
 
                                         <div class="row text-center">
 
-                                            <h1 class="mt-5 mb-3">เพลงบำบัดจิตใจ...</h1>
+                                            <h1 class="mt-5 mb-3">เพลงบำบัดจิตใจ</h1>
                                             <img class="mb-3" src="images/day8/ด้านที่ดีกว่า.png" style="width:100%">
                                             <div class="ratio ratio-16x9 py-3">
                                                 <iframe src="https://www.youtube.com/embed/gqeA_B7pK9s"

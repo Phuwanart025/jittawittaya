@@ -389,7 +389,7 @@
                                                                 มาได้ไงนะ  = ผิด" required>
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 ฉีดยาฆ่าแมลงแล้ว
-                                                                มาได้ไงนะ.
+                                                                มาได้ไงนะ
                                                             </label>
                                                         </div>
                                                     </div>
@@ -400,7 +400,7 @@
                                                                 onclick="disableCheckbox2(this.value);highlightAnswer2('option40');"
                                                                 value=" อี๋!!! สกปรก = ถูกต้อง" required>
                                                             <label class="form-check-label" for="defaultCheck1">
-                                                                อี๋!!! สกปรก.
+                                                                อี๋!!! สกปรก
                                                             </label>
                                                         </div>
                                                     </div>
@@ -453,7 +453,7 @@
                                                                 onclick="disableCheckbox3(this.value);highlightAnswer3('option50');"
                                                                 value=" เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก = ผิด" required>
                                                             <label class="form-check-label" for="defaultCheck1">
-                                                                เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก.
+                                                                เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก
                                                             </label>
                                                         </div>
                                                     </div>
@@ -464,7 +464,7 @@
                                                                 onclick="disableCheckbox3(this.value);highlightAnswer3('option60');"
                                                                 value=" เขาไม่รักเราแล้ว = ถูก" required>
                                                             <label class="form-check-label" for="defaultCheck1">
-                                                                เขาไม่รักเราแล้ว.
+                                                                เขาไม่รักเราแล้ว
                                                             </label>
                                                         </div>
                                                     </div>
@@ -634,13 +634,13 @@
                 if (answer == correctAnswer) {
                     document.getElementById(correctAnswer).style.backgroundColor = "lightgreen";
                     document.getElementById("result").innerHTML =
-                        "เฉลย: คุณเลือกตอบ ทำไมขับรถแบบนี้ไม่มีมารยาท. คุณตอบถูกแล้ว";
+                        "เฉลย: คุณเลือกตอบ ทำไมขับรถแบบนี้ไม่มีมารยาท คุณตอบถูกแล้ว";
                     document.getElementById("result").style.color = "green";
 
                 } else {
                     document.getElementById(answer).style.backgroundColor = "red";
                     document.getElementById("result").innerHTML =
-                        "เฉลย: คุณเลือกตอบเขาจะชนเรามั้ยนะ. คำตอบที่ถูกคือ...ทำไมขับรถแบบนี้ไม่มีมารยาท.";
+                        "เฉลย: คุณเลือกตอบเขาจะชนเรามั้ยนะ คำตอบที่ถูกคือ...ทำไมขับรถแบบนี้ไม่มีมารยาท";
                     document.getElementById("result").style.color = "red";
                 }
             }
@@ -661,13 +661,13 @@
                 if (answer2 == correctAnswer2) {
                     document.getElementById(correctAnswer2).style.backgroundColor = "red";
                     document.getElementById("result2").innerHTML =
-                        "เฉลย: คุณเลือกตอบ ฉีดยาฆ่าแมลงแล้ว มาได้ไงนะ. คำตอบที่ถูกคือ...อี๋!!! สกปรก.";
+                        "เฉลย: คุณเลือกตอบ ฉีดยาฆ่าแมลงแล้ว มาได้ไงนะ คำตอบที่ถูกคือ...อี๋!!! สกปรก";
                     document.getElementById("result2").style.color = "red";
 
                 } else {
                     document.getElementById(answer2).style.backgroundColor = "lightgreen";
                     document.getElementById("result2").innerHTML =
-                        "เฉลย: คุณเลือกตอบ อี๋!!! สกปรก. คุณตอบถูกแล้ว";
+                        "เฉลย: คุณเลือกตอบ อี๋!!! สกปรก คุณตอบถูกแล้ว";
                     document.getElementById("result2").style.color = "green";
                 }
             }
@@ -688,13 +688,13 @@
                 if (answer3 == correctAnswer3) {
                     document.getElementById(correctAnswer3).style.backgroundColor = "red";
                     document.getElementById("result3").innerHTML =
-                        "เฉลย: คุณเลือกตอบ  เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก. คำตอบที่ถูกคือ...เขาไม่รักเราแล้ว.";
+                        "เฉลย: คุณเลือกตอบ  เราก็สวยนะ เราหาแฟนใหม่ไม่ยากหรอก คำตอบที่ถูกคือ...เขาไม่รักเราแล้ว";
                     document.getElementById("result3").style.color = "red";
 
                 } else {
                     document.getElementById(answer3).style.backgroundColor = "lightgreen";
                     document.getElementById("result3").innerHTML =
-                        "เฉลย: คุณเลือกตอบ เขาไม่รักเราแล้ว. คุณตอบถูกแล้ว";
+                        "เฉลย: คุณเลือกตอบ เขาไม่รักเราแล้ว คุณตอบถูกแล้ว";
                     document.getElementById("result3").style.color = "green";
                 }
             }

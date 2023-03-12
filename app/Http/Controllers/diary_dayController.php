@@ -63,11 +63,12 @@ class diary_dayController extends Controller
             $diary->diary_day()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
-            return redirect()->back()->with([Alert::error('เกิดข้อผิดพลาด','ไม่สามารถบันทึกข้อมูลได้ คุณกรอกข้อมูลไม่ครบ'),
+            return redirect()->back()->with([
+                Alert::error('เกิดข้อผิดพลาด', 'ไม่สามารถบันทึกข้อมูลได้ คุณกรอกข้อมูลไม่ครบ'),
                 // 'error' => 'ไม่สามารถบันทึกได้ ข้อมูลไม่ถูกต้อง.', 
             ]);
         }
-        Alert::success('บันทึกข้อมูลสำเร็จ','');
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
@@ -115,11 +116,14 @@ class diary_dayController extends Controller
             $diary->diary_day2()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
+
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
+    //Day_3
     public function store3(Request $request)
     {
         try {
@@ -165,9 +169,11 @@ class diary_dayController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
+    //Day_4
     public function store4(Request $request)
     {
         try {
@@ -199,9 +205,11 @@ class diary_dayController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
+    //Day_5
     public function store5(Request $request)
     {
         try {
@@ -210,7 +218,7 @@ class diary_dayController extends Controller
                 'value' => 'required',
                 'v3' => 'required',
                 'v4' => 'required',
-               
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 5)
@@ -233,16 +241,18 @@ class diary_dayController extends Controller
             $v4 = implode(',', $request->input('v4'));
             $serialized_v4 = serialize($v4);
             $diary->idea_v4 = $serialized_v4;
-           
+
             $diary1->save();
             $diary->diary_day5()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
+    //Day_6
     public function store6(Request $request)
     {
         try {
@@ -252,7 +262,7 @@ class diary_dayController extends Controller
                 'v3' => 'required',
                 'v3_2' => 'required',
                 'v4' => 'required',
-               
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 6)
@@ -279,8 +289,11 @@ class diary_dayController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
+
+    //Day_7
     public function store7(Request $request)
     {
         try {
@@ -293,7 +306,7 @@ class diary_dayController extends Controller
                 'v4_2' => 'required',
                 'v4_3' => 'required',
                 'v4_4' => 'required',
-               
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 7)
@@ -323,9 +336,11 @@ class diary_dayController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
+    //Day_8
     public function store8(Request $request)
     {
         try {
@@ -336,7 +351,7 @@ class diary_dayController extends Controller
                 'v3_2' => 'required',
                 'v4' => 'required',
                 'v5' => 'required',
-               
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 8)
@@ -364,9 +379,11 @@ class diary_dayController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
+    //Day_9
     public function store9(Request $request)
     {
         try {
@@ -377,7 +394,7 @@ class diary_dayController extends Controller
                 'v3_2' => 'required',
                 'v4' => 'required',
                 'v5' => 'required',
-               
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 9)
@@ -405,9 +422,11 @@ class diary_dayController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
+    //Day_10
     public function store10(Request $request)
     {
         try {
@@ -419,7 +438,7 @@ class diary_dayController extends Controller
                 'v4' => 'required',
                 'v5' => 'required',
                 'v6' => 'required',
-               
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 10)
@@ -448,9 +467,11 @@ class diary_dayController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
+    //Day_11
     public function store11(Request $request)
     {
         try {
@@ -461,8 +482,8 @@ class diary_dayController extends Controller
                 'v3_2' => 'required',
                 'v4' => 'required',
                 'v5' => 'required',
-               
-               
+
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 11)
@@ -490,9 +511,11 @@ class diary_dayController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
+    //Day_12
     public function store12(Request $request)
     {
         try {
@@ -506,8 +529,8 @@ class diary_dayController extends Controller
                 'v4_2' => 'required',
                 'v5_1' => 'required',
                 'v5_2' => 'required',
-               
-               
+
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 12)
@@ -529,18 +552,20 @@ class diary_dayController extends Controller
             $diary->detail2_t12 = $request->v3_2;
             $diary->detail3_t12 = $request->v3_3;
             $diary->proof_support_v4_1 = $request->v4_1;
-            $diary->objectionable_evidence_v4_2	= $request->v4_2;
+            $diary->objectionable_evidence_v4_2    = $request->v4_2;
             $diary->proof_support_v5_1 = $request->v5_1;
-            $diary->objectionable_evidence_v5_2	 = $request->v5_2;
+            $diary->objectionable_evidence_v5_2     = $request->v5_2;
             $diary1->save();
             $diary->diary_day12()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
+    //Day_13
     public function store13(Request $request)
     {
         try {
@@ -557,8 +582,8 @@ class diary_dayController extends Controller
                 'v6_2' => 'required',
                 'v7_1' => 'required',
                 'v7_2' => 'required',
-               
-               
+
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 13)
@@ -580,21 +605,23 @@ class diary_dayController extends Controller
             $diary->detail2_t13 = $request->v3_2;
             $diary->detail3_t13 = $request->v3_3;
             $diary->story_d13 = $request->v4;
-            $diary->new_idea_v5_1	= $request->v5_1;
-            $diary->new_emotions_v5_2	= $request->v5_2;
+            $diary->new_idea_v5_1    = $request->v5_1;
+            $diary->new_emotions_v5_2    = $request->v5_2;
             $diary->new_idea_v6_1 = $request->v6_1;
-            $diary->new_emotions_v6_2	= $request->v6_2;
+            $diary->new_emotions_v6_2    = $request->v6_2;
             $diary->new_idea_v7_1 = $request->v7_1;
-            $diary->new_emotions_v7_2	= $request->v7_2;
+            $diary->new_emotions_v7_2    = $request->v7_2;
             $diary1->save();
             $diary->diary_day13()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
 
+    //Day_14
     public function store14(Request $request)
     {
         try {
@@ -614,8 +641,8 @@ class diary_dayController extends Controller
                 'v6_2' => 'required',
                 'v6_3' => 'required',
                 'v7' => 'required',
-               
-               
+
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 14)
@@ -637,14 +664,14 @@ class diary_dayController extends Controller
             $diary->detail2_t14 = $request->v3_2;
             $diary->detail3_t14 = $request->v3_3;
             $diary->story_v4 = $request->v4_1;
-            $diary->positive_v4	= $request->v4_2;
-            $diary->negative_v4	= $request->v4_3;
+            $diary->positive_v4    = $request->v4_2;
+            $diary->negative_v4    = $request->v4_3;
             $diary->story_v5 = $request->v5_1;
-            $diary->positive_v5	= $request->v5_2;
-            $diary->negative_v5	= $request->v5_3;
+            $diary->positive_v5    = $request->v5_2;
+            $diary->negative_v5    = $request->v5_3;
             $diary->story_v6 = $request->v6_1;
-            $diary->positive_v6	= $request->v6_2;
-            $diary->negative_v6	= $request->v6_3;
+            $diary->positive_v6    = $request->v6_2;
+            $diary->negative_v6    = $request->v6_3;
             $diary->story_positive_v7 = $request->v7;
             $diary1->save();
             $diary->diary_day14()->associate($diary1);
@@ -652,7 +679,7 @@ class diary_dayController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
         return redirect('/results');
     }
-
 }

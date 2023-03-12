@@ -221,6 +221,13 @@
     ul.ks-cboxtags li input[type="checkbox"]:focus+label {
         border: 2px solid #e9a1ff;
     }
+
+    video {
+        /* override other styles to make responsive */
+        width: 100% !important;
+        height: auto !important;
+
+    }
 </style>
 
 @section('content')
@@ -260,14 +267,13 @@
                                             </h1>
                                         </div>
 
-
                                         <h3 for="customRange2">วันนี้ความรู้สึกเป็นสีอะไร:</h3>
                                         <div class="row">
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #FFFF00"
                                                         type="radio" value="สีเหลือง" name="flexRadioDefault"
-                                                        id="color_feel_today1">
+                                                        id="color_feel_today1" required>
                                                     <img src="images/emu/emu4.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today1">
                                                         ความสุข
@@ -279,7 +285,7 @@
                                             <div class="col-md-3 py-2">
                                                 <div class="form-check">
                                                     <input class="form-check-input bg-danger" type="radio" value="สีแดง"
-                                                        name="flexRadioDefault" id="color_feel_today2">
+                                                        name="flexRadioDefault" id="color_feel_today2" required>
                                                     <img src="images/emu/emu2.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today2">
                                                         ความโกรธ
@@ -292,7 +298,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #A084DC"
                                                         type="radio" value="สีเขียว" name="flexRadioDefault"
-                                                        id="color_feel_today3">
+                                                        id="color_feel_today3" required>
                                                     <img src="images/emu/emu3.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today3">
                                                         ความกลัว
@@ -306,7 +312,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" style="background-color: #7286D3"
                                                         type="radio" value="สีฟ้า" name="flexRadioDefault"
-                                                        id="color_feel_today4">
+                                                        id="color_feel_today4" required>
                                                     <img src="images/emu/emu1.png" width="100" height="100">
                                                     <label class="form-check-label" for="color_feel_today4">
                                                         ความเศร้า
@@ -319,7 +325,7 @@
                                             <h3 for="customRange2">ระดับความรู้สึก: <label for="" id="demo"
                                                     style="font-weight:bold;color:red"></label></h3>
                                             <input type="range" min="1" max="5" name="value"
-                                                value="{{ old('value') }}" class="slider" id="myRange">
+                                                value="{{ old('value') }}" class="slider" id="myRange" required>
                                             <div class="sliderticks">
                                                 <p>น้อยที่สุด</p>
                                                 <p>น้อย</p>
@@ -332,17 +338,17 @@
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             เหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v3" id="v3" class="form-control shadow-textarea " rows="8"
-                                            placeholder="เหตุการณ์ที่เกิดขึ้น..."></textarea>
+                                            placeholder="เหตุการณ์ที่เกิดขึ้น..." required></textarea>
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..."></textarea>
+                                            placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..." required></textarea>
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
-                                            แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ:</h3>
+                                            แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ:</h3>
                                         <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
-                                            placeholder="แล้วถ้าลองคิดแบบอื่นจะคิดยังไงดีนะ..."></textarea>
+                                            placeholder="แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ..." required></textarea>
                                     </div>
 
                                     {{-- Content2 --}}
@@ -366,9 +372,9 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row py-5 text-center">
+                                        <div class="row text-center">
 
-                                            <h1 class="mb-3">ฝึกคิดเกี่ยวกับความโกรธ...</h1>
+                                            <h1 class="mt-5 mb-3">ลองมาฝึกคิดใหม่ เมื่อรู้สึกโกรธ</h1>
 
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">
@@ -397,13 +403,13 @@
                                                                 </select>
                                                             </td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
+                                                                    placeholder="คิดใหม่ยังไงดี..." required></td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
+                                                                    placeholder="คิดใหม่แล้วรู้สึกยังไง..." required></td>
                                                             <td>
                                                                 <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>โปรดเลือกคำตอบของคุณ</option>
+                                                                    aria-label="Default select example" required>
+                                                                    <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
                                                                     <option value="3">3</option>
@@ -427,13 +433,13 @@
                                                                 </select>
                                                             </td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
+                                                                    placeholder="คิดใหม่ยังไงดี..." required></td>
                                                             <td><input type="text" class="form-control"
-                                                                    placeholder="..."></td>
+                                                                    placeholder="คิดใหม่แล้วรู้สึกยังไง..." required></td>
                                                             <td>
                                                                 <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>โปรดเลือกคำตอบของคุณ</option>
+                                                                    aria-label="Default select example" required>
+                                                                    <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
                                                                     <option value="3">3</option>
@@ -445,9 +451,7 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-
                                         </div>
-
                                     </div>
 
                                     {{-- Content3 --}}
@@ -471,13 +475,28 @@
                                             </h1>
                                         </div>
 
+                                        <div class="row text-center">
+                                            <h1 class="mt-5 mb-3">เพลงบำบัดจิตใจ</h1>
+                                            <img class="mb-3" src="images/day17/1.png" style="width:100%">
+                                            <div class="ratio ratio-16x9 py-3">
+                                                <iframe src="https://www.youtube.com/embed/5pzhAG4wmT0"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen></iframe>
+                                            </div>
 
-                                        <h2 class="text-center py-3">...</h2>
-
-                                        <div class="d-grid gap-2 col-3 mx-auto mt-3 mb-3">
-                                            <button class="btn btn-primary w-100 btn-confirm"
-                                                type="submit">บันทึก</button>
+                                            <p class="py-3">ขอบคุณเพลง:<a target="_blank"
+                                                    href="https://youtu.be/5pzhAG4wmT0">
+                                                    ก่อนมะลิบาน - TIME【OFFICIAL MV
+                                                </a>
+                                            </p>
                                         </div>
+
+                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
+                                            <button class="btn btn-primary w-100" type="submit"
+                                                onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
+                                        </div>
+
                                     </div>
 
                                 </form>
