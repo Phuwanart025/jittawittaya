@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Jitdee</title>
+    <title>ReThink</title>
     <link rel="icon" type="image/x-icon" href="/images/logo1.1.png">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -61,7 +61,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="logo"><a href="{{ url('/') }}"><img src="images/logo1.png" width="150" height="150"></a></div>
+                        <div class="logo"><a href="{{ url('/') }}"><img src="images/logo1.png" width="200" height="200"></a></div>
                     </div>
                     <div class="col-md-9">
                         <div class="menu_text">

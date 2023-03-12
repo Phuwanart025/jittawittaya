@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <!-- site metas -->
-  <title>Jitdee</title>
+  <title>ReThink</title>
   <link rel="icon" type="image/x-icon" href="/images/logo1.1.png">
   <meta name="keywords" content="">
   <meta name="description" content="">
