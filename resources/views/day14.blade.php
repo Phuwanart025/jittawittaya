@@ -501,8 +501,8 @@
                                         </div>
 
                                         <div class="text-center">
-                                            <h2 class="mt-5 mb-3">ลองมาฝึกแก้ปัญหากัน</h2>
-                                            <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
+                                            {{-- <h2 class="mt-5 mb-3">ลองมาฝึกแก้ปัญหากัน</h2> --}}
+                                            <video class="mySlides1 mt-3 mb-3" autoplay muted loop="true">
                                                 <source src="images/day14/แบบฝึก.mp4" type="video/mp4">
                                             </video>
                                             <div class="table-responsive">

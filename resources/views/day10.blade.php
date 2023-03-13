@@ -504,7 +504,7 @@
 
                                         <div class="row text-center">
 
-                                            <h1 class="mt-5 mb-3"><span class="badge rounded-pill bg-primary">Interactional Model</span></h1>
+                                            <h1 class="mt-5 mb-3"><span class="badge rounded-pill bg-primary">Interactional model</span></h1>
                                             <h2><span class="badge rounded-pill bg-primary">เหตุการณ์
                                                     <i class="fas fa-arrow-circle-right"></i> ความคิด
                                                     <i class="fas fa-arrow-circle-right"></i> อารมณ์/พฤติกรรม

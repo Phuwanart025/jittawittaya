@@ -514,40 +514,13 @@
                                             <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
                                                 <source src="images/day16/1.mp4" type="video/mp4">
                                             </video>
-                                        </div>
-                                    </div>
-
-                                    {{-- Content5 --}}
-                                    <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY16</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-
-                                        <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto mt-5 mb-3">
                                             <img class="mb-3" src="images/day16/2.png" style="width:100%">
                                         </div>
-
 
                                         <div class="d-grid gap-2 col-3 py-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
-
                                     </div>
 
                                 </form>
@@ -566,7 +539,6 @@
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
                             <span class="dot" onclick="currentSlide(4)"></span>
-                            <span class="dot" onclick="currentSlide(5)"></span>
                         </div>
 
                     </div>

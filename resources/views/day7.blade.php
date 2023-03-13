@@ -306,26 +306,26 @@
                                                             <td>สอบไม่ผ่าน</td>
                                                             <td>ฉันทำอะไรก็ไม่เก่งสักอย่าง</td>
                                                             <td><input name="v4_1" id="v4_1" type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></td>
+                                                                    placeholder="รู้สึกยังไง..." required></td>
                                                         </tr>
                                                         <tr>
                                                             <td>สอบไม่ผ่าน</td>
                                                             <td>ครูออกข้อสอบยากเกินไปแล้ว</td>
                                                             <td><input name="v4_2" id="v4_2" type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></td>
+                                                                    placeholder="รู้สึกยังไง..." required></td>
                                                         </tr>
                                                         <tr>
                                                             <td>สอบไม่ผ่าน</td>
                                                             <td>ฉันจะต้องติดF แน่ๆ</td>
                                                             <td><input name="v4_3" id="v4_3" type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></td>
+                                                                    placeholder="รู้สึกยังไง..." required></td>
 
                                                         </tr>
                                                         <tr>
                                                             <td>สอบไม่ผ่าน</td>
                                                             <td>ครั้งหน้าฉันจะตั้งใจและอ่านมากขึ้น</td>
                                                             <td><input name="v4_4" id="v4_4" type="text" class="form-control"
-                                                                    placeholder="อะไรทำให้คุณรู้สึกอย่างนั้น..." required></td>
+                                                                    placeholder="รู้สึกยังไง..." required></td>
 
                                                         </tr>
                                                     </tbody>

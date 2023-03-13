@@ -406,7 +406,7 @@
                                             <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
                                                 <source src="images/day18/คำดีๆ/2.mp4" type="video/mp4">
                                             </video>
-                                            <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
+                                            <video class="mySlides1 mb-3" autoplay muted loop="true">
                                                 <source src="images/day18/คำดีๆ/1.mp4" type="video/mp4">
                                             </video>
                                         </div>

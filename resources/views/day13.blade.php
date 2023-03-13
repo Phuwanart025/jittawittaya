@@ -465,8 +465,8 @@
                                         </div>
 
                                         <div class="row text-center">
-                                            <h2 class="mt-5 mb-3">ลองคิดแบบใหม่</h2>
-
+                                            <h2 class="mt-5 mb-3">แบบฝึกหัด</h2>
+                                            <h2 class="mb-3">ให้เติมความคิดใหม่ กับอารมณ์ที่เกิดขึ้นใหม่</h2>
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">
                                                     <thead class="thead-info">

@@ -371,7 +371,7 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row text-center">
+                                        <div class="row">
                                             <h2 class="mt-5 mb-3" for="customRange2"><i class="fas fa-edit"></i>
                                                 สรุปกิจกรรม : ที่ผ่านมาคุณได้เรียนรู้อะไรบ้าง:</h2>
                                             <textarea name="v3_2" id="v3_2" class="form-control shadow-textarea " rows="10"
@@ -406,7 +406,7 @@
                                             </video>
                                         </div>
 
-                                        <div class="d-grid gap-2 col-3 py-3 mx-auto">
+                                        <div class="d-grid gap-2 col-3 mb-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
@@ -428,7 +428,6 @@
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
-
                         </div>
 
                     </div>

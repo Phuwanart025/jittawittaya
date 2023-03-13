@@ -493,11 +493,11 @@
                                                                 <span class="badge rounded-pill bg-success">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="มือสั่น"
+                                                                            type="radio" value="มืออ่อน"
                                                                             name="feel_body4" id="feel_body8" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            4.มือสั่น
+                                                                            4.มืออ่อน
                                                                         </label>
                                                                     </div>
                                                                 </span>
@@ -561,11 +561,11 @@
                                                                 <span class="badge rounded-pill bg-primary">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input bg-dark"
-                                                                            type="radio" value="ตัวอ่อนปวกเปียก"
+                                                                            type="radio" value="ตัวอ่อน"
                                                                             name="feel_body6" id="feel_body12" required>
                                                                         <label class="form-check-label"
                                                                             for="color_feel_today4">
-                                                                            6.ตัวอ่อนปวกเปียก
+                                                                            6.ตัวอ่อน
                                                                         </label>
                                                                     </div>
                                                                 </span>
