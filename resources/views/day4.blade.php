@@ -317,9 +317,9 @@
                                                 </iframe>
                                             </div>
 
-                                            <p class="py-3">ขอบคุณเพลงจาก:<a target="_blank"
+                                            <p class="py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                                     href="https://www.youtube.com/watch?v=bJDuQi7gVMU">
-                                                    Avenue - วัชราวลี Official MV</a></p>
+                                                    Avenue - วัชราวลี Official MV(YouTube)</a></p>
                                         </div>
                                     </div>
 
@@ -345,7 +345,8 @@
                                         </div>
 
                                         <div class="row text-center">
-                                            <h2 class="mt-5 mb-3">สัมผัสความ "<span style="font-weight:bold;color:#00679e">เศร้า</span>"
+                                            <h2 class="mt-5 mb-3">สัมผัสความ "<span
+                                                    style="font-weight:bold;color:#00679e">เศร้า</span>"
                                                 ในร่างกายเรา</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                                 <img class="mb-3" src="images/day4/2.png" style="width:100%">
@@ -387,9 +388,9 @@
                                                 </iframe>
                                             </div>
 
-                                            <p class="py-3">ขอบคุณคลิปจาก:<a target="_blank"
+                                            <p class="text-center py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                                     href="https://youtu.be/TooMaqEjh5s">
-                                                    กรมสุขภาพจิต</a></p>
+                                                    กรมสุขภาพจิต(YouTube)</a></p>
 
                                             <div class="d-grid gap-2 col-3 py-3 mx-auto">
                                                 <button class="btn btn-primary w-100" type="submit"

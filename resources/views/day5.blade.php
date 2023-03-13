@@ -370,10 +370,6 @@
                                                                 value="เครียด"><label for="1">เครียด</label>
                                                         </li>
 
-                                                        <li><input type="checkbox" id="2" name="v4[]"
-                                                                value="เบื่อ"><label for="2">เบื่อ</label>
-                                                        </li>
-
                                                         <li><input type="checkbox" id="3" name="v4[]"
                                                                 value="กลัว"><label for="3">กลัว</label>
                                                         </li>
@@ -384,9 +380,18 @@
                                                             </label>
                                                         </li>
 
+                                                        <li><input type="checkbox" id="2" name="v4[]"
+                                                                value="เบื่อ"><label for="2">เบื่อ</label>
+                                                        </li>
+
                                                         <li><input type="checkbox" id="5" name="v4[]"
                                                                 value="คนอื่นไม่ชอบฉัน"><label
                                                                 for="5">คนอื่นไม่ชอบฉัน
+                                                            </label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="17" name="v4[]"
+                                                                value="ตาสั่น"><label for="17">ตัวสั่น
                                                             </label>
                                                         </li>
 
@@ -395,9 +400,19 @@
                                                                 for="6">อย่ามายุ่งกับฉัน</label>
                                                         </li>
 
+                                                        <li><input type="checkbox" id="15" name="v4[]"
+                                                                value="ไม่มีแรง"><label for="15">ไม่มีแรง
+                                                            </label>
+                                                        </li>
+
                                                         <li><input type="checkbox" id="7" name="v4[]"
                                                                 value="เดี๋ยวต้องเกิดเรื่องแน่ๆ"><label
                                                                 for="7">เดี๋ยวต้องเกิดเรื่องแน่ๆ
+                                                            </label>
+                                                        </li>
+
+                                                        <li><input type="checkbox" id="18" name="v4[]"
+                                                                value="ปวดท้อง"><label for="18">ปวดท้อง
                                                             </label>
                                                         </li>
 
@@ -435,23 +450,8 @@
                                                             </label>
                                                         </li>
 
-                                                        <li><input type="checkbox" id="15" name="v4[]"
-                                                                value="ไม่มีแรง"><label for="15">ไม่มีแรง
-                                                            </label>
-                                                        </li>
-
                                                         <li><input type="checkbox" id="16" name="v4[]"
                                                                 value="เพลีย"><label for="16">เพลีย
-                                                            </label>
-                                                        </li>
-
-                                                        <li><input type="checkbox" id="17" name="v4[]"
-                                                                value="ตาสั่น"><label for="17">ตาสั่น
-                                                            </label>
-                                                        </li>
-
-                                                        <li><input type="checkbox" id="18" name="v4[]"
-                                                                value="ปวดท้อง"><label for="18">ปวดท้อง
                                                             </label>
                                                         </li>
 

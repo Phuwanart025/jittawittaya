@@ -328,6 +328,5 @@
     <script src="js/sb-admin-2.min.js"></script>
 
 </body>
-@include('layouts.footer')
 </html>
 @endsection

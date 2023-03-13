@@ -384,9 +384,9 @@
                                                 </iframe>
                                             </div>
 
-                                            <p class="py-3">ขอบคุณเพลง:<a target="_blank"
+                                            <p class="text-center py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                                     href="https://www.youtube.com/embed/OMVYOsoqjIo">
-                                                    Live and Learn - กมลา สุโกศล
+                                                    Live and Learn - กมลา สุโกศล(YouTube)
                                                 </a>
                                             </p>
 

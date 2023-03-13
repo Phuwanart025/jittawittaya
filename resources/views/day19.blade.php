@@ -267,7 +267,7 @@
                                         </div>
 
                                         <div class="row text-center">
-                                            <h2 class="mt-5 mb-3">มาปรับความคิดกันเถอะ</h2>
+                                            <h2 class="mt-5 mb-3">มาปรับความคิดกันเถอะ...</h2>
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">
                                                     <thead class="thead-info">

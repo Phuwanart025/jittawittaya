@@ -431,9 +431,9 @@
                                             </video>
                                         </div>
 
-                                        <p class="py-3">ขอบคุณนิทานจาก:<a target="_blank"
+                                        <p class="text-center py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                             href="https://www.bloggang.com/m/viewdiary.php?id=hrman&month=05-2015&date=14&group=3&gblog=208&fbclid=IwAR2cUmr4mWfT5Js3iqf_L5nY5AbZ5vPoyZlTpjQFyYHGiRbkxIJB8loUcJs">
-                                            BLOGGANG</a></p>
+                                            เว็บไซต์ BLOGGANG</a></p>
                                         <hr>
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
@@ -441,7 +441,6 @@
                                             placeholder="คุณได้อะไรจากนิทานเรื่องนี้..."></textarea>
 
                                     </div>
-
 
                                     {{-- Content4 --}}
                                     <div class="mySlides">

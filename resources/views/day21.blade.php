@@ -267,7 +267,7 @@
                                         </div>
 
                                         <div class="row text-center">
-                                            <h2 class="mt-5 mb-3">มาปรับความคิดกันเถอะ</h2>
+                                            <h2 class="mt-5 mb-3">มาปรับความคิดกันเถอะ...</h2>
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">
                                                     <thead class="thead-info">
@@ -373,7 +373,7 @@
 
                                         <div class="row">
                                             <h2 class="mt-5 mb-3" for="customRange2"><i class="fas fa-edit"></i>
-                                                สรุปกิจกรรม : ที่ผ่านมาคุณได้เรียนรู้อะไรบ้าง:</h2>
+                                                สรุปกิจกรรม : ที่ผ่านมาคุณได้เรียนรู้อะไรบ้าง</h2>
                                             <textarea name="activity_summary" id="activity_summary" class="form-control shadow-textarea " rows="10"
                                                 placeholder="ที่ผ่านมาคุณได้เรียนรู้อะไรบ้าง..." required></textarea>
                                         </div>
