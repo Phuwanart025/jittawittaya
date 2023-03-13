@@ -283,15 +283,17 @@
 
                                         <h2 class="text-center mt-5 mb-3">นิทานเรื่อง...คุณยายและความห่วงใย</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                            <img class="mySlides1" src="images/day6/คุณยายและความห่วงใย (ครึ่งเรื่อง)/1.png"
+                                            <img class="mySlides1"
+                                                src="images/day6/คุณยายและความห่วงใย (ครึ่งเรื่อง)/1.png"
                                                 style="width:100%">
-                                            <img class="mySlides1" src="images/day6/คุณยายและความห่วงใย (ครึ่งเรื่อง)/2.png"
+                                            <img class="mySlides1"
+                                                src="images/day6/คุณยายและความห่วงใย (ครึ่งเรื่อง)/2.png"
                                                 style="width:100%">
                                         </div>
 
-                                        <p class="text-center py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
-                                            href="https://www.bloggang.com/m/viewdiary.php?id=hrman&month=05-2015&date=14&group=3&gblog=208&fbclid=IwAR17eXg4p5ilvwCTyoyMxVex-sn7Oc99pH5fQ8v6cdoX-dk6rbF7ZASsPwY">
-                                            เว็บไซต์ BLOGGANG</a></p>
+                                        <p class="py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
+                                                href="https://www.bloggang.com/m/viewdiary.php?id=hrman&month=05-2015&date=14&group=3&gblog=208&fbclid=IwAR17eXg4p5ilvwCTyoyMxVex-sn7Oc99pH5fQ8v6cdoX-dk6rbF7ZASsPwY">
+                                                เว็บไซต์ BLOGGANG</a></p>
                                         <hr>
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
@@ -321,7 +323,7 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row text-center">
+                                        <div class="พนไ text-center">
                                             <h2 class="mt-5 mb-3">naïve model และ cognitive model</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                                 <img class="mySlides1" src="images/day6/รูปแบบความคิด/1.png"
