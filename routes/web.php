@@ -25,9 +25,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/results', function () {
-    return view('results');
-});
+
 
 Route::post('/store', [diary_dayController::class, 'store']);
 Route::post('/store2', [diary_dayController::class, 'store2']);
@@ -43,6 +41,13 @@ Route::post('/store11', [diary_dayController::class, 'store11']);
 Route::post('/store12', [diary_dayController::class, 'store12']);
 Route::post('/store13', [diary_dayController::class, 'store13']);
 Route::post('/store14', [diary_dayController::class, 'store14']);
+Route::post('/store15', [diary_dayController::class, 'store15']);
+Route::post('/store16', [diary_dayController::class, 'store16']);
+Route::post('/store17', [diary_dayController::class, 'store17']);
+Route::post('/store18', [diary_dayController::class, 'store18']);
+Route::post('/store19', [diary_dayController::class, 'store19']);
+Route::post('/store20', [diary_dayController::class, 'store20']);
+Route::post('/store21', [diary_dayController::class, 'store21']);
 
 Route::get('/certificate1', function () {
     return view('certificate1');
@@ -173,12 +178,33 @@ Route::middleware(['auth:sanctum'])->get('/record', function () {
     $rounds_story = DB::table('rounds_completed')
     ->join('users', 'rounds_completed.user_id', '=', 'users.id')
     ->where('rounds_completed.user_id', Auth::user()->id)
+    ->orwhere('rounds_completed.rounds')
     ->select(DB::raw('rounds_completed.rounds, COUNT(*) as count_round, SUM(rounds_completed.score) as total_score'))
     ->groupBy('rounds_completed.rounds')
     ->orderBy('rounds_completed.rounds', 'asc')
     ->get();
     return view('record', compact('rounds_story'));
 })->name('/record');
+
+
+Route::middleware(['auth:sanctum'])->get('/results', function () {
+    $rounds = DB::table('rounds_completed')
+    ->orderBy('rounds_completed.rounds', 'desc')
+    ->limit(1)
+    ->pluck('rounds_completed.rounds');
+
+$rounds_story = DB::table('rounds_completed')
+    ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+    ->where('rounds_completed.user_id', Auth::user()->id)
+    ->whereIn('rounds_completed.rounds', $rounds)
+    ->select(DB::raw('rounds_completed.rounds, COUNT(*) as count_round, SUM(rounds_completed.score) as total_score'))
+    ->groupBy('rounds_completed.rounds')
+    ->orderBy('rounds_completed.rounds', 'asc')
+
+    ->get();
+    return view('results', compact('rounds_story'));
+})->name('/results');
+
 
 Route::get('GoogleCallbacks', [
     App\Http\Controllers\HomeController::class,

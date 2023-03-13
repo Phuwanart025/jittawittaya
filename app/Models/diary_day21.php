@@ -8,9 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class diary_day21 extends Model
 {
     protected $fillable = [
-        'color_feel_today',
-        'sensation_level',
-        'detail_t1',
+        'data1_t21',
+        'data2_t21',
+        'data3_t21',
+        'data4_t21',
+        'data5_t21',
+        'data6_t21',
+        'data7_t21',
+        'data8_t21',
+        'data9_t21',
+        'data10_t21',
+        'data11_t21',
+        'data12_t21',
+        'data13_t21',
+        'data14_t21',
+        'activity_summary',
         'rounds_id',
     ];
     public $timestamps = false;

@@ -242,7 +242,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post" action="{{ url('store21') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -281,13 +281,13 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><input type="text" class="form-control" placeholder="..."
+                                                            <td><input name="v1" id="v1" type="text" class="form-control" placeholder="..."
                                                                     required></td>
-                                                            <td><input type="text" class="form-control" placeholder="..."
+                                                            <td><input  name="v2" id="v2" type="text" class="form-control" placeholder="..."
                                                                     required></td>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input  name="v3" id="v3" type="text" class="form-control"
                                                                     placeholder="..."></td>
-                                                            <td><select class="form-select"
+                                                            <td><select  name="v4" id="v4" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
@@ -297,11 +297,11 @@
                                                                     <option value="5">5</option>
                                                                 </select>
                                                             </td>
-                                                            <td><input type="text" class="form-control" placeholder="..."
+                                                            <td><input name="v5" id="v5" type="text" class="form-control" placeholder="..."
                                                                     required></td>
-                                                            <td><input type="text" class="form-control" placeholder="..."
+                                                            <td><input name="v6" id="v6" type="text" class="form-control" placeholder="..."
                                                                     required></td>
-                                                            <td><select class="form-select"
+                                                            <td><select  name="v7" id="v7" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
@@ -313,13 +313,13 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v8" id="v8" type="text" class="form-control"
                                                                     placeholder="..."></td>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v9" id="v9" type="text" class="form-control"
                                                                     placeholder="..."></td>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v10" id="v10" type="text" class="form-control"
                                                                     placeholder="..."></td>
-                                                            <td><select class="form-select"
+                                                            <td><select name="v11" id="v11" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
@@ -329,11 +329,11 @@
                                                                     <option value="5">5</option>
                                                                 </select>
                                                             </td>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v12" id="v12" type="text" class="form-control"
                                                                     placeholder="..."></td>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v13" id="v13" type="text" class="form-control"
                                                                     placeholder="..."></td>
-                                                            <td><select class="form-select"
+                                                            <td><select name="v14" id="v14"  class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
@@ -374,7 +374,7 @@
                                         <div class="row">
                                             <h2 class="mt-5 mb-3" for="customRange2"><i class="fas fa-edit"></i>
                                                 สรุปกิจกรรม : ที่ผ่านมาคุณได้เรียนรู้อะไรบ้าง:</h2>
-                                            <textarea name="v3_2" id="v3_2" class="form-control shadow-textarea " rows="10"
+                                            <textarea name="activity_summary" id="activity_summary" class="form-control shadow-textarea " rows="10"
                                                 placeholder="ที่ผ่านมาคุณได้เรียนรู้อะไรบ้าง..." required></textarea>
                                         </div>
                                     </div>

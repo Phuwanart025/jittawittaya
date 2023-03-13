@@ -640,7 +640,7 @@
                                     {{ $item13->new_idea_v7_1 }}
                                 </td>
                                 <td>
-                                    {{ $item13->new_emotions_v7_2}}
+                                    {{ $item13->new_emotions_v7_2 }}
                                 </td>
                             </tr>
                         </tbody>
@@ -680,55 +680,421 @@
                     <table class="table table-bordered">
                         <thead class="table-dark">
                             <th>ทางเลือก</th>
-                                                        <th>ข้อดี</th>
-                                                        <th>ข้อเสีย</th>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>{{ $item14->story_v4}}
-                                                            </td>
-                                                            <td>{{ $item14->positive_v4}}
-                                                            </td>
-                                                            <td>{{ $item14->negative_v4}}
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>{{ $item14->story_v5}}
-                                                            </td>
-                                                            <td>{{ $item14->positive_v5}}
-                                                            </td>
-                                                            <td>{{ $item14->negative_v5}}
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>{{ $item14->story_v6}}
-                                                            </td>
-                                                            <td>{{ $item14->positive_v6}}
-                                                            </td>
-                                                            <td>{{ $item14->negative_v6}}
-                                                            </td>
+                            <th>ข้อดี</th>
+                            <th>ข้อเสีย</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{ $item14->story_v4 }}
+                                </td>
+                                <td>{{ $item14->positive_v4 }}
+                                </td>
+                                <td>{{ $item14->negative_v4 }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>{{ $item14->story_v5 }}
+                                </td>
+                                <td>{{ $item14->positive_v5 }}
+                                </td>
+                                <td>{{ $item14->negative_v5 }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>{{ $item14->story_v6 }}
+                                </td>
+                                <td>{{ $item14->positive_v6 }}
+                                </td>
+                                <td>{{ $item14->negative_v6 }}
+                                </td>
 
-                                                        </tr>
-                                                      
-                                                        <tr class="table-dark">
-                                                            <td colspan="3">
-                                                                <div class="container">
-                                                                    <div class="row">
-                                                                        <label for="input3"
-                                                                            class="col-sm-4 col-form-label">ทางเลือกที่คิดว่าดีสำหรับฉัน</label>
-                                                                        <div class="col-sm-8">
-                                                                            {{ $item14->story_positive_v7}}
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                            </tr>
+
+                            <tr class="table-dark">
+                                <td colspan="3">
+                                    <div class="container">
+                                        <div class="row">
+                                            <label for="input3"
+                                                class="col-sm-4 col-form-label">ทางเลือกที่คิดว่าดีสำหรับฉัน</label>
+                                            <div class="col-sm-8">
+                                                {{ $item14->story_positive_v7 }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                 </div>
             @endforeach
         </div>
+
+        <div class="page-break row">
+            <h3>วันที่15</h3>
+
+            @foreach ($data15 as $item15)
+                <div class="column">
+                    <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
+                    <q>{{ $item15->color_feel_today }}</q><br>
+                </div>
+                <div class="column">
+                    <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
+                    <q>ระดับ{{ $item15->sensation_level }}</q><br>
+                </div>
+                <div class="column">
+                    <label class="lable" for="fname">เหตุการณ์ที่เกิดขึ้น :</label><br>
+                    <q>{{ $item15->detail_t15 }}</q><br>
+                </div>
+                <div class="row">
+                    <label class="lable" for="fname">คิดยังไงกับเหตุการณ์ที่เกิดขึ้น :</label><br>
+                    <q>{{ $item15->detail2_t15 }}</q><br>
+                </div>
+                <div class="row">
+                    <label class="lable" for="fname">แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ :</label><br>
+                    <q>{{ $item15->detail3_t15 }}</q><br>
+                </div>
+                <hr>
+                <div class="row">
+                    <label class="lable" for="fname">ถ้าฉัน คิดแบบนี้ ฉันจะรู้สึก? :</label><br>
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <th>เหตุการณ์</th>
+                            <th>คิดยังไง</th>
+                            <th>อารมณ์</th>
+                            <th>ระดับอารมณ์ 1-5</th>
+                            <th>คิดใหม่</th>
+                            <th>อารมณ์ใหม่</th>
+                            <th>ระดับอารมณ์ใหม่ 1-5</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>สัตว์เลี้ยงป่วยตาย</td>
+                                <td>คงไม่ได้เจอกันอีกแล้ว</td>
+                                <td>เศร้า</td>
+                                <td>5</td>
+
+                                <td>{{ $item15->rethink_15 }}</td>
+                                <td>{{ $item15->new_mood_15 }}</td>
+                                <td>{{ $item15->new_mood_level	 }}</td>
+                            </tr>
+                            <tr>
+                                <td>ตั้งใจทำงาน แต่คะแนนไม่ดี</td>
+                                <td>ฉันไม่ได้เรื่อง</td>
+                                <td>เศร้า</td>
+                                <td>4</td>
+
+                                <td>{{ $item15->rethink2_15 }}</td>
+                                <td>{{ $item15->new_mood2_15 }}</td>
+                                <td>{{ $item15->new_mood_level2 }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            @endforeach
+        </div>
+
+        <div class="page-break row">
+            <h3>วันที่16</h3>
+
+            @foreach ($data16 as $item16)
+                <div class="column">
+                    <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
+                    <q>{{ $item16->color_feel_today }}</q><br>
+                </div>
+                <div class="column">
+                    <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
+                    <q>ระดับ{{ $item16->sensation_level }}</q><br>
+                </div>
+                <div class="column">
+                    <label class="lable" for="fname">เหตุการณ์ที่เกิดขึ้น :</label><br>
+                    <q>{{ $item16->detail_t16 }}</q><br>
+                </div>
+                <div class="row">
+                    <label class="lable" for="fname">คิดยังไงกับเหตุการณ์ที่เกิดขึ้น :</label><br>
+                    <q>{{ $item16->detail2_t16 }}</q><br>
+                </div>
+                <div class="row">
+                    <label class="lable" for="fname">แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ :</label><br>
+                    <q>{{ $item16->detail3_t16 }}</q><br>
+                </div>
+                <hr>
+                <div class="row">
+                    <label class="lable" for="fname">ถ้าฉัน คิดแบบนี้ ฉันจะรู้สึก? :</label><br>
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <th>เหตุการณ์</th>
+                            <th>คิดยังไง</th>
+                            <th>อารมณ์</th>
+                            <th>ระดับอารมณ์ 1-5</th>
+                            <th>คิดใหม่</th>
+                            <th>อารมณ์ใหม่</th>
+                            <th>ระดับอารมณ์ใหม่ 1-5</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>อาจารย์สั่งงานกระชั้นชิด</td>
+                                <td>ทำไม่ทันแน่ๆเลย</td>
+                                <td>กังวล</td>
+                                <td>4</td>
+
+                                    <td>{{ $item16->rethink_16 }}</td>
+                                    <td>{{ $item16->new_mood_16 }}</td>
+                                    <td>{{ $item16->new_mood_level	 }}</td>
+                            </tr>
+                            <tr>
+                                <td>ตรวจสุขภาพพบค่าไตผิดปกติ</td>
+                                <td>ฉันจะเป็นโรคร้ายแรงมั้ย แล้วฉันจะตายหรือเปล่า</td>
+                                </td>
+                                <td>กลัว</td>
+                                <td>5</td>
+
+                                    <td>{{ $item16->rethink_16 }}</td>
+                                    <td>{{ $item16->new_mood_16 }}</td>
+                                    <td>{{ $item16->new_mood_level	 }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            @endforeach
+        </div>
+
+        <div class="page-break row">
+            <h3>วันที่17</h3>
+
+            @foreach ($data17 as $item17)
+                <div class="column">
+                    <label class="lable" for="fname">วันนี้ความรู้สึกเป็นสีอะไร :</label><br>
+                    <q>{{ $item17->color_feel_today }}</q><br>
+                </div>
+                <div class="column">
+                    <label class="lable" for="lname">ระดับความรู้สึก :</label><br>
+                    <q>ระดับ{{ $item17->sensation_level }}</q><br>
+                </div>
+                <div class="column">
+                    <label class="lable" for="fname">เหตุการณ์ที่เกิดขึ้น :</label><br>
+                    <q>{{ $item17->detail_t17 }}</q><br>
+                </div>
+                <div class="row">
+                    <label class="lable" for="fname">คิดยังไงกับเหตุการณ์ที่เกิดขึ้น :</label><br>
+                    <q>{{ $item17->detail2_t17 }}</q><br>
+                </div>
+                <div class="row">
+                    <label class="lable" for="fname">แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ :</label><br>
+                    <q>{{ $item17->detail3_t17 }}</q><br>
+                </div>
+                <hr>
+                <div class="row">
+                    <label class="lable" for="fname">ถ้าฉัน คิดแบบนี้ ฉันจะรู้สึก? :</label><br>
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <th>เหตุการณ์</th>
+                            <th>คิดยังไง</th>
+                            <th>อารมณ์</th>
+                            <th>ระดับอารมณ์ 1-5</th>
+                            <th>คิดใหม่</th>
+                            <th>อารมณ์ใหม่</th>
+                            <th>ระดับอารมณ์ใหม่ 1-5</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ป้าข้างบ้านถามว่าเรียนจบแล้วทำไมยังไม่มีงานทำ</td>
+                                                            <td>จะมายุ่งอะไรด้วย</td>
+                                                            <td>โกรธ</td>
+                                <td>5</td>
+
+                                <td>{{ $item17->rethink_17 }}</td>
+                                <td>{{ $item17->new_mood_17 }}</td>
+                                <td>{{ $item17->new_mood_level	 }}</td>
+                            </tr>
+                            <tr>
+                                <td>โดนแซงคิวเข้าห้องน้ำ</td>
+                                                            <td>ทำไมเห็นแก่ตัวแบบนี้</td>
+                                                            <td>โกรธ</td>
+                                <td>4</td>
+
+                                <td>{{ $item17->rethink2_17 }}</td>
+                                <td>{{ $item17->new_mood2_17 }}</td>
+                                <td>{{ $item17->new_mood_level2 }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            @endforeach
+        </div>
+
+        <div class="page-break row">
+            <h3>วันที่18</h3>
+
+            @foreach ($data18 as $item18)
+               
+                <div class="row">
+                    <label class="lable" for="fname">ตารางปรับความคิด :</label><br>
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <th>วันนี้เกิดอะไรขึ้น</th>
+                            <th>คิดยังไง</th>
+                            <th>อารมณ์</th>
+                            <th>ระดับอารมณ์ 1-5</th>
+                            <th>คิดใหม่</th>
+                            <th>อารมณ์ใหม่</th>
+                            <th>ระดับอารมณ์ใหม่ 1-5</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{ $item18->data1_t18 }}</td>
+                                <td>{{ $item18->data2_t18 }}</td>
+                                <td>{{ $item18->data3_t18 }}</td>
+                                <td>{{ $item18->data4_t18 }}</td>
+                                <td>{{ $item18->data5_t18 }}</td>
+                                <td>{{ $item18->data6_t18 }}</td>
+                                <td>{{ $item18->data7_t18 }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{ $item18->data8_t18 }}</td>
+                                <td>{{ $item18->data9_t18 }}</td>
+                                <td>{{ $item18->data10_t18 }}</td>
+                                <td>{{ $item18->data11_t18 }}</td>
+                                <td>{{ $item18->data12_t18 }}</td>
+                                <td>{{ $item18->data13_t18 }}</td>
+                                <td>{{ $item18->data14_t18 }}</td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            @endforeach
+            <h3>วันที่19</h3>
+
+            @foreach ($data19 as $item19)
+               
+                <div class="row">
+                    <label class="lable" for="fname">ตารางปรับความคิด :</label><br>
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <th>วันนี้เกิดอะไรขึ้น</th>
+                            <th>คิดยังไง</th>
+                            <th>อารมณ์</th>
+                            <th>ระดับอารมณ์ 1-5</th>
+                            <th>คิดใหม่</th>
+                            <th>อารมณ์ใหม่</th>
+                            <th>ระดับอารมณ์ใหม่ 1-5</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{ $item19->data1_t19 }}</td>
+                                <td>{{ $item19->data2_t19 }}</td>
+                                <td>{{ $item19->data3_t19 }}</td>
+                                <td>{{ $item19->data4_t19 }}</td>
+                                <td>{{ $item19->data5_t19 }}</td>
+                                <td>{{ $item19->data6_t19 }}</td>
+                                <td>{{ $item19->data7_t19 }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{ $item19->data8_t19 }}</td>
+                                <td>{{ $item19->data9_t19 }}</td>
+                                <td>{{ $item19->data10_t19 }}</td>
+                                <td>{{ $item19->data11_t19 }}</td>
+                                <td>{{ $item19->data12_t19 }}</td>
+                                <td>{{ $item19->data13_t19 }}</td>
+                                <td>{{ $item19->data14_t19 }}</td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            @endforeach
+            <h3>วันที่20</h3>
+
+            @foreach ($data20 as $item20)
+               
+                <div class="row">
+                    <label class="lable" for="fname">ตารางปรับความคิด :</label><br>
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <th>วันนี้เกิดอะไรขึ้น</th>
+                            <th>คิดยังไง</th>
+                            <th>อารมณ์</th>
+                            <th>ระดับอารมณ์ 1-5</th>
+                            <th>คิดใหม่</th>
+                            <th>อารมณ์ใหม่</th>
+                            <th>ระดับอารมณ์ใหม่ 1-5</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{ $item20->data1_t20 }}</td>
+                                <td>{{ $item20->data2_t20 }}</td>
+                                <td>{{ $item20->data3_t20 }}</td>
+                                <td>{{ $item20->data4_t20 }}</td>
+                                <td>{{ $item20->data5_t20 }}</td>
+                                <td>{{ $item20->data6_t20 }}</td>
+                                <td>{{ $item20->data7_t20 }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{ $item20->data8_t20 }}</td>
+                                <td>{{ $item20->data9_t20 }}</td>
+                                <td>{{ $item20->data10_t20 }}</td>
+                                <td>{{ $item20->data11_t20 }}</td>
+                                <td>{{ $item20->data12_t20 }}</td>
+                                <td>{{ $item20->data13_t20 }}</td>
+                                <td>{{ $item20->data14_t20 }}</td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            @endforeach
+
+        </div>
+        <div class="page-break row">
+            <h3>วันที่21</h3>
+
+            @foreach ($data21 as $item21)
+               
+                <div class="row">
+                    <label class="lable" for="fname">ตารางปรับความคิด :</label><br>
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <th>วันนี้เกิดอะไรขึ้น</th>
+                            <th>คิดยังไง</th>
+                            <th>อารมณ์</th>
+                            <th>ระดับอารมณ์ 1-5</th>
+                            <th>คิดใหม่</th>
+                            <th>อารมณ์ใหม่</th>
+                            <th>ระดับอารมณ์ใหม่ 1-5</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{ $item21->data1_t21 }}</td>
+                                <td>{{ $item21->data2_t21 }}</td>
+                                <td>{{ $item21->data3_t21 }}</td>
+                                <td>{{ $item21->data4_t21 }}</td>
+                                <td>{{ $item21->data5_t21 }}</td>
+                                <td>{{ $item21->data6_t21 }}</td>
+                                <td>{{ $item21->data7_t21 }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{ $item21->data8_t21 }}</td>
+                                <td>{{ $item21->data9_t21 }}</td>
+                                <td>{{ $item21->data10_t21 }}</td>
+                                <td>{{ $item21->data11_t21 }}</td>
+                                <td>{{ $item21->data12_t21 }}</td>
+                                <td>{{ $item21->data13_t21 }}</td>
+                                <td>{{ $item21->data14_t21 }}</td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            @endforeach
+        </div>
+
     </div>
 </body>
 
