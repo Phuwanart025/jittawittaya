@@ -139,7 +139,7 @@
         <script src="js/custom.min.js"></script>
        
        
-        @include('layouts.footer')
+      
  
     </body>
     </html>

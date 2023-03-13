@@ -243,7 +243,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="get" action="{{ url('store') }}" enctype="multipart/form-data">
+                                <form method="post" action="{{ url('store17') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -342,12 +342,12 @@
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             คิดยังไงกับเหตุการณ์ที่เกิดขึ้น:</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                        <textarea name="v3_2" id="v3_2" class="form-control shadow-textarea " rows="8"
                                             placeholder="คิดยังไงกับเหตุการณ์ที่เกิดขึ้น..." required></textarea>
 
                                         <h3 class="mt-5 mb-2" for="customRange2"><i class="fas fa-edit"></i>
                                             แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ:</h3>
-                                        <textarea name="v4" id="v4" class="form-control shadow-textarea " rows="8"
+                                        <textarea name="v3_3" id="v3_3" class="form-control shadow-textarea " rows="8"
                                             placeholder="แล้วถ้าลองคิดแบบอื่น จะคิดยังไงดีนะ..." required></textarea>
                                     </div>
 
@@ -402,12 +402,12 @@
                                                                     <option selected value="5">5</option>
                                                                 </select>
                                                             </td>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v4" id="v4" type="text" class="form-control"
                                                                     placeholder="คิดใหม่ยังไงดี..." required></td>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v4_2" id="v4_2" type="text" class="form-control"
                                                                     placeholder="คิดใหม่แล้วรู้สึกยังไง..." required></td>
                                                             <td>
-                                                                <select class="form-select"
+                                                                <select  name="v4_3" id="v4_3" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
@@ -432,12 +432,12 @@
                                                                     <option value="5">5</option>
                                                                 </select>
                                                             </td>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input name="v5" id="v5" type="text" class="form-control"
                                                                     placeholder="คิดใหม่ยังไงดี..." required></td>
-                                                            <td><input type="text" class="form-control"
+                                                            <td><input  name="v5_2" id="v5_2" type="text" class="form-control"
                                                                     placeholder="คิดใหม่แล้วรู้สึกยังไง..." required></td>
                                                             <td>
-                                                                <select class="form-select"
+                                                                <select name="v5_3" id="v5_3" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>

@@ -17,6 +17,13 @@ use App\Models\diary_day11;
 use App\Models\diary_day12;
 use App\Models\diary_day13;
 use App\Models\diary_day14;
+use App\Models\diary_day15;
+use App\Models\diary_day16;
+use App\Models\diary_day17;
+use App\Models\diary_day18;
+use App\Models\diary_day19;
+use App\Models\diary_day20;
+use App\Models\diary_day21;
 use App\Models\rounds_completed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -675,6 +682,410 @@ class diary_dayController extends Controller
             $diary->story_positive_v7 = $request->v7;
             $diary1->save();
             $diary->diary_day14()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
+        return redirect('/results');
+    }
+
+    public function store15(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v3_2' => 'required',
+                'v3_3' => 'required',
+                'v4' => 'required',
+                'v4_2' => 'required',
+                'v4_3' => 'required',
+                'v5' => 'required',
+                'v5_2' => 'required',
+                'v5_3' => 'required',
+                
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 15)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day15();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 15;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t15 = $request->v3;
+            $diary->detail2_t15 = $request->v3_2;
+            $diary->detail3_t15 = $request->v3_3;
+            $diary->rethink_15 = $request->v4;
+            $diary->new_mood_15    = $request->v4_2;
+            $diary->new_mood_level    = $request->v4_3;
+            $diary->rethink2_15 = $request->v5;
+            $diary->new_mood2_15    = $request->v5_2;
+            $diary->new_mood_level2    = $request->v5_3;
+           
+            $diary1->save();
+            $diary->diary_day15()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
+        return redirect('/results');
+    }
+
+    public function store16(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v3_2' => 'required',
+                'v3_3' => 'required',
+                'v4' => 'required',
+                'v4_2' => 'required',
+                'v4_3' => 'required',
+                'v5' => 'required',
+                'v5_2' => 'required',
+                'v5_3' => 'required',
+                
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 16)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day16();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 16;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t16 = $request->v3;
+            $diary->detail2_t16 = $request->v3_2;
+            $diary->detail3_t16 = $request->v3_3;
+            $diary->rethink_16 = $request->v4;
+            $diary->new_mood_16    = $request->v4_2;
+            $diary->new_mood_level    = $request->v4_3;
+            $diary->rethink2_16 = $request->v5;
+            $diary->new_mood2_16    = $request->v5_2;
+            $diary->new_mood_level2    = $request->v5_3;
+           
+            $diary1->save();
+            $diary->diary_day16()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
+        return redirect('/results');
+    }
+
+    public function store17(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'flexRadioDefault' => 'required',
+                'value' => 'required',
+                'v3' => 'required',
+                'v3_2' => 'required',
+                'v3_3' => 'required',
+                'v4' => 'required',
+                'v4_2' => 'required',
+                'v4_3' => 'required',
+                'v5' => 'required',
+                'v5_2' => 'required',
+                'v5_3' => 'required',
+                
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 17)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day17();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 17;
+            $diary1->score = 10;
+            $diary->color_feel_today = $request->flexRadioDefault;
+            $diary->sensation_level = $request->input('value');
+            $diary->detail_t17 = $request->v3;
+            $diary->detail2_t17 = $request->v3_2;
+            $diary->detail3_t17 = $request->v3_3;
+            $diary->rethink_17 = $request->v4;
+            $diary->new_mood_17    = $request->v4_2;
+            $diary->new_mood_level    = $request->v4_3;
+            $diary->rethink2_17 = $request->v5;
+            $diary->new_mood2_17    = $request->v5_2;
+            $diary->new_mood_level2    = $request->v5_3;
+           
+            $diary1->save();
+            $diary->diary_day17()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
+        return redirect('/results');
+    }
+
+    public function store18(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'v1' => 'required',
+                'v2' => 'required',
+                'v3' => 'required',
+                'v4' => 'required',
+                'v5' => 'required',
+                'v6' => 'required',
+                'v7' => 'required',
+                'v8' => 'required',
+                'v9' => 'required',
+                'v10' => 'required',
+                'v11' => 'required',
+                'v12' => 'required',
+                'v13' => 'required',
+                'v14' => 'required',
+                
+                
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 18)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day18();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 18;
+            $diary1->score = 10;
+            $diary->data1_t18 = $request->v1;
+            $diary->data2_t18 = $request->v2;
+            $diary->data3_t18 = $request->v3;
+            $diary->data4_t18 = $request->v4;
+            $diary->data5_t18 = $request->v5;
+            $diary->data6_t18 = $request->v6;
+            $diary->data7_t18 = $request->v7;
+            $diary->data8_t18 = $request->v8;
+            $diary->data9_t18 = $request->v9;
+            $diary->data10_t18 = $request->v10;
+            $diary->data11_t18 = $request->v11;
+            $diary->data12_t18 = $request->v12;
+            $diary->data13_t18 = $request->v13;
+            $diary->data14_t18 = $request->v14;
+           
+           
+            $diary1->save();
+            $diary->diary_day18()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
+        return redirect('/results');
+    }
+
+    public function store19(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'v1' => 'required',
+                'v2' => 'required',
+                'v3' => 'required',
+                'v4' => 'required',
+                'v5' => 'required',
+                'v6' => 'required',
+                'v7' => 'required',
+                'v8' => 'required',
+                'v9' => 'required',
+                'v10' => 'required',
+                'v11' => 'required',
+                'v12' => 'required',
+                'v13' => 'required',
+                'v14' => 'required',
+                
+                
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 19)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day19();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 19;
+            $diary1->score = 10;
+            $diary->data1_t19 = $request->v1;
+            $diary->data2_t19 = $request->v2;
+            $diary->data3_t19 = $request->v3;
+            $diary->data4_t19 = $request->v4;
+            $diary->data5_t19 = $request->v5;
+            $diary->data6_t19 = $request->v6;
+            $diary->data7_t19 = $request->v7;
+            $diary->data8_t19 = $request->v8;
+            $diary->data9_t19 = $request->v9;
+            $diary->data10_t19 = $request->v10;
+            $diary->data11_t19 = $request->v11;
+            $diary->data12_t19 = $request->v12;
+            $diary->data13_t19 = $request->v13;
+            $diary->data14_t19 = $request->v14;
+           
+           
+            $diary1->save();
+            $diary->diary_day19()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
+        return redirect('/results');
+    }
+
+    public function store20(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'v1' => 'required',
+                'v2' => 'required',
+                'v3' => 'required',
+                'v4' => 'required',
+                'v5' => 'required',
+                'v6' => 'required',
+                'v7' => 'required',
+                'v8' => 'required',
+                'v9' => 'required',
+                'v10' => 'required',
+                'v11' => 'required',
+                'v12' => 'required',
+                'v13' => 'required',
+                'v14' => 'required',
+                
+                
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 20)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day20();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 20;
+            $diary1->score = 10;
+            $diary->data1_t20 = $request->v1;
+            $diary->data2_t20 = $request->v2;
+            $diary->data3_t20 = $request->v3;
+            $diary->data4_t20 = $request->v4;
+            $diary->data5_t20 = $request->v5;
+            $diary->data6_t20 = $request->v6;
+            $diary->data7_t20 = $request->v7;
+            $diary->data8_t20 = $request->v8;
+            $diary->data9_t20 = $request->v9;
+            $diary->data10_t20 = $request->v10;
+            $diary->data11_t20 = $request->v11;
+            $diary->data12_t20 = $request->v12;
+            $diary->data13_t20 = $request->v13;
+            $diary->data14_t20 = $request->v14;
+           
+           
+            $diary1->save();
+            $diary->diary_day20()->associate($diary1);
+            $diary->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+        Alert::success('บันทึกข้อมูลสำเร็จ', '');
+        return redirect('/results');
+    }
+
+    public function store21(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'v1' => 'required',
+                'v2' => 'required',
+                'v3' => 'required',
+                'v4' => 'required',
+                'v5' => 'required',
+                'v6' => 'required',
+                'v7' => 'required',
+                'v8' => 'required',
+                'v9' => 'required',
+                'v10' => 'required',
+                'v11' => 'required',
+                'v12' => 'required',
+                'v13' => 'required',
+                'v14' => 'required',
+                
+                
+            ]);
+            $latest = rounds_completed::where('user_id', Auth::user()->id)
+                ->where('jobs_id', 21)
+                ->orderBy('id', 'desc')
+                ->first();
+            $diary1 = new rounds_completed();
+            $diary = new diary_day21();
+            if (empty($latest) || is_null($latest)) {
+                $diary1->rounds = 1;
+            } else {
+                $diary1->rounds = $latest->rounds + 1;
+            }
+            $diary1->user_id = Auth::user()->id;
+            $diary1->jobs_id = 21;
+            $diary1->score = 10;
+            $diary->activity_summary = $request->activity_summary;
+            $diary->data1_t21 = $request->v1;
+            $diary->data2_t21 = $request->v2;
+            $diary->data3_t21 = $request->v3;
+            $diary->data4_t21 = $request->v4;
+            $diary->data5_t21 = $request->v5;
+            $diary->data6_t21 = $request->v6;
+            $diary->data7_t21 = $request->v7;
+            $diary->data8_t21 = $request->v8;
+            $diary->data9_t21 = $request->v9;
+            $diary->data10_t21 = $request->v10;
+            $diary->data11_t21 = $request->v11;
+            $diary->data12_t21 = $request->v12;
+            $diary->data13_t21 = $request->v13;
+            $diary->data14_t21 = $request->v14;
+           
+           
+            $diary1->save();
+            $diary->diary_day21()->associate($diary1);
             $diary->save();
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);

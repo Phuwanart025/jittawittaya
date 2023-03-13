@@ -112,9 +112,58 @@ class PDFController extends Controller
             ->where('rounds_completed.rounds', $rounds)
             ->select('rounds_completed.*', 'day14.*', 'users.*')
             ->get();
+            $data15 = DB::table('rounds_completed')
+            ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+            ->join('day15', 'rounds_completed.id', '=', 'day15.rounds_id')
+            ->where('rounds_completed.user_id', Auth::user()->id)
+            ->where('rounds_completed.rounds', $rounds)
+            ->select('rounds_completed.*', 'day15.*', 'users.*')
+            ->get();
+            $data16 = DB::table('rounds_completed')
+            ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+            ->join('day16', 'rounds_completed.id', '=', 'day16.rounds_id')
+            ->where('rounds_completed.user_id', Auth::user()->id)
+            ->where('rounds_completed.rounds', $rounds)
+            ->select('rounds_completed.*', 'day16.*', 'users.*')
+            ->get();
+            $data17 = DB::table('rounds_completed')
+            ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+            ->join('day17', 'rounds_completed.id', '=', 'day17.rounds_id')
+            ->where('rounds_completed.user_id', Auth::user()->id)
+            ->where('rounds_completed.rounds', $rounds)
+            ->select('rounds_completed.*', 'day17.*', 'users.*')
+            ->get();
+            $data18 = DB::table('rounds_completed')
+            ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+            ->join('day18', 'rounds_completed.id', '=', 'day18.rounds_id')
+            ->where('rounds_completed.user_id', Auth::user()->id)
+            ->where('rounds_completed.rounds', $rounds)
+            ->select('rounds_completed.*', 'day18.*', 'users.*')
+            ->get();
+            $data19 = DB::table('rounds_completed')
+            ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+            ->join('day19', 'rounds_completed.id', '=', 'day19.rounds_id')
+            ->where('rounds_completed.user_id', Auth::user()->id)
+            ->where('rounds_completed.rounds', $rounds)
+            ->select('rounds_completed.*', 'day19.*', 'users.*')
+            ->get();
+            $data20 = DB::table('rounds_completed')
+            ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+            ->join('day20', 'rounds_completed.id', '=', 'day20.rounds_id')
+            ->where('rounds_completed.user_id', Auth::user()->id)
+            ->where('rounds_completed.rounds', $rounds)
+            ->select('rounds_completed.*', 'day20.*', 'users.*')
+            ->get();
+            $data21 = DB::table('rounds_completed')
+            ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+            ->join('day21', 'rounds_completed.id', '=', 'day21.rounds_id')
+            ->where('rounds_completed.user_id', Auth::user()->id)
+            ->where('rounds_completed.rounds', $rounds)
+            ->select('rounds_completed.*', 'day21.*', 'users.*')
+            ->get();
 
         $pdf = PDF::loadView('myPDF', compact('data','data2','data3','data4','data5','data6','data7','data8','data9','data10'
-        ,'data11','data12','data13','data14'));
+        ,'data11','data12','data13','data14','data15','data16','data17','data18','data19','data20','data21'));
         //  $pdf->set_option('isRemoteEnabled', TRUE);
         $pdf->render();
         return $pdf->stream('รายงานการทำแบบบันทึก-ReThink.pdf');

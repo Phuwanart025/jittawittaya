@@ -11,8 +11,10 @@
                     <div class="card o-hidden border-0 shadow-lg my-5">
                         <div class="card-body">
                             <div class="text-center">
-                                <h5>ผลคะแนนรวม: <span class="badge rounded-pill bg-primary"> {{ Auth::user()->id }} </span>
-                                    คะแนน</h5>
+                                @foreach ($rounds_story as $item)
+                                <h3>ผลคะแนนรวม: <span class="badge rounded-pill bg-primary"> {{ $item->total_score }} </span>
+                                    คะแนน</h3>
+                                    @endforeach
                                 <img src="images/101.gif" width="250" height="250">
                                 <br>
                                 <a class="btn btn-primary" href="/Menu_day">กลับไปหน้าแรก</a>
@@ -28,9 +30,7 @@
                 </div>
             </div>
         </div>
-
-
-        @include('layouts.footer')
+    </div>
 
     </body>
 

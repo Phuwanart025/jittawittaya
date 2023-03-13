@@ -111,7 +111,7 @@
      document.getElementById("myNav").style.width = "0%";
     }
     </script>  
-     @include('layouts.footer')
+   
 </body>
 </html>
 @endsection
