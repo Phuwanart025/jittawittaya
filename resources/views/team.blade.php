@@ -107,7 +107,7 @@
                 <div class="row row-cols-1 row-cols-md-2 g-4 mt-5 mb-5">
                     <div class="col">
                         <div class="card h-100 mx-auto">
-                            <div class="mt-5 mb-3 image_4"><img src="images/dev.png" width="160" height="160">
+                            <div class="mt-5 mb-3 image_4">
                             </div>
                             <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
 
@@ -118,7 +118,7 @@
 
                     <div class="col">
                         <div class="card h-100 mx-auto">
-                            <div class="mt-5 mb-3 image_4"><img src="images/dev.png" width="160" height="160">
+                            <div class="mt-5 mb-3 image_4">
                             </div>
                             <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
 
@@ -129,7 +129,7 @@
 
                     <div class="col">
                         <div class="card h-100 mx-auto">
-                            <div class="mt-5 mb-3 image_4"><img src="images/dev.png" width="160" height="160">
+                            <div class="mt-5 mb-3 image_4">
                             </div>
                             <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
 
@@ -141,7 +141,7 @@
 
                     <div class="col">
                         <div class="card h-100 mx-auto">
-                            <div class="mt-5 mb-3 image_4"><img src="images/dev.png" width="160" height="160">
+                            <div class="mt-5 mb-3 image_4">
                             </div>
                             <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
 

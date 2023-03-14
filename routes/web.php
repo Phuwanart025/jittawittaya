@@ -189,6 +189,7 @@ Route::middleware(['auth:sanctum'])->get('/record', function () {
 
 Route::middleware(['auth:sanctum'])->get('/results', function () {
     $rounds = DB::table('rounds_completed')
+    ->where('rounds_completed.user_id', Auth::user()->id)
     ->orderBy('rounds_completed.rounds', 'desc')
     ->limit(1)
     ->pluck('rounds_completed.rounds');
