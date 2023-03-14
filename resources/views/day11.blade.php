@@ -347,7 +347,7 @@
                                         </div>
 
                                         <div class="row">
-                                            <h2 class="mt-5 mb-3 text-center">มาทบทวนความรู้กัน</h2>
+                                            <h2 class="mt-5 mb-3 text-center">มาทบทวนความรู้กัน...</h2>
                                             <div
                                                 class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3 text-center">
                                                 {{-- day6 --}}

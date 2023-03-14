@@ -11,8 +11,52 @@
         -ms-transition: all 1s ease;
         transition: all 1s ease;
     }
-
+    .bgimg2 {
+        background-image: url('/images/card/3.jpg');
+        min-height: 10%;
+        background-position: center;
+        background-size: cover;
+        -webkit-filter: brightness(50%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+    .bgimg3 {
+        background-image: url('/images/card/2.jpg');
+        min-height: 10%;
+        background-position: center;
+        background-size: cover;
+        -webkit-filter: brightness(50%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+    .bgimg4 {
+        background-image: url('/images/card/1.jpg');
+        min-height: 10%;
+        background-position: center;
+        background-size: cover;
+        -webkit-filter: brightness(50%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
     .bgimg:hover {
+        -webkit-filter: brightness(100%);
+    }
+    .bgimg2:hover {
+        -webkit-filter: brightness(100%);
+    }
+    .bgimg3:hover {
+        -webkit-filter: brightness(100%);
+    }
+    .bgimg4:hover {
         -webkit-filter: brightness(100%);
     }
 </style>
@@ -121,7 +165,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg2">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -140,7 +184,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg2">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -159,7 +203,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg2">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -178,7 +222,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg2">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -197,7 +241,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg2">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -216,7 +260,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg2">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -235,7 +279,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg3">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -254,7 +298,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg3">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -273,7 +317,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg3">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -292,7 +336,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg3">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -311,7 +355,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg3">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -330,7 +374,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg3">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -349,7 +393,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg4">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -368,7 +412,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg4">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -387,7 +431,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg4">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">
@@ -406,7 +450,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-xxl-3 col-sm-6">
-                    <div class="card bgimg">
+                    <div class="card bgimg4">
                         <div class="card-body d-flex">
                             <div class="icon me-3">
                                 <svg width="33px" height="32px">

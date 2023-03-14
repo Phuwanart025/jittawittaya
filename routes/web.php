@@ -167,11 +167,11 @@ Route::get('/choose', function () {
 
 Route::get('/profile', function () {
     return view('profile');
-});
+})->middleware('auth');
 
 Auth::routes();
 
-Route::get('/mypdf/{rounds}', [App\Http\Controllers\PDFController::class, 'pdf']);
+Route::get('/mypdf/{rounds}', [App\Http\Controllers\PDFController::class, 'pdf'])->middleware('auth');
 
 
 Route::middleware(['auth:sanctum'])->get('/record', function () {
@@ -184,7 +184,7 @@ Route::middleware(['auth:sanctum'])->get('/record', function () {
     ->orderBy('rounds_completed.rounds', 'asc')
     ->get();
     return view('record', compact('rounds_story'));
-})->name('/record');
+})->name('/record')->middleware('auth');
 
 
 Route::middleware(['auth:sanctum'])->get('/results', function () {
@@ -200,10 +200,10 @@ $rounds_story = DB::table('rounds_completed')
     ->select(DB::raw('rounds_completed.rounds, COUNT(*) as count_round, SUM(rounds_completed.score) as total_score'))
     ->groupBy('rounds_completed.rounds')
     ->orderBy('rounds_completed.rounds', 'asc')
-
+    ->limit(1)
     ->get();
     return view('results', compact('rounds_story'));
-})->name('/results');
+})->name('/results')->middleware('auth');
 
 
 Route::get('GoogleCallbacks', [
@@ -222,4 +222,4 @@ Route::post('ajaxRequestPost2', [
 Route::post('/profile-update', [
     App\Http\Controllers\HomeController::class,
     'profile_update',
-])->name('profile-update');
+])->name('profile-update')->middleware('auth');
