@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\rounds_completed;
+use App\Models\jobs_21day;
 use Carbon\Carbon;
 use RealRashid\SweetAlert\Facades\Alert;
 class Is_day
@@ -28,31 +29,32 @@ class Is_day
             ->orderByDesc('jobs_id')
             ->first();
     
-        if (!$last_round_completed || $last_round_completed->completed_rounds === 21) {
-            return redirect()->route('day1');
+            if (!$last_round_completed || $last_round_completed->completed_rounds === 21) {
+                return redirect()->route('day1');
+            }
+        
+            // ตรวจสอบว่าเวลาที่บันทึกข้อมูลล่าสุดถึงเวลา 12 ชั่วโมงหรือไม่
+            $last_completed_time = Carbon::parse($last_round_completed->created_at);
+            $current_time = Carbon::now();
+            $elapsed_time = $current_time->diffInHours($last_completed_time);
+        
+            if ($elapsed_time < 12) {
+                $end_time = $last_completed_time->addHours(12)->format('d-m-Y H:i:s');
+        
+                $message = 'คุณสามารถเข้าสู่รอบถัดไปได้หลังจาก ' . $end_time;
+                $next_job = $last_round_completed->jobs_id + 1;
+
+                if ($next_job) {
+                    $message .= ' วันถัดไป: วันที่ ' . $next_job;
+                }
+            
+        
+                Alert::error($message, 'error')->timerProgressBar()->persistent(true)->autoClose(false);
+                return redirect()->back();
+            }
+        
+            // ถ้าครบ 12 ชั่วโมงให้เข้าสู่หน้าถัดไป
+            $next_round = $last_round_completed->jobs_id + 1;
+            return redirect()->route('day'.$next_round);
         }
-    
-        // ตรวจสอบว่าเวลาที่บันทึกข้อมูลล่าสุดถึงเวลา 12 ชั่วโมงหรือไม่
-        $last_completed_time = Carbon::parse($last_round_completed->created_at);
-        $current_time = Carbon::now();
-        $elapsed_time = $current_time->diffInHours($last_completed_time);
-        
-        if ($elapsed_time < 12) {
-            $remaining_time = 12 * 60 * 60 - $elapsed_time * 60 * 60;
-            $remaining_hours = floor($remaining_time / 3600);
-            $remaining_minutes = floor(($remaining_time % 3600) / 60);
-            $remaining_seconds = $remaining_time % 60;
-        
-            $countdown_time = $current_time->addSeconds($remaining_time)->format('Y-m-d H:i:s');
-        
-            $message = 'คุณสามารถเข้าสู่รอบถัดไปได้ในอีก ' . $remaining_hours . ' ชั่วโมง ' . $remaining_minutes . ' นาที ' . $remaining_seconds . ' วินาที โดยการนับถอยหลังจะสิ้นสุดเมื่อ ' . $countdown_time;
-        
-            Alert::error($message, 'error')->timerProgressBar()->persistent(true)->autoClose(false);
-            return redirect()->back();
-        }
-        // ถ้าครบ 12 ชั่วโมงให้เข้าสู่หน้าถัดไป
-        $next_round = $last_round_completed + 1;
-        return redirect()->route('day'.$next_round);
-    
-    }
 }
