@@ -481,9 +481,9 @@
                                                     allowfullscreen></iframe>
                                             </div>
 
-                                            <p class="py-3">ขอบคุณคลิปวิดีโอจาก:<a target="_blank"
+                                            <p class="py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                                     href="https://youtu.be/oo8p8QnVqUE">
-                                                    Mission To The Moon
+                                                    Mission To The Moon(YouTube)
                                                 </a>
                                             </p>
                                         </div>

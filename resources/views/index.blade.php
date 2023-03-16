@@ -131,20 +131,8 @@
             <div class="contact_bt"><a href="{{ url('/Menu_day') }}">start <span class="contact_padding"><img src="images/contact-icon.png"></span></a></div>
           </div>
           <div class="col-sm-2">
-            <div class="play_icon"><a type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/play-icon.png"></a>
-              <div class="dropdown">
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <video width="820" height="540" controls>
-                    <source src="myVideo.mp4" type="video/mp4">
-                    <source src="myVideo.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
+            <div class="play_icon"><a href="{{ url('/Menu_day') }}" type="button" id="dropdownMenuButton" ><img src="images/play-icon.png"></a>
+              
             </div>
           </div>
           <div class="col-sm-5">

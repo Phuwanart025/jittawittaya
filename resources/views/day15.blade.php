@@ -428,7 +428,7 @@
                                                                     placeholder="คิดใหม่แล้วรู้สึกยังไง..." required></td>
                                                             <td><select name="v5_3" id="v5_3" class="form-select"
                                                                     aria-label="Default select example" required>
-                                                                    <option value="">โปรดเลือกคำตอบของคุณ</option>
+                                                                    <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
                                                                     <option value="3">3</option>
@@ -475,9 +475,9 @@
                                                     allowfullscreen></iframe>
                                             </div>
 
-                                            <p class="py-3">ขอบคุณเพลง:<a target="_blank"
+                                            <p class="py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                                     href="https://youtu.be/Lttip5f8R1Q">
-                                                    ก้อนหินก้อนนั้น - โรส ศิรินทิพย์【OFFICIAL MV
+                                                    ก้อนหินก้อนนั้น - โรส ศิรินทิพย์【OFFICIAL MV】(YouTube)
                                                 </a>
                                             </p>
 

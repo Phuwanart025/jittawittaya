@@ -18,8 +18,8 @@
                         <div class="card shadow mb-4 bg w3-theme-l3">
                             <div class="card-header py-3 bg w3-theme">
                                 <div class="w3-center">
-                                    <h6 class="m-0 font-weight-bold text-grey ">จำนวนบทความทั้งหมด : <span
-                                            class="badge bg-warning ms-2">1 </span> </h6>
+                                    <h5 class="m-0 font-weight-bold text-grey "><span
+                                            class="badge bg-warning ms-2">ประวัติการทำแบบบันทึกอารมณ์</span> </h5>
                                 </div>
                             </div>
                             <script>let data = [1,2,3,4,5];

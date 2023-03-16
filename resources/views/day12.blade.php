@@ -306,6 +306,9 @@
                                         <h2 class="text-center mt-5 mb-3">ตรวจสอบความคิด</h2>
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <img class="mySlides1" src="images/day12/ความรู้/วันที่12/1.png" style="width:100%">
+                                            <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
+                                                <source src="images/day12/ความรู้/วันที่12/1-1.mp4" type="video/mp4">
+                                            </video>
                                             <img class="mySlides1" src="images/day12/ความรู้/วันที่12/2.png" style="width:100%">
                                             <img class="mySlides1" src="images/day12/ความรู้/วันที่12/3.png" style="width:100%">
                                         </div>

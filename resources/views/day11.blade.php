@@ -314,9 +314,9 @@
                                                 style="width:100%">
                                         </div>
 
-                                        <p class="py-3">ขอบคุณนิทานจาก:<a target="_blank"
+                                        <p class="text-center py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                                 href="https://www.bloggang.com/m/viewdiary.php?id=hrman&month=05-2015&date=14&group=3&gblog=208&fbclid=IwAR17eXg4p5ilvwCTyoyMxVex-sn7Oc99pH5fQ8v6cdoX-dk6rbF7ZASsPwY">
-                                                BLOGGANG</a></p>
+                                                เว็บไซต์ BLOGGANG</a></p>
                                         <hr>
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>

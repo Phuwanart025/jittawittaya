@@ -268,10 +268,9 @@
                                         </div>
 
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto mt-5 mb-3">
-                                            <h1 class="text-red">รอรูปจากมิน</h1>
-                                            {{-- <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
-                                                <source src="images/day18/คำดีๆ/1.mp4" type="video/mp4">
-                                            </video> --}}
+                                            <video class="mySlides1 mt-2 mb-3" autoplay muted loop="true">
+                                                <source src="images/day18/1.mp4" type="video/mp4">
+                                            </video>
                                         </div>
                                     </div>
 
@@ -297,7 +296,7 @@
                                         </div>
 
                                         <div class="row text-center">
-                                            <h2 class="mt-5 mb-3">มาปรับความคิดกันเถอะ</h2>
+                                            <h2 class="mt-5 mb-3">มาปรับความคิดกันเถอะ...</h2>
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">
                                                     <thead class="thead-info">
@@ -443,9 +442,9 @@
                                                     allowfullscreen></iframe>
                                             </div>
 
-                                            <p class="py-3">ขอบคุณเพลง:<a target="_blank"
+                                            <p class="py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                                     href="https://youtu.be/zwUmBsBy-vg">
-                                                    BOYd - ฤดูที่แตกต่าง feat. Nop [Official MV]
+                                                    BOYd - ฤดูที่แตกต่าง feat. Nop [Official MV](YouTube)
                                                 </a>
                                             </p>
 

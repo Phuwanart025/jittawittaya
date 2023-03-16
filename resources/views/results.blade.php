@@ -12,25 +12,21 @@
                         <div class="card-body">
                             <div class="text-center">
                                 @foreach ($rounds_story as $item)
-                                <h3>ผลคะแนนรวม: <span class="badge rounded-pill bg-primary"> {{ $item->total_score }} </span>
-                                    คะแนน</h3>
-                                    @endforeach
+                                    <h3>ผลคะแนนรวม: <span class="badge rounded-pill bg-primary"> {{ $item->total_score }}
+                                        </span>
+                                        คะแนน</h3>
+                                @endforeach
                                 <img src="images/101.gif" width="250" height="250">
                                 <br>
-                                <a class="btn btn-primary" href="/Menu_day">กลับไปหน้าแรก</a>
+                                <a class="btn btn-primary" href="/Menu_day">กลับไปหน้าเมนู</a>
                             </div>
-
-
-
-
-
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 
     </body>
 

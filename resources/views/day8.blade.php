@@ -430,9 +430,9 @@
                                                 </iframe>
                                             </div>
 
-                                            <p class="py-3">ขอบคุณเพลง:<a target="_blank"
+                                            <p class="py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                                     href="https://www.youtube.com/watch?v=gqeA_B7pK9s">
-                                                    ด้านที่ดีกว่าของชีวิต - BOYd KOSIYABONG
+                                                    ด้านที่ดีกว่าของชีวิต - BOYd KOSIYABONG(YouTube)
                                                 </a>
                                             </p>
 

@@ -173,7 +173,7 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                                <form method="post"  action="{{ url('store3') }}" enctype="multipart/form-data">
+                                <form method="post" action="{{ url('store3') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -302,10 +302,10 @@
                                             <img class="mySlides1" src="images/day3/อิฐขี้กลัว/3.png" style="width:100%">
                                             <img class="mySlides1" src="images/day3/อิฐขี้กลัว/4.png" style="width:100%">
                                         </div>
-                                        <p class="py-3">ขอบคุณนิทานจาก:
+                                        <p class="text-center py-3">ขอบคุณแหล่งที่มา:
                                             <a target="_blank"
                                                 href="https://kalyanamitra.org/th/article_detail.php?i=11083">
-                                                kalyanamitra.org</a>
+                                                เว็บไซต์ kalyanamitra.org</a>
                                         </p>
                                         <hr>
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
@@ -336,11 +336,11 @@
                                         </div>
 
                                         <div class="row text-center">
-                                            <h2 class="mt-5 mb-3">สัมผัสความ "<span style="font-weight:bold;color:#0081C9">กลัว</span>"
+                                            <h2 class="mt-5 mb-3">สัมผัสความ "<span
+                                                    style="font-weight:bold;color:#0081C9">กลัว</span>"
                                                 ในร่างกายเรา</h2>
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <img class="mySlides1" src="images/day3/2.png"
-                                                    style="width:100%">
+                                                <img class="mySlides1" src="images/day3/2.png" style="width:100%">
                                                 <video autoplay muted loop="true">
                                                     <source src="images/day3/3.mp4" type="video/mp4">
                                                 </video>
@@ -584,9 +584,9 @@
                                                     allowfullscreenn></iframe>
                                             </div>
 
-                                            <p class="py-3">ขอบคุณคลิปจาก:<a target="_blank"
+                                            <p class="py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                                     href="https://www.youtube.com/watch?v=YaJlJ6MroNE">
-                                                    กรมสุขภาพจิต</a></p>
+                                                    กรมสุขภาพจิต(YouTube)</a></p>
                                             {{-- <a class="btn btn-success " href="https://www.youtube.com/watch?v=YaJlJ6MroNE"
                                                 target="_blank">คลิก</a> --}}
                                         </div>

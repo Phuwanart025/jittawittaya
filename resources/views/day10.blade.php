@@ -181,8 +181,8 @@
                         <div class="card-body p-0">
                             <div class="p-5">
 
-                               
-                                <form method="post"  action="{{ url('store10') }}" enctype="multipart/form-data">
+
+                                <form method="post" action="{{ url('store10') }}" enctype="multipart/form-data">
                                     @csrf
 
                                     {{-- Content1 --}}
@@ -307,8 +307,48 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row text-center">
+                                        <div class="row text-center mb-3">
+                                            <h1 class="mt-5 mb-3"><span
+                                                    class="badge rounded-pill bg-primary">Interactional model</span></h1>
+                                            <h2><span class="badge rounded-pill bg-primary">เหตุการณ์
+                                                    <i class="fas fa-arrow-circle-right"></i> ความคิด
+                                                    <i class="fas fa-arrow-circle-right"></i> อารมณ์/พฤติกรรม
+                                                </span></h2>
 
+                                            <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day10/Interactional model/1.mp4" type="video/mp4">
+                                                </video>
+                                                <video class="mySlides1" autoplay muted loop="true">
+                                                    <source src="images/day10/Interactional model/2.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    {{-- Content3 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY10</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row text-center">
                                             <video class="mySlides1" autoplay muted loop="true">
                                                 <source src="images/day10/เกม/1.mp4" type="video/mp4">
                                             </video>
@@ -349,7 +389,7 @@
 
                                     </div>
 
-                                    {{-- Content3 --}}
+                                    {{-- Content4 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -386,7 +426,8 @@
                                                                 id="option30" style="background-color: #A084DC"
                                                                 onclick="disableCheckbox2(this.value);highlightAnswer2('option30');"
                                                                 value=" ฉีดยาฆ่าแมลงแล้ว
-                                                                มาได้ไงนะ  = ผิด" required>
+                                                                มาได้ไงนะ  = ผิด"
+                                                                required>
                                                             <label class="form-check-label" for="defaultCheck1">
                                                                 ฉีดยาฆ่าแมลงแล้ว
                                                                 มาได้ไงนะ
@@ -415,7 +456,7 @@
 
                                     </div>
 
-                                    {{-- Content4 --}}
+                                    {{-- Content5 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -469,7 +510,7 @@
                                                         </div>
                                                     </div>
 
-                                                    
+
                                                 </div>
 
                                                 <p class="py-3 result-text" id="result3" name="result3"
@@ -479,51 +520,11 @@
 
                                         </div>
 
-                                    </div>
-
-                                    {{-- Content5 --}}
-                                    <div class="mySlides">
-                                        <!-- Nested Row within Card Body -->
-                                        <div class="text-center">
-                                            <label class="choose_taital">
-                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY10</span>
-                                            </label>
-                                            <h1><span>วันที่ปัจจุบัน : </span>
-                                                <span class="badge rounded-pill bg-info">
-                                                    <script>
-                                                        var date = new Date();
-                                                        document.write(
-                                                            date.getDate() + "-" +
-                                                            (parseInt(date.getMonth()) + 1) + "-" +
-                                                            date.getFullYear()
-                                                        );
-                                                    </script>
-                                                </span>
-                                            </h1>
-                                        </div>
-
-                                        <div class="row text-center">
-
-                                            <h1 class="mt-5 mb-3"><span class="badge rounded-pill bg-primary">Interactional model</span></h1>
-                                            <h2><span class="badge rounded-pill bg-primary">เหตุการณ์
-                                                    <i class="fas fa-arrow-circle-right"></i> ความคิด
-                                                    <i class="fas fa-arrow-circle-right"></i> อารมณ์/พฤติกรรม
-                                                </span></h2>
-
-                                            <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
-                                                <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day10/Interactional model/1.mp4" type="video/mp4">
-                                                </video>
-                                                <video class="mySlides1" autoplay muted loop="true">
-                                                    <source src="images/day10/Interactional model/2.mp4" type="video/mp4">
-                                                </video>
-                                            </div>
-                                        </div>
-
                                         <div class="d-grid gap-2 col-3 py-3 mx-auto">
                                             <button class="btn btn-primary w-100" type="submit"
                                                 onclick="return confirm('กรุณายืนยันการบันทึกข้อมูล??')">บันทึก</button>
                                         </div>
+
                                     </div>
 
                                 </form>
@@ -543,7 +544,6 @@
                             <span class="dot" onclick="currentSlide(3)"></span>
                             <span class="dot" onclick="currentSlide(4)"></span>
                             <span class="dot" onclick="currentSlide(5)"></span>
-
                         </div>
                     </div>
                 </div>

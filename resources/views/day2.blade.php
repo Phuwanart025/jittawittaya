@@ -293,9 +293,9 @@
                                             <img class="mySlides1" src="images/day2/เพื่อน/4.png" style="width:100%">
                                             <img class="mySlides1" src="images/day2/เพื่อน/5.png" style="width:100%">
                                         </div>
-                                        <p class="py-3">ขอบคุณนิทานจาก:<a target="_blank"
+                                        <p class="text-center py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                                 href="http://www.pakornblog.com/story.php?act=detail&storyid=47&fbclid=IwAR1q_aaH7ChQp2DEDlosUceN2DCUfLBupQ2ZxBVDHh4BuMq3fXDFQe4ZKGE">
-                                                PakornBlok</a></p>
+                                               เว็บไซต์ PakornBlok</a></p>
                                         <hr>
                                         <h3 class="py-3" for="customRange2"><i class="fas fa-edit"></i>
                                             คุณได้อะไรจากนิทานเรื่องนี้ :</h3>
@@ -607,9 +607,9 @@
                                             <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                                 <img class="mySlides1" src="images/day2/4.jpg"
                                                     style="width:100%">
-                                                {{-- <img class="mySlides1" src="images/day2/02(4).png" style="width:100%">
-                                                <img class="mySlides1" src="images/day2/02(5).png" style="width:100%"> --}}
                                             </div>
+
+                                            <p class="text-center py-3">ขอบคุณแหล่งที่มา: กรมสุขภาพจิต</p>
                                         </div>
 
                                         <div class="d-grid gap-2 col-3 mx-auto py-3">

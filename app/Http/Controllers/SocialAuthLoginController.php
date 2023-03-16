@@ -19,80 +19,43 @@ class SocialAuthLoginController extends Controller
         try {
            
             $userData = ($request->all());
-            // error_log("name--------->".($userData["name"])); 
-            $useDratadb = User::where('google_id',$userData["sub"])->first();
-            // $finduser = User::where('google_id')->first();
-          
-            if (User::where('google_id',$userData["sub"])->count()>0) {
+            
+            // Check if user already exists with the given Google ID or email
+            $user = User::where('google_id', $userData["sub"])
+                        ->orWhere('email', $userData["email"])
+                        ->first();
+            
+            if ($user) {
                
-                $email = $userData['email'];
-                $password = ('password');
-
-                $login_type = filter_var($email, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
-                Auth::loginUsingId($useDratadb->id, TRUE);
+                // User with the given Google ID or email exists
+                if (!$user->google_id) {
+                    // Update the user record with Google ID if it is not available
+                    $user->update([
+                        'google_id' => $userData["sub"],
+                    ]);
+                }
+                
+                // Log in the user
+                Auth::loginUsingId($user->id, TRUE);
                 return redirect()->intended($this->redirectPath());
-                // if (Auth::attempt([$login_type => $email, 'password' => $password])) {
-                //Auth successful here
-
-                //      }
-
+    
             } else {
+                
+                // User with the given Google ID or email does not exist, create a new user
                 $newUser = User::create([
-                    
                     'name' => $userData["name"],
                     'username' => $userData["email"],
                     'email' => $userData["email"],
-                    'email_verified_at' => 'current_timestamp()',
+                    'email_verified_at' => now(),
                     'google_id' => $userData["sub"],
                     'password' => encrypt('123456789')
                 ]);
-
+    
+                // Log in the new user
                 Auth::loginUsingId($newUser->id, TRUE);
                 return redirect()->intended($this->redirectPath());
             }
-
-            return "555";
-        } catch (Exception $e) {
-            error_log($e->getMessage());
-        }
-    }
-
-    public function ajaxRequestPost2(Request $request)
-    {
-        try {
-           
-            $userData = ($request->all());
-          
-            $useDratadb = User::where('facebook_id',$userData["id"])->first();
-            // $finduser = User::where('google_id')->first();
-             error_log("name--------->".json_encode($userData)); 
-
-            if (User::where('facebook_id',$userData["id"])->count()>0) {
-               
-                $email = $userData['email'];
-                $password = ('password');
-
-                $login_type = filter_var($email, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
-                Auth::loginUsingId($useDratadb->id, TRUE);
-                return redirect()->intended($this->redirectPath());
-                // if (Auth::attempt([$login_type => $email, 'password' => $password])) {
-                //Auth successful here
-                //      }
-            } else {
-                $newUser = User::create([
-                  
-                    'name' => $userData["name"],
-                    'username' => $userData["name"],
-                    'email' => $userData["email"],
-                    'email_verified_at' => 'current_timestamp()',
-                    'facebook_id' => $userData["id"],
-                    'password' => encrypt('123456789')
-                ]);
-
-                Auth::loginUsingId($newUser->id, TRUE);
-                return redirect()->intended($this->redirectPath());
-            }
-
+    
             return redirect()->back()
             ->withInput()
             ->with([
@@ -102,4 +65,42 @@ class SocialAuthLoginController extends Controller
             error_log($e->getMessage());
         }
     }
+    public function ajaxRequestPost2(Request $request)
+{
+    try {
+        $userData = ($request->all());
+          
+        $user = User::where('facebook_id', $userData["id"])
+        ->orWhere('email', $userData["email"])
+        ->first();
+        
+        if ($user) {
+            // User with the given Facebook ID exists, log in the user
+            Auth::loginUsingId($user->id, TRUE);
+            return redirect()->intended($this->redirectPath());
+        } else {
+            // User with the given Facebook ID does not exist, create a new user
+            $newUser = User::create([
+                'name' => $userData["name"],
+                'username' => $userData["name"],
+                'email' => $userData["email"],
+                'email_verified_at' => now(),
+                'facebook_id' => $userData["id"],
+                'password' => encrypt('123456789')
+            ]);
+
+            // Log in the new user
+            Auth::loginUsingId($newUser->id, TRUE);
+            return redirect()->intended($this->redirectPath());
+        }
+
+        return redirect()->back()
+            ->withInput()
+            ->with([
+                'error' => 'ไม่สามารถเข้าระบบได้ ข้อมูลไม่ถูกต้อง.',
+            ]);
+    } catch (Exception $e) {
+        error_log($e->getMessage());
+    }
+}
 }

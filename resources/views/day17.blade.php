@@ -485,9 +485,9 @@
                                                     allowfullscreen></iframe>
                                             </div>
 
-                                            <p class="py-3">ขอบคุณเพลง:<a target="_blank"
+                                            <p class="py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
                                                     href="https://youtu.be/5pzhAG4wmT0">
-                                                    ก่อนมะลิบาน - TIME【OFFICIAL MV
+                                                    ก่อนมะลิบาน - TIME【OFFICIAL MV】 (YouTube)
                                                 </a>
                                             </p>
                                         </div>
