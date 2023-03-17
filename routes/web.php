@@ -138,10 +138,10 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 });
 
 
-Route::middleware(['auth:sanctum', 'Is_day'])->group(function () {
-    for ($i = 1; $i <= 21; $i++) {
-        Route::get('/day'.$i, function () use ($i) {
-            return view('day'.$i);
-        })->name('day'.$i);
-    }
-});
+// Route::middleware(['auth:sanctum', 'Is_day'])->group(function () {
+//     for ($i = 1; $i <= 21; $i++) {
+//         Route::get('/day'.$i, function () use ($i) {
+//             return view('day'.$i);
+//         })->name('day'.$i);
+//     }
+// });

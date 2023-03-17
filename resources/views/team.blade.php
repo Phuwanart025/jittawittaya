@@ -104,73 +104,53 @@
                 <h2 class="text-center">คลินิกสุขภาพจิต โรงพยาบาลสุทธาเวช</h2>
                 <h2 class="text-center">คณะแพทยศาสตร์ มหาวิทยาลัยมหาสารคาม</h2>
 
-                <div class="row row-cols-1 row-cols-md-2 g-4 mt-5 mb-5">
-                    <div class="col">
-                        <div class="card h-100 mx-auto">
-                            <div class="mt-5 mb-3 image_4">
-                            </div>
-                            <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
-
+                <div class="row row-cols-1 row-cols-md-1 g-4 mt-5 mb-5">
+                    <div class="card h-100 mx-auto mt-5 mb-5">
+                        <div class="col-md-6 mt-5 mb-5 mx-auto">
                             <h3 class="mt-5 mb-2 text-center">อ.พญ.กองกาญจน์ จันทน์จารุสิริ</h3>
                             <p class="mt-3 mb-2 text-center">อาจารย์สาขาจิตเวชศาสตร์เด็กและวัยรุ่น</p>
                         </div>
-                    </div>
 
-                    <div class="col">
-                        <div class="card h-100 mx-auto">
-                            <div class="mt-5 mb-3 image_4">
-                            </div>
-                            <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
-
+                        <div class="col-md-6 mt-5 mb-5 mx-auto">
                             <h3 class="mt-5 mb-2 text-center">ผศ.พญ.จริยา จิรานุกูล</h3>
                             <p class="mt-3 mb-2 text-center">อาจารย์สาขาจิตเวชศาสตร์</p>
+
                         </div>
-                    </div>
 
-                    <div class="col">
-                        <div class="card h-100 mx-auto">
-                            <div class="mt-5 mb-3 image_4">
-                            </div>
-                            <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
-
+                        <div class="col-md-6 mt-5 mb-5 mx-auto">
                             <h3 class="mt-5 mb-2 text-center">น.ส.ธาณัฐดา สิริโสนแก้ว</h3>
                             <p class="mt-3 mb-2 text-center">นักจิตวิทยา</p>
+
                         </div>
-                    </div>
 
-
-                    <div class="col">
-                        <div class="card h-100 mx-auto">
-                            <div class="mt-5 mb-3 image_4">
-                            </div>
-                            <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
-
+                        <div class="col-md-6 mt-5 mb-5 mx-auto">
                             <h3 class="mt-5 mb-2 text-center">นายพีระยุทธ ไชยคุณ</h3>
                             <p class="mt-3 mb-2 text-center">นักจิตวิทยาคลินิก</p>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
 
-                <h1 class="choose_taital mt-5 mb-3"><span>ขอ </span><img src="images/hands.png" width="45"
-                        height="45"><span style="color: #1f1f1f"> ขอบคุณ</span></h1>
+
+                <h1 class="choose_taital mt-5 mb-3"><span>ขอ</span><img src="images/hands.png" width="45"
+                        height="45"><span style="color: #1f1f1f">ขอบคุณ</span></h1>
 
                 <div class="row row-cols-1 row-cols-md-1 g-4 mt-5 mb-5">
-                    <div class="col">
-                        <div class="card h-100 mx-auto">
-                            <div class="mt-5 mb-3 image_4"><img src="images/it.jpg" width="170" height="170">
-                            </div>
-                            <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
-
+                    <div class="card h-100 mx-auto mt-5 mb-5">
+                        <div class="col-md-6 mt-5 mb-5 mx-auto">
                             <h3 class="mt-5 mb-2 text-center">ผศ.ธนันชัย คำเกตุ</h3>
                             <p class="mt-3 mb-2 text-center">อาจารย์ที่ปรึกษาโปรเจ็ค</p>
                             <p class="mt-3 mb-2 text-center">สาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาการสารสนเทศ</p>
                             <p class="mt-4 mb-4 text-center">มหาวิทยาลัยมหาสารคาม</p>
                         </div>
+
                     </div>
                 </div>
 
-                {{-- <div class="team_section_2 layout_padding">
+            </div>
+        </div>
+
+        {{-- <div class="team_section_2 layout_padding">
                     <div class="container">
                         <div class="images_main_1">
                             <div class="row py-5">
@@ -247,8 +227,7 @@
                     </div>
                 </div> --}}
 
-            </div>
-        </div>
+
 
         <!-- Newsletter section end -->
 
