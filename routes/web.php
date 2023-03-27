@@ -138,10 +138,20 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 });
 
 
-// Route::middleware(['auth:sanctum', 'Is_day'])->group(function () {
-//     for ($i = 1; $i <= 21; $i++) {
-//         Route::get('/day'.$i, function () use ($i) {
-//             return view('day'.$i);
-//         })->name('day'.$i);
-//     }
-// });
+Route::middleware(['auth:sanctum', 'Is_day'])->group(function () {
+    for ($i = 1; $i <= 21; $i++) {
+        Route::get('/day'.$i, function () use ($i) {
+            return view('day'.$i);
+        })->name('day'.$i);
+    }
+});
+
+Route::get('/Menu_day', function () {
+    $last_round_completed = rounds_completed::where('user_id', Auth::user()->id)
+        ->join('jobs_21day', 'rounds_completed.jobs_id', '=', 'jobs_21day.id')
+        ->select('rounds_completed.jobs_id', DB::raw('COUNT(rounds_completed.id) as completed_rounds'), 'rounds_completed.created_at')
+        ->groupBy('rounds_completed.jobs_id', 'rounds_completed.created_at')
+        ->orderByDesc('jobs_id')
+        ->first();
+    return view('Menu_day', compact('last_round_completed'));
+})->middleware('auth');
