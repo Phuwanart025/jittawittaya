@@ -23,14 +23,15 @@ class Is_day
     public function handle(Request $request, Closure $next)
     {
         // Find the highest jobs_id of the user
-        $last_round_completed = rounds_completed::where('user_id', Auth::user()->id)
-            ->join('jobs_21day', 'rounds_completed.jobs_id', '=', 'jobs_21day.id')
-            ->select('rounds_completed.jobs_id', DB::raw('COUNT(rounds_completed.id) as completed_rounds'), 'rounds_completed.created_at')
-            ->groupBy('rounds_completed.jobs_id', 'rounds_completed.created_at', 'rounds_completed.rounds')
-            ->orderByDesc('jobs_id')
-            ->first();
-
-            if (!$last_round_completed || $last_round_completed->completed_rounds === 21) {
+        $last_round_completed =  rounds_completed::where('user_id', Auth::user()->id)
+        ->join('jobs_21day', 'rounds_completed.jobs_id', '=', 'jobs_21day.id')
+        ->select('rounds_completed.jobs_id', 'rounds_completed.rounds')
+        ->groupBy('rounds_completed.jobs_id', 'rounds_completed.rounds', 'rounds_completed.created_at')
+        ->orderByDesc('rounds_completed.rounds')
+        ->limit(1)
+        ->first();
+        
+            if (!$last_round_completed || $last_round_completed->jobs_id === 21) {
                 if ($request->route()->getName() !== 'day1') {
                     return redirect()->route('day1');
                 }
@@ -38,6 +39,7 @@ class Is_day
                 $nextRound = $last_round_completed->jobs_id + 1;
             
                 if ($nextRound === 21) {
+                    $nextRound = 1;
                     return redirect()->route('day1');
                 } elseif ($request->route()->getName() !== 'day'.$nextRound) {
                     return redirect()->route('day'.$nextRound);

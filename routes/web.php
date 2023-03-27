@@ -73,21 +73,26 @@ Route::middleware(['auth:sanctum'])->get('/record', function () {
     return view('record', compact('rounds_story'));
 })->name('/record');
 
-Route::middleware(['auth:sanctum'])->get('/results', function () {
-    $rounds = DB::table('rounds_completed')
-        ->orderBy('rounds_completed.rounds', 'desc')
-        ->limit(1)
-        ->pluck('rounds_completed.rounds');
 
-    $rounds_story = DB::table('rounds_completed')
-        ->join('users', 'rounds_completed.user_id', '=', 'users.id')
-        ->where('rounds_completed.user_id', Auth::user()->id)
-        ->whereIn('rounds_completed.rounds', $rounds)
-        ->select(DB::raw('rounds_completed.rounds, COUNT(*) as count_round, SUM(rounds_completed.score) as total_score'))
-        ->groupBy('rounds_completed.rounds')
-        ->orderBy('rounds_completed.rounds', 'asc')
-        ->limit(1)
-        ->get();
+
+
+Route::middleware(['auth:sanctum'])->get('/results', function () {
+   
+    $rounds = DB::table('rounds_completed')
+    ->orderBy('rounds_completed.rounds', 'desc')
+    ->limit(1)
+    ->pluck('rounds_completed.rounds');
+
+$rounds_story = DB::table('rounds_completed')
+    ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+    ->where('rounds_completed.user_id', Auth::user()->id)
+    ->whereIn('rounds_completed.rounds', $rounds)
+    ->select(DB::raw('rounds_completed.rounds, COUNT(*) as count_round, SUM(rounds_completed.score) as total_score'))
+    ->groupBy('rounds_completed.rounds')
+    ->orderBy('rounds_completed.rounds', 'asc')
+    ->limit(1)
+    ->get();
+    
     return view('results', compact('rounds_story'));
 })->name('/results');
 
