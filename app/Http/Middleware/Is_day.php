@@ -66,7 +66,11 @@ class Is_day
             if ($elapsedTime < 12) {
                 $endTime = $lastCompletedTime->addHours(12)->format('d-m-Y H:i:s');
                 $message = 'คุณสามารถเข้าสู่รอบถัดไปได้หลังจาก ' . $endTime;
-                $nextJob = $last_round_completed->jobs_id + 1;
+                if ($last_round_completed->jobs_id == 21) {
+                    $nextJob = 1;
+                } else {
+                    $nextJob = $last_round_completed->jobs_id + 1;
+                }
         
                 if ($nextJob) {
                     $message .= ' วันถัดไป: วันที่ ' . $nextJob;
