@@ -47,7 +47,7 @@ class Is_day
             $next_job = $last_round_completed->jobs_id + 1;
 
             if ($next_job) {
-                $message .= ' วันถัดไป: วันที่ ' . $next_job;
+                $message .= ' วันถัดไป : วันที่ ' . $next_job;
             }
 
             Alert::error($message, 'error')->timerProgressBar()->persistent(true)->autoClose(false);

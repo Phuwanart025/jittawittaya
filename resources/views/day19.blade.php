@@ -221,6 +221,7 @@
     ul.ks-cboxtags li input[type="checkbox"]:focus+label {
         border: 2px solid #e9a1ff;
     }
+
     video {
         /* override other styles to make responsive */
         width: 100% !important;
@@ -268,6 +269,7 @@
 
                                         <div class="row text-center">
                                             <h2 class="mt-5 mb-3">มาปรับความคิดกันเถอะ...</h2>
+                                            <h2 class="mb-3">วันนี้มีเหตุการณ์ไม่สบายใจอะไรเกิดขึ้นบ้างไหม</h2>
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">
                                                     <thead class="thead-info">
@@ -281,13 +283,15 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><input name="v1" id="v1" type="text" class="form-control" placeholder="..."
-                                                                    required></td>
-                                                            <td><input  name="v2" id="v2" type="text" class="form-control" placeholder="..."
-                                                                    required></td>
-                                                            <td><input  name="v3" id="v3" type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><select  name="v4" id="v4" class="form-select"
+                                                            <td><input name="v1" id="v1" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้" required>
+                                                            </td>
+                                                            <td><input name="v2" id="v2" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้" required>
+                                                            </td>
+                                                            <td><input name="v3" id="v3" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
+                                                            <td><select name="v4" id="v4" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
@@ -297,11 +301,13 @@
                                                                     <option value="5">5</option>
                                                                 </select>
                                                             </td>
-                                                            <td><input name="v5" id="v5" type="text" class="form-control" placeholder="..."
-                                                                    required></td>
-                                                            <td><input name="v6" id="v6" type="text" class="form-control" placeholder="..."
-                                                                    required></td>
-                                                            <td><select  name="v7" id="v7" class="form-select"
+                                                            <td><input name="v5" id="v5" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้" required>
+                                                            </td>
+                                                            <td><input name="v6" id="v6" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้" required>
+                                                            </td>
+                                                            <td><select name="v7" id="v7" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
@@ -313,12 +319,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input name="v8" id="v8" type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input name="v9" id="v9" type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input name="v10" id="v10" type="text" class="form-control"
-                                                                    placeholder="..."></td>
+                                                            <td><input name="v8" id="v8" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
+                                                            <td><input name="v9" id="v9" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
+                                                            <td><input name="v10" id="v10" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
                                                             <td><select name="v11" id="v11" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
@@ -329,11 +335,11 @@
                                                                     <option value="5">5</option>
                                                                 </select>
                                                             </td>
-                                                            <td><input name="v12" id="v12" type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input name="v13" id="v13" type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><select name="v14" id="v14"  class="form-select"
+                                                            <td><input name="v12" id="v12" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
+                                                            <td><input name="v13" id="v13" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
+                                                            <td><select name="v14" id="v14" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
@@ -351,6 +357,38 @@
                                     </div>
 
                                     {{-- Content2 --}}
+                                    <div class="mySlides">
+                                        <!-- Nested Row within Card Body -->
+                                        <div class="text-center">
+                                            <label class="choose_taital">
+                                                <span class="badge rounded-pill bg-info">บันทึกความรู้สึก DAY19</span>
+                                            </label>
+                                            <h1><span>วันที่ปัจจุบัน : </span>
+                                                <span class="badge rounded-pill bg-info">
+                                                    <script>
+                                                        var date = new Date();
+                                                        document.write(
+                                                            date.getDate() + "-" +
+                                                            (parseInt(date.getMonth()) + 1) + "-" +
+                                                            date.getFullYear()
+                                                        );
+                                                    </script>
+                                                </span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="row text-center">
+                                            <h2 class="mt-5 mb-3">บทความชวนคิด ให้ใจได้เปลี่ยน</h2>
+                                            <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto mt-5 mb-3">
+                                                <img class="mySlides1" src="images/day19/นิทาน/1.png" style="width:100%">
+                                                <img class="mySlides1" src="images/day19/นิทาน/2.png" style="width:100%">
+                                                <img class="mySlides1" src="images/day19/นิทาน/3.png" style="width:100%">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    {{-- Content3 --}}
                                     <div class="mySlides">
                                         <!-- Nested Row within Card Body -->
                                         <div class="text-center">
@@ -398,6 +436,7 @@
                                 &#10095;</div>
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
                     </div>
                 </div>

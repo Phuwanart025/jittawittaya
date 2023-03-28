@@ -42,13 +42,175 @@
         <!-- choose section start -->
         <div class="team_section layout_padding">
             <div class="container">
-                <br><br><br><br><br><br><br><br><br><br>
+                <br><br>
 
-                <h1 class="choose_taital py-5"><span>คู่มือ</span>
-                    {{-- <img src="images/development.png" width="50" height="50">  --}}
-                    <span style="color: #1f1f1f">การใช้งานระบบ</span>
+
+                <center><img class="mt-5" src="images/logo1.1.png" width="160" height="160"></center>
+
+                <h3 class="choose_taital mt-2 mb-5"><strong><span
+                            style="color: #fff359">Re</span><span>Think</span></strong>
+                </h3>
+                <br><br><br><br>
+                <h1 class="choose_taital py-5"><strong><span>คู่มือ</span>
+                        <img src="images/book.png" width="40" height="40">
+                        <span style="color: #1f1f1f">การใช้งานระบบ</span></strong>
                 </h1>
 
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h2 class="mt-5"><strong>ขั้นตอนการใช้งานระบบ</strong></h2>
+
+                {{-- 1. --}}
+                <div class="mb-5">
+                    <p class=" mt-3 mb-3" style="color: #000000; font-size: 18px;">1. เริ่มต้นด้วยการสมัครสมาชิกโดยใช้
+                        E-mail,
+                        Facebook หรือ Google Account ตั้งค่าบัญชีผู้ใช้งานและรหัสผ่าน เพื่อเข้าใช้งานระบบ ดังภาพประกอบ</p>
+
+                    {{-- 1.1 --}}
+                    <p class="mt-2" style="color: #000000; font-size: 18px;">1.1. กรณีสมัครสมาชิกโดยใช้ E-mail
+                        มีขั้นตอนดังนี้
+                    </p>
+                    <p>&emsp;&emsp;คลิกที่ปุ่มลงทะเบียน
+                        <i class="fas fa-arrow-circle-right"></i> กรอกข้อมูลให้ครบ แล้วกดปุ่ม "สร้าง Account"
+                    </p>
+                    <div class="container">
+                        <div class="row mx-auto">
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/1.png">
+                                    <p class="mt-2">คลิกที่ปุ่มลงทะเบียน</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/2.png">
+                                    <p class="mt-2">กรอกข้อมูลให้ครบ แล้วกดปุ่ม "สร้าง Account"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- 1.2 --}}
+                    <p class="mt-3 mb-2" style="color: #000000; font-size: 18px;">1.2. กรณีสมัครสมาชิกโดยใช้ Facebook หรือ
+                        Google Account มีขั้นตอนดังนี้
+                    </p>
+                    <p>&emsp;&emsp;คลิกที่ปุ่มเข้าสู่ระบบ
+                        <i class="fas fa-arrow-circle-right"></i> เลือกสมัครสมาชิกโดยใช้ Facebook หรือ Google Account
+                    </p>
+                    <div class="container">
+                        <div class="row mb-5 mx-auto">
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/3.png">
+                                    <p class="mt-2">คลิกที่ปุ่มเข้าสู่ระบบ</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/4.png">
+                                    <p class="mt-2">เลือกสมัครสมาชิกโดยใช้ Facebook หรือ Google Account</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- 2. --}}
+                <div class="mb-5">
+                    <p class=" mt-5 mb-2" style="color: #000000; font-size: 18px;">2. ใช้งานระบบโดยการเขียนบันทึกประจำวันได้
+                        1
+                        ครั้งต่อวัน และสามารถเขียนบันทึกวันถัดไปได้อีกครั้งใน 12 ชั่วโมงข้างหน้า จนครบทั้ง 21 วัน
+                        ดังภาพประกอบ</p>
+                    <p>&emsp;&emsp;คลิกที่ปุ่มเมนู <span class="badge bg-info"><img src="images/toggle-icon.png"
+                                width="20" height="20"></span>
+                        <i class="fas fa-arrow-circle-right"></i> บันทึกของฉัน
+                        <i class="fas fa-arrow-circle-right"></i> เริ่มเลย
+                    </p>
+
+                    <div class="container">
+                        <div class="row mx-auto">
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/5.png">
+                                    <p class="mt-2">คลิกที่ปุ่มเมนู <span class="badge bg-info"><img
+                                                src="images/toggle-icon.png" width="20" height="20"></span></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/6.png">
+                                    <p class="mt-2">แล้วเลือกคลิก "บันทึกของฉัน"</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/7.png">
+                                    <p class="mt-2">คลิกที่ปุ่ม "เริ่มเลย" เพื่อเริ่มบันทึก</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/8.png">
+                                    <p class="mt-2">ตัวอย่างหน้าบันทึกของฉัน</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- 3. --}}
+                <div class="mb-5">
+                    <p class=" mt-5 mb-2" style="color: #000000; font-size: 18px;">3. คุณสามารถตรวจสอบ
+                        ประวัติการเขียนบันทึกของคุณย้อนหลังได้ทุกวันในรูปแบบของไฟล์เอกสาร(PDF)</p>
+
+                    <p>&emsp;&emsp;คลิกที่ปุ่มเมนู <span class="badge bg-info"><img src="images/toggle-icon.png"
+                                width="20" height="20"></span>
+                        <i class="fas fa-arrow-circle-right"></i> ประวัติบันทึกของฉัน
+                        <i class="fas fa-arrow-circle-right"></i> ดาวน์โหลด
+                    </p>
+
+                    <div class="container">
+                        <div class="row mx-auto">
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/5.png">
+                                    <p class="mt-2">คลิกที่ปุ่มเมนู <span class="badge bg-info"><img
+                                                src="images/toggle-icon.png" width="20" height="20"></span></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/9.png">
+                                    <p class="mt-2">แล้วเลือกคลิก "ประวัติบันทึกของฉัน"</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/10.png">
+                                    <p class="mt-2">คลิกที่ปุ่ม "ดาวน์โหลด" เพื่อดูประวัติการบันทึกของฉัน</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-2 mb-5 image_4">
+                                    <img src="images/คู่มือ/11.png">
+                                    <p class="mt-2">ตัวอย่างหน้าประวัติการบันทึกของฉัน</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- 4. --}}
+                <div class="mb-5">
+                    <h3 class="mb-2"><strong>เพิ่มเติม</strong></h3>
+                    <p class=" mt-3 mb-3" style="color: #000000; font-size: 18px;">
+                        - กรณีที่สมัครสมาชิกผ่านช่องทางใดช่องทางหนึ่งแล้ว หากสมัครเพิ่มจะใช้ E-mail เดิมซ้ำไม่ได้ </p>
+                    <p class=" mt-3" style="color: #000000; font-size: 18px;">- กรณีลืมรหัสผ่าน คุณสามารถกด
+                        <a href="{{ route('password.request') }}">"ลืมรหัสผ่าน"</a> เพื่อกรอก
+                        E-mail
+                        และรอรับ link เพื่อเปลี่ยนรหัสผ่านใหม่
+                    </p>
+                    <p class="mb-3" style="color: red; font-size: 18px;">*กรุณาตรวจสอบ E-mail ให้ถูกต้องก่อนยืนยัน</p>
+                </div>
 
             </div>
         </div>

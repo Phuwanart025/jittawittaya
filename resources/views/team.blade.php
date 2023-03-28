@@ -36,24 +36,36 @@
 @section('content')
 
     <body>
-
         @extends('layouts.app')
 
         <!-- team section start -->
         <div class="team_section layout_padding">
             <div class="container">
-                <br><br><br><br><br><br>
+                <br><br><br><br><br>
 
-                <center><img src="images/logo1.1.png" width="160" height="160"></center>
+                <center><img class="mt-5" src="images/logo1.1.png" width="160" height="160"></center>
 
-                <h1 class="choose_taital mt-2 mb-2"><span style="color: #fff359">Re</span><span>Think</span>
+                <h1 class="font-weight-bold choose_taital mt-2 mb-2"><span
+                            style="color: #fff359">Re</span><span>Think</span>
                 </h1>
-                <h1 class="choose_taital"><span style="color: #1f1f1f">คิดใหม่ ให้ใจได้เปลี่ยน</span>
-                </h1>
-                <p class="choose_text"></p>
+                <h6 class="font-weight-bold choose_taital mb-5"><strong><span style="color: #1f1f1f;">คิดใหม่ ให้ใจได้เปลี่ยน</span>
+                </h6>
 
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <h1 class="choose_taital py-5"><span>ทีม</span> <img src="images/development.png" width="50"
+                <p class=" mt-5" style="color: #000000; font-size: 18px;">&emsp;&emsp;&emsp;Rethink
+                    เป็นเว็บไชต์ที่ถูกพัฒนาออกมาในรูปแบบของการเขียนบันทึกประจำวัน ที่จะช่วยให้คุณเข้าใจตนเองมากขึ้น
+                    การบันทึกอย่างต่อเนื่องทั้ง 21 วัน จะพาคุณไปเรียนรู้การปรับเปลี่ยนรูปแบบความคิด เพื่อจัดการกับอารมณ์
+                    อาการทางร่างกาย และพฤติกรรมที่ไม่พึงประสงค์ โดยเว็บไซต์ถูกพัฒนามาให้สามารถใช้งานและเข้าถึงได้ง่าย</p>
+                <p class="" style="color: #000000; font-size: 18px;">
+                    &emsp;&emsp;&emsp;เว็บไซต์ของเราพัฒนาขึ้นโดยมีแนวคิดพื้นฐานจากทฤษฏีการบำบัดทางจิตวิทยาที่มีชื่อว่า
+                    Cognitive Behavioral Therapy ซึ่งมีแนวคิดว่า ความคิดอัตโนมัติที่บุคคลมีต่อเหตุการณ์หนึ่ง
+                    ส่งผลต่อทั้งอารมณ์ อาการทางร่างกาย และพฤติกรรม ผู้พัฒนาเล็งเห็นความสำคัญของแนวคิดนี้
+                    ว่าจะเป็นประโยชน์ต่อผู้ใช้งานในการปรับเปลี่ยนความคิด</p>
+                <p class=" mb-5" style="color: #000000; font-size: 18px;">&emsp;&emsp;&emsp;ทีมผู้พัฒนาอยากให้ Rethink
+                    เป็นอีกหนึ่งเครื่องมือที่ช่วยให้ผู้ใช้งานได้ฝึกทำความเข้าใจตนเอง พัฒนาตนเอง มีความสุขในการใช้ชีวิต
+                    และมีสุขภาพจิตที่ดียิ่งขึ้น</p>
+
+                <br><br><br><br><br>
+                <h1 class="font-weight-bold choose_taital py-5"><span>ทีม</span> <img src="images/development.png" width="50"
                         height="50"> <span style="color: #1f1f1f">ผู้พัฒนา</span></h1>
                 <p class="choose_text"></p>
 
@@ -61,10 +73,11 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="mt-5 mb-3 image_4"><img src="images/dev1.png" width="160" height="160"></div>
-                            <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
+                            {{-- <h6 class="follow_text">ข้อมูลส่วนตัว</h6> --}}
 
-                            <h3 class="mt-4 mb-2 text-center">นายภควัต นาเจิมพลอย</h3>
+                            <h4 class="mt-4 mb-2 text-center">นายภควัต นาเจิมพลอย</h4>
                             <h4 class="mb-2 text-center">MR.PAKAWAT NAJERMPLOY</h4>
+                            <h4 class="mb-2 text-center">รหัสนิสิต 62011211064</h4>
                             <p class="mt-3 mb-2 text-center">สาขาวิชาเทคโนโลยีสารสนเทศ</p>
                             <p class="mb-2 text-center">คณะวิทยาการสารสนเทศ</p>
                             <p class="mt-4 mb-4 text-center">มหาวิทยาลัยมหาสารคาม</p>
@@ -74,10 +87,11 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="mt-5 mb-3 image_4"><img src="images/dev2.png" width="160" height="160"></div>
-                            <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
+                            {{-- <h6 class="follow_text">ข้อมูลส่วนตัว</h6> --}}
 
-                            <h3 class="mt-4 mb-2 text-center">นายภูวนาท ประทุมวัน</h3>
+                            <h4 class="mt-4 mb-2 text-center">นายภูวนาท ประทุมวัน</h4>
                             <h4 class="mb-2 text-center">MR.PHUWANART PRATUMWAN</h4>
+                            <h4 class="mb-2 text-center">รหัสนิสิต 62011211025</h4>
                             <p class="mt-3 mb-2 text-center">สาขาวิชาเทคโนโลยีสารสนเทศ</p>
                             <p class="mb-2 text-center">คณะวิทยาการสารสนเทศ</p>
                             <p class="mt-4 mb-4 text-center">มหาวิทยาลัยมหาสารคาม</p>
@@ -87,10 +101,11 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="mt-5 mb-3 image_4"><img src="images/dev3.png" width="160" height="160"></div>
-                            <h6 class="follow_text">ข้อมูลส่วนตัว</h6>
+                            {{-- <h6 class="follow_text">ข้อมูลส่วนตัว</h6> --}}
 
-                            <h3 class="mt-4 mb-2 text-center">นางสาวจุฑามาศ หาสุข</h3>
+                            <h4 class="mt-4 mb-2 text-center">นางสาวจุฑามาศ หาสุข</h4>
                             <h4 class="mb-2 text-center">MISS.JUTHAMAS HASUK</h4>
+                            <h4 class="mb-2 text-center">รหัสนิสิต 62011211108</h4>
                             <p class="mt-3 mb-2 text-center">สาขาวิชาเทคโนโลยีสารสนเทศ</p>
                             <p class="mb-2 text-center">คณะวิทยาการสารสนเทศ</p>
                             <p class="mt-4 mb-4 text-center">มหาวิทยาลัยมหาสารคาม</p>
@@ -98,7 +113,8 @@
                     </div>
                 </div>
 
-                <h1 class="choose_taital mt-5 mb-3"><span>ร่วม</span><img src="images/computer-icon.png" width="70"
+                <br><br><br><br><br>
+                <h1 class="font-weight-bold choose_taital mt-5 mb-3"><span>ร่วม</span><img src="images/computer-icon.png" width="70"
                         height="70"><span style="color: #1f1f1f">กับ</span></h1>
 
                 <h2 class="text-center">คลินิกสุขภาพจิต โรงพยาบาลสุทธาเวช</h2>
@@ -107,41 +123,65 @@
                 <div class="row row-cols-1 row-cols-md-1 g-4 mt-5 mb-5">
                     <div class="card h-100 mx-auto mt-5 mb-5">
                         <div class="col-md-6 mt-5 mb-5 mx-auto">
+                            {{-- <div class="mt-5 mb-3 image_4"><img src="images/user.png" width="50" height="50"></div> --}}
                             <h3 class="mt-5 mb-2 text-center">อ.พญ.กองกาญจน์ จันทน์จารุสิริ</h3>
-                            <p class="mt-3 mb-2 text-center">อาจารย์สาขาจิตเวชศาสตร์เด็กและวัยรุ่น</p>
+                            <p class="mb-2 text-center">อาจารย์สาขาจิตเวชศาสตร์เด็กและวัยรุ่น</p>
                         </div>
 
                         <div class="col-md-6 mt-5 mb-5 mx-auto">
+                            {{-- <div class="mt-5 mb-3 image_4"><img src="images/user.png" width="50" height="50"></div> --}}
                             <h3 class="mt-5 mb-2 text-center">ผศ.พญ.จริยา จิรานุกูล</h3>
-                            <p class="mt-3 mb-2 text-center">อาจารย์สาขาจิตเวชศาสตร์</p>
+                            <p class="mb-2 text-center">อาจารย์สาขาจิตเวชศาสตร์</p>
 
                         </div>
 
                         <div class="col-md-6 mt-5 mb-5 mx-auto">
+                            {{-- <div class="mt-5 mb-3 image_4"><img src="images/user.png" width="50" height="50"></div> --}}
                             <h3 class="mt-5 mb-2 text-center">น.ส.ธาณัฐดา สิริโสนแก้ว</h3>
-                            <p class="mt-3 mb-2 text-center">นักจิตวิทยา</p>
+                            <p class="mb-2 text-center">นักจิตวิทยา</p>
 
                         </div>
 
                         <div class="col-md-6 mt-5 mb-5 mx-auto">
+                            {{-- <div class="mt-5 mb-3 image_4"><img src="images/user.png" width="50" height="50"></div> --}}
                             <h3 class="mt-5 mb-2 text-center">นายพีระยุทธ ไชยคุณ</h3>
-                            <p class="mt-3 mb-2 text-center">นักจิตวิทยาคลินิก</p>
+                            <p class="mb-2 text-center">นักจิตวิทยาคลินิก</p>
                         </div>
 
                     </div>
                 </div>
 
+                <br><br><br><br><br>
+                <h1 class="font-weight-bold choose_taital mt-5 mb-3"><span>ขอ</span><img src="images/pray.png" width="40"
+                        height="40"><span style="color: #1f1f1f">ขอบคุณ</span></h1>
 
-                <h1 class="choose_taital mt-5 mb-3"><span>ขอ</span><img src="images/hands.png" width="45"
-                        height="45"><span style="color: #1f1f1f">ขอบคุณ</span></h1>
+                <h2 class="text-center">อาจารย์ประจำภาควิชาเทคโนโลยีสารสนเทศ</h2>
+                <h2 class="text-center">คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</h2>
 
                 <div class="row row-cols-1 row-cols-md-1 g-4 mt-5 mb-5">
                     <div class="card h-100 mx-auto mt-5 mb-5">
                         <div class="col-md-6 mt-5 mb-5 mx-auto">
-                            <h3 class="mt-5 mb-2 text-center">ผศ.ธนันชัย คำเกตุ</h3>
+                            {{-- <div class="mt-5 mb-3 image_4"><img src="images/user.png" width="50" height="50"></div> --}}
+                            <h3 class="mt-5 mb-2 text-center">ผู้ช่วยศาสตราจารย์ ธนันชัย คำเกตุ</h3>
                             <p class="mt-3 mb-2 text-center">อาจารย์ที่ปรึกษาโปรเจ็ค</p>
-                            <p class="mt-3 mb-2 text-center">สาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาการสารสนเทศ</p>
-                            <p class="mt-4 mb-4 text-center">มหาวิทยาลัยมหาสารคาม</p>
+                            <p class="mb-2 text-center">สาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาการสารสนเทศ</p>
+                            <p class="mt-5 mb-4 text-center">มหาวิทยาลัยมหาสารคาม</p>
+                        </div>
+
+                        <div class="col-md-6 mt-5 mb-5 mx-auto">
+                            {{-- <div class="mt-5 mb-3 image_4"><img src="images/user.png" width="50" height="50"></div> --}}
+                            <h3 class="mt-5 mb-2 text-center">ผู้ช่วยศาสตราจารย์ วุฒิชัย วิเชียรไชย</h3>
+                            <p class="mt-3 mb-2 text-center">อาจารย์ที่ปรึกษาโปรเจ็ค</p>
+                            <p class="mb-2 text-center">สาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาการสารสนเทศ</p>
+                            <p class="mt-5 mb-4 text-center">มหาวิทยาลัยมหาสารคาม</p>
+                        </div>
+
+                        <div class="col-md-6 mt-5 mb-5 mx-auto">
+                            {{-- <div class="mt-5 mb-3 image_4"><img src="images/user.png" width="50" height="50"></div> --}}
+                            <h3 class="mt-5 mb-2 text-center">อาจารย์ ปรีชา น้อยอำคา</h3>
+                            <p class="mt-3 mb-2 text-center">อาจารย์ที่ปรึกษาโปรเจ็ค</p>
+                            <p class="mb-2 text-center">สาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาการสารสนเทศ</p>
+                            <p class="mt-5 mb-4 text-center">มหาวิทยาลัยมหาสารคาม</p>
                         </div>
 
                     </div>

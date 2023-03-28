@@ -89,7 +89,7 @@
                                                     <a class="w3-btn w3-round-xlarge w3-hover-white"
                                                         href="{{ route('login') }}">เข้าสู่ระบบ</a>
 
-                                                    <span class="padding_left0"></span>
+                                                    <span class="padding_left1"></span>
                                                     @if (Route::has('register'))
                                                         <a class="w3-btn w3-round-xlarge w3-hover-white"
                                                             href="{{ route('register') }}">ลงทะเบียน</a>
@@ -132,8 +132,8 @@
                                                     href="{{ url('certificate1') }}">รางวัลของฉัน</a> --}}
                                                 <a class=" w3-btn w3-round-xlarge w3-hover-white"
                                                     href="{{ url('team') }}">เกี่ยวกับเรา</a>
-                                                <a class=" w3-btn w3-round-xlarge w3-hover-white"
-                                                    href="{{ url('contact') }}">แหล่งให้บริการด้านสุขภาพจิต</a>
+                                                {{-- <a class=" w3-btn w3-round-xlarge w3-hover-white"
+                                                    href="{{ url('contact') }}">แหล่งให้บริการด้านสุขภาพจิต</a> --}}
                                                 {{-- <a class="w3-btn w3-round-xlarge w3-hover-white" href="{{ url('choose') }}">คู่มือการใช้งาน</a> --}}
                                                 {{-- <a class=" w3-btn w3-round-xlarge w3-hover-white" href="{{ url('about') }}">เกี่ยวกับ</a> --}}
                                                 <hr>

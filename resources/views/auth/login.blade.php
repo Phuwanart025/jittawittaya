@@ -39,7 +39,6 @@
 
 </head>
 @section('content')
-
 <body>
 
     @extends('layouts.app')
