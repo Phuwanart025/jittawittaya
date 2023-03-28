@@ -31,6 +31,7 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 class diary_dayController extends Controller
 {
+    //Day_1
     public function store(Request $request)
     {
         try {
@@ -56,7 +57,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 1;
-            $diary1->score = 10;
+            $diary1->score = 3;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t1 = $request->v3;
@@ -108,7 +109,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 2;
-            $diary1->score = 10;
+            $diary1->score = 3;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t2 = $request->v3;
@@ -159,7 +160,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 3;
-            $diary1->score = 10;
+            $diary1->score = 3;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t3 = $request->v3;
@@ -202,7 +203,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 4;
-            $diary1->score = 10;
+            $diary1->score = 3;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t4 = $request->v3;
@@ -240,7 +241,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 5;
-            $diary1->score = 10;
+            $diary1->score = 3;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t5 = $request->v3;
@@ -284,7 +285,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 6;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t6 = $request->v3;
@@ -328,7 +329,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 7;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t7 = $request->v3;
@@ -373,7 +374,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 8;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t8 = $request->v3;
@@ -416,7 +417,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 9;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t9 = $request->v3;
@@ -460,7 +461,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 10;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t10 = $request->v3;
@@ -505,7 +506,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 11;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t11 = $request->v3;
@@ -552,7 +553,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 12;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t12 = $request->v3;
@@ -605,7 +606,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 13;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t13 = $request->v3;
@@ -664,7 +665,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 14;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t14 = $request->v3;
@@ -690,6 +691,7 @@ class diary_dayController extends Controller
         return redirect('/results');
     }
 
+    //Day_15
     public function store15(Request $request)
     {
         try {
@@ -705,7 +707,7 @@ class diary_dayController extends Controller
                 'v5' => 'required',
                 'v5_2' => 'required',
                 'v5_3' => 'required',
-                
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 15)
@@ -720,7 +722,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 15;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t15 = $request->v3;
@@ -732,7 +734,7 @@ class diary_dayController extends Controller
             $diary->rethink2_15 = $request->v5;
             $diary->new_mood2_15    = $request->v5_2;
             $diary->new_mood_level2    = $request->v5_3;
-           
+
             $diary1->save();
             $diary->diary_day15()->associate($diary1);
             $diary->save();
@@ -743,6 +745,7 @@ class diary_dayController extends Controller
         return redirect('/results');
     }
 
+    //Day_16
     public function store16(Request $request)
     {
         try {
@@ -758,7 +761,7 @@ class diary_dayController extends Controller
                 'v5' => 'required',
                 'v5_2' => 'required',
                 'v5_3' => 'required',
-                
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 16)
@@ -773,7 +776,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 16;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t16 = $request->v3;
@@ -785,7 +788,7 @@ class diary_dayController extends Controller
             $diary->rethink2_16 = $request->v5;
             $diary->new_mood2_16    = $request->v5_2;
             $diary->new_mood_level2    = $request->v5_3;
-           
+
             $diary1->save();
             $diary->diary_day16()->associate($diary1);
             $diary->save();
@@ -796,6 +799,7 @@ class diary_dayController extends Controller
         return redirect('/results');
     }
 
+    //Day_17
     public function store17(Request $request)
     {
         try {
@@ -811,7 +815,7 @@ class diary_dayController extends Controller
                 'v5' => 'required',
                 'v5_2' => 'required',
                 'v5_3' => 'required',
-                
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 17)
@@ -826,7 +830,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 17;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->color_feel_today = $request->flexRadioDefault;
             $diary->sensation_level = $request->input('value');
             $diary->detail_t17 = $request->v3;
@@ -838,7 +842,7 @@ class diary_dayController extends Controller
             $diary->rethink2_17 = $request->v5;
             $diary->new_mood2_17    = $request->v5_2;
             $diary->new_mood_level2    = $request->v5_3;
-           
+
             $diary1->save();
             $diary->diary_day17()->associate($diary1);
             $diary->save();
@@ -849,6 +853,7 @@ class diary_dayController extends Controller
         return redirect('/results');
     }
 
+    //Day_18
     public function store18(Request $request)
     {
         try {
@@ -867,8 +872,8 @@ class diary_dayController extends Controller
                 'v12' => 'required',
                 'v13' => 'required',
                 'v14' => 'required',
-                
-                
+
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 18)
@@ -883,7 +888,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 18;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->data1_t18 = $request->v1;
             $diary->data2_t18 = $request->v2;
             $diary->data3_t18 = $request->v3;
@@ -898,8 +903,8 @@ class diary_dayController extends Controller
             $diary->data12_t18 = $request->v12;
             $diary->data13_t18 = $request->v13;
             $diary->data14_t18 = $request->v14;
-           
-           
+
+
             $diary1->save();
             $diary->diary_day18()->associate($diary1);
             $diary->save();
@@ -910,6 +915,7 @@ class diary_dayController extends Controller
         return redirect('/results');
     }
 
+    //Day_19
     public function store19(Request $request)
     {
         try {
@@ -928,8 +934,8 @@ class diary_dayController extends Controller
                 'v12' => 'required',
                 'v13' => 'required',
                 'v14' => 'required',
-                
-                
+
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 19)
@@ -944,7 +950,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 19;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->data1_t19 = $request->v1;
             $diary->data2_t19 = $request->v2;
             $diary->data3_t19 = $request->v3;
@@ -959,8 +965,8 @@ class diary_dayController extends Controller
             $diary->data12_t19 = $request->v12;
             $diary->data13_t19 = $request->v13;
             $diary->data14_t19 = $request->v14;
-           
-           
+
+
             $diary1->save();
             $diary->diary_day19()->associate($diary1);
             $diary->save();
@@ -971,6 +977,7 @@ class diary_dayController extends Controller
         return redirect('/results');
     }
 
+    //Day_20
     public function store20(Request $request)
     {
         try {
@@ -989,8 +996,8 @@ class diary_dayController extends Controller
                 'v12' => 'required',
                 'v13' => 'required',
                 'v14' => 'required',
-                
-                
+
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 20)
@@ -1005,7 +1012,7 @@ class diary_dayController extends Controller
             }
             $diary1->user_id = Auth::user()->id;
             $diary1->jobs_id = 20;
-            $diary1->score = 10;
+            $diary1->score = 5;
             $diary->data1_t20 = $request->v1;
             $diary->data2_t20 = $request->v2;
             $diary->data3_t20 = $request->v3;
@@ -1020,8 +1027,8 @@ class diary_dayController extends Controller
             $diary->data12_t20 = $request->v12;
             $diary->data13_t20 = $request->v13;
             $diary->data14_t20 = $request->v14;
-           
-           
+
+
             $diary1->save();
             $diary->diary_day20()->associate($diary1);
             $diary->save();
@@ -1032,6 +1039,7 @@ class diary_dayController extends Controller
         return redirect('/results');
     }
 
+    //Day_21
     public function store21(Request $request)
     {
         try {
@@ -1050,8 +1058,8 @@ class diary_dayController extends Controller
                 'v12' => 'required',
                 'v13' => 'required',
                 'v14' => 'required',
-                
-                
+
+
             ]);
             $latest = rounds_completed::where('user_id', Auth::user()->id)
                 ->where('jobs_id', 21)
@@ -1082,8 +1090,8 @@ class diary_dayController extends Controller
             $diary->data12_t21 = $request->v12;
             $diary->data13_t21 = $request->v13;
             $diary->data14_t21 = $request->v14;
-           
-           
+
+
             $diary1->save();
             $diary->diary_day21()->associate($diary1);
             $diary->save();
