@@ -30,43 +30,44 @@ class Is_day
         ->orderByDesc('rounds_completed.rounds')
         ->limit(1)
         ->first();
-        
-            if (!$last_round_completed || $last_round_completed->jobs_id === 21) {
-                if ($request->route()->getName() !== 'day1') {
-                    return redirect()->route('day1');
-                }
-            } elseif ($last_round_completed && $last_round_completed->jobs_id < 21) {
-                $nextRound = $last_round_completed->jobs_id + 1;
-            
-                if ($nextRound === 21) {
+
+        if (!$last_round_completed || $last_round_completed->jobs_id === 21) {
+            if ($request->route()->getName() !== 'day1') {
+                return redirect()->route('day1');
+            }
+        } elseif ($last_round_completed->jobs_id < 21) {
+            $nextRound = $last_round_completed->jobs_id + 1;
+            if ($nextRound === 21) {
                     $nextRound = 1;
                     return redirect()->route('day1');
                 } elseif ($request->route()->getName() !== 'day'.$nextRound) {
                     return redirect()->route('day'.$nextRound);
                 }
-            }
-            
+        }
+        
+        if ($last_round_completed) {
             $lastCompletedTime = Carbon::parse($last_round_completed->created_at);
             $currentTime = Carbon::now();
             $elapsedTime = $currentTime->diffInHours($lastCompletedTime);
-    
-            // If the last job was completed less than 12 hours ago, show an alert message
-            if ($elapsedTime < 12) {
-                $endTime = $lastCompletedTime->addHours(12)->format('d-m-Y H:i:s');
+            
+            // If the last job was completed less than 1 hour ago, show an alert message
+            if ($elapsedTime < 1) {
+                $endTime = $lastCompletedTime->addHours(1)->format('d-m-Y H:i:s');
                 $message = 'คุณสามารถเข้าสู่รอบถัดไปได้หลังจาก ' . $endTime;
                 $nextJob = $last_round_completed->jobs_id + 1;
-    
+                
                 if ($nextJob) {
                     $message .= ' วันถัดไป: วันที่ ' . $nextJob;
                 }
-    
+                
                 Alert::error($message, 'error')->timerProgressBar()->persistent(true)->autoClose(false);
                 return redirect()->back();
-            }    
-            
-            // If it has been 12 hours or more since the last job was completed, proceed to the next job
-           
-     
-            return $next($request);
+            }
         }
+        
+        // If it has been 1 hour or more since the last job was completed, proceed to the next job
+        return $next($request);
     }
+}
+        
+          
