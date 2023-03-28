@@ -8,23 +8,23 @@
         <!-- services section start -->
         <div class="services_section layout_padding">
             <div class="container">
-                <h1 class="services_taital"><span>ประวัติ</span> <img src="images/icon-1.png"> <span
-                        style="color: #1f1f1f">บันทึกความรู้สึก</span></h1>
-                <p class="services_text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua</p>
+                <h1 class="font-weight-bold services_taital"><span>ประวัติ</span> <img src="images/writing.png" width="40" height="40">
+                    <span style="color: #1f1f1f">บันทึกของฉัน</span></h1>
+
                 <div class="row">
                     <div class="p-5">
                         <!-- DataTales Example -->
                         <div class="card shadow mb-4 bg w3-theme-l3">
                             <div class="card-header py-3 bg w3-theme">
                                 <div class="w3-center">
-                                    <h5 class="m-0 font-weight-bold text-grey "><span
-                                            class="badge bg-warning ms-2">ประวัติการทำแบบบันทึกอารมณ์</span> </h5>
+                                    <h4 class="m-0 font-weight-bold text-grey "><span
+                                            class="badge bg-warning ms-2">ประวัติการทำแบบบันทึกของฉัน</span> </h4>
                                 </div>
                             </div>
-                            <script>let data = [1,2,3,4,5];
+                            <script>
+                                let data = [1, 2, 3, 4, 5];
                                 let table = document.getElementById("myTable");
-                                
+
                                 for (let i = 0; i < data.length; i++) {
                                     let row = table.insertRow();
                                     let cell1 = row.insertCell();
@@ -32,7 +32,7 @@
                                     cell1.innerHTML = i + 1; // Add 1 to the index to start row number at 1
                                     cell2.innerHTML = data[i];
                                 }
-                                </script>
+                            </script>
                             <div class="card-body w3-center">
                                 <div class="table-responsive">
                                     <table id="myTable" class="display  text-secondary" style="width: 100%;">
@@ -65,7 +65,7 @@
                                                     <td>{{ $item->total_score }} คะแนน</td>
                                                     <td>{{ $item->count_round }}/21วัน</td>
                                                     <td>
-                                                        <a href="{{ url('/mypdf/' . $item->rounds) }}" method="GET"
+                                                        <a href="{{ url('/mypdf/' . $item->rounds) }}" target="_blank" method="GET"
                                                             class="btn btn-warning w3-round-xxlarge">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20"
                                                                 height="20" fill="currentColor"

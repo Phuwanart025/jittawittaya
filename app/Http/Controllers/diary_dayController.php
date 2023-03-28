@@ -62,8 +62,10 @@ class diary_dayController extends Controller
             $diary->detail_t1 = $request->v3;
             //
             $v4 = implode(',', $request->input('v4'));
-            $serialized_v4 = serialize($v4);
+            $serialized_v4 = str_replace("]","",str_replace("[","",$v4));
             $diary->story_d1 = $serialized_v4;
+
+
             // $diary->thoughts = $request->v5;
             // $diary->emotions = $request->v6;
             $diary1->save();
@@ -246,7 +248,7 @@ class diary_dayController extends Controller
             $diary->detail_t5 = $request->v3;
 
             $v4 = implode(',', $request->input('v4'));
-            $serialized_v4 = serialize($v4);
+            $serialized_v4 =str_replace("]","",str_replace("[","",$v4));
             $diary->idea_v4 = $serialized_v4;
 
             $diary1->save();

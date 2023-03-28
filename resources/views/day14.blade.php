@@ -377,16 +377,15 @@
                                             <h1 class="mt-5 mb-3">เพลงบำบัดจิตใจ</h1>
                                             <img class="mb-3" src="images/day14/1.png" style="width:100%">
                                             <div class="ratio ratio-16x9 py-3">
-                                                <iframe src="https://www.youtube.com/embed/OMVYOsoqjIo"
+                                                <iframe src="https://www.youtube.com/embed/0Tnu9B5u94k"
                                                     title="YouTube video player" frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    allowfullscreen>
-                                                </iframe>
+                                                    allowfullscreen></iframe>
                                             </div>
 
                                             <p class="text-center py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
-                                                    href="https://www.youtube.com/embed/OMVYOsoqjIo">
-                                                    Live and Learn - กมลา สุโกศล(YouTube)
+                                                    href="https://youtu.be/0Tnu9B5u94k">
+                                                    Boyd Kosiyabong - Live & Learn (Official Lyric Video)(YouTube)
                                                 </a>
                                             </p>
 
@@ -442,7 +441,6 @@
                                             </h1>
                                         </div>
 
-                                        {{-- <h2 class="text-center mt-5 mb-3">อารมณ์มาจากไหนกันนะ</h2> --}}
                                         <div class="my-custom-scrollbar my-custom-scrollbar-primary mx-auto py-3">
                                             <video class="mySlides1" autoplay muted loop="true">
                                                 <source src="images/day14/ความรู้/ความรู้  ฝึกแก้ปัญหา.mp4"

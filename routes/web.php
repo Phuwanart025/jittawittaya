@@ -77,22 +77,22 @@ Route::middleware(['auth:sanctum'])->get('/record', function () {
 
 
 Route::middleware(['auth:sanctum'])->get('/results', function () {
-   
-    $rounds = DB::table('rounds_completed')
-    ->orderBy('rounds_completed.rounds', 'desc')
-    ->limit(1)
-    ->pluck('rounds_completed.rounds');
 
-$rounds_story = DB::table('rounds_completed')
-    ->join('users', 'rounds_completed.user_id', '=', 'users.id')
-    ->where('rounds_completed.user_id', Auth::user()->id)
-    ->whereIn('rounds_completed.rounds', $rounds)
-    ->select(DB::raw('rounds_completed.rounds, COUNT(*) as count_round, SUM(rounds_completed.score) as total_score'))
-    ->groupBy('rounds_completed.rounds')
-    ->orderBy('rounds_completed.rounds', 'asc')
-    ->limit(1)
-    ->get();
-    
+    $rounds = DB::table('rounds_completed')
+        ->orderBy('rounds_completed.rounds', 'desc')
+        ->limit(1)
+        ->pluck('rounds_completed.rounds');
+
+    $rounds_story = DB::table('rounds_completed')
+        ->join('users', 'rounds_completed.user_id', '=', 'users.id')
+        ->where('rounds_completed.user_id', Auth::user()->id)
+        ->whereIn('rounds_completed.rounds', $rounds)
+        ->select(DB::raw('rounds_completed.rounds, COUNT(*) as count_round, SUM(rounds_completed.score) as total_score'))
+        ->groupBy('rounds_completed.rounds')
+        ->orderBy('rounds_completed.rounds', 'asc')
+        ->limit(1)
+        ->get();
+
     return view('results', compact('rounds_story'));
 })->name('/results');
 
@@ -139,15 +139,14 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/store19', [diary_dayController::class, 'store19']);
     Route::post('/store20', [diary_dayController::class, 'store20']);
     Route::post('/store21', [diary_dayController::class, 'store21']);
-
 });
 
 
 Route::middleware(['auth:sanctum', 'Is_day'])->group(function () {
     for ($i = 1; $i <= 21; $i++) {
-        Route::get('/day'.$i, function () use ($i) {
-            return view('day'.$i);
-        })->name('day'.$i);
+        Route::get('/day' . $i, function () use ($i) {
+            return view('day' . $i);
+        })->name('day' . $i);
     }
 });
 

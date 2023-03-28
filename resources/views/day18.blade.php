@@ -297,10 +297,11 @@
 
                                         <div class="row text-center">
                                             <h2 class="mt-5 mb-3">มาปรับความคิดกันเถอะ...</h2>
+                                            <h2 class="mb-3">วันนี้มีเหตุการณ์ไม่สบายใจอะไรเกิดขึ้นบ้างไหม</h2>
                                             <div class="table-responsive">
                                                 <table class="table text-black table-bordered table-info table-highlight">
                                                     <thead class="thead-info">
-                                                        <th>วันนี้เกิดอะไรขึ้น</th>
+                                                        <th>เหตุการณ์</th>
                                                         <th>คิดยังไง</th>
                                                         <th>อารมณ์</th>
                                                         <th>ระดับอารมณ์ 1-5</th>
@@ -310,13 +311,15 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><input name="v1" id="v1" type="text" class="form-control" placeholder="..."
-                                                                    required></td>
-                                                            <td><input  name="v2" id="v2" type="text" class="form-control" placeholder="..."
-                                                                    required></td>
-                                                            <td><input  name="v3" id="v3" type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><select  name="v4" id="v4" class="form-select"
+                                                            <td><input name="v1" id="v1" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้" required>
+                                                            </td>
+                                                            <td><input name="v2" id="v2" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้" required>
+                                                            </td>
+                                                            <td><input name="v3" id="v3" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
+                                                            <td><select name="v4" id="v4" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
@@ -326,11 +329,13 @@
                                                                     <option value="5">5</option>
                                                                 </select>
                                                             </td>
-                                                            <td><input name="v5" id="v5" type="text" class="form-control" placeholder="..."
-                                                                    required></td>
-                                                            <td><input name="v6" id="v6" type="text" class="form-control" placeholder="..."
-                                                                    required></td>
-                                                            <td><select  name="v7" id="v7" class="form-select"
+                                                            <td><input name="v5" id="v5" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้" required>
+                                                            </td>
+                                                            <td><input name="v6" id="v6" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้" required>
+                                                            </td>
+                                                            <td><select name="v7" id="v7" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
@@ -342,12 +347,12 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input name="v8" id="v8" type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input name="v9" id="v9" type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input name="v10" id="v10" type="text" class="form-control"
-                                                                    placeholder="..."></td>
+                                                            <td><input name="v8" id="v8" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
+                                                            <td><input name="v9" id="v9" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
+                                                            <td><input name="v10" id="v10" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
                                                             <td><select name="v11" id="v11" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
@@ -358,11 +363,11 @@
                                                                     <option value="5">5</option>
                                                                 </select>
                                                             </td>
-                                                            <td><input name="v12" id="v12" type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><input name="v13" id="v13" type="text" class="form-control"
-                                                                    placeholder="..."></td>
-                                                            <td><select name="v14" id="v14"  class="form-select"
+                                                            <td><input name="v12" id="v12" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
+                                                            <td><input name="v13" id="v13" type="text"
+                                                                    class="form-control" placeholder="พิมพ์ตรงนี้"></td>
+                                                            <td><select name="v14" id="v14" class="form-select"
                                                                     aria-label="Default select example" required>
                                                                     <option value="">เลือกระดับอารมณ์ของคุณ</option>
                                                                     <option value="1">1</option>
@@ -436,15 +441,16 @@
                                             <h1 class="mt-5 mb-3">เพลงบำบัดจิตใจ</h1>
                                             <img class="mb-3" src="images/day18/1.png" style="width:100%">
                                             <div class="ratio ratio-16x9 py-3">
-                                                <iframe src="https://www.youtube.com/embed/zwUmBsBy-vg"
+                                                <iframe src="https://www.youtube.com/embed/iHsmotTnh5I"
                                                     title="YouTube video player" frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     allowfullscreen></iframe>
                                             </div>
 
                                             <p class="py-3">ขอบคุณแหล่งที่มา:<a target="_blank"
-                                                    href="https://youtu.be/zwUmBsBy-vg">
-                                                    BOYd - ฤดูที่แตกต่าง feat. Nop [Official MV](YouTube)
+                                                    href="https://youtu.be/iHsmotTnh5I">
+                                                    Boyd Kosiyabong - ฤดูที่แตกต่าง ft. Nop Ponchamni (Official Lyric
+                                                    Video)(YouTube)
                                                 </a>
                                             </p>
 
