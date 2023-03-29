@@ -34,12 +34,18 @@ class Is_day
         // ->limit(1)
         // ->first();
 
-        $last_round_completed = DB::select("SELECT `rounds_completed`.`jobs_id`, `rounds_completed`.`rounds`, `rounds_completed`.`created_at` 
-        FROM `rounds_completed` 
-        WHERE `user_id` = 21 AND `rounds_completed`.`rounds` = (SELECT MAX(rounds) FROM rounds_completed WHERE user_id = 21)
-        GROUP BY `rounds_completed`.`jobs_id`, `rounds_completed`.`rounds`, `rounds_completed`.`created_at` 
-        ORDER BY `rounds_completed`.`jobs_id` DESC
-        LIMIT 1")[0];
+        $last_round_completed = DB::table('rounds_completed')
+        ->select('rounds_completed.jobs_id', 'rounds_completed.rounds', 'rounds_completed.created_at')
+        ->where('user_id', Auth::user()->id)
+        ->where('rounds_completed.rounds', function ($query) {
+            $query->select(DB::raw('MAX(rounds)'))
+                  ->from('rounds_completed')
+                  ->where('user_id', Auth::user()->id);
+        })
+        ->groupBy('rounds_completed.jobs_id', 'rounds_completed.rounds', 'rounds_completed.created_at')
+        ->orderBy('rounds_completed.jobs_id', 'desc')
+        ->first();
+        
 
         if (!$last_round_completed || $last_round_completed->jobs_id === 21) {
             if ($request->route()->getName() !== 'day1') {
