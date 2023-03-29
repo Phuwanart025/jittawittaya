@@ -346,7 +346,7 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row text-center">
+                                        <div class="container mb-5">
 
                                             <h2 class="mt-5 mb-3">จากเหตุการณ์นี้ เขามีกับดักความคิดแบบไหนกันนะ</h2>
                                             <div class="table-responsive py-3">
@@ -363,14 +363,18 @@
                                                             <td>แฟนอ่านแชทแล้วไม่ตอบ</td>
                                                             <td>เขาคงคิดว่าเราไม่สำคัญ</td>
                                                             <td>
-                                                                <select class="form-select"
-                                                                name="v4" id="v4" aria-label="Default select example" required>
-                                                                <option selected value="">เลือกคำตอบของคุณ</option>
+                                                                <select class="form-select" name="v4" id="v4"
+                                                                    aria-label="Default select example" required>
+                                                                    <option selected value="">เลือกคำตอบของคุณ
+                                                                    </option>
                                                                     <option value="Mind Reading">1. Mind Reading</option>
-                                                                    <option value="Emotional Reasoning">2. Emotional Reasoning</option>
-                                                                    <option value="Should Statements">3. Should Statements</option>
+                                                                    <option value="Emotional Reasoning">2. Emotional
+                                                                        Reasoning</option>
+                                                                    <option value="Should Statements">3. Should Statements
+                                                                    </option>
                                                                     <option value="Labeling">4. Labeling</option>
-                                                                    <option value="Personalization">5. Personalization</option>
+                                                                    <option value="Personalization">5. Personalization
+                                                                    </option>
                                                                 </select>
                                                             </td>
                                                             <td>เศร้า</td>
@@ -379,23 +383,63 @@
                                                             <td>อาจารย์ออกข้อสอบนอกเหนือจากสิ่งที่สอนได้คะแนนน้อย</td>
                                                             <td>อาจารย์ต้องออกข้อสอบให้ตรงกับที่สอนสิ</td>
                                                             <td>
-                                                                <select class="form-select"
-                                                                name="v5" id="v5"aria-label="Default select example" required>
-                                                                <option selected value="">เลือกคำตอบของคุณ</option>
-                                                                <option  value="Mind Readin">1. Mind Reading</option>
-                                                                <option value="Emotional Reasoning">2. Emotional Reasoning</option>
-                                                                <option value="Should Statements">3. Should Statements</option>
-                                                                <option value="Labeling">4. Labeling</option>
-                                                                <option value="Personalization">5. Personalization</option>
-                                                            </select>
+                                                                <select class="form-select" name="v5"
+                                                                    id="v5"aria-label="Default select example"
+                                                                    required>
+                                                                    <option selected value="">เลือกคำตอบของคุณ
+                                                                    </option>
+                                                                    <option value="Mind Readin">1. Mind Reading</option>
+                                                                    <option value="Emotional Reasoning">2. Emotional
+                                                                        Reasoning</option>
+                                                                    <option value="Should Statements">3. Should Statements
+                                                                    </option>
+                                                                    <option value="Labeling">4. Labeling</option>
+                                                                    <option value="Personalization">5. Personalization
+                                                                    </option>
+                                                                </select>
                                                             </td>
                                                             <td>โกรธ</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
+
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="mt-3 btn btn-danger btn-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                เฉลย
+                                            </button><span class="text-red"> ***โปรดทำก่อนกดดูเฉลยนะ</span>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-primary text-white">
+                                                            <label class="modal-title" id="exampleModalLabel"
+                                                                style="font-size: 18">
+
+                                                                <i class="fas fa-comment-dots"></i>
+                                                                จากเหตุการณ์นี้ เขามีกับดักความคิดแบบไหนกันนะ?
+                                                            </label>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="row py-3">
+                                                                <img src="https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-26-181_512.gif"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger btn-sm"
+                                                                data-bs-dismiss="modal">ปิด</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+
 
                                     {{-- Content4 --}}
                                     <div class="mySlides">

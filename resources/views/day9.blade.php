@@ -348,7 +348,7 @@
                                             </h1>
                                         </div>
 
-                                        <div class="row text-center">
+                                        <div class="container mb-5">
 
                                             <h2 class="mt-5 mb-3">จากเหตุการณ์นี้ เขามีกับดักความคิดแบบไหนกันนะ</h2>
                                             <div class="table-responsive py-3">
@@ -366,15 +366,21 @@
                                                             <td>ยายอาจจะล้มหัวฟาดพื้น เลือดออกในสมอง ยายจะตายมั้ย
                                                                 จะทำยังไงดี</td>
                                                             <td>
-                                                                <select class="form-select"  name="v4" id="v4"
+                                                                <select class="form-select" name="v4" id="v4"
                                                                     aria-label="Default select example" required>
-                                                                    <option selected value="">เลือกคำตอบของคุณ</option>
-                                                                    <option value="Magnification and
-                                                                    Minimization">1. Magnification and
+                                                                    <option selected value="">เลือกคำตอบของคุณ
+                                                                    </option>
+                                                                    <option
+                                                                        value="Magnification and
+                                                                    Minimization">
+                                                                        1. Magnification and
                                                                         Minimization</option>
-                                                                    <option value="Catastrophizing">2. Catastrophizing</option>
-                                                                    <option value="Overgeneralization">3. Overgeneralization</option>
-                                                                    <option value="All-or-Nothing Thinking">4. All-or-Nothing Thinking
+                                                                    <option value="Catastrophizing">2. Catastrophizing
+                                                                    </option>
+                                                                    <option value="Overgeneralization">3.
+                                                                        Overgeneralization</option>
+                                                                    <option value="All-or-Nothing Thinking">4.
+                                                                        All-or-Nothing Thinking
                                                                     </option>
                                                                     <option value="Mental Filter">5. Mental Filter</option>
                                                                 </select>
@@ -386,15 +392,21 @@
                                                                 วันนี้นัดคุยงานกลุ่มแต่เพื่อนไม่มาช่วย</td>
                                                             <td>ฉันทำงานกลุ่มอยู่คนเดียว เหนื่อยจัง</td>
                                                             <td>
-                                                                <select class="form-select"  name="v5" id="v5"
+                                                                <select class="form-select" name="v5" id="v5"
                                                                     aria-label="Default select example" required>
-                                                                    <option selected value="">เลือกคำตอบของคุณ</option>
-                                                                    <option value="Magnification and
-                                                                    Minimization">1. Magnification and
+                                                                    <option selected value="">เลือกคำตอบของคุณ
+                                                                    </option>
+                                                                    <option
+                                                                        value="Magnification and
+                                                                    Minimization">
+                                                                        1. Magnification and
                                                                         Minimization</option>
-                                                                    <option value="Catastrophizing">2. Catastrophizing</option>
-                                                                    <option value="Overgeneralization">3. Overgeneralization</option>
-                                                                    <option value="All-or-Nothing Thinking">4. All-or-Nothing Thinking
+                                                                    <option value="Catastrophizing">2. Catastrophizing
+                                                                    </option>
+                                                                    <option value="Overgeneralization">3.
+                                                                        Overgeneralization</option>
+                                                                    <option value="All-or-Nothing Thinking">4.
+                                                                        All-or-Nothing Thinking
                                                                     </option>
                                                                     <option value="Mental Filter">5. Mental Filter</option>
                                                                 </select>
@@ -403,6 +415,40 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
+                                            </div>
+
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="mt-3 btn btn-danger btn-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                เฉลย
+                                            </button><span class="text-red"> ***โปรดทำก่อนกดดูเฉลยนะ</span>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header bg-primary text-white">
+                                                            <label class="modal-title" id="exampleModalLabel"
+                                                                style="font-size: 18">
+
+                                                                <i class="fas fa-comment-dots"></i>
+                                                                จากเหตุการณ์นี้ เขามีกับดักความคิดแบบไหนกันนะ?
+                                                            </label>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="row py-3">
+                                                                <img src="https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-26-181_512.gif"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger btn-sm"
+                                                                data-bs-dismiss="modal">ปิด</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="d-grid gap-2 col-3 py-3 mx-auto">
