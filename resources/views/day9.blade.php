@@ -439,8 +439,8 @@
                                                         </div>
                                                         <div class="modal-body">
                                                             <div class="row py-3">
-                                                                <img src="https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-26-181_512.gif"
-                                                                    alt="">
+                                                                <img src="images/day9/game9.jpg"
+                                                                    style="width:100%" alt="">
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
