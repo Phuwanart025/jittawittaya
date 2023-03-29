@@ -460,66 +460,313 @@
                                             </div>
                                         </div>
 
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="mt-3 btn btn-danger btn-sm" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal">
-                                            เฉลย
-                                        </button><span class="text-red"> ***โปรดทำก่อนกดดูเฉลยนะ</span>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header bg-primary text-white">
-                                                        <label class="modal-title" id="exampleModalLabel"
-                                                            style="font-size: 24">
+                                        
+                                        
 
-                                                            <i class="fas fa-comment-dots"></i>
-                                                            เฉลยความคิดคืออะไร?
-                                                        </label>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="row py-3">
-                                                            <div class="col-md-3">
-                                                                <img src="https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-26-181_512.gif"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-9">
-                                                                <h3><span
-                                                                        class="badge bg-info">ในส่วนที่เป็นความคิดนั้นจะมี</span>
-                                                                </h3>
-                                                                <div class="row py-3">
-                                                                    <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle"> ไม่อยากไปเที่ยว
-                                                                            </i></p>
-                                                                        <p><i class="fas fa-check-circle"> คนอื่นไม่ชอบฉัน
-                                                                            </i></p>
-                                                                        <p><i class="fas fa-check-circle"> อย่ามายุ่งกับฉัน
-                                                                            </i></p>
-                                                                    </div>
-                                                                    <div class="col-6 col-sm-6">
-                                                                        <p><i class="fas fa-check-circle">
-                                                                                เดี๋ยวต้องเกิดเรื่องแน่ๆ
-                                                                            </i></p>
-                                                                        <p><i class="fas fa-check-circle"> โดนเอาเปรียบ
-                                                                            </i></p>
-                                                                        <p><i class="fas fa-check-circle"> ไม่เก่ง
-                                                                            </i></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-danger btn-sm"
-                                                            data-bs-dismiss="modal">ปิด</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
 
                                     {{-- Content3 --}}
                                     <div class="mySlides">

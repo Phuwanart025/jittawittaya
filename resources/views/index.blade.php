@@ -90,7 +90,7 @@
                                 <div class="overlay-content ">
                                     <div class="container">
                                         @auth
-                                            <h3 class="w3-text-white">ยินดีตอนรับ</h3>
+                                            <h3 class="w3-text-white">ยินดีตอนรับ </h3>
                                             <h3 class="w3-text-white"><svg xmlns="http://www.w3.org/2000/svg" width="30"
                                                     height="30" fill="currentColor" class="bi bi-person-circle"
                                                     viewBox="0 0 16 16">
